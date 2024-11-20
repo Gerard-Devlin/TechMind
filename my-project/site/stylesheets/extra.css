@@ -1,0 +1,44 @@
+:root > * {
+/*  !* 背景色 *!*/
+/*  --md-code-bg-color: #282a36;*/
+/*  !* 数字 *!*/
+/*  --md-code-hl-number-color: #bd93f9;*/
+
+/*  !* 特殊字符 *!*/
+/*  --md-code-hl-special-color: #ff79c6;*/
+
+/*  !* 函数名 *!*/
+/*  --md-code-hl-function-color: #50fa7b;*/
+
+/*  !* 常量/类型 *!*/
+/*  --md-code-hl-constant-color: #bd93f9;*/
+
+/*  !* 关键字 *!*/
+/*  --md-code-hl-keyword-color: #ff79c6;*/
+
+/*  !* 字符串 *!*/
+/*  --md-code-hl-string-color: #f1fa8c;*/
+
+/*  !* 标识符/名称 *!*/
+/*  --md-code-hl-name-color: #f8f8f2;*/
+
+/*  !* 运算符 *!*/
+/*  --md-code-hl-operator-color: #ff79c6;*/
+
+/*  !* 标点符号 *!*/
+/*  --md-code-hl-punctuation-color: #f8f8f2;*/
+
+  /* 注释 */
+  --md-code-hl-comment-color: #f3a16d;
+
+/*  !* 泛型 *!*/
+/*  --md-code-hl-generic-color: #f8f8f2;*/
+
+/*  !* 变量 *!*/
+/*  --md-code-hl-variable-color: #f8f8f2;*/
+.admonition p {
+    font-size: 1.2em;  /* 你可以根据需要调整大小 */
+}
+
+
+}
