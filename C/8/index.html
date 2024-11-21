@@ -1664,7 +1664,7 @@ a[6]: 7
 <p><code>a[2]=a[1]+6</code>：赋值左边的叫左值</p>
 <h3 id="_3">有效的下标范围</h3>
 <ul>
-<li>编译器和运行环境都==不会==检查数组下标是否越界</li>
+<li>编译器和运行环境都 <mark>不会</mark> 检查数组下标是否越界</li>
 <li>一旦程序运行，越界的数组访问可能造成问题，导致程序崩溃→segmentation fault</li>
 <li>长度为0的数组存在，但是无用</li>
 </ul>
@@ -1732,7 +1732,7 @@ a[6]: 7
 </span><span id="__span-7-7"><a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a><span class="w">    </span><span class="n">b</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">=</span><span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
 </span><span id="__span-7-8"><a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a><span class="p">}</span>
 </span></code></pre></div>
-<p>通常使用for循环，变量i从0到==&lt;==数组长度</p>
+<p>通常使用for循环，变量i从0到 <mark>&lt;</mark> 数组长度</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <blockquote>
