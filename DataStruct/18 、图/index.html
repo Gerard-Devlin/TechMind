@@ -939,21 +939,6 @@
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#include-bitsstdch-using-namespace-std-typedef-pairint-int-pii-const-int-n-1e3-10-int-n-m-disn-an-bool-visn-vectorpii-vn-queueint-q-int-main-cin-n-m-for-int-i-1-i-n-i-cin-ai-for-int-i-1-i-m-i-int-x-y-z-cin-x-y-z-vxpush_backz-y-vypush_backz-x-memsetdis-0x3f-sizeofdis-dis1-0-qpush1-while-qempty-int-x-qfront-qpop-visx-0-for-int-i-0-i-vxsize-i-int-nx-vxisecond-int-w-vxifirst-if-disnx-disx-w-anx-disnx-disx-w-anx-if-visnx-visnx-1-qpushnx-cout-disn-an-endl-return-0" class="md-nav__link">
-    <span class="md-ellipsis">
-      #include &lt;bits/stdc++.h&gt; using namespace std; typedef pair&lt;int, int&gt; pii; const int N = 1e3 + 10; int n, m, dis[N], a[N]; bool vis[N]; vector&lt;pii&gt; v[N]; queue&lt;int&gt; q; int main() { cin &gt;&gt; n &gt;&gt; m; for (int i = 1; i &lt;= n; i++) cin &gt;&gt; a[i]; for (int i = 1; i &lt;= m; i++) { int x, y, z; cin &gt;&gt; x &gt;&gt; y &gt;&gt; z; v[x].push_back({z, y}); v[y].push_back({z, x}); } memset(dis, 0x3f, sizeof(dis)); dis[1] = 0; q.push(1); while (!q.empty()) { int x = q.front(); q.pop(); vis[x] = 0; for (int i = 0; i &lt; v[x].size(); i++) { int nx = v[x][i].second; int w = v[x][i].first; if (dis[nx] &gt; dis[x] + w + a[nx]) { dis[nx] = dis[x] + w + a[nx]; if (!vis[nx]) { vis[nx] = 1; q.push(nx); } } } } cout &lt;&lt; dis[n] - a[n] &lt;&lt; endl; return 0; }
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="#include <bits/stdc++.h> using namespace std; typedef pair<int, int> pii; const int N = 1e3 + 10; int n, m, dis[N], a[N]; bool vis[N]; vector<pii> v[N]; queue<int> q; int main() { cin >> n >> m; for (int i = 1; i <= n; i++) cin >> a[i]; for (int i = 1; i <= m; i++) { int x, y, z; cin >> x >> y >> z; v[x].push_back({z, y}); v[y].push_back({z, x}); } memset(dis, 0x3f, sizeof(dis)); dis[1] = 0; q.push(1); while (!q.empty()) { int x = q.front(); q.pop(); vis[x] = 0; for (int i = 0; i < v[x].size(); i++) { int nx = v[x][i].second; int w = v[x][i].first; if (dis[nx] > dis[x] + w + a[nx]) { dis[nx] = dis[x] + w + a[nx]; if (!vis[nx]) { vis[nx] = 1; q.push(nx); } } } } cout << dis[n] - a[n] << endl; return 0; }">
-      <ul class="md-nav__list">
-        
           <li class="md-nav__item">
   <a href="#eg67" class="md-nav__link">
     <span class="md-ellipsis">
@@ -1588,21 +1573,6 @@
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#include-bitsstdch-using-namespace-std-typedef-pairint-int-pii-const-int-n-1e3-10-int-n-m-disn-an-bool-visn-vectorpii-vn-queueint-q-int-main-cin-n-m-for-int-i-1-i-n-i-cin-ai-for-int-i-1-i-m-i-int-x-y-z-cin-x-y-z-vxpush_backz-y-vypush_backz-x-memsetdis-0x3f-sizeofdis-dis1-0-qpush1-while-qempty-int-x-qfront-qpop-visx-0-for-int-i-0-i-vxsize-i-int-nx-vxisecond-int-w-vxifirst-if-disnx-disx-w-anx-disnx-disx-w-anx-if-visnx-visnx-1-qpushnx-cout-disn-an-endl-return-0" class="md-nav__link">
-    <span class="md-ellipsis">
-      #include &lt;bits/stdc++.h&gt; using namespace std; typedef pair&lt;int, int&gt; pii; const int N = 1e3 + 10; int n, m, dis[N], a[N]; bool vis[N]; vector&lt;pii&gt; v[N]; queue&lt;int&gt; q; int main() { cin &gt;&gt; n &gt;&gt; m; for (int i = 1; i &lt;= n; i++) cin &gt;&gt; a[i]; for (int i = 1; i &lt;= m; i++) { int x, y, z; cin &gt;&gt; x &gt;&gt; y &gt;&gt; z; v[x].push_back({z, y}); v[y].push_back({z, x}); } memset(dis, 0x3f, sizeof(dis)); dis[1] = 0; q.push(1); while (!q.empty()) { int x = q.front(); q.pop(); vis[x] = 0; for (int i = 0; i &lt; v[x].size(); i++) { int nx = v[x][i].second; int w = v[x][i].first; if (dis[nx] &gt; dis[x] + w + a[nx]) { dis[nx] = dis[x] + w + a[nx]; if (!vis[nx]) { vis[nx] = 1; q.push(nx); } } } } cout &lt;&lt; dis[n] - a[n] &lt;&lt; endl; return 0; }
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="#include <bits/stdc++.h> using namespace std; typedef pair<int, int> pii; const int N = 1e3 + 10; int n, m, dis[N], a[N]; bool vis[N]; vector<pii> v[N]; queue<int> q; int main() { cin >> n >> m; for (int i = 1; i <= n; i++) cin >> a[i]; for (int i = 1; i <= m; i++) { int x, y, z; cin >> x >> y >> z; v[x].push_back({z, y}); v[y].push_back({z, x}); } memset(dis, 0x3f, sizeof(dis)); dis[1] = 0; q.push(1); while (!q.empty()) { int x = q.front(); q.pop(); vis[x] = 0; for (int i = 0; i < v[x].size(); i++) { int nx = v[x][i].second; int w = v[x][i].first; if (dis[nx] > dis[x] + w + a[nx]) { dis[nx] = dis[x] + w + a[nx]; if (!vis[nx]) { vis[nx] = 1; q.push(nx); } } } } cout << dis[n] - a[n] << endl; return 0; }">
-      <ul class="md-nav__list">
-        
           <li class="md-nav__item">
   <a href="#eg67" class="md-nav__link">
     <span class="md-ellipsis">
@@ -1655,9 +1625,6 @@
 <li><a href="#eg64">e.g.64 邮递员送信</a></li>
 <li><a href="#eg65">e.g.65 最短路计数</a></li>
 <li><a href="#eg66-2022-b">e.g.66 [蓝桥杯 2022 国 B] 出差</a></li>
-</ul>
-</li>
-<li><a href="#include-bitsstdch-using-namespace-std-typedef-pairint-int-pii-const-int-n-1e3-10-int-n-m-disn-an-bool-visn-vectorpii-vn-queueint-q-int-main-cin-n-m-for-int-i-1-i-n-i-cin-ai-for-int-i-1-i-m-i-int-x-y-z-cin-x-y-z-vxpush_backz-y-vypush_backz-x-memsetdis-0x3f-sizeofdis-dis1-0-qpush1-while-qempty-int-x-qfront-qpop-visx-0-for-int-i-0-i-vxsize-i-int-nx-vxisecond-int-w-vxifirst-if-disnx-disx-w-anx-disnx-disx-w-anx-if-visnx-visnx-1-qpushnx-cout-disn-an-endl-return-0">#include &lt;bits/stdc++.h&gt; using namespace std; typedef pair&lt;int, int&gt; pii; const int N = 1e3 + 10; int n, m, dis[N], a[N]; bool vis[N]; vector&lt;pii&gt; v[N]; queue&lt;int&gt; q; int main() { cin &gt;&gt; n &gt;&gt; m; for (int i = 1; i &lt;= n; i++) cin &gt;&gt; a[i]; for (int i = 1; i &lt;= m; i++) { int x, y, z; cin &gt;&gt; x &gt;&gt; y &gt;&gt; z; v[x].push_back({z, y}); v[y].push_back({z, x}); } memset(dis, 0x3f, sizeof(dis)); dis[1] = 0; q.push(1); while (!q.empty()) { int x = q.front(); q.pop(); vis[x] = 0; for (int i = 0; i &lt; v[x].size(); i++) { int nx = v[x][i].second; int w = v[x][i].first; if (dis[nx] &gt; dis[x] + w + a[nx]) { dis[nx] = dis[x] + w + a[nx]; if (!vis[nx]) { vis[nx] = 1; q.push(nx); } } } } cout &lt;&lt; dis[n] - a[n] &lt;&lt; endl; return 0; }</a><ul>
 <li><a href="#eg67">e.g.67 【模板】负环</a></li>
 </ul>
 </li>
@@ -2229,7 +2196,7 @@
 <p><strong>【评测用例规模与约定】</strong></p>
 <p>对于 <span class="arithmatex">\(100 \%\)</span> 的数据, <span class="arithmatex">\(1 \leq N \leq 1000,1 \leq M \leq 10000,1 \leq C_{i} \leq 200,1 \leq u, v \leq\)</span> <span class="arithmatex">\(N, 1 \leq c \leq 1000\)</span> </p>
 <p>蓝桥杯 2022 国赛 B 组 E 题。</p>
-<h2 id="include-bitsstdch-using-namespace-std-typedef-pairint-int-pii-const-int-n-1e3-10-int-n-m-disn-an-bool-visn-vectorpii-vn-queueint-q-int-main-cin-n-m-for-int-i-1-i-n-i-cin-ai-for-int-i-1-i-m-i-int-x-y-z-cin-x-y-z-vxpush_backz-y-vypush_backz-x-memsetdis-0x3f-sizeofdis-dis1-0-qpush1-while-qempty-int-x-qfront-qpop-visx-0-for-int-i-0-i-vxsize-i-int-nx-vxisecond-int-w-vxifirst-if-disnx-disx-w-anx-disnx-disx-w-anx-if-visnx-visnx-1-qpushnx-cout-disn-an-endl-return-0"><div class="language-c++ highlight"><pre><span></span><code><span id="__span-21-1"><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;bits/stdc++.h&gt;</span>
+<div class="language-c++ highlight"><pre><span></span><code><span id="__span-21-1"><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;bits/stdc++.h&gt;</span>
 </span><span id="__span-21-2"><a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a><span class="k">using</span><span class="w"> </span><span class="k">namespace</span><span class="w"> </span><span class="nn">std</span><span class="p">;</span>
 </span><span id="__span-21-3"><a id="__codelineno-21-3" name="__codelineno-21-3" href="#__codelineno-21-3"></a><span class="k">typedef</span><span class="w"> </span><span class="n">pair</span><span class="o">&lt;</span><span class="kt">int</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="o">&gt;</span><span class="w"> </span><span class="n">pii</span><span class="p">;</span>
 </span><span id="__span-21-4"><a id="__codelineno-21-4" name="__codelineno-21-4" href="#__codelineno-21-4"></a><span class="k">const</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">N</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">1e3</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">10</span><span class="p">;</span>
@@ -2269,7 +2236,8 @@
 </span><span id="__span-21-38"><a id="__codelineno-21-38" name="__codelineno-21-38" href="#__codelineno-21-38"></a><span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">dis</span><span class="p">[</span><span class="n">n</span><span class="p">]</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">a</span><span class="p">[</span><span class="n">n</span><span class="p">]</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span>
 </span><span id="__span-21-39"><a id="__codelineno-21-39" name="__codelineno-21-39" href="#__codelineno-21-39"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
 </span><span id="__span-21-40"><a id="__codelineno-21-40" name="__codelineno-21-40" href="#__codelineno-21-40"></a><span class="p">}</span>
-</span></code></pre></div></h2>
+</span></code></pre></div>
+<hr />
 <h3 id="eg67">e.g.67 【模板】负环</h3>
 <p>题目描述</p>
 <p>给定一个 <span class="arithmatex">\(n\)</span> 个点的有向图，请求出图中是否存在<strong>从顶点 <span class="arithmatex">\(1\)</span> 出发能到达</strong>的负环。</p>
