@@ -14,7 +14,7 @@
         <link rel="prev" href="../17%20%E3%80%81%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/">
       
       
-        <link rel="next" href="../%E7%BB%BC%E5%90%88/">
+        <link rel="next" href="../19%20%E3%80%81%E6%9C%80%E5%B0%8F%E7%94%9F%E6%88%90%E6%A0%91/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -944,10 +944,55 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#include-bitsstdch-using-namespace-std-typedef-pairint-int-pii-const-int-n-1e3-10-int-n-m-disn-an-bool-visn-vectorpii-vn-queueint-q-int-main-cin-n-m-for-int-i-1-i-n-i-cin-ai-for-int-i-1-i-m-i-int-x-y-z-cin-x-y-z-vxpush_backz-y-vypush_backz-x-memsetdis-0x3f-sizeofdis-dis1-0-qpush1-while-qempty-int-x-qfront-qpop-visx-0-for-int-i-0-i-vxsize-i-int-nx-vxisecond-int-w-vxifirst-if-disnx-disx-w-anx-disnx-disx-w-anx-if-visnx-visnx-1-qpushnx-cout-disn-an-endl-return-0" class="md-nav__link">
+    <span class="md-ellipsis">
+      #include &lt;bits/stdc++.h&gt; using namespace std; typedef pair&lt;int, int&gt; pii; const int N = 1e3 + 10; int n, m, dis[N], a[N]; bool vis[N]; vector&lt;pii&gt; v[N]; queue&lt;int&gt; q; int main() { cin &gt;&gt; n &gt;&gt; m; for (int i = 1; i &lt;= n; i++) cin &gt;&gt; a[i]; for (int i = 1; i &lt;= m; i++) { int x, y, z; cin &gt;&gt; x &gt;&gt; y &gt;&gt; z; v[x].push_back({z, y}); v[y].push_back({z, x}); } memset(dis, 0x3f, sizeof(dis)); dis[1] = 0; q.push(1); while (!q.empty()) { int x = q.front(); q.pop(); vis[x] = 0; for (int i = 0; i &lt; v[x].size(); i++) { int nx = v[x][i].second; int w = v[x][i].first; if (dis[nx] &gt; dis[x] + w + a[nx]) { dis[nx] = dis[x] + w + a[nx]; if (!vis[nx]) { vis[nx] = 1; q.push(nx); } } } } cout &lt;&lt; dis[n] - a[n] &lt;&lt; endl; return 0; }
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="#include <bits/stdc++.h> using namespace std; typedef pair<int, int> pii; const int N = 1e3 + 10; int n, m, dis[N], a[N]; bool vis[N]; vector<pii> v[N]; queue<int> q; int main() { cin >> n >> m; for (int i = 1; i <= n; i++) cin >> a[i]; for (int i = 1; i <= m; i++) { int x, y, z; cin >> x >> y >> z; v[x].push_back({z, y}); v[y].push_back({z, x}); } memset(dis, 0x3f, sizeof(dis)); dis[1] = 0; q.push(1); while (!q.empty()) { int x = q.front(); q.pop(); vis[x] = 0; for (int i = 0; i < v[x].size(); i++) { int nx = v[x][i].second; int w = v[x][i].first; if (dis[nx] > dis[x] + w + a[nx]) { dis[nx] = dis[x] + w + a[nx]; if (!vis[nx]) { vis[nx] = 1; q.push(nx); } } } } cout << dis[n] - a[n] << endl; return 0; }">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#eg67" class="md-nav__link">
+    <span class="md-ellipsis">
+      e.g.67 【模板】负环
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../19%20%E3%80%81%E6%9C%80%E5%B0%8F%E7%94%9F%E6%88%90%E6%A0%91/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    19 、最小生成树
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -1548,6 +1593,30 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#include-bitsstdch-using-namespace-std-typedef-pairint-int-pii-const-int-n-1e3-10-int-n-m-disn-an-bool-visn-vectorpii-vn-queueint-q-int-main-cin-n-m-for-int-i-1-i-n-i-cin-ai-for-int-i-1-i-m-i-int-x-y-z-cin-x-y-z-vxpush_backz-y-vypush_backz-x-memsetdis-0x3f-sizeofdis-dis1-0-qpush1-while-qempty-int-x-qfront-qpop-visx-0-for-int-i-0-i-vxsize-i-int-nx-vxisecond-int-w-vxifirst-if-disnx-disx-w-anx-disnx-disx-w-anx-if-visnx-visnx-1-qpushnx-cout-disn-an-endl-return-0" class="md-nav__link">
+    <span class="md-ellipsis">
+      #include &lt;bits/stdc++.h&gt; using namespace std; typedef pair&lt;int, int&gt; pii; const int N = 1e3 + 10; int n, m, dis[N], a[N]; bool vis[N]; vector&lt;pii&gt; v[N]; queue&lt;int&gt; q; int main() { cin &gt;&gt; n &gt;&gt; m; for (int i = 1; i &lt;= n; i++) cin &gt;&gt; a[i]; for (int i = 1; i &lt;= m; i++) { int x, y, z; cin &gt;&gt; x &gt;&gt; y &gt;&gt; z; v[x].push_back({z, y}); v[y].push_back({z, x}); } memset(dis, 0x3f, sizeof(dis)); dis[1] = 0; q.push(1); while (!q.empty()) { int x = q.front(); q.pop(); vis[x] = 0; for (int i = 0; i &lt; v[x].size(); i++) { int nx = v[x][i].second; int w = v[x][i].first; if (dis[nx] &gt; dis[x] + w + a[nx]) { dis[nx] = dis[x] + w + a[nx]; if (!vis[nx]) { vis[nx] = 1; q.push(nx); } } } } cout &lt;&lt; dis[n] - a[n] &lt;&lt; endl; return 0; }
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="#include <bits/stdc++.h> using namespace std; typedef pair<int, int> pii; const int N = 1e3 + 10; int n, m, dis[N], a[N]; bool vis[N]; vector<pii> v[N]; queue<int> q; int main() { cin >> n >> m; for (int i = 1; i <= n; i++) cin >> a[i]; for (int i = 1; i <= m; i++) { int x, y, z; cin >> x >> y >> z; v[x].push_back({z, y}); v[y].push_back({z, x}); } memset(dis, 0x3f, sizeof(dis)); dis[1] = 0; q.push(1); while (!q.empty()) { int x = q.front(); q.pop(); vis[x] = 0; for (int i = 0; i < v[x].size(); i++) { int nx = v[x][i].second; int w = v[x][i].first; if (dis[nx] > dis[x] + w + a[nx]) { dis[nx] = dis[x] + w + a[nx]; if (!vis[nx]) { vis[nx] = 1; q.push(nx); } } } } cout << dis[n] - a[n] << endl; return 0; }">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#eg67" class="md-nav__link">
+    <span class="md-ellipsis">
+      e.g.67 【模板】负环
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1586,6 +1655,10 @@
 <li><a href="#eg64">e.g.64 邮递员送信</a></li>
 <li><a href="#eg65">e.g.65 最短路计数</a></li>
 <li><a href="#eg66-2022-b">e.g.66 [蓝桥杯 2022 国 B] 出差</a></li>
+</ul>
+</li>
+<li><a href="#include-bitsstdch-using-namespace-std-typedef-pairint-int-pii-const-int-n-1e3-10-int-n-m-disn-an-bool-visn-vectorpii-vn-queueint-q-int-main-cin-n-m-for-int-i-1-i-n-i-cin-ai-for-int-i-1-i-m-i-int-x-y-z-cin-x-y-z-vxpush_backz-y-vypush_backz-x-memsetdis-0x3f-sizeofdis-dis1-0-qpush1-while-qempty-int-x-qfront-qpop-visx-0-for-int-i-0-i-vxsize-i-int-nx-vxisecond-int-w-vxifirst-if-disnx-disx-w-anx-disnx-disx-w-anx-if-visnx-visnx-1-qpushnx-cout-disn-an-endl-return-0">#include &lt;bits/stdc++.h&gt; using namespace std; typedef pair&lt;int, int&gt; pii; const int N = 1e3 + 10; int n, m, dis[N], a[N]; bool vis[N]; vector&lt;pii&gt; v[N]; queue&lt;int&gt; q; int main() { cin &gt;&gt; n &gt;&gt; m; for (int i = 1; i &lt;= n; i++) cin &gt;&gt; a[i]; for (int i = 1; i &lt;= m; i++) { int x, y, z; cin &gt;&gt; x &gt;&gt; y &gt;&gt; z; v[x].push_back({z, y}); v[y].push_back({z, x}); } memset(dis, 0x3f, sizeof(dis)); dis[1] = 0; q.push(1); while (!q.empty()) { int x = q.front(); q.pop(); vis[x] = 0; for (int i = 0; i &lt; v[x].size(); i++) { int nx = v[x][i].second; int w = v[x][i].first; if (dis[nx] &gt; dis[x] + w + a[nx]) { dis[nx] = dis[x] + w + a[nx]; if (!vis[nx]) { vis[nx] = 1; q.push(nx); } } } } cout &lt;&lt; dis[n] - a[n] &lt;&lt; endl; return 0; }</a><ul>
+<li><a href="#eg67">e.g.67 【模板】负环</a></li>
 </ul>
 </li>
 </ul>
@@ -2156,7 +2229,7 @@
 <p><strong>【评测用例规模与约定】</strong></p>
 <p>对于 <span class="arithmatex">\(100 \%\)</span> 的数据, <span class="arithmatex">\(1 \leq N \leq 1000,1 \leq M \leq 10000,1 \leq C_{i} \leq 200,1 \leq u, v \leq\)</span> <span class="arithmatex">\(N, 1 \leq c \leq 1000\)</span> </p>
 <p>蓝桥杯 2022 国赛 B 组 E 题。</p>
-<div class="language-c++ highlight"><pre><span></span><code><span id="__span-21-1"><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;bits/stdc++.h&gt;</span>
+<h2 id="include-bitsstdch-using-namespace-std-typedef-pairint-int-pii-const-int-n-1e3-10-int-n-m-disn-an-bool-visn-vectorpii-vn-queueint-q-int-main-cin-n-m-for-int-i-1-i-n-i-cin-ai-for-int-i-1-i-m-i-int-x-y-z-cin-x-y-z-vxpush_backz-y-vypush_backz-x-memsetdis-0x3f-sizeofdis-dis1-0-qpush1-while-qempty-int-x-qfront-qpop-visx-0-for-int-i-0-i-vxsize-i-int-nx-vxisecond-int-w-vxifirst-if-disnx-disx-w-anx-disnx-disx-w-anx-if-visnx-visnx-1-qpushnx-cout-disn-an-endl-return-0"><div class="language-c++ highlight"><pre><span></span><code><span id="__span-21-1"><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;bits/stdc++.h&gt;</span>
 </span><span id="__span-21-2"><a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a><span class="k">using</span><span class="w"> </span><span class="k">namespace</span><span class="w"> </span><span class="nn">std</span><span class="p">;</span>
 </span><span id="__span-21-3"><a id="__codelineno-21-3" name="__codelineno-21-3" href="#__codelineno-21-3"></a><span class="k">typedef</span><span class="w"> </span><span class="n">pair</span><span class="o">&lt;</span><span class="kt">int</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="o">&gt;</span><span class="w"> </span><span class="n">pii</span><span class="p">;</span>
 </span><span id="__span-21-4"><a id="__codelineno-21-4" name="__codelineno-21-4" href="#__codelineno-21-4"></a><span class="k">const</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">N</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">1e3</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">10</span><span class="p">;</span>
@@ -2196,7 +2269,107 @@
 </span><span id="__span-21-38"><a id="__codelineno-21-38" name="__codelineno-21-38" href="#__codelineno-21-38"></a><span class="w">    </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">dis</span><span class="p">[</span><span class="n">n</span><span class="p">]</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">a</span><span class="p">[</span><span class="n">n</span><span class="p">]</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span>
 </span><span id="__span-21-39"><a id="__codelineno-21-39" name="__codelineno-21-39" href="#__codelineno-21-39"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
 </span><span id="__span-21-40"><a id="__codelineno-21-40" name="__codelineno-21-40" href="#__codelineno-21-40"></a><span class="p">}</span>
+</span></code></pre></div></h2>
+<h3 id="eg67">e.g.67 【模板】负环</h3>
+<p>题目描述</p>
+<p>给定一个 <span class="arithmatex">\(n\)</span> 个点的有向图，请求出图中是否存在<strong>从顶点 <span class="arithmatex">\(1\)</span> 出发能到达</strong>的负环。</p>
+<p>负环的定义是：一条边权之和为负数的回路。</p>
+<p>输入格式</p>
+<p><strong>本题单测试点有多组测试数据</strong>。</p>
+<p>输入的第一行是一个整数 <span class="arithmatex">\(T\)</span>，表示测试数据的组数。对于每组数据的格式如下：</p>
+<p>第一行有两个整数，分别表示图的点数 <span class="arithmatex">\(n\)</span> 和接下来给出边信息的条数 <span class="arithmatex">\(m\)</span>。</p>
+<p>接下来 <span class="arithmatex">\(m\)</span> 行，每行三个整数 <span class="arithmatex">\(u, v, w\)</span>。</p>
+<ul>
+<li>若 <span class="arithmatex">\(w \geq 0\)</span>，则表示存在一条从 <span class="arithmatex">\(u\)</span> 至 <span class="arithmatex">\(v\)</span> 边权为 <span class="arithmatex">\(w\)</span> 的边，还存在一条从 <span class="arithmatex">\(v\)</span> 至 <span class="arithmatex">\(u\)</span> 边权为 <span class="arithmatex">\(w\)</span> 的边。</li>
+<li>若 <span class="arithmatex">\(w &lt; 0\)</span>，则只表示存在一条从 <span class="arithmatex">\(u\)</span> 至 <span class="arithmatex">\(v\)</span> 边权为 <span class="arithmatex">\(w\)</span> 的边。</li>
+</ul>
+<p>输出格式</p>
+<p>对于每组数据，输出一行一个字符串，若所求负环存在，则输出 <code>YES</code>，否则输出 <code>NO</code>。</p>
+<p>样例 </p>
+<p>样例输入 </p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-22-1"><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a>2
+</span><span id="__span-22-2"><a id="__codelineno-22-2" name="__codelineno-22-2" href="#__codelineno-22-2"></a>3 4
+</span><span id="__span-22-3"><a id="__codelineno-22-3" name="__codelineno-22-3" href="#__codelineno-22-3"></a>1 2 2
+</span><span id="__span-22-4"><a id="__codelineno-22-4" name="__codelineno-22-4" href="#__codelineno-22-4"></a>1 3 4
+</span><span id="__span-22-5"><a id="__codelineno-22-5" name="__codelineno-22-5" href="#__codelineno-22-5"></a>2 3 1
+</span><span id="__span-22-6"><a id="__codelineno-22-6" name="__codelineno-22-6" href="#__codelineno-22-6"></a>3 1 -3
+</span><span id="__span-22-7"><a id="__codelineno-22-7" name="__codelineno-22-7" href="#__codelineno-22-7"></a>3 3
+</span><span id="__span-22-8"><a id="__codelineno-22-8" name="__codelineno-22-8" href="#__codelineno-22-8"></a>1 2 3
+</span><span id="__span-22-9"><a id="__codelineno-22-9" name="__codelineno-22-9" href="#__codelineno-22-9"></a>2 3 4
+</span><span id="__span-22-10"><a id="__codelineno-22-10" name="__codelineno-22-10" href="#__codelineno-22-10"></a>3 1 -8
 </span></code></pre></div>
+<p>样例输出 </p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-23-1"><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a>NO
+</span><span id="__span-23-2"><a id="__codelineno-23-2" name="__codelineno-23-2" href="#__codelineno-23-2"></a>YES
+</span></code></pre></div>
+<p>提示</p>
+<p>数据规模与约定</p>
+<p>对于全部的测试点，保证：</p>
+<ul>
+<li><span class="arithmatex">\(1 \leq n \leq 2 \times 10^3\)</span>，<span class="arithmatex">\(1 \leq m \leq 3 \times 10^3\)</span>。</li>
+<li><span class="arithmatex">\(1 \leq u, v \leq n\)</span>，<span class="arithmatex">\(-10^4 \leq w \leq 10^4\)</span>。</li>
+<li><span class="arithmatex">\(1 \leq T \leq 10\)</span>。</li>
+</ul>
+<p>提示</p>
+<p>请注意，<span class="arithmatex">\(m\)</span> <strong>不是</strong>图的边数。</p>
+<div class="language-c++ highlight"><pre><span></span><code><span id="__span-24-1"><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;bits/stdc++.h&gt;</span>
+</span><span id="__span-24-2"><a id="__codelineno-24-2" name="__codelineno-24-2" href="#__codelineno-24-2"></a><span class="k">using</span><span class="w"> </span><span class="k">namespace</span><span class="w"> </span><span class="nn">std</span><span class="p">;</span>
+</span><span id="__span-24-3"><a id="__codelineno-24-3" name="__codelineno-24-3" href="#__codelineno-24-3"></a><span class="k">typedef</span><span class="w"> </span><span class="n">pair</span><span class="o">&lt;</span><span class="kt">int</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="o">&gt;</span><span class="w"> </span><span class="n">pii</span><span class="p">;</span>
+</span><span id="__span-24-4"><a id="__codelineno-24-4" name="__codelineno-24-4" href="#__codelineno-24-4"></a><span class="k">const</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">N</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">2e3</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">10</span><span class="p">;</span>
+</span><span id="__span-24-5"><a id="__codelineno-24-5" name="__codelineno-24-5" href="#__codelineno-24-5"></a><span class="kt">int</span><span class="w"> </span><span class="n">t</span><span class="p">,</span><span class="w"> </span><span class="n">n</span><span class="p">,</span><span class="w"> </span><span class="n">m</span><span class="p">,</span><span class="w"> </span><span class="n">dis</span><span class="p">[</span><span class="n">N</span><span class="p">],</span><span class="w"> </span><span class="n">cnt</span><span class="p">[</span><span class="n">N</span><span class="p">];</span>
+</span><span id="__span-24-6"><a id="__codelineno-24-6" name="__codelineno-24-6" href="#__codelineno-24-6"></a><span class="kt">bool</span><span class="w"> </span><span class="n">vis</span><span class="p">[</span><span class="n">N</span><span class="p">];</span>
+</span><span id="__span-24-7"><a id="__codelineno-24-7" name="__codelineno-24-7" href="#__codelineno-24-7"></a><span class="kt">int</span><span class="w"> </span><span class="nf">solve</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-24-8"><a id="__codelineno-24-8" name="__codelineno-24-8" href="#__codelineno-24-8"></a><span class="w">    </span><span class="n">vector</span><span class="o">&lt;</span><span class="n">pii</span><span class="o">&gt;</span><span class="w"> </span><span class="n">v</span><span class="p">[</span><span class="n">N</span><span class="p">];</span>
+</span><span id="__span-24-9"><a id="__codelineno-24-9" name="__codelineno-24-9" href="#__codelineno-24-9"></a><span class="w">    </span><span class="n">queue</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="w"> </span><span class="n">q</span><span class="p">;</span>
+</span><span id="__span-24-10"><a id="__codelineno-24-10" name="__codelineno-24-10" href="#__codelineno-24-10"></a><span class="w">    </span><span class="n">cin</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">m</span><span class="p">;</span>
+</span><span id="__span-24-11"><a id="__codelineno-24-11" name="__codelineno-24-11" href="#__codelineno-24-11"></a><span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="n">m</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-24-12"><a id="__codelineno-24-12" name="__codelineno-24-12" href="#__codelineno-24-12"></a><span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="n">y</span><span class="p">,</span><span class="w"> </span><span class="n">w</span><span class="p">;</span>
+</span><span id="__span-24-13"><a id="__codelineno-24-13" name="__codelineno-24-13" href="#__codelineno-24-13"></a><span class="w">        </span><span class="n">cin</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">y</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">w</span><span class="p">;</span>
+</span><span id="__span-24-14"><a id="__codelineno-24-14" name="__codelineno-24-14" href="#__codelineno-24-14"></a><span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">w</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-24-15"><a id="__codelineno-24-15" name="__codelineno-24-15" href="#__codelineno-24-15"></a><span class="w">            </span><span class="n">v</span><span class="p">[</span><span class="n">x</span><span class="p">].</span><span class="n">push_back</span><span class="p">({</span><span class="n">w</span><span class="p">,</span><span class="w"> </span><span class="n">y</span><span class="p">});</span>
+</span><span id="__span-24-16"><a id="__codelineno-24-16" name="__codelineno-24-16" href="#__codelineno-24-16"></a><span class="w">            </span><span class="n">v</span><span class="p">[</span><span class="n">y</span><span class="p">].</span><span class="n">push_back</span><span class="p">({</span><span class="n">w</span><span class="p">,</span><span class="w"> </span><span class="n">x</span><span class="p">});</span>
+</span><span id="__span-24-17"><a id="__codelineno-24-17" name="__codelineno-24-17" href="#__codelineno-24-17"></a><span class="w">        </span><span class="p">}</span><span class="w"> </span><span class="k">else</span>
+</span><span id="__span-24-18"><a id="__codelineno-24-18" name="__codelineno-24-18" href="#__codelineno-24-18"></a><span class="w">            </span><span class="n">v</span><span class="p">[</span><span class="n">x</span><span class="p">].</span><span class="n">push_back</span><span class="p">({</span><span class="n">w</span><span class="p">,</span><span class="w"> </span><span class="n">y</span><span class="p">});</span>
+</span><span id="__span-24-19"><a id="__codelineno-24-19" name="__codelineno-24-19" href="#__codelineno-24-19"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-24-20"><a id="__codelineno-24-20" name="__codelineno-24-20" href="#__codelineno-24-20"></a><span class="w">    </span><span class="n">memset</span><span class="p">(</span><span class="n">dis</span><span class="p">,</span><span class="w"> </span><span class="mh">0x3f</span><span class="p">,</span><span class="w"> </span><span class="k">sizeof</span><span class="p">(</span><span class="n">dis</span><span class="p">));</span>
+</span><span id="__span-24-21"><a id="__codelineno-24-21" name="__codelineno-24-21" href="#__codelineno-24-21"></a><span class="w">    </span><span class="n">memset</span><span class="p">(</span><span class="n">cnt</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="k">sizeof</span><span class="p">(</span><span class="n">cnt</span><span class="p">));</span>
+</span><span id="__span-24-22"><a id="__codelineno-24-22" name="__codelineno-24-22" href="#__codelineno-24-22"></a><span class="w">    </span><span class="n">memset</span><span class="p">(</span><span class="n">vis</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="k">sizeof</span><span class="p">(</span><span class="n">vis</span><span class="p">));</span>
+</span><span id="__span-24-23"><a id="__codelineno-24-23" name="__codelineno-24-23" href="#__codelineno-24-23"></a><span class="w">    </span><span class="n">dis</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+</span><span id="__span-24-24"><a id="__codelineno-24-24" name="__codelineno-24-24" href="#__codelineno-24-24"></a><span class="w">    </span><span class="n">q</span><span class="p">.</span><span class="n">push</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+</span><span id="__span-24-25"><a id="__codelineno-24-25" name="__codelineno-24-25" href="#__codelineno-24-25"></a><span class="w">    </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">q</span><span class="p">.</span><span class="n">empty</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-24-26"><a id="__codelineno-24-26" name="__codelineno-24-26" href="#__codelineno-24-26"></a><span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">q</span><span class="p">.</span><span class="n">front</span><span class="p">();</span>
+</span><span id="__span-24-27"><a id="__codelineno-24-27" name="__codelineno-24-27" href="#__codelineno-24-27"></a><span class="w">        </span><span class="n">q</span><span class="p">.</span><span class="n">pop</span><span class="p">();</span>
+</span><span id="__span-24-28"><a id="__codelineno-24-28" name="__codelineno-24-28" href="#__codelineno-24-28"></a><span class="w">        </span><span class="n">vis</span><span class="p">[</span><span class="n">x</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+</span><span id="__span-24-29"><a id="__codelineno-24-29" name="__codelineno-24-29" href="#__codelineno-24-29"></a><span class="w">        </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">v</span><span class="p">[</span><span class="n">x</span><span class="p">].</span><span class="n">size</span><span class="p">();</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-24-30"><a id="__codelineno-24-30" name="__codelineno-24-30" href="#__codelineno-24-30"></a><span class="w">            </span><span class="kt">int</span><span class="w"> </span><span class="n">nx</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">v</span><span class="p">[</span><span class="n">x</span><span class="p">][</span><span class="n">i</span><span class="p">].</span><span class="n">second</span><span class="p">;</span>
+</span><span id="__span-24-31"><a id="__codelineno-24-31" name="__codelineno-24-31" href="#__codelineno-24-31"></a><span class="w">            </span><span class="kt">int</span><span class="w"> </span><span class="n">w</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">v</span><span class="p">[</span><span class="n">x</span><span class="p">][</span><span class="n">i</span><span class="p">].</span><span class="n">first</span><span class="p">;</span>
+</span><span id="__span-24-32"><a id="__codelineno-24-32" name="__codelineno-24-32" href="#__codelineno-24-32"></a><span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">dis</span><span class="p">[</span><span class="n">nx</span><span class="p">]</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">dis</span><span class="p">[</span><span class="n">x</span><span class="p">]</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">w</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-24-33"><a id="__codelineno-24-33" name="__codelineno-24-33" href="#__codelineno-24-33"></a><span class="w">                </span><span class="n">dis</span><span class="p">[</span><span class="n">nx</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">dis</span><span class="p">[</span><span class="n">x</span><span class="p">]</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">w</span><span class="p">;</span>
+</span><span id="__span-24-34"><a id="__codelineno-24-34" name="__codelineno-24-34" href="#__codelineno-24-34"></a><span class="w">                </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">vis</span><span class="p">[</span><span class="n">nx</span><span class="p">])</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-24-35"><a id="__codelineno-24-35" name="__codelineno-24-35" href="#__codelineno-24-35"></a><span class="w">                    </span><span class="n">vis</span><span class="p">[</span><span class="n">nx</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+</span><span id="__span-24-36"><a id="__codelineno-24-36" name="__codelineno-24-36" href="#__codelineno-24-36"></a><span class="w">                    </span><span class="n">q</span><span class="p">.</span><span class="n">push</span><span class="p">(</span><span class="n">nx</span><span class="p">);</span>
+</span><span id="__span-24-37"><a id="__codelineno-24-37" name="__codelineno-24-37" href="#__codelineno-24-37"></a><span class="w">                    </span><span class="n">cnt</span><span class="p">[</span><span class="n">nx</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">cnt</span><span class="p">[</span><span class="n">x</span><span class="p">]</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+</span><span id="__span-24-38"><a id="__codelineno-24-38" name="__codelineno-24-38" href="#__codelineno-24-38"></a><span class="w">                    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">cnt</span><span class="p">[</span><span class="n">nx</span><span class="p">]</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="n">n</span><span class="p">)</span>
+</span><span id="__span-24-39"><a id="__codelineno-24-39" name="__codelineno-24-39" href="#__codelineno-24-39"></a><span class="w">                        </span><span class="k">return</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+</span><span id="__span-24-40"><a id="__codelineno-24-40" name="__codelineno-24-40" href="#__codelineno-24-40"></a><span class="w">                </span><span class="p">}</span>
+</span><span id="__span-24-41"><a id="__codelineno-24-41" name="__codelineno-24-41" href="#__codelineno-24-41"></a><span class="w">            </span><span class="p">}</span>
+</span><span id="__span-24-42"><a id="__codelineno-24-42" name="__codelineno-24-42" href="#__codelineno-24-42"></a><span class="w">        </span><span class="p">}</span>
+</span><span id="__span-24-43"><a id="__codelineno-24-43" name="__codelineno-24-43" href="#__codelineno-24-43"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-24-44"><a id="__codelineno-24-44" name="__codelineno-24-44" href="#__codelineno-24-44"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+</span><span id="__span-24-45"><a id="__codelineno-24-45" name="__codelineno-24-45" href="#__codelineno-24-45"></a><span class="p">}</span>
+</span><span id="__span-24-46"><a id="__codelineno-24-46" name="__codelineno-24-46" href="#__codelineno-24-46"></a><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-24-47"><a id="__codelineno-24-47" name="__codelineno-24-47" href="#__codelineno-24-47"></a><span class="w">    </span><span class="n">cin</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">t</span><span class="p">;</span>
+</span><span id="__span-24-48"><a id="__codelineno-24-48" name="__codelineno-24-48" href="#__codelineno-24-48"></a><span class="w">    </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">t</span><span class="o">--</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-24-49"><a id="__codelineno-24-49" name="__codelineno-24-49" href="#__codelineno-24-49"></a><span class="w">        </span><span class="kt">int</span><span class="w"> </span><span class="n">ret</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">solve</span><span class="p">();</span>
+</span><span id="__span-24-50"><a id="__codelineno-24-50" name="__codelineno-24-50" href="#__codelineno-24-50"></a><span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">ret</span><span class="p">)</span>
+</span><span id="__span-24-51"><a id="__codelineno-24-51" name="__codelineno-24-51" href="#__codelineno-24-51"></a><span class="w">            </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;YES&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span>
+</span><span id="__span-24-52"><a id="__codelineno-24-52" name="__codelineno-24-52" href="#__codelineno-24-52"></a><span class="w">        </span><span class="k">else</span>
+</span><span id="__span-24-53"><a id="__codelineno-24-53" name="__codelineno-24-53" href="#__codelineno-24-53"></a><span class="w">            </span><span class="n">cout</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="s">&quot;NO&quot;</span><span class="w"> </span><span class="o">&lt;&lt;</span><span class="w"> </span><span class="n">endl</span><span class="p">;</span>
+</span><span id="__span-24-54"><a id="__codelineno-24-54" name="__codelineno-24-54" href="#__codelineno-24-54"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-24-55"><a id="__codelineno-24-55" name="__codelineno-24-55" href="#__codelineno-24-55"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+</span><span id="__span-24-56"><a id="__codelineno-24-56" name="__codelineno-24-56" href="#__codelineno-24-56"></a><span class="p">}</span>
+</span></code></pre></div>
+<hr />
 
 
 
@@ -2251,13 +2424,13 @@
         
         
           
-          <a href="../%E7%BB%BC%E5%90%88/" class="md-footer__link md-footer__link--next" aria-label="Next: 综合">
+          <a href="../19%20%E3%80%81%E6%9C%80%E5%B0%8F%E7%94%9F%E6%88%90%E6%A0%91/" class="md-footer__link md-footer__link--next" aria-label="Next: 19 、最小生成树">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                综合
+                19 、最小生成树
               </div>
             </div>
             <div class="md-footer__button md-icon">
