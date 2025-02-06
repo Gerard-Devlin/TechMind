@@ -1437,6 +1437,39 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="（3）特征缩放">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#imean-normalization" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ⅰ.均值归一化（Mean-Normalization)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iiz-score-standardization" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ⅱ.标准化（Z-Score Standardization）
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      （4）多项式回归
+    </span>
+  </a>
+  
 </li>
         
       </ul>
@@ -1570,6 +1603,39 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="（3）特征缩放">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#imean-normalization" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ⅰ.均值归一化（Mean-Normalization)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#iiz-score-standardization" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ⅱ.标准化（Z-Score Standardization）
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      （4）多项式回归
+    </span>
+  </a>
+  
 </li>
         
       </ul>
@@ -1619,7 +1685,12 @@
 <li><a href="#5">5、特征工程</a><ul>
 <li><a href="#1_1">（1）向量化</a></li>
 <li><a href="#2_1">（2）多元线性回</a></li>
-<li><a href="#3_1">（3）特征缩放</a></li>
+<li><a href="#3_1">（3）特征缩放</a><ul>
+<li><a href="#imean-normalization">Ⅰ.均值归一化（Mean-Normalization)</a></li>
+<li><a href="#iiz-score-standardization">Ⅱ.标准化（Z-Score Standardization）</a></li>
+</ul>
+</li>
+<li><a href="#4_1">（4）多项式回归</a></li>
 </ul>
 </li>
 </ul>
@@ -1724,22 +1795,22 @@ J(\theta) = \frac{1}{2m} \sum_{i=1}^{m} \left( f_{(w,b)}x^{(i)} - y^{(i)} \right
 <blockquote>
 <ul>
 <li>
-<p>Linear Regression Model
+<p>线性回归模型
 $$
 f_{w,b}(x) = wx + b
 $$</p>
 </li>
 <li>
-<p>Cost Function
+<p>代价方程
 $$
 J(w, b) = \frac{1}{2m} \sum_{i=1}^{m} \left( f_{w,b}(x^{(i)}) - y^{(i)} \right)^2
 $$</p>
 </li>
 <li>
-<p>Gradient Descent Algorithm</p>
+<p>梯度下降算法</p>
 <blockquote>
 <ul>
-<li>Repeat until convergence:</li>
+<li>重复直到收敛:</li>
 </ul>
 </blockquote>
 </li>
@@ -1751,7 +1822,7 @@ w = w - \alpha \frac{\partial}{\partial w} J(w, b)
 b = b - \alpha \frac{\partial}{\partial b} J(w, b)
 \]</div>
 <ul>
-<li>Gradient Calculations
+<li>梯度计算（代价方程的偏导）
 $$
 \frac{\partial}{\partial w} J(w, b) = \frac{1}{m} \sum_{i=1}^{m} \left( f_{w,b}(x^{(i)}) - y^{(i)} \right) x^{(i)}
 $$</li>
@@ -1773,6 +1844,8 @@ $$</p>
 </span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>    <span class="n">f</span> <span class="o">=</span> <span class="n">f</span> <span class="o">+</span> <span class="n">w</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">*</span> <span class="n">x</span><span class="p">[</span><span class="n">j</span><span class="p">]</span>
 </span></code></pre></div>
 <p>并行运行，效率更高</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
 </span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="n">a</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">rand</span><span class="p">(</span><span class="mi">10000000</span><span class="p">)</span>  <span class="c1"># very large arrays</span>
 </span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="n">b</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">rand</span><span class="p">(</span><span class="mi">10000000</span><span class="p">)</span>
@@ -1793,6 +1866,7 @@ $$</p>
 </span><span id="__span-4-18"><a id="__codelineno-4-18" name="__codelineno-4-18" href="#__codelineno-4-18"></a>
 </span><span id="__span-4-19"><a id="__codelineno-4-19" name="__codelineno-4-19" href="#__codelineno-4-19"></a><span class="k">del</span><span class="p">(</span><span class="n">a</span><span class="p">);</span><span class="k">del</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>  <span class="c1">#remove these big arrays from memory</span>
 </span></code></pre></div>
+</div>
 <hr />
 <h4 id="2_1">（2）多元线性回</h4>
 <table>
@@ -1847,6 +1921,68 @@ $$</p>
 </details>
 <hr />
 <h4 id="3_1">（3）特征缩放</h4>
+<p>让多个变量范围类似，重新缩放特征可以<strong>加快</strong>梯度下降速度（<strong>数据预处理</strong>）</p>
+<h5 id="imean-normalization">Ⅰ.均值归一化（Mean-Normalization)</h5>
+<ul>
+<li><span class="arithmatex">\(x_{normalized}=\frac{x-μ}{max(x)−min(x)}\)</span></li>
+</ul>
+<p>其中：</p>
+<ul>
+<li><span class="arithmatex">\(μ\)</span> 是特征 <span class="arithmatex">\(x\)</span> 的均值。</li>
+</ul>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">MinMaxScaler</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="c1"># 示例数据：特征矩阵 X</span>
+</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="n">X</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]])</span>
+</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>
+</span><span id="__span-6-7"><a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a><span class="c1"># 创建 MinMaxScaler 对象，指定特定的范围 (默认范围是 [0, 1])</span>
+</span><span id="__span-6-8"><a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a><span class="n">scaler</span> <span class="o">=</span> <span class="n">MinMaxScaler</span><span class="p">(</span><span class="n">feature_range</span><span class="o">=</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+</span><span id="__span-6-9"><a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a>
+</span><span id="__span-6-10"><a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a><span class="c1"># 拟合并转换数据</span>
+</span><span id="__span-6-11"><a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a><span class="n">X_normalized</span> <span class="o">=</span> <span class="n">scaler</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
+</span><span id="__span-6-12"><a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a>
+</span><span id="__span-6-13"><a id="__codelineno-6-13" name="__codelineno-6-13" href="#__codelineno-6-13"></a><span class="c1"># 输出归一化后的数据</span>
+</span><span id="__span-6-14"><a id="__codelineno-6-14" name="__codelineno-6-14" href="#__codelineno-6-14"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;均值归一化后的数据：&quot;</span><span class="p">)</span>
+</span><span id="__span-6-15"><a id="__codelineno-6-15" name="__codelineno-6-15" href="#__codelineno-6-15"></a><span class="nb">print</span><span class="p">(</span><span class="n">X_normalized</span><span class="p">)</span>
+</span></code></pre></div>
+<hr />
+<h5 id="iiz-score-standardization">Ⅱ.标准化（Z-Score Standardization）</h5>
+<ul>
+<li><span class="arithmatex">\(z=\frac{x-μ}{\sigma}\)</span></li>
+</ul>
+<p>其中：</p>
+<ul>
+<li><span class="arithmatex">\(\mu\)</span> 是数据的均值，</li>
+<li><span class="arithmatex">\(\sigma\)</span> 是数据的标准差。</li>
+</ul>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="kn">from</span> <span class="nn">scipy</span> <span class="kn">import</span> <span class="n">stats</span>
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="c1"># 示例数据</span>
+</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="n">X</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">50</span><span class="p">])</span>
+</span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>
+</span><span id="__span-7-7"><a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a><span class="c1"># 计算 Z-score</span>
+</span><span id="__span-7-8"><a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a><span class="n">z_scores</span> <span class="o">=</span> <span class="n">stats</span><span class="o">.</span><span class="n">zscore</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
+</span><span id="__span-7-9"><a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Z-scores:&quot;</span><span class="p">,</span> <span class="n">z_scores</span><span class="p">)</span>
+</span></code></pre></div>
+<hr />
+<h4 id="4_1">（4）多项式回归</h4>
+<p>在原来基础上加入其他次项来使其更加拟合曲线</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">20</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">x</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span>
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>
+</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="n">X</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">c_</span><span class="p">[</span><span class="n">x</span><span class="p">,</span> <span class="n">x</span><span class="o">**</span><span class="mi">2</span><span class="p">,</span> <span class="n">x</span><span class="o">**</span><span class="mi">3</span><span class="p">,</span><span class="n">x</span><span class="o">**</span><span class="mi">4</span><span class="p">,</span> <span class="n">x</span><span class="o">**</span><span class="mi">5</span><span class="p">,</span> <span class="n">x</span><span class="o">**</span><span class="mi">6</span><span class="p">,</span> <span class="n">x</span><span class="o">**</span><span class="mi">7</span><span class="p">,</span> <span class="n">x</span><span class="o">**</span><span class="mi">8</span><span class="p">,</span> <span class="n">x</span><span class="o">**</span><span class="mi">9</span><span class="p">,</span> <span class="n">x</span><span class="o">**</span><span class="mi">10</span><span class="p">,</span> <span class="n">x</span><span class="o">**</span><span class="mi">11</span><span class="p">,</span> <span class="n">x</span><span class="o">**</span><span class="mi">12</span><span class="p">,</span> <span class="n">x</span><span class="o">**</span><span class="mi">13</span><span class="p">]</span>
+</span><span id="__span-8-5"><a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a><span class="n">X</span> <span class="o">=</span> <span class="n">zscore_normalize_features</span><span class="p">(</span><span class="n">X</span><span class="p">)</span> 
+</span><span id="__span-8-6"><a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a>
+</span><span id="__span-8-7"><a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a><span class="n">model_w</span><span class="p">,</span><span class="n">model_b</span> <span class="o">=</span> <span class="n">run_gradient_descent_feng</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">iterations</span><span class="o">=</span><span class="mi">1000000</span><span class="p">,</span> <span class="n">alpha</span> <span class="o">=</span> <span class="mf">1e-1</span><span class="p">)</span>
+</span><span id="__span-8-8"><a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a>
+</span><span id="__span-8-9"><a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a><span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s1">&#39;x&#39;</span><span class="p">,</span> <span class="n">c</span><span class="o">=</span><span class="s1">&#39;r&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;Actual Value&quot;</span><span class="p">);</span> <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Normalized x x**2, x**3 feature&quot;</span><span class="p">)</span>
+</span><span id="__span-8-10"><a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a><span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">X</span><span class="nd">@model_w</span> <span class="o">+</span> <span class="n">model_b</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;Predicted Value&quot;</span><span class="p">);</span> <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;x&quot;</span><span class="p">);</span> <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;y&quot;</span><span class="p">);</span> <span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">();</span> <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</span></code></pre></div>
+</div>
 
 
 
