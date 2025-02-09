@@ -36,9 +36,11 @@
 
 /*  !* 变量 *!*/
 /*  --md-code-hl-variable-color: #f8f8f2;*/
-.admonition p {
-    font-size: 1.2em;  /* 你可以根据需要调整大小 */
+
+
+
 }
 
-
+.admonition p {
+    font-size: 1.2em;  /* 你可以根据需要调整大小 */
 }
