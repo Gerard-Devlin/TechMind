@@ -1476,6 +1476,15 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      6、激活函数
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1484,9 +1493,69 @@
         <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
-      二、激活函数
+      二、多类
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="二、多类">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1softmax" class="md-nav__link">
+    <span class="md-ellipsis">
+      1、Softmax回归模型
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2softmax" class="md-nav__link">
+    <span class="md-ellipsis">
+      2、Softmax实现
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      3、改进
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      4、多个输出的分类
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      5、高级优化方法
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      6、其他类型的层
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1585,6 +1654,15 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      6、激活函数
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1593,9 +1671,69 @@
         <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
-      二、激活函数
+      二、多类
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="二、多类">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1softmax" class="md-nav__link">
+    <span class="md-ellipsis">
+      1、Softmax回归模型
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2softmax" class="md-nav__link">
+    <span class="md-ellipsis">
+      2、Softmax实现
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      3、改进
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      4、多个输出的分类
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      5、高级优化方法
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      6、其他类型的层
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1635,9 +1773,18 @@
 <li><a href="#3tensorflowkeras">3、tensorflow的Keras库</a></li>
 <li><a href="#4numpy">4、numpy硬编码</a></li>
 <li><a href="#5">5、训练步骤</a></li>
+<li><a href="#6">6、激活函数</a></li>
 </ul>
 </li>
-<li><a href="#_2">二、激活函数</a></li>
+<li><a href="#_2">二、多类</a><ul>
+<li><a href="#1softmax">1、Softmax回归模型</a></li>
+<li><a href="#2softmax">2、Softmax实现</a></li>
+<li><a href="#3">3、改进</a></li>
+<li><a href="#4">4、多个输出的分类</a></li>
+<li><a href="#5_1">5、高级优化方法</a></li>
+<li><a href="#6_1">6、其他类型的层</a></li>
+</ul>
+</li>
 </ul>
 </div>
 <hr />
@@ -1815,7 +1962,7 @@ a_j^{[l]}=g(\vec w _j^{[l]}·\vec a ^{[l-1]}+b_j^{[l]})
 </tbody>
 </table>
 <hr />
-<h2 id="_2">二、激活函数</h2>
+<h3 id="6">6、激活函数</h3>
 <table>
 <thead>
 <tr>
@@ -1835,8 +1982,186 @@ a_j^{[l]}=g(\vec w _j^{[l]}·\vec a ^{[l-1]}+b_j^{[l]})
 <td style="text-align: center;"><img alt="Sigmoid.svg" src="../../assets/images/Sigmoid.svg" /></td>
 <td style="text-align: center;"><img alt="ReLU.svg" src="../../assets/images/ReLU.svg" /></td>
 </tr>
+<tr>
+<td style="text-align: center;">二分类问题</td>
+<td style="text-align: center;"><span class="arithmatex">\(y\)</span> 可取正负</td>
+<td style="text-align: center;"><span class="arithmatex">\(y\)</span> 取非负</td>
+</tr>
 </tbody>
 </table>
+<ul>
+<li><strong>隐藏层</strong>不要使用<strong>线性</strong>激活函数，因为线性相关 <span class="arithmatex">\(\Leftrightarrow\)</span> 相当于简单的线性回归</li>
+</ul>
+<hr />
+<h2 id="_2">二、多类</h2>
+<h3 id="1softmax">1、Softmax回归模型</h3>
+<details class="example">
+<summary>Example</summary>
+<table>
+<thead>
+<tr>
+<th>计算得分 <span class="arithmatex">\(z\)</span></th>
+<th>计算概率 <span class="arithmatex">\(a\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\(z_1 = \vec{w}_1 \cdot \vec{x} + b_1\)</span></td>
+<td><span class="arithmatex">\(a_1 = \frac{e^{z_1}}{e^{z_1} + e^{z_2} + e^{z_3} + e^{z_4}}\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(z_2 = \vec{w}_2 \cdot \vec{x} + b_2\)</span></td>
+<td><span class="arithmatex">\(a_2 = \frac{e^{z_2}}{e^{z_1} + e^{z_2} + e^{z_3} + e^{z_4}}\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(z_3 = \vec{w}_3 \cdot \vec{x} + b_3\)</span></td>
+<td><span class="arithmatex">\(a_3 = \frac{e^{z_3}}{e^{z_1} + e^{z_2} + e^{z_3} + e^{z_4}}\)</span></td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(z_4 = \vec{w}_4 \cdot \vec{x} + b_4\)</span></td>
+<td><span class="arithmatex">\(a_4 = \frac{e^{z_4}}{e^{z_1} + e^{z_2} + e^{z_3} + e^{z_4}}\)</span></td>
+</tr>
+</tbody>
+</table>
+</details>
+<ul>
+<li>
+<div class="arithmatex">\[
+  z_j = \vec{w}_j \cdot \vec{x} + b_j \quad \text{for } j = 1, \ldots, N
+  \]</div>
+</li>
+<li>
+<div class="arithmatex">\[
+  a_j = \frac{e^{z_j}}{\sum_{k=1}^{N} e^{z_k}} = P(y = j|\vec{x})
+  \]</div>
+</li>
+<li>
+<div class="arithmatex">\[
+  a_1 + a_2 + \ldots + a_N = 1
+  \]</div>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>步骤</th>
+<th>逻辑回归</th>
+<th>Softmax回归</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>模型</td>
+<td><span class="arithmatex">\(z = \vec{w} \cdot \vec{x} + b\)</span></td>
+<td><span class="arithmatex">\(z_j = \vec{w}_j \cdot \vec{x} + b_j\)</span> for <span class="arithmatex">\(j = 1, \ldots, N\)</span></td>
+</tr>
+<tr>
+<td>概率计算</td>
+<td><span class="arithmatex">\(a_1 = g(z) = \frac{1}{1 + e^{-z}}\)</span></td>
+<td><span class="arithmatex">\(a_j = \frac{e^{z_j}}{\sum_{k=1}^{N} e^{z_k}}\)</span></td>
+</tr>
+<tr>
+<td></td>
+<td><span class="arithmatex">\(a_2 = 1 - a_1\)</span></td>
+<td></td>
+</tr>
+<tr>
+<td>损失函数</td>
+<td><span class="arithmatex">\(\text{loss} = -y \log a_1 - (1 - y) \log(1 - a_1)\)</span></td>
+<td><span class="arithmatex">\(\text{loss}(a_1, \ldots, a_N, y) = -\log a_y\)</span></td>
+</tr>
+<tr>
+<td>代价函数</td>
+<td><span class="arithmatex">\(J(\vec{w}, b) = \text{average loss}\)</span></td>
+<td><span class="arithmatex">\(J(\vec{w}, b) = \text{average loss}\)</span></td>
+</tr>
+<tr>
+<td></td>
+<td><span class="arithmatex">\(a_1 + a_2 = 1\)</span></td>
+<td><span class="arithmatex">\(a_1 + a_2 + \ldots + a_N = 1\)</span></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="2softmax">2、Softmax实现</h3>
+<p><img alt="Softmax.svg" src="../../assets/images/Softmax.svg" /></p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">tensorflow</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">tf</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">tensorflow.keras</span><span class="w"> </span><span class="kn">import</span> <span class="n">Sequential</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="kn">from</span><span class="w"> </span><span class="nn">tensorflow.keras.layers</span><span class="w"> </span><span class="kn">import</span> <span class="n">Dense</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="kn">from</span><span class="w"> </span><span class="nn">tensorflow.keras.losses</span><span class="w"> </span><span class="kn">import</span> <span class="n">SparseCategoricalCrossentropy</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="c1"># 创建一个顺序模型</span>
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="n">model</span> <span class="o">=</span> <span class="n">Sequential</span><span class="p">([</span>
+</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>    <span class="n">Dense</span><span class="p">(</span><span class="n">units</span><span class="o">=</span><span class="mi">25</span><span class="p">,</span> <span class="n">activation</span><span class="o">=</span><span class="s1">&#39;relu&#39;</span><span class="p">),</span>
+</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>    <span class="n">Dense</span><span class="p">(</span><span class="n">units</span><span class="o">=</span><span class="mi">15</span><span class="p">,</span> <span class="n">activation</span><span class="o">=</span><span class="s1">&#39;relu&#39;</span><span class="p">),</span>
+</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>    <span class="n">Dense</span><span class="p">(</span><span class="n">units</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">activation</span><span class="o">=</span><span class="s1">&#39;softmax&#39;</span><span class="p">)</span>
+</span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a><span class="p">])</span>
+</span><span id="__span-3-12"><a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a>
+</span><span id="__span-3-13"><a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a><span class="c1"># 编译模型，指定损失函数为SparseCategoricalCrossentropy</span>
+</span><span id="__span-3-14"><a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a><span class="n">model</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="n">loss</span><span class="o">=</span><span class="n">SparseCategoricalCrossentropy</span><span class="p">())</span>
+</span><span id="__span-3-15"><a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a><span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">Y</span><span class="p">,</span> <span class="n">epochs</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
+</span></code></pre></div>
+<hr />
+<h3 id="3">3、改进</h3>
+<p>数值舍入误差</p>
+<ul>
+<li>你的输出层提供的是logits（即未经过激活函数的原始分数），而不是概率值</li>
+</ul>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="n">model</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="n">loss</span><span class="o">=</span><span class="n">BinaryCrossentropy</span><span class="p">(</span><span class="n">from_logits</span><span class="o">=</span><span class="kc">True</span><span class="p">))</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="n">model</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="n">loss</span><span class="o">=</span><span class="n">SparseCategoricalCrossentropy</span><span class="p">(</span><span class="n">from_logits</span><span class="o">=</span><span class="kc">True</span><span class="p">))</span>
+</span></code></pre></div>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="c1"># 创建一个顺序模型</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="n">model</span> <span class="o">=</span> <span class="n">Sequential</span><span class="p">([</span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>    <span class="n">Dense</span><span class="p">(</span><span class="n">units</span><span class="o">=</span><span class="mi">25</span><span class="p">,</span> <span class="n">activation</span><span class="o">=</span><span class="s1">&#39;relu&#39;</span><span class="p">),</span>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>    <span class="n">Dense</span><span class="p">(</span><span class="n">units</span><span class="o">=</span><span class="mi">15</span><span class="p">,</span> <span class="n">activation</span><span class="o">=</span><span class="s1">&#39;relu&#39;</span><span class="p">),</span>
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>     <span class="c1"># 最后一层相应的改成线性模型</span>
+</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>    <span class="n">Dense</span><span class="p">(</span><span class="n">units</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">activation</span><span class="o">=</span><span class="s1">&#39;linear&#39;</span><span class="p">)</span>
+</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="p">])</span>
+</span></code></pre></div>
+<hr />
+<h3 id="4">4、多个输出的分类</h3>
+<p>（Muti-label Classification)</p>
+<ul>
+<li>选择使用多个神经网络分别给出输出</li>
+<li>使用一个神经网络，最后一层使用Sigmoid激活函数，给出多个输出的概率值</li>
+</ul>
+<hr />
+<h3 id="5_1">5、高级优化方法</h3>
+<ul>
+<li><span class="arithmatex">\(Adam\)</span>算法(Adaptive Moment estimation)：使用多个学习率 <span class="arithmatex">\(\alpha\)</span></li>
+</ul>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">tensorflow</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">tf</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">tensorflow.keras</span><span class="w"> </span><span class="kn">import</span> <span class="n">Sequential</span>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="kn">from</span><span class="w"> </span><span class="nn">tensorflow.keras.layers</span><span class="w"> </span><span class="kn">import</span> <span class="n">Dense</span>
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="kn">from</span><span class="w"> </span><span class="nn">tensorflow.keras.optimizers</span><span class="w"> </span><span class="kn">import</span> <span class="n">Adam</span>
+</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="kn">from</span><span class="w"> </span><span class="nn">tensorflow.keras.losses</span><span class="w"> </span><span class="kn">import</span> <span class="n">SparseCategoricalCrossentropy</span>
+</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>
+</span><span id="__span-6-7"><a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a><span class="c1"># 定义模型结构</span>
+</span><span id="__span-6-8"><a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a><span class="n">model</span> <span class="o">=</span> <span class="n">Sequential</span><span class="p">([</span>
+</span><span id="__span-6-9"><a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a>    <span class="n">Dense</span><span class="p">(</span><span class="n">units</span><span class="o">=</span><span class="mi">25</span><span class="p">,</span> <span class="n">activation</span><span class="o">=</span><span class="s1">&#39;sigmoid&#39;</span><span class="p">),</span>
+</span><span id="__span-6-10"><a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a>    <span class="n">Dense</span><span class="p">(</span><span class="n">units</span><span class="o">=</span><span class="mi">15</span><span class="p">,</span> <span class="n">activation</span><span class="o">=</span><span class="s1">&#39;sigmoid&#39;</span><span class="p">),</span>
+</span><span id="__span-6-11"><a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a>    <span class="n">Dense</span><span class="p">(</span><span class="n">units</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">activation</span><span class="o">=</span><span class="s1">&#39;linear&#39;</span><span class="p">)</span>
+</span><span id="__span-6-12"><a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a><span class="p">])</span>
+</span><span id="__span-6-13"><a id="__codelineno-6-13" name="__codelineno-6-13" href="#__codelineno-6-13"></a>
+</span><span id="__span-6-14"><a id="__codelineno-6-14" name="__codelineno-6-14" href="#__codelineno-6-14"></a><span class="c1"># 编译模型</span>
+</span><span id="__span-6-15"><a id="__codelineno-6-15" name="__codelineno-6-15" href="#__codelineno-6-15"></a><span class="n">model</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span>
+</span><span id="__span-6-16"><a id="__codelineno-6-16" name="__codelineno-6-16" href="#__codelineno-6-16"></a>    <span class="c1"># 使用Adam优化器，学习率为0.001</span>
+</span><span id="__span-6-17"><a id="__codelineno-6-17" name="__codelineno-6-17" href="#__codelineno-6-17"></a>    <span class="n">optimizer</span><span class="o">=</span><span class="n">Adam</span><span class="p">(</span><span class="n">learning_rate</span><span class="o">=</span><span class="mf">1e-3</span><span class="p">),</span>
+</span><span id="__span-6-18"><a id="__codelineno-6-18" name="__codelineno-6-18" href="#__codelineno-6-18"></a>    <span class="c1"># 使用SparseCategoricalCrossentropy损失函数，from_logits=True表示输出层为logits</span>
+</span><span id="__span-6-19"><a id="__codelineno-6-19" name="__codelineno-6-19" href="#__codelineno-6-19"></a>    <span class="n">loss</span><span class="o">=</span><span class="n">SparseCategoricalCrossentropy</span><span class="p">(</span><span class="n">from_logits</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</span><span id="__span-6-20"><a id="__codelineno-6-20" name="__codelineno-6-20" href="#__codelineno-6-20"></a><span class="p">)</span>
+</span><span id="__span-6-21"><a id="__codelineno-6-21" name="__codelineno-6-21" href="#__codelineno-6-21"></a>
+</span><span id="__span-6-22"><a id="__codelineno-6-22" name="__codelineno-6-22" href="#__codelineno-6-22"></a><span class="c1"># 训练模型</span>
+</span><span id="__span-6-23"><a id="__codelineno-6-23" name="__codelineno-6-23" href="#__codelineno-6-23"></a><span class="n">model</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">Y</span><span class="p">,</span> <span class="n">epochs</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
+</span></code></pre></div>
+<hr />
+<h3 id="6_1">6、其他类型的层</h3>
+<ul>
+<li>全连接层（Dense Layer）</li>
+<li>卷积层（Convolutional Layer）：每个神经元只关注输入的一部分</li>
+</ul>
+<p><img alt="lenet.svg" src="../../assets/images/lenet.svg" /></p>
+<hr />
 
 
 
