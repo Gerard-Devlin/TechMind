@@ -1572,7 +1572,17 @@
           <li class="md-nav__item">
   <a href="#1_1" class="md-nav__link">
     <span class="md-ellipsis">
-      1、线性回归
+      1、模型
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1、模型">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      （1）回归
     </span>
   </a>
   
@@ -1581,7 +1591,21 @@
           <li class="md-nav__item">
   <a href="#2_1" class="md-nav__link">
     <span class="md-ellipsis">
-      2、分类
+      （2）分类
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      2、模型选择和交叉验证测试集
     </span>
   </a>
   
@@ -1590,7 +1614,7 @@
           <li class="md-nav__item">
   <a href="#3_1" class="md-nav__link">
     <span class="md-ellipsis">
-      3、模型选择和交叉验证测试集
+      3、建立表现基准
     </span>
   </a>
   
@@ -1599,7 +1623,7 @@
           <li class="md-nav__item">
   <a href="#4_1" class="md-nav__link">
     <span class="md-ellipsis">
-      4、建立表现基准
+      4、学习曲线
     </span>
   </a>
   
@@ -1608,16 +1632,7 @@
           <li class="md-nav__item">
   <a href="#5_2" class="md-nav__link">
     <span class="md-ellipsis">
-      5、学习曲线
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#6_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      6、实现
+      5、实现
     </span>
   </a>
   
@@ -1819,7 +1834,17 @@
           <li class="md-nav__item">
   <a href="#1_1" class="md-nav__link">
     <span class="md-ellipsis">
-      1、线性回归
+      1、模型
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1、模型">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      （1）回归
     </span>
   </a>
   
@@ -1828,7 +1853,21 @@
           <li class="md-nav__item">
   <a href="#2_1" class="md-nav__link">
     <span class="md-ellipsis">
-      2、分类
+      （2）分类
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      2、模型选择和交叉验证测试集
     </span>
   </a>
   
@@ -1837,7 +1876,7 @@
           <li class="md-nav__item">
   <a href="#3_1" class="md-nav__link">
     <span class="md-ellipsis">
-      3、模型选择和交叉验证测试集
+      3、建立表现基准
     </span>
   </a>
   
@@ -1846,7 +1885,7 @@
           <li class="md-nav__item">
   <a href="#4_1" class="md-nav__link">
     <span class="md-ellipsis">
-      4、建立表现基准
+      4、学习曲线
     </span>
   </a>
   
@@ -1855,16 +1894,7 @@
           <li class="md-nav__item">
   <a href="#5_2" class="md-nav__link">
     <span class="md-ellipsis">
-      5、学习曲线
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#6_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      6、实现
+      5、实现
     </span>
   </a>
   
@@ -1924,12 +1954,15 @@
 </ul>
 </li>
 <li><a href="#_3">三、模型评估</a><ul>
-<li><a href="#1_1">1、线性回归</a></li>
-<li><a href="#2_1">2、分类</a></li>
-<li><a href="#3_1">3、模型选择和交叉验证测试集</a></li>
-<li><a href="#4_1">4、建立表现基准</a></li>
-<li><a href="#5_2">5、学习曲线</a></li>
-<li><a href="#6_2">6、实现</a></li>
+<li><a href="#1_1">1、模型</a><ul>
+<li><a href="#1_2">（1）回归</a></li>
+<li><a href="#2_1">（2）分类</a></li>
+</ul>
+</li>
+<li><a href="#2_2">2、模型选择和交叉验证测试集</a></li>
+<li><a href="#3_1">3、建立表现基准</a></li>
+<li><a href="#4_1">4、学习曲线</a></li>
+<li><a href="#5_2">5、实现</a></li>
 </ul>
 </li>
 </ul>
@@ -2316,33 +2349,47 @@ a_j^{[l]}=g(\vec w _j^{[l]}·\vec a ^{[l-1]}+b_j^{[l]})
 <p><span class="arithmatex">\(J\)</span> 越大，误差越大</p>
 </div>
 <hr />
-<h3 id="1_1">1、线性回归</h3>
-<p>最小化代价函数
-$$
+<h3 id="1_1">1、模型</h3>
+<h4 id="1_2">（1）回归</h4>
+<ul>
+<li>最小化代价函数</li>
+</ul>
+<div class="arithmatex">\[
 J(\mathbf{w}, b) = \min_{\mathbf{w}, b} \left[ \frac{1}{2m_{\text{train}}} \sum_{i=1}^{m_{\text{train}}} \left( f_{\mathbf{w},b} (\mathbf{x}^{(i)}) - y^{(i)} \right)^2 + \frac{\lambda}{2m_{\text{train}}} \sum_{j=1}^{n} w_j^2 \right]
-$$</p>
-<p>训练集误差</p>
+\]</div>
+<ul>
+<li>训练集误差</li>
+</ul>
 <div class="arithmatex">\[
 J_{\text{test}} (\mathbf{w}, b) = \frac{1}{2m_{\text{test}}} \sum_{i=1}^{m_{\text{test}}} \left( f_{\mathbf{w},b} (\mathbf{x}^{(i)}_{\text{test}}) - y^{(i)}_{\text{test}} \right)^2
 \]</div>
-<p>测试集误差</p>
+<ul>
+<li>测试集误差</li>
+</ul>
 <div class="arithmatex">\[
 J_{\text{train}} (\mathbf{w}, b) = \frac{1}{2m_{\text{train}}} \sum_{i=1}^{m_{\text{train}}} \left( f_{\mathbf{w},b} (\mathbf{x}^{(i)}_{\text{train}}) - y^{(i)}_{\text{train}} \right)^2
 \]</div>
-<h3 id="2_1">2、分类</h3>
+<h4 id="2_1">（2）分类</h4>
+<ul>
+<li>最小化代价函数</li>
+</ul>
 <div class="arithmatex">\[
 J(\vec{w}, b) = -\frac{1}{m} \sum_{i=1}^{m} \left[ y^{(i)}\log(f_{\vec{w},b}(\vec{x}^{(i)})) + (1 - y^{(i)})\log(1 - f_{\vec{w},b}(\vec{x}^{(i)})) \right] + \frac{\lambda}{2m} \sum_{j=1}^{n} w_j^2
 \]</div>
-<p>训练集误差</p>
+<ul>
+<li>训练集误差</li>
+</ul>
 <div class="arithmatex">\[
 J_{test}(\vec{w}, b) = -\frac{1}{m_{test}} \sum_{i=1}^{m_{test}} \left[ y_{test}^{(i)}\log(f_{\vec{w},b}(\vec{x}_{test}^{(i)})) + (1 - y_{test}^{(i)})\log(1 - f_{\vec{w},b}(\vec{x}_{test}^{(i)})) \right]
 \]</div>
-<p>测试集误差</p>
+<ul>
+<li>测试集误差</li>
+</ul>
 <div class="arithmatex">\[
 J_{train}(\vec{w}, b) = -\frac{1}{m_{train}} \sum_{i=1}^{m_{train}} \left[ y_{train}^{(i)}\log(f_{\vec{w},b}(\vec{x}_{train}^{(i)})) + (1 - y_{train}^{(i)})\log(1 - f_{\vec{w},b}(\vec{x}_{train}^{(i)})) \right]
 \]</div>
 <hr />
-<h3 id="3_1">3、模型选择和交叉验证测试集</h3>
+<h3 id="2_2">2、模型选择和交叉验证测试集</h3>
 <p>使用交叉验证集（Cross Validation Set）确定参数个数等等，再用测试集来验证</p>
 <table>
 <thead>
@@ -2366,7 +2413,7 @@ J_{train}(\vec{w}, b) = -\frac{1}{m_{train}} \sum_{i=1}^{m_{train}} \left[ y_{tr
 </tbody>
 </table>
 <hr />
-<h3 id="4_1">4、建立表现基准</h3>
+<h3 id="3_1">3、建立表现基准</h3>
 <ul>
 <li>基准（其他模型，人类表现……）</li>
 <li>训练集误差</li>
@@ -2383,7 +2430,7 @@ J_{train}(\vec{w}, b) = -\frac{1}{m_{train}} \sum_{i=1}^{m_{train}} \left[ y_{tr
 </blockquote>
 </div>
 <hr />
-<h3 id="5_2">5、学习曲线</h3>
+<h3 id="4_1">4、学习曲线</h3>
 <p><span class="arithmatex">\(J_{cv}\)</span> 随测试集增大减小，<span class="arithmatex">\(J_{train}\)</span> 随着测试集增加增加，最后<strong>趋于平衡</strong></p>
 <ul>
 <li>高偏差 → 平衡误差最终高于人类基准</li>
@@ -2404,7 +2451,7 @@ J_{train}(\vec{w}, b) = -\frac{1}{m_{train}} \sum_{i=1}^{m_{train}} \left[ y_{tr
 </details>
 <p><img alt="BiasVariance.svg" src="../../assets/images/BiasVariance.svg" /></p>
 <hr />
-<h3 id="6_2">6、实现</h3>
+<h3 id="5_2">5、实现</h3>
 <p>未正则化的 MNIST 模型</p>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="n">layer_1</span> <span class="o">=</span> <span class="n">Dense</span><span class="p">(</span><span class="n">units</span><span class="o">=</span><span class="mi">25</span><span class="p">,</span> <span class="n">activation</span><span class="o">=</span><span class="s2">&quot;relu&quot;</span><span class="p">)</span>
 </span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="n">layer_2</span> <span class="o">=</span> <span class="n">Dense</span><span class="p">(</span><span class="n">units</span><span class="o">=</span><span class="mi">15</span><span class="p">,</span> <span class="n">activation</span><span class="o">=</span><span class="s2">&quot;relu&quot;</span><span class="p">)</span>
