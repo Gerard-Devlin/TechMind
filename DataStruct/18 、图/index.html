@@ -65,7 +65,16 @@
     
     
     
-  </head>
+   <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -2024,7 +2033,7 @@
 <h3 id="eg62">e.g.62 医院设置</h3>
 <p>题目描述</p>
 <p>设有一棵二叉树，如图：</p>
-<p><img alt="P1364.png" src="../../assets/images/P1364.png" /></p>
+<p><a class="glightbox" href="../../assets/images/P1364.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="P1364.png" src="../../assets/images/P1364.png" /></a></p>
 <p>其中，圈中的数字表示结点中居民的人口。圈边上数字表示结点编号，现在要求在某个结点上建立一个医院，使所有居民所走的路程之和为最小，同时约定，相邻接点之间的距离为 <span class="arithmatex">\(1\)</span>。如上图中，若医院建在 <span class="arithmatex">\(1\)</span> 处，则距离和 <span class="arithmatex">\(=4+12+2\times20+2\times40=136\)</span>；若医院建在 <span class="arithmatex">\(3\)</span> 处，则距离和 <span class="arithmatex">\(=4\times2+13+20+40=81\)</span>。</p>
 <p>输入格式</p>
 <p>第一行一个整数 <span class="arithmatex">\(n\)</span>，表示树的结点数。</p>
@@ -2385,7 +2394,7 @@
 </span></code></pre></div>
 <p>提示</p>
 <p><strong>【样例说明】</strong></p>
-<p><img alt="P8802.jpg" src="../../assets/images/P8802.jpg" /></p>
+<p><a class="glightbox" href="../../assets/images/P8802.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="P8802.jpg" src="../../assets/images/P8802.jpg" /></a></p>
 <p><strong>【评测用例规模与约定】</strong></p>
 <p>对于 <span class="arithmatex">\(100 \%\)</span> 的数据, <span class="arithmatex">\(1 \leq N \leq 1000,1 \leq M \leq 10000,1 \leq C_{i} \leq 200,1 \leq u, v \leq\)</span> <span class="arithmatex">\(N, 1 \leq c \leq 1000\)</span> </p>
 <p>蓝桥杯 2022 国赛 B 组 E 题。</p>
@@ -2608,7 +2617,7 @@
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      Copyright © 2024 Devlin
+      Copyright © 2025 Devlin
     </div>
   
   
@@ -2647,5 +2656,7 @@
         <script src="https://cdn.jsdelivr.net/npm/katex@0/dist/contrib/auto-render.min.js"></script>
       
     
-  </body>
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
 </html>

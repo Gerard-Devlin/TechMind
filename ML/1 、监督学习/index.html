@@ -65,7 +65,16 @@
     
     
     
-  </head>
+   <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -2236,7 +2245,7 @@
 </div>
 <hr />
 <h3 id="1">1、回归模型</h3>
-<p><img alt="Process.svg" src="../../assets/images/Process.svg" /></p>
+<p><a class="glightbox" href="../../assets/images/Process.svg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Process.svg" src="../../assets/images/Process.svg" /></a></p>
 <ul>
 <li><span class="arithmatex">\(ŷ\)</span> 是 <span class="arithmatex">\(y\)</span> 的预测值</li>
 </ul>
@@ -2497,7 +2506,7 @@ $$</p>
 </span><span id="__span-10-10"><a id="__codelineno-10-10" name="__codelineno-10-10" href="#__codelineno-10-10"></a><span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;z&#39;</span><span class="p">)</span>
 </span><span id="__span-10-11"><a id="__codelineno-10-11" name="__codelineno-10-11" href="#__codelineno-10-11"></a><span class="n">draw_vthresh</span><span class="p">(</span><span class="n">ax</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span>
 </span></code></pre></div>
-<p><img alt="Sigmoid.svg" src="../../assets/images/Sigmoid.svg" /></p>
+<p><a class="glightbox" href="../../assets/images/Sigmoid.svg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Sigmoid.svg" src="../../assets/images/Sigmoid.svg" /></a></p>
 <div class="arithmatex">\[
 z= \vec w·\vec x + b
 \]</div>
@@ -2594,8 +2603,8 @@ L\left(f_{\vec{w},b}(\vec{x}^{(i)}), y^{(i)}\right) =
 </thead>
 <tbody>
 <tr>
-<td><img alt="JLinear.png" src="../../assets/images/JLinear.png" /></td>
-<td style="text-align: center;"><img alt="JLogistic.png" src="../../assets/images/JLogistic.png" /></td>
+<td><a class="glightbox" href="../../assets/images/JLinear.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="JLinear.png" src="../../assets/images/JLinear.png" /></a></td>
+<td style="text-align: center;"><a class="glightbox" href="../../assets/images/JLogistic.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="JLogistic.png" src="../../assets/images/JLogistic.png" /></a></td>
 </tr>
 </tbody>
 </table>
@@ -2939,7 +2948,7 @@ J(\vec{w}, b) = \frac{1}{2m} \sum_{i=1}^{m} (f_{\vec{w},b}(\vec{x}^{(i)}) - y^{(
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      Copyright © 2024 Devlin
+      Copyright © 2025 Devlin
     </div>
   
   
@@ -2978,5 +2987,7 @@ J(\vec{w}, b) = \frac{1}{2m} \sum_{i=1}^{m} (f_{\vec{w},b}(\vec{x}^{(i)}) - y^{(
         <script src="https://cdn.jsdelivr.net/npm/katex@0/dist/contrib/auto-render.min.js"></script>
       
     
-  </body>
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
 </html>

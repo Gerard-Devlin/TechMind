@@ -65,7 +65,16 @@
     
     
     
-  </head>
+   <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -1737,7 +1746,7 @@
 <p>用来计算<strong>连续</strong>数字的和👉提高效率</p>
 </div>
 <h2 id="3">3、二维前缀和</h2>
-<p><img alt="prefix-sum-2d.svg" src="../../assets/images/prefix-sum-2d.svg" /></p>
+<p><a class="glightbox" href="../../assets/images/prefix-sum-2d.svg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="prefix-sum-2d.svg" src="../../assets/images/prefix-sum-2d.svg" /></a></p>
 <div class="language-c++ highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1">// 二维前缀和模板</span>
 </span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="k">const</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">N</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1010</span><span class="p">;</span>
 </span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="p">[</span><span class="n">N</span><span class="p">][</span><span class="n">N</span><span class="p">];</span><span class="w">    </span><span class="c1">// 原始数组</span>
@@ -2059,7 +2068,7 @@ S=a_{1} \cdot a_{2}+a_{1} \cdot a_{3}+\cdots+a_{1} \cdot a_{n}+a_{2} \cdot a_{3}
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      Copyright © 2024 Devlin
+      Copyright © 2025 Devlin
     </div>
   
   
@@ -2098,5 +2107,7 @@ S=a_{1} \cdot a_{2}+a_{1} \cdot a_{3}+\cdots+a_{1} \cdot a_{n}+a_{2} \cdot a_{3}
         <script src="https://cdn.jsdelivr.net/npm/katex@0/dist/contrib/auto-render.min.js"></script>
       
     
-  </body>
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
 </html>

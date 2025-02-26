@@ -65,7 +65,16 @@
     
     
     
-  </head>
+   <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -1733,13 +1742,13 @@
 <h3 id="1_1">（1）满二叉树</h3>
 <p>每一层节点都是满的</p>
 <h3 id="2">（2）完全二叉树</h3>
-<p><img alt="tree-binary-proper.svg" src="../../assets/images/tree-binary-proper.svg" /></p>
+<p><a class="glightbox" href="../../assets/images/tree-binary-proper.svg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="tree-binary-proper.svg" src="../../assets/images/tree-binary-proper.svg" /></a></p>
 <p>最后一层有缺失</p>
 <h3 id="3">（3）退化二叉树</h3>
 <p>每一个节点<strong>只有一个</strong>子节点</p>
 <h3 id="4">（4）完美二叉树</h3>
 <p>所有叶结点的深度均相同，且所有非叶节点的子节点数量均为 2 的二叉树称为完美二叉树。</p>
-<p><img alt="tree-binary-perfect.svg" src="../../assets/images/tree-binary-perfect.svg" /></p>
+<p><a class="glightbox" href="../../assets/images/tree-binary-perfect.svg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="tree-binary-perfect.svg" src="../../assets/images/tree-binary-perfect.svg" /></a></p>
 <hr />
 <h2 id="2_1">2、静态写法</h2>
 <div class="admonition tip">
@@ -1761,13 +1770,13 @@
 <ul>
 <li>先（根）序遍历</li>
 <li><strong>先根节点</strong>，再左子树，再右子树</li>
-<li><img alt="tree-basic-preorder.svg" src="../../assets/images/tree-basic-preorder.svg" /></li>
+<li><a class="glightbox" href="../../assets/images/tree-basic-preorder.svg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="tree-basic-preorder.svg" src="../../assets/images/tree-basic-preorder.svg" /></a></li>
 <li>中（根）序遍历</li>
 <li>先左子树，<strong>再根节点</strong>，再右子树</li>
-<li><img alt="tree-basic-inorder.svg" src="../../assets/images/tree-basic-inorder.svg" /></li>
+<li><a class="glightbox" href="../../assets/images/tree-basic-inorder.svg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="tree-basic-inorder.svg" src="../../assets/images/tree-basic-inorder.svg" /></a></li>
 <li>后（根）序遍历</li>
 <li>先左子树，再右子树，<strong>再根节点</strong></li>
-<li><img alt="tree-basic-postorder.svg" src="../../assets/images/tree-basic-postorder.svg" /></li>
+<li><a class="glightbox" href="../../assets/images/tree-basic-postorder.svg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="tree-basic-postorder.svg" src="../../assets/images/tree-basic-postorder.svg" /></a></li>
 </ul>
 <hr />
 <h2 id="_1">例题</h2>
@@ -2015,7 +2024,7 @@
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      Copyright © 2024 Devlin
+      Copyright © 2025 Devlin
     </div>
   
   
@@ -2054,5 +2063,7 @@
         <script src="https://cdn.jsdelivr.net/npm/katex@0/dist/contrib/auto-render.min.js"></script>
       
     
-  </body>
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
 </html>

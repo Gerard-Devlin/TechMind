@@ -65,7 +65,16 @@
     
     
     
-  </head>
+   <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -1485,7 +1494,7 @@
 </ul>
 </div>
 <h1 id="queue-adt">Queue ADT</h1>
-<p><img src="C:\Users\Devlin\Desktop\Uni\Programming\DataStruct\Queue.assets\image-20241024172303362.png" alt="image-20241024172303362" style="zoom:40%;" /></p>
+<p><a class="glightbox" href="C:\Users\Devlin\Desktop\Uni\Programming\DataStruct\Queue.assets\image-20241024172303362.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="C:\Users\Devlin\Desktop\Uni\Programming\DataStruct\Queue.assets\image-20241024172303362.png" alt="image-20241024172303362" style="zoom:40%;" /></a></p>
 <p>A list or collection that its insertion can be performed from at one end(rear) and deletion can be performed at other end(front)</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -1502,10 +1511,10 @@
 </span></code></pre></div>
 </blockquote>
 </div>
-<p><img src="C:\Users\Devlin\Desktop\Uni\Programming\DataStruct\Queue.assets\image-20241024172940265.png" alt="image-20241024172940265" style="zoom:50%;" /></p>
+<p><a class="glightbox" href="C:\Users\Devlin\Desktop\Uni\Programming\DataStruct\Queue.assets\image-20241024172940265.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="C:\Users\Devlin\Desktop\Uni\Programming\DataStruct\Queue.assets\image-20241024172940265.png" alt="image-20241024172940265" style="zoom:50%;" /></a></p>
 <hr />
 <h1 id="implementation-of-queues">Implementation of Queues</h1>
-<p><img src="C:\Users\Devlin\Desktop\Uni\Programming\DataStruct\Queue.assets\image-20241024173523081.png" alt="image-20241024173523081" style="zoom:33%;" /></p>
+<p><a class="glightbox" href="C:\Users\Devlin\Desktop\Uni\Programming\DataStruct\Queue.assets\image-20241024173523081.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="C:\Users\Devlin\Desktop\Uni\Programming\DataStruct\Queue.assets\image-20241024173523081.png" alt="image-20241024173523081" style="zoom:33%;" /></a></p>
 <h2 id="1-array-implementation">1 ）Array Implementation</h2>
 
 
@@ -1584,7 +1593,7 @@
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      Copyright © 2024 Devlin
+      Copyright © 2025 Devlin
     </div>
   
   
@@ -1623,5 +1632,7 @@
         <script src="https://cdn.jsdelivr.net/npm/katex@0/dist/contrib/auto-render.min.js"></script>
       
     
-  </body>
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
 </html>

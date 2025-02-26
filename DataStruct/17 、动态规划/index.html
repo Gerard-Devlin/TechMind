@@ -65,7 +65,16 @@
     
     
     
-  </head>
+   <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -1771,7 +1780,7 @@
 <p>题目描述</p>
 <p>观察下面的数字金字塔。</p>
 <p>写一个程序来查找从最高点到底部任意处结束的路径，使路径经过数字的和最大。每一步可以走到左下方的点也可以到达右下方的点。</p>
-<p><img alt="P1216.png" src="../../assets/images/P1216.png" /></p>
+<p><a class="glightbox" href="../../assets/images/P1216.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="P1216.png" src="../../assets/images/P1216.png" /></a></p>
 <p>在上面的样例中，从 <span class="arithmatex">\(7 \to 3 \to 8 \to 7 \to 5\)</span> 的路径产生了最大权值。</p>
 <p>输入格式</p>
 <p>第一个行一个正整数 <span class="arithmatex">\(r\)</span> ,表示行的数目。</p>
@@ -1875,7 +1884,7 @@
 <hr />
 <h3 id="eg55-2023-a">e.g.55 [蓝桥杯 2023 省 A] 更小的数</h3>
 <p>题目描述</p>
-<p><img alt="P9232.png" src="../../assets/images/P9232.png" /></p>
+<p><a class="glightbox" href="../../assets/images/P9232.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="P9232.png" src="../../assets/images/P9232.png" /></a></p>
 <p>小蓝有一个长度均为 <span class="arithmatex">\(n\)</span> 且仅由数字字符 <span class="arithmatex">\(0 \sim 9\)</span> 组成的字符串，下标从 <span class="arithmatex">\(0\)</span> 到 <span class="arithmatex">\(n-1\)</span>，你可以将其视作是一个具有 <span class="arithmatex">\(n\)</span> 位的十进制数字 <span class="arithmatex">\(num\)</span>，小蓝可以从 <span class="arithmatex">\(num\)</span> 中选出一段连续的子串并将子串进行反转，最多反转一次。小蓝想要将选出的子串进行反转后再放入原位置处得到的新的数字 <span class="arithmatex">\(num_{new}\)</span> 满足条件 <span class="arithmatex">\(num_{new}&lt;num\)</span>，请你帮他计算下一共有多少种不同的子串选择方案，只要两个子串在 <span class="arithmatex">\(num\)</span> 中的位置不完全相同我们就视作是不同的方案。</p>
 <p>注意，我们允许前导零的存在，即数字的最高位可以是 <span class="arithmatex">\(0\)</span>，这是合法的。</p>
 <p>输入格式</p>
@@ -2324,7 +2333,7 @@ $$</p>
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      Copyright © 2024 Devlin
+      Copyright © 2025 Devlin
     </div>
   
   
@@ -2363,5 +2372,7 @@ $$</p>
         <script src="https://cdn.jsdelivr.net/npm/katex@0/dist/contrib/auto-render.min.js"></script>
       
     
-  </body>
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
 </html>

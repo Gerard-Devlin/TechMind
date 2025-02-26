@@ -65,7 +65,16 @@
     
     
     
-  </head>
+   <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -1512,7 +1521,7 @@
 <li>Insert/remove/add – O(n)</li>
 </ol>
 <h1 id="linked-list"><strong><em>Linked</em></strong> List</h1>
-<p><img alt="list.svg" src="../../assets/images/list.svg" /></p>
+<p><a class="glightbox" href="../../assets/images/list.svg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="list.svg" src="../../assets/images/list.svg" /></a></p>
 <div class="language-c++ highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">struct</span><span class="w"> </span><span class="nc">Node</span><span class="p">{</span>
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">data</span><span class="p">;</span><span class="w">   </span><span class="c1">//4 bytes</span>
 </span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">    </span><span class="n">Node</span><span class="w"> </span><span class="o">*</span><span class="n">next</span><span class="p">;</span><span class="w"> </span><span class="c1">//4 bytes</span>
@@ -1642,9 +1651,9 @@
 </span></code></pre></div>
 <hr />
 <h2 id="2insert-in-the-middle">2）Insert in the middle</h2>
-<p><img alt="list-insert-1.svg" src="../../assets/images/list-insert-1.svg" /></p>
-<p><img alt="list-insert-2.svg" src="../../assets/images/list-insert-2.svg" /></p>
-<p><img alt="list-insert-3.svg" src="../../assets/images/list-insert-3.svg" /></p>
+<p><a class="glightbox" href="../../assets/images/list-insert-1.svg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="list-insert-1.svg" src="../../assets/images/list-insert-1.svg" /></a></p>
+<p><a class="glightbox" href="../../assets/images/list-insert-2.svg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="list-insert-2.svg" src="../../assets/images/list-insert-2.svg" /></a></p>
+<p><a class="glightbox" href="../../assets/images/list-insert-3.svg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="list-insert-3.svg" src="../../assets/images/list-insert-3.svg" /></a></p>
 <div class="language-c++ highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="k">struct</span><span class="w"> </span><span class="nc">Node</span><span class="w"> </span><span class="p">{</span>
 </span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">data</span><span class="p">;</span>
 </span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="w">    </span><span class="n">Node</span><span class="o">*</span><span class="n">next</span><span class="p">;</span>
@@ -1690,7 +1699,7 @@
 </span><span id="__span-4-43"><a id="__codelineno-4-43" name="__codelineno-4-43" href="#__codelineno-4-43"></a><span class="w">    </span><span class="n">printf</span><span class="p">(</span><span class="s">&quot;</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
 </span><span id="__span-4-44"><a id="__codelineno-4-44" name="__codelineno-4-44" href="#__codelineno-4-44"></a><span class="p">}</span>
 </span></code></pre></div>
-<p><img src="C:\Users\Devlin\Desktop\Uni\Programming\DataStruct\List.assets\image-20241017185651616.png" alt="image-20241017185651616" style="zoom:30%;" /></p>
+<p><a class="glightbox" href="C:\Users\Devlin\Desktop\Uni\Programming\DataStruct\List.assets\image-20241017185651616.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="C:\Users\Devlin\Desktop\Uni\Programming\DataStruct\List.assets\image-20241017185651616.png" alt="image-20241017185651616" style="zoom:30%;" /></a></p>
 <hr />
 <h2 id="3delete-in-a-list">3）Delete in a list</h2>
 <ul>
@@ -1757,7 +1766,7 @@
 </span></code></pre></div>
 <hr />
 <h2 id="4reverse-a-linked-list">4）Reverse a linked list</h2>
-<p><img src="C:\Users\Devlin\Desktop\Uni\Programming\DataStruct\List.assets\image-20241018104750434.png" alt="image-20241018104750434" style="zoom:50%;" /></p>
+<p><a class="glightbox" href="C:\Users\Devlin\Desktop\Uni\Programming\DataStruct\List.assets\image-20241018104750434.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="C:\Users\Devlin\Desktop\Uni\Programming\DataStruct\List.assets\image-20241018104750434.png" alt="image-20241018104750434" style="zoom:50%;" /></a></p>
 <h3 id="1iteration-way">①Iteration way</h3>
 <div class="language-c++ highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="kt">void</span><span class="w"> </span><span class="nf">Reverse</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
 </span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="w">    </span><span class="n">Node</span><span class="w"> </span><span class="o">*</span><span class="n">next</span><span class="p">,</span><span class="o">*</span><span class="n">prev</span><span class="p">,</span><span class="o">*</span><span class="n">current</span><span class="p">;</span>
@@ -1914,12 +1923,12 @@
 </span><span id="__span-10-47"><a id="__codelineno-10-47" name="__codelineno-10-47" href="#__codelineno-10-47"></a><span class="w">    </span><span class="n">ReversePrint</span><span class="p">(</span><span class="n">head</span><span class="p">);</span>
 </span><span id="__span-10-48"><a id="__codelineno-10-48" name="__codelineno-10-48" href="#__codelineno-10-48"></a><span class="p">}</span>
 </span></code></pre></div>
-<p><img src="C:\Users\Devlin\Desktop\Uni\Programming\DataStruct\List.assets\image-20241018130753641.png" alt="image-20241018130753641" style="zoom:50%;" /></p>
+<p><a class="glightbox" href="C:\Users\Devlin\Desktop\Uni\Programming\DataStruct\List.assets\image-20241018130753641.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="C:\Users\Devlin\Desktop\Uni\Programming\DataStruct\List.assets\image-20241018130753641.png" alt="image-20241018130753641" style="zoom:50%;" /></a></p>
 <h4 align='center'>Recursion tree</h4>
 
 <hr />
 <h3 id="3recursion-way">③Recursion  way</h3>
-<p><img src="C:\Users\Devlin\Desktop\Uni\Programming\DataStruct\List.assets\image-20241018104750434.png" alt="image-20241018104750434" style="zoom:50%;" /></p>
+<p><a class="glightbox" href="C:\Users\Devlin\Desktop\Uni\Programming\DataStruct\List.assets\image-20241018104750434.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img src="C:\Users\Devlin\Desktop\Uni\Programming\DataStruct\List.assets\image-20241018104750434.png" alt="image-20241018104750434" style="zoom:50%;" /></a></p>
 <div class="language-c++ highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="k">struct</span><span class="w"> </span><span class="nc">Node</span><span class="o">*</span><span class="n">head</span><span class="p">;</span><span class="c1">//global</span>
 </span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="kt">void</span><span class="w"> </span><span class="nf">Reverse</span><span class="p">(</span><span class="k">struct</span><span class="w"> </span><span class="nc">Node</span><span class="o">*</span><span class="n">p</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 </span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="w">    </span><span class="k">if</span><span class="p">(</span><span class="n">p</span><span class="o">-&gt;</span><span class="n">next</span><span class="o">==</span><span class="nb">NULL</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">             </span><span class="c1">//exit condition</span>
@@ -1949,7 +1958,7 @@
 </div>
 <hr />
 <h1 id="doubly-linked-list"><strong><em>Doubly</em></strong> Linked List</h1>
-<p><img alt="list.svg" src="../../assets/images/list.svg" /></p>
+<p><a class="glightbox" href="../../assets/images/list.svg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="list.svg" src="../../assets/images/list.svg" /></a></p>
 <h4 align='center'>
     singly linked list
 </h4>
@@ -1963,7 +1972,7 @@
 </span><span id="__span-13-4"><a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a><span class="w">    </span><span class="k">struct</span><span class="w"> </span><span class="nc">Node</span><span class="o">*</span><span class="w"> </span><span class="n">prev</span><span class="p">;</span>
 </span><span id="__span-13-5"><a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a><span class="p">};</span>
 </span></code></pre></div>
-<img alt="double-list.svg" src="../../assets/images/double-list.svg" /></p>
+<a class="glightbox" href="../../assets/images/double-list.svg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="double-list.svg" src="../../assets/images/double-list.svg" /></a></p>
 <h4 align='center'>
     doubly linked list
 </h4>
@@ -1987,7 +1996,7 @@
 </div>
 <hr />
 <h1 id="implementation-in-ccdoubly-linked-list">Implementation in C/C++(<strong><em>doubly</em></strong>-linked list)</h1>
-<p><img alt="wrong-way.png" src="../../assets/images/wrong-way.png" /></p>
+<p><a class="glightbox" href="../../assets/images/wrong-way.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="wrong-way.png" src="../../assets/images/wrong-way.png" /></a></p>
 <h4 align='center'>wrong way</h4>
 
 <ul>
@@ -1998,7 +2007,7 @@
 <p>The only way to access something <strong>in heap</strong> is <strong>through a pointer.</strong></p>
 </li>
 </ul>
-<p><img alt="right-way.png" src="../../assets/images/right-way.png" /></p>
+<p><a class="glightbox" href="../../assets/images/right-way.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="right-way.png" src="../../assets/images/right-way.png" /></a></p>
 <h4 align='center'>right way</h4>
 
 <p>Create new Node</p>
@@ -2137,7 +2146,7 @@
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      Copyright © 2024 Devlin
+      Copyright © 2025 Devlin
     </div>
   
   
@@ -2176,5 +2185,7 @@
         <script src="https://cdn.jsdelivr.net/npm/katex@0/dist/contrib/auto-render.min.js"></script>
       
     
-  </body>
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
 </html>

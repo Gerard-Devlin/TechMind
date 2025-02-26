@@ -65,7 +65,16 @@
     
     
     
-  </head>
+   <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -2344,9 +2353,9 @@ a_j^{[l]}=g(\vec w _j^{[l]}·\vec a ^{[l-1]}+b_j^{[l]})
 <td style="text-align: center;"><span class="arithmatex">\(\text{}\max(0, x)\)</span></td>
 </tr>
 <tr>
-<td style="text-align: center;"><img alt="Linear.svg" src="../../assets/images/Linear.svg" /></td>
-<td style="text-align: center;"><img alt="Sigmoid.svg" src="../../assets/images/Sigmoid.svg" /></td>
-<td style="text-align: center;"><img alt="ReLU.svg" src="../../assets/images/ReLU.svg" /></td>
+<td style="text-align: center;"><a class="glightbox" href="../../assets/images/Linear.svg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Linear.svg" src="../../assets/images/Linear.svg" /></a></td>
+<td style="text-align: center;"><a class="glightbox" href="../../assets/images/Sigmoid.svg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Sigmoid.svg" src="../../assets/images/Sigmoid.svg" /></a></td>
+<td style="text-align: center;"><a class="glightbox" href="../../assets/images/ReLU.svg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="ReLU.svg" src="../../assets/images/ReLU.svg" /></a></td>
 </tr>
 <tr>
 <td style="text-align: center;">二分类问题</td>
@@ -2450,7 +2459,7 @@ a_j^{[l]}=g(\vec w _j^{[l]}·\vec a ^{[l-1]}+b_j^{[l]})
 </table>
 <hr />
 <h3 id="2softmax">2、Softmax实现</h3>
-<p><img alt="Softmax.svg" src="../../assets/images/Softmax.svg" /></p>
+<p><a class="glightbox" href="../../assets/images/Softmax.svg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Softmax.svg" src="../../assets/images/Softmax.svg" /></a></p>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">tensorflow</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">tf</span>
 </span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">tensorflow.keras</span><span class="w"> </span><span class="kn">import</span> <span class="n">Sequential</span>
 </span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="kn">from</span><span class="w"> </span><span class="nn">tensorflow.keras.layers</span><span class="w"> </span><span class="kn">import</span> <span class="n">Dense</span>
@@ -2526,7 +2535,7 @@ a_j^{[l]}=g(\vec w _j^{[l]}·\vec a ^{[l-1]}+b_j^{[l]})
 <li>全连接层（Dense Layer）</li>
 <li>卷积层（Convolutional Layer）：每个神经元只关注输入的一部分</li>
 </ul>
-<p><img alt="lenet.svg" src="../../assets/images/lenet.svg" /></p>
+<p><a class="glightbox" href="../../assets/images/lenet.svg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="lenet.svg" src="../../assets/images/lenet.svg" /></a></p>
 <hr />
 <h2 id="_3">三、模型评估</h2>
 <p>把数据集切分成训练集和测试集</p>
@@ -2633,7 +2642,7 @@ J_{train}(\vec{w}, b) = -\frac{1}{m_{train}} \sum_{i=1}^{m_{train}} \left[ y_{tr
 </ul>
 </blockquote>
 </details>
-<p><img alt="BiasVariance.svg" src="../../assets/images/BiasVariance.svg" /></p>
+<p><a class="glightbox" href="../../assets/images/BiasVariance.svg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="BiasVariance.svg" src="../../assets/images/BiasVariance.svg" /></a></p>
 <hr />
 <h3 id="5_2">5、实现</h3>
 <p>未正则化的 MNIST 模型</p>
@@ -2681,7 +2690,7 @@ J_{train}(\vec{w}, b) = -\frac{1}{m_{train}} \sum_{i=1}^{m_{train}} \left[ y_{tr
 $$
 H(p_1)=-p_1\log_2(p1)-(1-p1)\log_2(1-p_1)
 $$</p>
-<p><img alt="entropy.svg" src="../../assets/images/entropy.svg" /></p>
+<p><a class="glightbox" href="../../assets/images/entropy.svg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="entropy.svg" src="../../assets/images/entropy.svg" /></a></p>
 <hr />
 <h3 id="2_3">2、选择拆分信息增益</h3>
 <ul>
@@ -2910,7 +2919,7 @@ InformationGain=H(p_1^{root})-((w^{left}H(p_1^{left})+w^{right}H(P_1^{right}))
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      Copyright © 2024 Devlin
+      Copyright © 2025 Devlin
     </div>
   
   
@@ -2949,5 +2958,7 @@ InformationGain=H(p_1^{root})-((w^{left}H(p_1^{left})+w^{right}H(P_1^{right}))
         <script src="https://cdn.jsdelivr.net/npm/katex@0/dist/contrib/auto-render.min.js"></script>
       
     
-  </body>
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
 </html>

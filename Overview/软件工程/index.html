@@ -65,7 +65,16 @@
     
     
     
-  </head>
+   <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -2071,7 +2080,7 @@
 <ol>
 <li>典型的迭代模型</li>
 <li>依赖于风险评估成败
-<img alt="Spiral_model_(Boehm,_1988).svg" src="../../assets/images/Spiral_model_%28Boehm%2C_1988%29.svg" /></li>
+<a class="glightbox" href="../../assets/images/Spiral_model_%28Boehm%2C_1988%29.svg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Spiral_model_(Boehm,_1988).svg" src="../../assets/images/Spiral_model_%28Boehm%2C_1988%29.svg" /></a></li>
 </ol>
 <h4 id="4">(4)构件集成模型</h4>
 <ol>
@@ -2080,7 +2089,7 @@
 </ol>
 <h3 id="3_1">3、过程模型新发展</h3>
 <h4 id="1-rup-rational-united-process">(1)统一过程 RUP (Rational United Process)</h4>
-<p><img alt="RUP.svg" src="../../assets/images/RUP.svg" /></p>
+<p><a class="glightbox" href="../../assets/images/RUP.svg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="RUP.svg" src="../../assets/images/RUP.svg" /></a></p>
 <p>基于迭代，四个阶段(初始、细化、构造、交付)</p>
 <h4 id="2_3">(2)敏捷过程</h4>
 <p>以人为核心，迭代的，循序渐进的</p>
@@ -2133,9 +2142,9 @@
 <h3 id="2_4">2、面向对象</h3>
 <h4 id="umlunified-modeling-language">工具UML(Unified Modeling Language)</h4>
 <h5 id="1_4">（1）用例图</h5>
-<p><img alt="Use_case_restaurant_model.svg" src="../../assets/images/Use_case_restaurant_model.svg" /></p>
+<p><a class="glightbox" href="../../assets/images/Use_case_restaurant_model.svg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Use_case_restaurant_model.svg" src="../../assets/images/Use_case_restaurant_model.svg" /></a></p>
 <h5 id="2_5">（2）活动图</h5>
-<p><img alt="SwimlaneActivity.svg" src="../../assets/images/SwimlaneActivity.svg" /></p>
+<p><a class="glightbox" href="../../assets/images/SwimlaneActivity.svg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="SwimlaneActivity.svg" src="../../assets/images/SwimlaneActivity.svg" /></a></p>
 <h5 id="3_2">（3）类图</h5>
 <pre class="mermaid"><code>
 classDiagram
@@ -2237,7 +2246,7 @@ classDiagram
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      Copyright © 2024 Devlin
+      Copyright © 2025 Devlin
     </div>
   
   
@@ -2276,5 +2285,7 @@ classDiagram
         <script src="https://cdn.jsdelivr.net/npm/katex@0/dist/contrib/auto-render.min.js"></script>
       
     
-  </body>
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
 </html>
