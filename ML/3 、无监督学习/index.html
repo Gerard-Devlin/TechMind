@@ -1525,6 +1525,48 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="二、推荐系统">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      1、协同过滤算法
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      2、二元标签
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      3、均值归一化
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      4、实现
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -1649,6 +1691,48 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="二、推荐系统">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      1、协同过滤算法
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      2、二元标签
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      3、均值归一化
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      4、实现
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -1688,7 +1772,13 @@
 <li><a href="#4">4、特征选择</a></li>
 </ul>
 </li>
-<li><a href="#_2">二、推荐系统</a></li>
+<li><a href="#_2">二、推荐系统</a><ul>
+<li><a href="#1_1">1、协同过滤算法</a></li>
+<li><a href="#2_2">2、二元标签</a></li>
+<li><a href="#3_1">3、均值归一化</a></li>
+<li><a href="#4_1">4、实现</a></li>
+</ul>
+</li>
 </ul>
 </div>
 <hr />
@@ -1760,7 +1850,7 @@ p(x) = \prod_{i=1}^{n} p(x_i; \mu_j, \sigma_j^2)
 <td>大量的正例和负例。</td>
 </tr>
 <tr>
-<td>许多不同类型的异常 (y = 1)。对于任何算法来说，很难从正例中学习异常的样子；未来的异常可能看起来与我们迄今为止看到的任何异常例子都不同。</td>
+<td>许多不同类型的异常 (y = 1)。很难从正例中学习异常的样子</td>
 <td>足够的正例让算法了解正例的样子，未来的正例可能与训练集中的相似。</td>
 </tr>
 </tbody>
@@ -1778,9 +1868,140 @@ p(x) = \prod_{i=1}^{n} p(x_i; \mu_j, \sigma_j^2)
 </ul>
 <hr />
 <h2 id="_2">二、推荐系统</h2>
+<p>学习所有用户的参数</p>
+<details class="note">
+<summary>Note</summary>
+<ul>
+<li><span class="arithmatex">\(r(i,j) = 1\)</span> 如果用户 <span class="arithmatex">\(j\)</span> 已经对电影 <span class="arithmatex">\(i\)</span> 进行了评分（否则为 0）</li>
+<li><span class="arithmatex">\(y^{(i,j)}\)</span> = 用户 <span class="arithmatex">\(j\)</span> 对电影 <span class="arithmatex">\(i\)</span> 的评分（如果已定义）</li>
+<li><span class="arithmatex">\(w^{(j)}, b^{(j)}\)</span> = 用户 <span class="arithmatex">\(j\)</span> 的参数</li>
+<li><span class="arithmatex">\(x^{(i)}\)</span> = 电影 <span class="arithmatex">\(i\)</span> 的特征向量</li>
+</ul>
+</details>
 <div class="arithmatex">\[
 \min_{w^{(j)}, b^{(j)}} J(w^{(j)}, b^{(j)}) = \frac{1}{2m^{(j)}} \sum_{i:r(i,j)=1} \left( w^{(j)} \cdot x^{(i)} + b^{(j)} - y^{(i,j)} \right)^2 + \frac{\lambda}{2m^{(j)}} \sum_{k=1}^{n} \left( w_k^{(j)} \right)^2
 \]</div>
+<hr />
+<h3 id="1_1">1、协同过滤算法</h3>
+<ul>
+<li>学习用户参数 <span class="arithmatex">\(w^{(1)}, b^{(1)}, \ldots, w^{(n_u)}, b^{(n_u)}\)</span> 的成本函数：</li>
+</ul>
+<div class="arithmatex">\[
+\min_{w^{(1)}, b^{(1)}, \ldots, w^{(n_u)}, b^{(n_u)}} \frac{1}{2} \sum_{j=1}^{n_u} \sum_{i: r(i,j)=1} (w^{(j)} \cdot x^{(i)} + b^{(j)} - y^{(i,j)})^2 + \frac{\lambda}{2} \sum_{j=1}^{n_u} \sum_{k=1}^{n} (w_k^{(j)})^2
+\]</div>
+<ul>
+<li>学习电影特征向量 <span class="arithmatex">\(x^{(1)}, \ldots, x^{(n_m)}\)</span> 的成本函数：</li>
+</ul>
+<div class="arithmatex">\[
+\min_{x^{(1)}, \ldots, x^{(n_m)}} \frac{1}{2} \sum_{i=1}^{n_m} \sum_{j: r(i,j)=1} (w^{(j)} \cdot x^{(i)} + b^{(j)} - y^{(i,j)})^2 + \frac{\lambda}{2} \sum_{i=1}^{n_m} \sum_{k=1}^{n} (x_k^{(i)})^2
+\]</div>
+<ul>
+<li>两式叠加：</li>
+</ul>
+<div class="arithmatex">\[
+\min_{\substack{w^{(1)}, \ldots, w^{(n_u)} \\ b^{(1)}, \ldots, b^{(n_u)} \\ x^{(1)}, \ldots, x^{(n_m)}}} J(w, b, x) = \frac{1}{2} \sum_{(i,j): r(i,j)=1} \left( w^{(j)} \cdot x^{(i)} + b^{(j)} - y^{(i,j)} \right)^2 + \frac{\lambda}{2} \sum_{j=1}^{n_u} \sum_{k=1}^{n} \left( w_k^{(j)} \right)^2 + \frac{\lambda}{2} \sum_{i=1}^{n_m} \sum_{k=1}^{n} \left( x_k^{(i)} \right)^2
+\]</div>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">cofi_cost_func</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">W</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">Y</span><span class="p">,</span> <span class="n">R</span><span class="p">,</span> <span class="n">lambda_</span><span class="p">):</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="sd">    Returns the cost for the content-based filtering</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="sd">    Args:</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="sd">      X (ndarray (num_movies,num_features)): matrix of item features</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="sd">      W (ndarray (num_users,num_features)) : matrix of user parameters</span>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="sd">      b (ndarray (1, num_users)            : vector of user parameters</span>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="sd">      Y (ndarray (num_movies,num_users)    : matrix of user ratings of movies</span>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="sd">      R (ndarray (num_movies,num_users)    : matrix, where R(i, j) = 1 if the i-th movies was rated by the j-th user</span>
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="sd">      lambda_ (float): regularization parameter</span>
+</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="sd">    Returns:</span>
+</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="sd">      J (float) : Cost</span>
+</span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a><span class="sd">    &quot;&quot;&quot;</span>
+</span><span id="__span-2-14"><a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a>    <span class="n">nm</span><span class="p">,</span> <span class="n">nu</span> <span class="o">=</span> <span class="n">Y</span><span class="o">.</span><span class="n">shape</span>
+</span><span id="__span-2-15"><a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a>    <span class="n">J</span> <span class="o">=</span> <span class="mi">0</span>
+</span><span id="__span-2-16"><a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a>    <span class="c1">### START CODE HERE ###  </span>
+</span><span id="__span-2-17"><a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a>    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">nu</span><span class="p">):</span>
+</span><span id="__span-2-18"><a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a>        <span class="n">w</span> <span class="o">=</span> <span class="n">W</span><span class="p">[</span><span class="n">j</span><span class="p">,</span> <span class="p">:]</span>
+</span><span id="__span-2-19"><a id="__codelineno-2-19" name="__codelineno-2-19" href="#__codelineno-2-19"></a>        <span class="n">b_j</span> <span class="o">=</span> <span class="n">b</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="n">j</span><span class="p">]</span>
+</span><span id="__span-2-20"><a id="__codelineno-2-20" name="__codelineno-2-20" href="#__codelineno-2-20"></a>        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">nm</span><span class="p">):</span>
+</span><span id="__span-2-21"><a id="__codelineno-2-21" name="__codelineno-2-21" href="#__codelineno-2-21"></a>            <span class="n">x</span> <span class="o">=</span> <span class="n">X</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="p">:]</span>
+</span><span id="__span-2-22"><a id="__codelineno-2-22" name="__codelineno-2-22" href="#__codelineno-2-22"></a>            <span class="n">y</span> <span class="o">=</span> <span class="n">Y</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">]</span>
+</span><span id="__span-2-23"><a id="__codelineno-2-23" name="__codelineno-2-23" href="#__codelineno-2-23"></a>            <span class="n">r</span> <span class="o">=</span> <span class="n">R</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">]</span>
+</span><span id="__span-2-24"><a id="__codelineno-2-24" name="__codelineno-2-24" href="#__codelineno-2-24"></a>            <span class="n">J</span> <span class="o">+=</span> <span class="mf">0.5</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">square</span><span class="p">(</span><span class="n">r</span> <span class="o">*</span> <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">w</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span> <span class="o">+</span> <span class="n">b_j</span> <span class="o">-</span> <span class="n">y</span><span class="p">))</span>
+</span><span id="__span-2-25"><a id="__codelineno-2-25" name="__codelineno-2-25" href="#__codelineno-2-25"></a>    <span class="c1"># Regularization</span>
+</span><span id="__span-2-26"><a id="__codelineno-2-26" name="__codelineno-2-26" href="#__codelineno-2-26"></a>    <span class="n">J</span> <span class="o">+=</span> <span class="p">(</span><span class="n">lambda_</span> <span class="o">/</span> <span class="mi">2</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">square</span><span class="p">(</span><span class="n">W</span><span class="p">))</span> <span class="o">+</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">square</span><span class="p">(</span><span class="n">X</span><span class="p">)))</span>
+</span><span id="__span-2-27"><a id="__codelineno-2-27" name="__codelineno-2-27" href="#__codelineno-2-27"></a>    <span class="c1">### END CODE HERE ### </span>
+</span><span id="__span-2-28"><a id="__codelineno-2-28" name="__codelineno-2-28" href="#__codelineno-2-28"></a>
+</span><span id="__span-2-29"><a id="__codelineno-2-29" name="__codelineno-2-29" href="#__codelineno-2-29"></a>    <span class="k">return</span> <span class="n">J</span>
+</span></code></pre></div>
+<hr />
+<h3 id="2_2">2、二元标签</h3>
+<ul>
+<li><strong>1</strong> 表示用户在展示某项物品后参与了</li>
+<li><strong>0</strong> 表示用户在展示某项物品后没有参与</li>
+</ul>
+<p>损失函数 <span class="arithmatex">\(L\)</span> 为：</p>
+<p>$$
+L\left(f_{w, b, x}\left(x\right), y^{(i, j)}\right) = -y^{(i, j)} \log\left(f_{w, b, x}\left(x\right)\right) - \left(1 - y^{(i, j)}\right) \log\left(1 - f_{w, b, x}\left(x\right)\right)
+$$
+整体损失函数 <span class="arithmatex">\(J\)</span> 为：</p>
+<div class="arithmatex">\[
+J(w, b, x) = \sum_{(i, j): r(i, j) = 1} L\left(f_{w, b, x}(x), y^{(i, j)}\right)
+\]</div>
+<hr />
+<h3 id="3_1">3、均值归一化</h3>
+<ul>
+<li>均值归一化让数据分布更加合理，提高模型的训练效率和效果</li>
+</ul>
+<div class="arithmatex">\[
+origin =\begin{bmatrix}
+5 &amp; 5 &amp; 0 &amp; 0 &amp; ? \\
+5 &amp; ? &amp; ? &amp; 0 &amp; ? \\
+? &amp; 4 &amp; 0 &amp; ? &amp; ? \\
+0 &amp; 0 &amp; 5 &amp; 4 &amp; ? \\
+0 &amp; 0 &amp; 5 &amp; 0 &amp; ?
+\end{bmatrix}
+\]</div>
+<div class="arithmatex">\[
+\mu = \begin{bmatrix}
+2.5 \\
+2.5 \\
+2 \\
+2.25 \\
+1.25
+\end{bmatrix}
+\Rightarrow
+\begin{bmatrix}
+2.5 &amp; 2.5 &amp; -2.5 &amp; -2.5 &amp; ? \\
+2.5 &amp; ? &amp; ? &amp; -2.5 &amp; ? \\
+? &amp; 2 &amp; -2 &amp; ? &amp; ? \\
+-2.25 &amp; -2.25 &amp; 2.75 &amp; 1.75 &amp; ? \\
+-1.25 &amp; -1.25 &amp; 3.75 &amp; -1.25 &amp; ?
+\end{bmatrix}
+\]</div>
+<hr />
+<h3 id="4_1">4、实现</h3>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="c1"># Initialize an optimizer</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="n">optimizer</span> <span class="o">=</span> <span class="n">keras</span><span class="o">.</span><span class="n">optimizers</span><span class="o">.</span><span class="n">Adam</span><span class="p">(</span><span class="n">learning_rate</span><span class="o">=</span><span class="mf">1e-1</span><span class="p">)</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="c1"># Set the number of iterations</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="n">iterations</span> <span class="o">=</span> <span class="mi">200</span>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="c1"># Define the cost function</span>
+</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="k">def</span><span class="w"> </span><span class="nf">cofiCostFuncV</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">W</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">Ynorm</span><span class="p">,</span> <span class="n">R</span><span class="p">,</span> <span class="n">num_users</span><span class="p">,</span> <span class="n">num_movies</span><span class="p">,</span> <span class="k">lambda</span><span class="p">):</span>
+</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>    <span class="c1"># The implementation of the cost function should be here</span>
+</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>    <span class="k">pass</span>
+</span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a>
+</span><span id="__span-3-12"><a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a><span class="c1"># Gradient descent loop</span>
+</span><span id="__span-3-13"><a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a><span class="k">for</span> <span class="nb">iter</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">iterations</span><span class="p">):</span>
+</span><span id="__span-3-14"><a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a>    <span class="c1"># Use TensorFlow&#39;s GradientTape to record the operations used to compute the cost</span>
+</span><span id="__span-3-15"><a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a>    <span class="k">with</span> <span class="n">tf</span><span class="o">.</span><span class="n">GradientTape</span><span class="p">()</span> <span class="k">as</span> <span class="n">tape</span><span class="p">:</span>
+</span><span id="__span-3-16"><a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a>        <span class="c1"># Compute the cost</span>
+</span><span id="__span-3-17"><a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a>        <span class="n">cost_value</span> <span class="o">=</span> <span class="n">cofiCostFuncV</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">W</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">Ynorm</span><span class="p">,</span> <span class="n">R</span><span class="p">,</span> <span class="n">num_users</span><span class="p">,</span> <span class="n">num_movies</span><span class="p">,</span> <span class="k">lambda</span><span class="p">)</span>
+</span><span id="__span-3-18"><a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a>
+</span><span id="__span-3-19"><a id="__codelineno-3-19" name="__codelineno-3-19" href="#__codelineno-3-19"></a>    <span class="c1"># Use the gradient tape to automatically retrieve the gradients of the trainable variables with respect to the loss</span>
+</span><span id="__span-3-20"><a id="__codelineno-3-20" name="__codelineno-3-20" href="#__codelineno-3-20"></a>    <span class="n">grads</span> <span class="o">=</span> <span class="n">tape</span><span class="o">.</span><span class="n">gradient</span><span class="p">(</span><span class="n">cost_value</span><span class="p">,</span> <span class="p">[</span><span class="n">X</span><span class="p">,</span> <span class="n">W</span><span class="p">,</span> <span class="n">b</span><span class="p">])</span>
+</span><span id="__span-3-21"><a id="__codelineno-3-21" name="__codelineno-3-21" href="#__codelineno-3-21"></a>
+</span><span id="__span-3-22"><a id="__codelineno-3-22" name="__codelineno-3-22" href="#__codelineno-3-22"></a>    <span class="c1"># Run one step of gradient descent by updating the value of the variables to minimize the loss</span>
+</span><span id="__span-3-23"><a id="__codelineno-3-23" name="__codelineno-3-23" href="#__codelineno-3-23"></a>    <span class="n">optimizer</span><span class="o">.</span><span class="n">apply_gradients</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">grads</span><span class="p">,</span> <span class="p">[</span><span class="n">X</span><span class="p">,</span> <span class="n">W</span><span class="p">,</span> <span class="n">b</span><span class="p">]))</span>
+</span></code></pre></div>
 
 
 
