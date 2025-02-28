@@ -3,13 +3,13 @@ site_url: https://Gerard-Devlin.github.io/TechMind/
 repo_url: https://github.com/Gerard-Devlin/TechMind
 repo_name: Gerard-Devlin/TechMind
 # 自定义页脚文本
-copyright: "Copyright © 2024 Devlin"
+copyright: "Copyright © 2025 Devlin"
 theme:
   name: material
   icon:
-    logo: material/book-open-variant
-    repo: fontawesome/brands/gitkraken
-    favicon: fontawesome/brands/gitkraken
+    logo: material/application-braces-outline
+    repo: fontawesome/brands/git-alt
+    favicon: images/favicon.png
     annotation: material/google-circles
 
   features:
@@ -96,6 +96,8 @@ markdown_extensions:
 
 # JavaScript 支持
 extra_javascript:
+  - javascripts/mathjax.js
+  - javascripts/katex.js
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
   - https://cdn.jsdelivr.net/npm/katex@0/dist/katex.min.js
   - https://cdn.jsdelivr.net/npm/katex@0/dist/contrib/auto-render.min.js
@@ -105,11 +107,46 @@ extra_css:
   - https://unpkg.com/katex@0/dist/katex.min.css
   - stylesheets/extra.css
 
+# 插件支持
+plugins:
+  - search:
+      pipeline:
+        - stemmer
+        - stopWordFilter
+        - trimmer
+      separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
+      lang:
+        - en
+        - zh
+  - glightbox
+
+
 # 导航
 nav:
   - Home: index.md
+
+  - Overview:
+    - Overview/计算机数据.md
+    - Overview/计算机网络.md
+    - Overview/计算机操作系统.md
+    - Overview/软件工程.md
+    - Overview/算法与数据结构.md
+
+  - C:
+    - C/1 、入门.md
+    - C/2 、变量与运算符.md
+    - C/3 、if-else判断.md
+    - C/4 、while循环.md
+    - C/5 、for循环.md
+    - C/6 、数据类型和运算.md
+    - C/7 、函数.md
+    - C/8 、数组.md
+    - C/9 、指针.md
+    - C/10 、字符串.md
+    - C/11 、结构体.md
+
   - DataStruct:
-    - DataStruct/1、概述.md
+    - DataStruct/1 、概述.md
     - DataStruct/2 、输入输出.md
     - DataStruct/3 、链表.md
     - DataStruct/4 、队列.md
@@ -120,20 +157,19 @@ nav:
     - DataStruct/9 、排列.md
     - DataStruct/10 、前缀和.md
     - DataStruct/11 、差分数组.md
+    - DataStruct/12 、二分.md
+    - DataStruct/13 、DFS.md
+    - DataStruct/14 、BFS.md
+    - DataStruct/15 、数论.md
+    - DataStruct/16 、贪心.md
+    - DataStruct/17 、动态规划.md
+    - DataStruct/18 、图.md
+    - DataStruct/19 、最小生成树.md
     - DataStruct/综合.md
-  - C:
-    - C/1.md
-    - C/2.md
-    - C/3.md
-    - C/4.md
-    - C/5.md
-    - C/6.md
-    - C/7.md
-    - C/8.md
-    - C/9.md
-    - C/10.md
-    - C/11.md
-  - Overview:
-    - Overview/计算机网络.md
-    - Overview/计算机操作系统.md
-    - Overview/软件工程.md
+
+
+  - ML:
+    - ML/1 、监督学习.md
+    - ML/2 、高级学习算法.md
+    - ML/3 、无监督学习.md
+
