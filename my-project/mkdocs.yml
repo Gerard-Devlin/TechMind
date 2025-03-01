@@ -6,6 +6,7 @@ repo_name: Gerard-Devlin/TechMind
 copyright: "Copyright © 2025 Devlin"
 theme:
   name: material
+  custom_dir: material
   icon:
     logo: material/application-braces-outline
     repo: fontawesome/brands/git-alt
