@@ -1,4 +1,5 @@
 
+
 <!doctype html>
 <html lang="en" class="no-js">
   <head>
@@ -89,11 +90,6 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
-      
-        
-        <a href="#home" class="md-skip">
-          Skip to content
-        </a>
       
     </div>
     <div data-md-component="announce">
@@ -220,6 +216,7 @@
     <div class="md-container" data-md-component="container">
       
       
+  
         
           
             
@@ -324,6 +321,455 @@
           
         
       
+
+  <!-- Additional styles for landing page -->
+<style>
+
+/* Apply box shadow on smaller screens that don't display tabs */
+@media only screen and (max-width: 1220px) {
+  .md-header {
+    box-shadow: 0 0 .2rem rgba(0,0,0,.1),0 .2rem .4rem rgba(0,0,0,.2);
+    transition: color 250ms,background-color 250ms,box-shadow 250ms;
+  }
+}
+
+/* Hide main content for now */
+.md-content {
+  display: none;
+}
+
+.md-container{
+    background-color: white;
+}
+
+.md-main__inner.md-grid{
+  margin-top: -5rem;
+}
+
+.md-button.md-button--primary{
+  border-radius: 9px;
+}
+
+/* Hide table of contents */
+@media screen and (min-width: 60em) {
+  .md-sidebar--secondary {
+    display: none;
+  }
+}
+
+/* Hide navigation */
+@media screen and (min-width: 76.25em) {
+  .md-sidebar--primary {
+    display: none;
+  }
+}
+
+/* Get started button */
+.md-typeset .md-button--primary {
+    color: var(--md-primary-fg-color);
+    /*background-color: var(--md-primary-bg-color);*/
+    /*border-color: var(--md-primary-bg-color);*/
+}
+.md-typeset .md-button--primary:hover {
+  color: var(--md-primary-bg-color);
+  background-color: var(--md-primary-fg-color);
+  border-color: var(--md-primary-bg-color);
+}
+
+.tx-hero {
+  max-width: 700px;
+  display: flex;
+  padding: .4rem;
+  margin: 0 auto;
+  text-align: center;
+}
+.tx-hero h1 {
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 46px;
+  color: rgb(38, 38, 38);
+}
+.tx-hero p {
+  color: rgb(92, 92, 92);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+}
+.tx-hero__image {
+  max-width: 1000px;
+  min-width: 600px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  align-items: stretch;
+}
+
+.tx-hero__image img {
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+}
+
+/* Secondary content styles */
+.secondary-section {
+  background: rgb(245, 245, 245) none repeat scroll 0% 0%;
+  border-top: 1px solid rgb(222, 222, 222);
+  border-bottom: 1px solid rgb(222, 222, 222)
+}
+@media screen and (max-width: 1012px) {
+  .secondary-section {
+    display: block;
+  }
+}
+
+.secondary-section .g {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0px 40px;
+  max-width: 1280px;
+}
+
+.secondary-section .g .section {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: normal;
+  padding: 88px 0px 116px;
+}
+
+.secondary-section .g .section.follow {
+  padding-top: 0px;
+}
+
+
+.secondary-section .g .section .component-wrapper {
+  display: flex;
+  -moz-box-align: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 1012px) {
+  .secondary-section .g .section .component-wrapper {
+    display: block;
+  }
+}
+
+.secondary-section .g .section .component-wrapper h3 {
+  color: rgb(38, 38, 38);
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 46px;
+  letter-spacing: normal;
+  margin-bottom: 12px;
+}
+
+.secondary-section .g .section .component-wrapper h4 {
+  color: rgb(38, 38, 38);
+}
+
+.secondary-section .g .section .component-wrapper p {
+  color: rgb(92, 92, 92);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: normal;
+  margin-bottom: 16px;
+}
+
+.secondary-section .g .section .component-wrapper .image-wrapper {
+  margin-bottom: 12px;
+  overflow: hidden;
+  border-radius: 8px;
+  margin-top: 48px;
+  border: 1px solid rgb(222, 222, 222);
+  box-shadow: rgba(202, 202, 202, 0.15) 0px 0px 0px 6px;
+  max-width: 600px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  align-items: stretch;
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+}
+
+.secondary-section .g .section .component-wrapper .first-column {
+  padding-right: 100px;
+  flex: 0 1 auto;
+  height: auto;
+  width: 50%;
+}
+
+@media screen and (max-width: 1012px) {
+  .secondary-section .g .section .component-wrapper .first-column {
+    padding-right: 0px;
+    width: 100%;
+    margin-bottom: 32px;
+  }
+}
+
+.secondary-section .g .section .component-wrapper .second-column {
+  flex: 0 1 auto;
+  height: auto;
+  width: 50%;
+}
+@media screen and (max-width: 1012px) {
+  .secondary-section .g .section .component-wrapper .second-column {
+    width: 100%;
+    margin-bottom: 32px;
+  }
+}
+
+.secondary-section .g .section .component-wrapper .responsive-grid {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2rem;
+}
+@media screen and (min-width: 64rem) {
+  .secondary-section .g .section .component-wrapper .responsive-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.secondary-section .g .section .component-wrapper .responsive-grid a.card-wrapper {
+  text-decoration: none;
+  transition: none;
+  background: none;
+  padding: 0;
+}
+
+.secondary-section .g .section .component-wrapper .responsive-grid .card {
+  position: relative;
+  background-color:  #fff none repeat scroll 0% 0%;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  -moz-box-align: center;
+  align-items: center;
+  height: 100%;
+  -moz-box-pack: start;
+  justify-content: flex-start;
+  box-shadow: rgba(0, 0, 0, 0.09) 0.3125rem 0.3125rem 0px -0.0625rem, rgba(0, 0, 0, 0.15) 0px 0.25rem 0.5rem 0px;
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+}
+.secondary-section .g .section .component-wrapper .responsive-grid .card:hover {
+  box-shadow: rgba(0, 0, 0, 0.2) 0.3125rem 0.3125rem 0px -0.0625rem, rgba(0, 0, 0, 0.26) 0px 0.25rem 0.5rem 0px;
+}
+
+@media screen and (min-width: 75rem) {
+  .secondary-section .g .section .component-wrapper .responsive-grid .card {
+    padding: 2rem 2.5rem;
+  }
+}
+@media screen and (min-width: 36rem) {
+  .secondary-section .g .section .component-wrapper .responsive-grid .card {
+    padding: 1rem 1.5rem;
+  }
+}
+
+.secondary-section .g .section .component-wrapper .responsive-grid .card .logo {
+  margin-right: 0.75rem;
+  width: 1.2rem;
+  min-width: 1.2rem;
+}
+
+.secondary-section .g .section .component-wrapper .responsive-grid .card .card-content {
+  display: flex;
+  flex: 1 1 0%;
+  flex-direction: column;
+  width: 100%;
+}
+
+.secondary-section .g .section .component-wrapper .responsive-grid .card .card-content h5 {
+  color: rgb(61, 61, 61);
+  margin: 0;
+}
+
+.secondary-section .g .section .component-wrapper .responsive-grid .card .card-content p {
+  margin-top: 0.25em;
+  margin-bottom: 0;
+  color: rgb(92, 92, 92);
+  font-size: 0.65rem;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.secondary-section .g .section .component-wrapper .responsive-grid .card .card-content code {
+  background: rgba(0, 0, 0, 0.05) none repeat scroll 0% 0%;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+
+.component-wrapper span.em {
+  color: rgb(61, 61, 61);
+}
+
+.component-wrapper a {
+  transition: color 125ms;
+  color: rgb(61, 61, 61);
+  background: rgba(0, 0, 0, 0.05) none repeat scroll 0% 0%;
+  padding: 2px 6px;
+  margin: 0px 1px;
+  border-radius: 4px;
+  display: inline;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.component-wrapper a:hover {
+  color: var(--md-typeset-a-color);
+  background: var(--md-accent-fg-color--transparent);
+}
+
+.em{
+  font-weight: bold;
+}
+
+
+</style>
+
+  <!-- Hero for landing page -->
+  <div class="md-container tx-hero">
+    <div class="md-grid md-typeset">
+      <div class="md-main__inner" >
+        <div>
+          <h1>Computer Science, Simplified</h1>
+          <p>TechMind is an open source resource that helps you <span class="em">understand</span>,<span class="em">explore</span>, and <span class="em">master</span> essential computer science concepts with ease. From computing languages to deep learning, we make learning accessible for all.
+          </p>
+          <a
+            href="/TechMind/Overview/计算机数据/"
+            title="Get Started"
+            class="md-button md-button--primary"
+          >
+            Get started
+            <svg width="11" height="10" viewBox="0 0 11 10" fill="none" style="margin-left:2px"><path d="M1 5.16772H9.5M9.5 5.16772L6.5 1.66772M9.5 5.16772L6.5 8.66772" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="md-container">
+    <div class="tx-hero__image">
+      <img
+        src="https://Gerard-Devlin.github.io/TechMind/assets/images/screen.png"
+        alt=""
+        draggable="false"
+      >
+    </div>
+  </div>
+
+  <div class="md-container secondary-section">
+    <div class="g">
+      <!-- Architecture as building blocks -->
+      <div class="section">
+        <div class="component-wrapper">
+          <div class="first-column">
+            <h3>🏎️Buckle Up and Get Started !</h3>
+            <p>
+              Experience the magic of computing and unlock a world of possibilities by running your <span class="em">first command</span>!
+            </p>
+            <p>
+              This website offers comprehensive notes covering everything from
+              <a href="Overview/计算机数据/">course overviews</a>,
+              <a href="C/1%20、入门/">basic programming languages</a>,and
+              <a href="DataStruct/1%20、概述/">complex data structures</a>,to the intriguing realms of
+              <a href="ML/1%20、监督学习/">deep learning and neural networks</a>.
+              You won't just learn through theory; by engaging in practical labs, you can dive deep into the core of computer science and ultimately become a pro.
+            </p>
+          </div>
+          <div class="second-column">
+            <div class="image-wrapper">
+              <img
+                src="https://Gerard-Devlin.github.io/TechMind/assets/images/copilot-init.png"
+                alt=""
+                draggable="false"
+              >
+            </div>
+          </div>
+        </div>
+        <div class="component-wrapper" style="display: block;">
+          <h4>Explore features</h4>
+
+          <!-- Arch as code -->
+          <div class="responsive-grid">
+            <a class="card-wrapper" href="Overview/计算机数据/">
+              <div class="card">
+                <div class="logo">
+                  <span class="twemoji">
+                  </span>
+                </div>
+                <div class="card-content">
+                  <h5>Overview</h5>
+                  <p>
+                    Build a solid foundation in computing concepts with our easy-to-follow introduction to computer science.
+                  </p>
+                </div>
+              </div>
+            </a>
+
+            <!-- C -->
+            <a class="card-wrapper" href="C/1%20、入门/">
+              <div class="card">
+                <div class="logo">
+                  <span class="twemoji">
+                  </span>
+                </div>
+                <div class="card-content">
+                  <h5>C</h5>
+                  <p>
+                    Master the essentials of C language and build your foundation in programming with easy-to-follow guides.
+                  </p>
+                </div>
+              </div>
+            </a>
+
+            <!-- Data -->
+            <a class="card-wrapper" href="DataStruct/1%20、概述/">
+              <div class="card">
+                <div class="logo">
+                  <span class="twemoji">
+                  </span>
+                </div>
+                <div class="card-content">
+                  <h5>Data Structure</h5>
+                  <p>
+                    Unlock the secrets of efficient algorithms and data management through practical examples and tutorials.
+                  </p>
+                </div>
+              </div>
+            </a>
+
+            <a class="card-wrapper" href="ML/1%20、监督学习/">
+              <div class="card">
+                <div class="logo">
+                  <span class="twemoji">
+                  </span>
+                </div>
+                <div class="card-content">
+                  <h5>Machine Learning</h5>
+                  <p>
+                    Discover the power of AI and ML concepts with clear explanations and hands-on projects.
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
       <main class="md-main" data-md-component="main">
         <div class="md-main__inner md-grid">
           
@@ -376,20 +822,6 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Home
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
       
       <a href="." class="md-nav__link md-nav__link--active">
         
@@ -401,34 +833,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#instructions" class="md-nav__link">
-    <span class="md-ellipsis">
-      Instructions
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
       
     </li>
   
@@ -1493,25 +1897,6 @@
   
   
   
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#instructions" class="md-nav__link">
-    <span class="md-ellipsis">
-      Instructions
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
   
 </nav>
                   </div>
@@ -1522,70 +1907,6 @@
           
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
-                
-                  
-
-
-  
-  
-
-
-<h1 id="home">Home</h1>
-<h2 id="instructions">Instructions</h2>
-<ul>
-<li>A CS beginner guide</li>
-<li>Learn from basic  grammar to higher level Machine learning knowledge</li>
-</ul>
-<div class="grid cards">
-<ul>
-<li>
-<p><span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.59 3.41 2 8l4.59 4.6L8 11.18 4.82 8 8 4.82zm5.82 0L11 4.82 14.18 8 11 11.18l1.41 1.42L17 8zm9.18 8.18-8.09 8.09L9.83 16l-1.41 1.41 5.08 5.09L23 13z"/></svg></span> <strong>Learn in Minutes</strong></p>
-<hr />
-<p>Master the essentials of <strong>C language</strong> and build your foundation in programming with easy-to-follow guides.</p>
-<p><a href="../TechMind/C/1 、入门/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> Start Learning</a></p>
-</li>
-<li>
-<p><span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2m-8 5H9v2c0 1.1-.9 2-2 2 1.1 0 2 .9 2 2v2h2v2H9c-1.1 0-2-.9-2-2v-1c0-1.1-.9-2-2-2v-2c1.1 0 2-.9 2-2V8c0-1.1.9-2 2-2h2zm8 5c-1.1 0-2 .9-2 2v1c0 1.1-.9 2-2 2h-2v-2h2v-2c0-1.1.9-2 2-2-1.1 0-2-.9-2-2V8h-2V6h2c1.1 0 2 .9 2 2v1c0 1.1.9 2 2 2z"/></svg></span>  <strong>Deep Dive into Data Structures</strong></p>
-<hr />
-<p>Unlock the secrets of efficient algorithms and data management through practical examples and tutorials.</p>
-<p><a href="../TechMind/DataStruct/1 、概述/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> Explore Now</a></p>
-</li>
-<li>
-<p><span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.33 12.91c.09 1.55-.62 3.04-1.89 3.95l.77 1.49c.23.45.26.98.06 1.45-.19.47-.58.84-1.06 1l-.79.25a1.687 1.687 0 0 1-1.86-.55L14.44 18c-.89-.15-1.73-.53-2.44-1.1-.5.15-1 .23-1.5.23-.88 0-1.76-.27-2.5-.79-.53.16-1.07.23-1.62.22-.79.01-1.57-.15-2.3-.45a4.1 4.1 0 0 1-2.43-3.61c-.08-.72.04-1.45.35-2.11-.29-.75-.32-1.57-.07-2.33C2.3 7.11 3 6.32 3.87 5.82c.58-1.69 2.21-2.82 4-2.7 1.6-1.5 4.05-1.66 5.83-.37.42-.11.86-.17 1.3-.17 1.36-.03 2.65.57 3.5 1.64 2.04.53 3.5 2.35 3.58 4.47.05 1.11-.25 2.2-.86 3.13.07.36.11.72.11 1.09m-5-1.41c.57.07 1.02.5 1.02 1.07a1 1 0 0 1-1 1h-.63c-.32.9-.88 1.69-1.62 2.29.25.09.51.14.77.21 5.13-.07 4.53-3.2 4.53-3.25a2.59 2.59 0 0 0-2.69-2.49 1 1 0 0 1-1-1 1 1 0 0 1 1-1c1.23.03 2.41.49 3.33 1.3.05-.29.08-.59.08-.89-.06-1.24-.62-2.32-2.87-2.53-1.25-2.96-4.4-1.32-4.4-.4-.03.23.21.72.25.75a1 1 0 0 1 1 1c0 .55-.45 1-1 1-.53-.02-1.03-.22-1.43-.56-.48.31-1.03.5-1.6.56-.57.05-1.04-.35-1.07-.9a.97.97 0 0 1 .88-1.1c.16-.02.94-.14.94-.77 0-.66.25-1.29.68-1.79-.92-.25-1.91.08-2.91 1.29C6.75 5 6 5.25 5.45 7.2 4.5 7.67 4 8 3.78 9c1.08-.22 2.19-.13 3.22.25.5.19.78.75.59 1.29-.19.52-.77.78-1.29.59-.73-.32-1.55-.34-2.3-.06-.32.27-.32.83-.32 1.27 0 .74.37 1.43 1 1.83.53.27 1.12.41 1.71.4q-.225-.39-.39-.81a1.038 1.038 0 0 1 1.96-.68c.4 1.14 1.42 1.92 2.62 2.05 1.37-.07 2.59-.88 3.19-2.13.23-1.38 1.34-1.5 2.56-1.5m2 7.47-.62-1.3-.71.16 1 1.25zm-4.65-8.61a1 1 0 0 0-.91-1.03c-.71-.04-1.4.2-1.93.67-.57.58-.87 1.38-.84 2.19a1 1 0 0 0 1 1c.57 0 1-.45 1-1 0-.27.07-.54.23-.76.12-.1.27-.15.43-.15.55.03 1.02-.38 1.02-.92"/></svg></span> <strong>Machine Learning Simplified</strong></p>
-<hr />
-<p>Discover the power of <strong>AI and ML</strong> concepts with clear explanations and hands-on projects.</p>
-<p><a href="../TechMind/ML/1 、监督学习/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> Begin Your Journey</a></p>
-</li>
-<li>
-<p><span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 6h16v10H4m16 2a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2H4c-1.11 0-2 .89-2 2v10a2 2 0 0 0 2 2H0v2h24v-2z"/></svg></span> <strong>Understanding Computer Systems</strong></p>
-<hr />
-<p>Dive into the fundamentals of computer architecture and system programming to understand how software interacts with hardware.</p>
-<p><a href="../TechMind/CSAPP/1 、导论/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> Start Your Exploration</a></p>
-</li>
-<li>
-<p><span class="twemoji lg middle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3c-1.27 0-2.4.8-2.82 2H3v2h1.95L2 14c-.47 2 1 3 3.5 3s4.06-1 3.5-3L6.05 7h3.12c.33.85.98 1.5 1.83 1.83V20H2v2h20v-2h-9V8.82c.85-.32 1.5-.97 1.82-1.82h3.13L15 14c-.47 2 1 3 3.5 3s4.06-1 3.5-3l-2.95-7H21V5h-6.17C14.4 3.8 13.27 3 12 3m0 2a1 1 0 0 1 1 1 1 1 0 0 1-1 1 1 1 0 0 1-1-1 1 1 0 0 1 1-1m-6.5 5.25L7 14H4zm13 0L20 14h-3z"/></svg></span> <strong>Free Knowledge for All</strong></p>
-<hr />
-<p>All content is open-source and community-driven. Expand your skills without limits.</p>
-<p><a href="#"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> Contribute</a></p>
-</li>
-</ul>
-</div>
-<details class="danger" open="open">
-<summary>Danger</summary>
-<p><strong>This is just a work in progress</strong></p>
-</details>
-
-
-
-
-
-
-
-
-
-
-
-
                 
               </article>
             </div>
@@ -1604,6 +1925,7 @@
         
       </main>
       
+  
         <footer class="md-footer">
   
     
@@ -1650,6 +1972,7 @@
   </div>
 </footer>
       
+
     </div>
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
