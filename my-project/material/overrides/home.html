@@ -22,7 +22,7 @@
 }
 
 .md-container{
-    background-color: rgb(245, 245, 245);
+    background-color: white;
 }
 
 .md-main__inner.md-grid{
@@ -49,14 +49,14 @@
 
 /* Get started button */
 .md-typeset .md-button--primary {
-    color: var(--md-primary-fg-color);
-    /*background-color: var(--md-primary-bg-color);*/
-    /*border-color: var(--md-primary-bg-color);*/
+    color: rgb(245,245,245);
+    background-color: black;
+    border-color: black;
 }
 .md-typeset .md-button--primary:hover {
-  color: var(--md-primary-bg-color);
-  background-color: var(--md-primary-fg-color);
-  border-color: var(--md-primary-bg-color);
+  color: black;
+  background-color: white;
+  border-color: black;
 }
 
 .tx-hero {
@@ -325,7 +325,7 @@
       <div class="md-main__inner" >
         <div>
           <h1>Computer Science, Simplified</h1>
-          <p>TechMind is an open source resource that helps you <span class="em">understand</span>,<span class="em">explore</span>, and <span class="em">master</span> essential computer science concepts with ease. From computing languages to deep learning, we make learning accessible for all.
+          <p>TechMind is an open source resource that helps you <span class="em">understand</span>, <span class="em">explore</span>, and <span class="em">master</span> essential computer science concepts with ease. From computing languages to deep learning, we make learning accessible for all.
           </p>
           <a
             href="/TechMind/Overview/计算机数据/"
@@ -388,6 +388,7 @@
               <div class="card">
                 <div class="logo">
                   <span class="twemoji">
+                    {% include ".icons/octicons/file-code-24.svg" %}
                   </span>
                 </div>
                 <div class="card-content">
@@ -404,6 +405,7 @@
               <div class="card">
                 <div class="logo">
                   <span class="twemoji">
+                    {% include ".icons/octicons/terminal-24.svg" %}
                   </span>
                 </div>
                 <div class="card-content">
@@ -420,6 +422,7 @@
               <div class="card">
                 <div class="logo">
                   <span class="twemoji">
+                     {% include ".icons/fontawesome/solid/puzzle-piece.svg" %}
                   </span>
                 </div>
                 <div class="card-content">
@@ -435,6 +438,7 @@
               <div class="card">
                 <div class="logo">
                   <span class="twemoji">
+                    {% include ".icons/octicons/hubot-24.svg" %}
                   </span>
                 </div>
                 <div class="card-content">
