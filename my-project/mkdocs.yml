@@ -28,6 +28,10 @@ theme:
     - content.tooltips
     - header.autohide
     - toc
+    # 搜索提示
+    - search.suggest
+    - search.highlight
+    - search.share
   # 配色方案
   palette:
     # 暗色模式
