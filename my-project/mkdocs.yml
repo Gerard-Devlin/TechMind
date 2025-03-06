@@ -9,7 +9,7 @@ theme:
   custom_dir: material
   icon:
     logo: material/application-braces-outline
-    repo: fontawesome/brands/git-alt
+    repo: fontawesome/brands/github-alt
     favicon: images/favicon.png
     annotation: material/google-circles
 
@@ -37,12 +37,14 @@ theme:
     # 暗色模式
     - scheme: slate
       primary: black
+      accent : teal
       toggle:
         icon: material/toggle-switch
         name: Switch to light mode
     # 亮色模式
     - scheme: default
       primary: white
+      accent : teal
       toggle:
         icon: material/toggle-switch-off-outline
         name: Switch to dark mode
@@ -124,6 +126,7 @@ plugins:
         - en
         - zh
   - glightbox
+  - tags
 
 
 # 导航
@@ -172,9 +175,13 @@ nav:
     - DataStruct/19 、最小生成树.md
     - DataStruct/综合.md
 
+  - CSAPP:
+      - CSAPP/1 、信息的表示和处理.md
+
 
   - ML:
     - ML/1 、监督学习.md
     - ML/2 、高级学习算法.md
     - ML/3 、无监督学习.md
+
 
