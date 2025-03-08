@@ -1502,6 +1502,48 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="四、浮点">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      1、浮点数表示
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      2、舍入
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      3、性质
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      4、类型转换
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -1723,6 +1765,48 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="四、浮点">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      1、浮点数表示
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      2、舍入
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      3、性质
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      4、类型转换
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -1756,7 +1840,13 @@
 </ul>
 </li>
 <li><a href="#_3">三、内存组织</a></li>
-<li><a href="#_4">四、浮点</a></li>
+<li><a href="#_4">四、浮点</a><ul>
+<li><a href="#1">1、浮点数表示</a></li>
+<li><a href="#2_1">2、舍入</a></li>
+<li><a href="#3_1">3、性质</a></li>
+<li><a href="#4">4、类型转换</a></li>
+</ul>
+</li>
 </ul>
 </div>
 <hr />
@@ -1986,6 +2076,103 @@ TMax=2^{w-1}-1
 </div>
 <hr />
 <h2 id="_4">四、浮点</h2>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>限制：</p>
+<ul>
+<li>只能表示形如<span class="arithmatex">\(x/2^k\)</span> 的数字，否则需要<strong>循环小数</strong></li>
+<li>位数有限</li>
+</ul>
+</div>
+<hr />
+<h3 id="1">1、浮点数表示</h3>
+<div class="arithmatex">\[
+(-1)^s·M·2^E
+\]</div>
+<ul>
+<li><span class="arithmatex">\(S\)</span> ：符号位，决定正负</li>
+<li><span class="arithmatex">\(M\)</span> ：分数值<span class="arithmatex">\(\in[1.0,2.0)\)</span>，编码<strong>尾数位</strong></li>
+</ul>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>单精度（32位）：1+8+23</p>
+<p>双精度（64位）：1+11+52</p>
+</div>
+<p><strong>规格化值</strong>：指数位不能是全 <span class="arithmatex">\(0\)</span> 全 <span class="arithmatex">\(1\)</span>，化成 <span class="arithmatex">\(1.xxxxxx\)</span> 形式
+$$
+E=Exp-Bias
+$$</p>
+<ul>
+<li>Exp：指数位当作无符号整数    </li>
+<li>偏置量（Bias) ：<span class="arithmatex">\(2^{k-1}-1\)</span></li>
+<li>单精度：127</li>
+<li>双精度：1023</li>
+</ul>
+<hr />
+<p><strong>非规格化值</strong>：指数位全 <span class="arithmatex">\(0\)</span>，化 <span class="arithmatex">\(0.xxxxxx\)</span> 形式
+$$
+E=1-Bias
+$$</p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>符号位为 <span class="arithmatex">\(1\)</span> 时，会出现 <span class="arithmatex">\(-0\)</span> </p>
+<p>巧妙：规格化值的最小也是<span class="arithmatex">\(1-Bias\)</span>，衔接规格化值和非规格化值</p>
+</div>
+<hr />
+<p><strong>特殊值</strong>：指数位全 <span class="arithmatex">\(1\)</span></p>
+<ul>
+<li>位数位全 <span class="arithmatex">\(0\)</span> ,表示无穷<span class="arithmatex">\(\infty\)</span></li>
+<li>位数位不全 <span class="arithmatex">\(0\)</span>，表示 <span class="arithmatex">\(NaN\)</span></li>
+</ul>
+<p><a class="glightbox" href="../../assets/images/04-float_12.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="04-float_12.jpg" src="../../assets/images/04-float_12.jpg" /></a></p>
+<hr />
+<h3 id="2_1">2、舍入</h3>
+<ul>
+<li>银行家舍入法：<strong>平衡</strong>算法</li>
+</ul>
+<pre class="mermaid"><code>flowchart TD
+    A[Start: Round number x to n decimal places] --&gt; B[Multiply x by 10^n]
+    B --&gt; C[Get the fractional part d of the result]
+    C --&gt; D{Is d &lt; 0.5?}
+    D --&gt;|Yes| E[Round down]
+    D --&gt;|No| F{Is d &gt; 0.5?}
+    F --&gt;|Yes| G[Round up]
+    F --&gt;|No| H{Is d = 0.5}
+    H --&gt; I{Is the digit before the rounding position even?}
+    I --&gt;|Yes| J[Round down to even]
+    I --&gt;|No| K[Round up to even]
+    E --&gt; L[Divide the result by 10^n]
+    G --&gt; L
+    J --&gt; L
+    K --&gt; L
+    L --&gt; M[End: Return the rounded value]</code></pre>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<div class="arithmatex">\[
+\begin{aligned}
+7.8949999 =7.89\\
+7.8950001=7.90\\
+7.8950000=7.90\\
+7.8850000=7.88
+\end{aligned}
+\]</div>
+</div>
+<hr />
+<h3 id="3_1">3、性质</h3>
+<ul>
+<li>加法、乘法均不满足结合律</li>
+</ul>
+<p><code>(3.14+1e10)-1e10 = 0, 3.14+(1e10-1e10) = 3.14</code></p>
+<p><code>(1e20*1e20)*1e-20= inf, 1e20*(1e20*1e-20)= 1e20</code></p>
+<hr />
+<h3 id="4">4、类型转换</h3>
+<p><code>double/float → int</code>：截去小数部分</p>
+<p><code>int → double</code>：精确转换，只要<code>int</code>字长小于53</p>
+<p><code>int → float</code>：根据舍入模式舍入</p>
+<div class="admonition bug">
+<p class="admonition-title">Bug</p>
+<p>浮点数比较就是<strong>单调</strong>的，不像补码表示的整数会<strong>溢出</strong>然后<strong>循环</strong>一圈</p>
+</div>
 
 
 
