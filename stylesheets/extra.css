@@ -52,6 +52,9 @@ td {
     display: table;
     width: 100%;
 }
+.md-typeset table:not([class]) {
+    border-radius: .5em;
+}
 
 img {
     display: block;
@@ -63,6 +66,8 @@ img {
 .md-code__content {
     border-radius: .5em;
 }
+
+
 }
 
 
