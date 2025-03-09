@@ -41,19 +41,29 @@
     font-size: 1.2em;  /* 你可以根据需要调整大小 */
 }
 
-/*表格居中*/
-td{
+/* 表格居中 */
+
+td {
     width: 100em;
 }
 
-.md-typeset__table{
+.md-typeset__table {
     margin: 0 auto;
     display: table;
     width: 100%;
 }
 
+img {
+    display: block;
+    margin: 0 auto;
+    border-radius: .3em;
+    box-shadow: 0 8px 16px rgba(50, 50, 50, 0.4);
+}
 
-
+/* 代码块圆角 */
+.md-code__content {
+    border-radius: .5em;
+}
 }
 
 
