@@ -73,7 +73,6 @@ markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true
       line_spans: __span
-      linenums: false
       pygments_lang_class: true
   - pymdownx.inlinehilite
   - pymdownx.snippets
@@ -127,6 +126,7 @@ plugins:
         - en
         - zh
   - glightbox:
+      width: 80%
       background: white
   - tags
 
@@ -180,6 +180,7 @@ nav:
   - CSAPP:
       - CSAPP/1 、信息的表示和处理.md
       - CSAPP/2 、机器级编程：基础.md
+      - CSAPP/3 、机器级编程：控制.md
 
 
   - ML:

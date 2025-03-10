@@ -325,13 +325,13 @@ int main() {
 
 如下图的九宫格中，放着 1 ~ 8 的数字卡片，还有一个格子空着。与空格子相邻的格子中的卡片可以移动到空格中。 经过若干次移动，可以形成图 2 所示的局面。
 
-![eg43.png](../assets/images/eg43.png)
+![eg43.png](../assets/images/DataStruct/eg43.png)
 
 我们把上图的局面记为：12345678.
 
 把下图的局面记为：123.46758
 
-![eg43(2).png](../assets/images/eg43%282%29.png)
+![eg43(2).png](../assets/images/DataStruct/eg43%282%29.png)
 
 显然是按从上到下，从左到右的顺序记录数字，空格记为句点。
 

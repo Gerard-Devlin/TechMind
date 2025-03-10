@@ -52,18 +52,22 @@ td {
     display: table;
     width: 100%;
 }
+.md-typeset table:not([class]) {
+    border-radius: .5em;
+}
 
 img {
     display: block;
     margin: 0 auto;
     border-radius: .3em;
-    box-shadow: 0 8px 16px rgba(50, 50, 50, 0.4);
 }
 
 /* 代码块圆角 */
 .md-code__content {
     border-radius: .5em;
 }
+
+
 }
 
 

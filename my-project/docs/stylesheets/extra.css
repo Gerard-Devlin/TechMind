@@ -44,7 +44,7 @@
 /* 表格居中 */
 
 td {
-    width: 100em;
+    width: 50em;
 }
 
 .md-typeset__table {
@@ -52,17 +52,25 @@ td {
     display: table;
     width: 100%;
 }
+.md-typeset table:not([class]) {
+    border-radius: .5em;
+}
 
+/* 图片居中 */
 img {
     display: block;
     margin: 0 auto;
     border-radius: .3em;
-    box-shadow: 0 8px 16px rgba(50, 50, 50, 0.4);
 }
 
 /* 代码块圆角 */
 .md-code__content {
     border-radius: .5em;
+}
+
+
+.md-typeset hr {
+    border-bottom: .1rem solid var(--md-default-fg-color--lightest);
 }
 }
 
