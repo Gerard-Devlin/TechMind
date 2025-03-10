@@ -14,7 +14,7 @@
         <link rel="prev" href="../1%20%E3%80%81%E4%BF%A1%E6%81%AF%E7%9A%84%E8%A1%A8%E7%A4%BA%E5%92%8C%E5%A4%84%E7%90%86/">
       
       
-        <link rel="next" href="../../ML/1%20%E3%80%81%E7%9B%91%E7%9D%A3%E5%AD%A6%E4%B9%A0/">
+        <link rel="next" href="../3%20%E3%80%81%E6%9C%BA%E5%99%A8%E7%BA%A7%E7%BC%96%E7%A8%8B%EF%BC%9A%E6%8E%A7%E5%88%B6/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -1589,6 +1589,28 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3%20%E3%80%81%E6%9C%BA%E5%99%A8%E7%BA%A7%E7%BC%96%E7%A8%8B%EF%BC%9A%E6%8E%A7%E5%88%B6/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    3 、机器级编程：控制
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -1906,10 +1928,10 @@
 <li>指令集架构（ISA）：Instruction Set Architecture</li>
 <li>微结构：架构的具体实现</li>
 </ul>
-<p><a class="glightbox" href="../../assets/images/05-machine-basics_12.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="05-machine-basics_12.jpg" src="../../assets/images/05-machine-basics_12.jpg" /></a></p>
+<p><a class="glightbox" href="../../assets/images/CSAPP/05-machine-basics_12.jpg" data-type="image" data-width="80%" data-height="auto" data-desc-position="bottom"><img alt="05-machine-basics_12.jpg" src="../../assets/images/CSAPP/05-machine-basics_12.jpg" /></a></p>
 <hr />
 <h3 id="2c">2、将<code>C</code>代码转换成汇编</h3>
-<p><a class="glightbox" href="../../assets/images/05-machine-basics_13.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="05-machine-basics_13.jpg" src="../../assets/images/05-machine-basics_13.jpg" /></a></p>
+<p><a class="glightbox" href="../../assets/images/CSAPP/05-machine-basics_13.jpg" data-type="image" data-width="80%" data-height="auto" data-desc-position="bottom"><img alt="05-machine-basics_13.jpg" src="../../assets/images/CSAPP/05-machine-basics_13.jpg" /></a></p>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>gcc<span class="w"> </span>-Og<span class="w"> </span>-S<span class="w"> </span>sum.c
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="c1"># -S:生成 sum.s 文件</span>
 </span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="c1"># -Og: 优化</span>
@@ -1962,7 +1984,7 @@
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <ul>
-<li>反汇编器：把机器码转换成汇编语言</li>
+<li>反编译器：把机器码转换成汇编语言</li>
 </ul>
 <div class="language-asm highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="nf">objdump</span><span class="w"> </span><span class="p">-</span><span class="no">d</span><span class="w"> </span><span class="p">.</span><span class="err">\</span><span class="no">sum.exe</span><span class="w"> </span><span class="err">&gt;</span><span class="no">sum.d</span>
 </span></code></pre></div>
@@ -1972,12 +1994,12 @@
 <p><div class="language-asm highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="nf">gdb</span><span class="w"> </span><span class="no">sum</span><span class="w"> </span>
 </span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="no">disassemble</span><span class="w"> </span><span class="no">sumstore</span>
 </span></code></pre></div>
-<a class="glightbox" href="../../assets/images/GDB.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="GDB.jpg" src="../../assets/images/GDB.jpg" /></a></p>
+<a class="glightbox" href="../../assets/images/CSAPP/GDB.jpg" data-type="image" data-width="80%" data-height="auto" data-desc-position="bottom"><img alt="GDB.jpg" src="../../assets/images/CSAPP/GDB.jpg" /></a></p>
 </div>
 <hr />
 <h2 id="_2">二、汇编基础</h2>
 <h3 id="186-64">1、<code>×86-64</code> 寄存器</h3>
-<p><a class="glightbox" href="../../assets/images/05-machine-basics_23.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="05-machine-basics_23.jpg" src="../../assets/images/05-machine-basics_23.jpg" /></a></p>
+<p><a class="glightbox" href="../../assets/images/CSAPP/05-machine-basics_23.jpg" data-type="image" data-width="80%" data-height="auto" data-desc-position="bottom"><img alt="05-machine-basics_23.jpg" src="../../assets/images/CSAPP/05-machine-basics_23.jpg" /></a></p>
 <hr />
 <h3 id="2">2、移动数据</h3>
 <div class="language-asm highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="nf">movq</span><span class="w"> </span><span class="no">Source</span><span class="p">,</span><span class="no">Dest</span>
@@ -2002,7 +2024,7 @@
 </ul>
 </li>
 </ul>
-<p><a class="glightbox" href="../../assets/images/05-machine-basics_26.jpg" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="05-machine-basics_26.jpg" src="../../assets/images/05-machine-basics_26.jpg" /></a></p>
+<p><a class="glightbox" href="../../assets/images/CSAPP/05-machine-basics_26.jpg" data-type="image" data-width="80%" data-height="auto" data-desc-position="bottom"><img alt="05-machine-basics_26.jpg" src="../../assets/images/CSAPP/05-machine-basics_26.jpg" /></a></p>
 <hr />
 <div class="language-asm highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="nl">swap:</span>
 </span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="w">    </span><span class="nf">movq</span><span class="w">    </span><span class="p">(</span><span class="nv">%rdi</span><span class="p">),</span><span class="w"> </span><span class="nv">%rax</span><span class="w">    </span><span class="c1"># t0 = *xp</span>
@@ -2194,13 +2216,13 @@
         
         
           
-          <a href="../../ML/1%20%E3%80%81%E7%9B%91%E7%9D%A3%E5%AD%A6%E4%B9%A0/" class="md-footer__link md-footer__link--next" aria-label="Next: 1 、监督学习">
+          <a href="../3%20%E3%80%81%E6%9C%BA%E5%99%A8%E7%BA%A7%E7%BC%96%E7%A8%8B%EF%BC%9A%E6%8E%A7%E5%88%B6/" class="md-footer__link md-footer__link--next" aria-label="Next: 3 、机器级编程：控制">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                1 、监督学习
+                3 、机器级编程：控制
               </div>
             </div>
             <div class="md-footer__button md-icon">
