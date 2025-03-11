@@ -14,7 +14,7 @@
         <link rel="prev" href="../2.1%20%E6%9C%BA%E5%99%A8%E7%BA%A7%E7%BC%96%E7%A8%8B%EF%BC%9A%E5%9F%BA%E7%A1%80/">
       
       
-        <link rel="next" href="../../ML/1%20%E3%80%81%E7%9B%91%E7%9D%A3%E5%AD%A6%E4%B9%A0/">
+        <link rel="next" href="../bomblab/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -84,7 +84,7 @@
     
     
     
-    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="teal">
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="indigo">
   
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
@@ -140,7 +140,7 @@
     
     
     
-    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="teal"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
     
       <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"/></svg>
@@ -150,7 +150,7 @@
     
     
     
-    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="teal"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
     
       <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_0" hidden>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6m0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4M7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3"/></svg>
@@ -1682,6 +1682,80 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_3" id="__nav_5_3_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Lab
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_3">
+            <span class="md-nav__icon md-icon"></span>
+            Lab
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bomblab/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Bomblab
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -2015,12 +2089,14 @@
 </ul>
 <hr />
 <h3 id="1">1、具体条件</h3>
-<div class="language-asm highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">cmpq</span><span class="w"> </span><span class="no">Src2</span><span class="p">,</span><span class="w"> </span><span class="no">Src1</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="c1"># 计算 Src1 - Src2，反过来的</span>
-</span></code></pre></div>
-<div class="language-asm highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nf">testq</span><span class="w"> </span><span class="no">Src2</span><span class="p">,</span><span class="w"> </span><span class="no">Src1</span>
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="c1"># 计算 Src1 &amp; Src2</span>
-</span></code></pre></div>
+<div class="language-asm highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
+<span class="normal"><a href="#__codelineno-0-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="nf">cmpq</span><span class="w"> </span><span class="no">Src2</span><span class="p">,</span><span class="w"> </span><span class="no">Src1</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="c1"># 计算 Src1 - Src2，反过来的</span>
+</span></code></pre></div></td></tr></table></div>
+<div class="language-asm highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span>
+<span class="normal"><a href="#__codelineno-1-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="nf">testq</span><span class="w"> </span><span class="no">Src2</span><span class="p">,</span><span class="w"> </span><span class="no">Src1</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="c1"># 计算 Src1 &amp; Src2</span>
+</span></code></pre></div></td></tr></table></div>
 <hr />
 <h3 id="2setx">2、<code>SetX</code>指令集</h3>
 <ul>
@@ -2089,15 +2165,20 @@
 </table>
 <details class="example" open="open">
 <summary>Example</summary>
-<div class="language-c++ highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kt">int</span><span class="w"> </span><span class="nf">gt</span><span class="w"> </span><span class="p">(</span><span class="kt">long</span><span class="w"> </span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="kt">long</span><span class="w"> </span><span class="n">y</span><span class="p">){</span>
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">y</span><span class="p">;</span>
-</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="p">}</span>
-</span></code></pre></div>
-<div class="language-asm highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nf">cmpq</span><span class="w">  </span><span class="nv">%rsi</span><span class="p">,</span><span class="w"> </span><span class="nv">%rdi</span><span class="w">   </span><span class="c1"># Compare x:y</span>
-</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="nf">setg</span><span class="w">  </span><span class="nv">%al</span><span class="w">          </span><span class="c1"># Set when &gt;</span>
-</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="nf">movzbl</span><span class="w"> </span><span class="nv">%al</span><span class="p">,</span><span class="w"> </span><span class="nv">%eax</span><span class="w">   </span><span class="c1"># Zero rest of %rax</span>
-</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="nf">ret</span>
-</span></code></pre></div>
+<div class="language-c++ highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span>
+<span class="normal"><a href="#__codelineno-2-2">2</a></span>
+<span class="normal"><a href="#__codelineno-2-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="kt">int</span><span class="w"> </span><span class="nf">gt</span><span class="w"> </span><span class="p">(</span><span class="kt">long</span><span class="w"> </span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="kt">long</span><span class="w"> </span><span class="n">y</span><span class="p">){</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">y</span><span class="p">;</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3"></a><span class="p">}</span>
+</span></code></pre></div></td></tr></table></div>
+<div class="language-asm highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1">1</a></span>
+<span class="normal"><a href="#__codelineno-3-2">2</a></span>
+<span class="normal"><a href="#__codelineno-3-3">3</a></span>
+<span class="normal"><a href="#__codelineno-3-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="nf">cmpq</span><span class="w">  </span><span class="nv">%rsi</span><span class="p">,</span><span class="w"> </span><span class="nv">%rdi</span><span class="w">   </span><span class="c1"># Compare x:y</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2"></a><span class="nf">setg</span><span class="w">  </span><span class="nv">%al</span><span class="w">          </span><span class="c1"># Set when &gt;</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3"></a><span class="nf">movzbl</span><span class="w"> </span><span class="nv">%al</span><span class="p">,</span><span class="w"> </span><span class="nv">%eax</span><span class="w">   </span><span class="c1"># Zero rest of %rax</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4"></a><span class="nf">ret</span>
+</span></code></pre></div></td></tr></table></div>
 <table>
 <thead>
 <tr>
@@ -2192,28 +2273,46 @@
 </table>
 <details class="example" open="open">
 <summary>Example</summary>
-<div class="language-c++ highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kt">long</span><span class="w"> </span><span class="nf">absdiff</span><span class="p">(</span><span class="kt">long</span><span class="w"> </span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="kt">long</span><span class="w"> </span><span class="n">y</span><span class="p">){</span>
-</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="w">    </span><span class="kt">long</span><span class="w"> </span><span class="n">result</span><span class="p">;</span>
-</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">y</span><span class="p">)</span>
-</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="w">        </span><span class="n">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">x</span><span class="o">-</span><span class="n">y</span><span class="p">;</span>
-</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="w">    </span><span class="k">else</span>
-</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="w">        </span><span class="n">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">y</span><span class="o">-</span><span class="n">x</span><span class="p">;</span>
-</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">result</span><span class="p">;</span>
-</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="p">}</span>
-</span></code></pre></div>
-<div class="language-asm highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="nl">absdiff:</span>
-</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="nl">.LFB2:</span>
-</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="w">    </span><span class="na">.cfi_startproc</span>
-</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="w">    </span><span class="nf">cmpq</span><span class="w">    </span><span class="nv">%rsi</span><span class="p">,</span><span class="w"> </span><span class="nv">%rdi</span><span class="w">  </span><span class="c1"># x &gt; y</span>
-</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="w">    </span><span class="nf">jle</span><span class="w"> </span><span class="no">.L4</span><span class="w">             </span><span class="c1"># Jump to .L4</span>
-</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="w">    </span><span class="nf">movq</span><span class="w">    </span><span class="nv">%rdi</span><span class="p">,</span><span class="w"> </span><span class="nv">%rax</span>
-</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="w">    </span><span class="nf">subq</span><span class="w">    </span><span class="nv">%rsi</span><span class="p">,</span><span class="w"> </span><span class="nv">%rax</span>
-</span><span id="__span-5-8"><a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a><span class="w">    </span><span class="nf">ret</span>
-</span><span id="__span-5-9"><a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a><span class="nl">.L4:</span><span class="w">                    </span><span class="c1"># x &lt;= y</span>
-</span><span id="__span-5-10"><a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a><span class="w">    </span><span class="nf">movq</span><span class="w">    </span><span class="nv">%rsi</span><span class="p">,</span><span class="w"> </span><span class="nv">%rax</span>
-</span><span id="__span-5-11"><a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a><span class="w">    </span><span class="nf">subq</span><span class="w">    </span><span class="nv">%rdi</span><span class="p">,</span><span class="w"> </span><span class="nv">%rax</span>
-</span><span id="__span-5-12"><a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a><span class="w">    </span><span class="nf">ret</span>
-</span></code></pre></div>
+<div class="language-c++ highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1">1</a></span>
+<span class="normal"><a href="#__codelineno-4-2">2</a></span>
+<span class="normal"><a href="#__codelineno-4-3">3</a></span>
+<span class="normal"><a href="#__codelineno-4-4">4</a></span>
+<span class="normal"><a href="#__codelineno-4-5">5</a></span>
+<span class="normal"><a href="#__codelineno-4-6">6</a></span>
+<span class="normal"><a href="#__codelineno-4-7">7</a></span>
+<span class="normal"><a href="#__codelineno-4-8">8</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1"></a><span class="kt">long</span><span class="w"> </span><span class="nf">absdiff</span><span class="p">(</span><span class="kt">long</span><span class="w"> </span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="kt">long</span><span class="w"> </span><span class="n">y</span><span class="p">){</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2"></a><span class="w">    </span><span class="kt">long</span><span class="w"> </span><span class="n">result</span><span class="p">;</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">y</span><span class="p">)</span>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4"></a><span class="w">        </span><span class="n">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">x</span><span class="o">-</span><span class="n">y</span><span class="p">;</span>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5"></a><span class="w">    </span><span class="k">else</span>
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6"></a><span class="w">        </span><span class="n">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">y</span><span class="o">-</span><span class="n">x</span><span class="p">;</span>
+</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">result</span><span class="p">;</span>
+</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8"></a><span class="p">}</span>
+</span></code></pre></div></td></tr></table></div>
+<div class="language-asm highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-5-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-5-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-5-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-5-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-5-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-5-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-5-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-5-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-5-10">10</a></span>
+<span class="normal"><a href="#__codelineno-5-11">11</a></span>
+<span class="normal"><a href="#__codelineno-5-12">12</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1"></a><span class="nl">absdiff:</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2"></a><span class="nl">.LFB2:</span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3"></a><span class="w">    </span><span class="na">.cfi_startproc</span>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4"></a><span class="w">    </span><span class="nf">cmpq</span><span class="w">    </span><span class="nv">%rsi</span><span class="p">,</span><span class="w"> </span><span class="nv">%rdi</span><span class="w">  </span><span class="c1"># x &gt; y</span>
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5"></a><span class="w">    </span><span class="nf">jle</span><span class="w"> </span><span class="no">.L4</span><span class="w">             </span><span class="c1"># Jump to .L4</span>
+</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6"></a><span class="w">    </span><span class="nf">movq</span><span class="w">    </span><span class="nv">%rdi</span><span class="p">,</span><span class="w"> </span><span class="nv">%rax</span>
+</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7"></a><span class="w">    </span><span class="nf">subq</span><span class="w">    </span><span class="nv">%rsi</span><span class="p">,</span><span class="w"> </span><span class="nv">%rax</span>
+</span><span id="__span-5-8"><a id="__codelineno-5-8" name="__codelineno-5-8"></a><span class="w">    </span><span class="nf">ret</span>
+</span><span id="__span-5-9"><a id="__codelineno-5-9" name="__codelineno-5-9"></a><span class="nl">.L4:</span><span class="w">                    </span><span class="c1"># x &lt;= y</span>
+</span><span id="__span-5-10"><a id="__codelineno-5-10" name="__codelineno-5-10"></a><span class="w">    </span><span class="nf">movq</span><span class="w">    </span><span class="nv">%rsi</span><span class="p">,</span><span class="w"> </span><span class="nv">%rax</span>
+</span><span id="__span-5-11"><a id="__codelineno-5-11" name="__codelineno-5-11"></a><span class="w">    </span><span class="nf">subq</span><span class="w">    </span><span class="nv">%rdi</span><span class="p">,</span><span class="w"> </span><span class="nv">%rax</span>
+</span><span id="__span-5-12"><a id="__codelineno-5-12" name="__codelineno-5-12"></a><span class="w">    </span><span class="nf">ret</span>
+</span></code></pre></div></td></tr></table></div>
 <table>
 <thead>
 <tr>
@@ -2236,35 +2335,54 @@
 </tr>
 </tbody>
 </table>
-<div class="language-c++ highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="c1">// 用 goto 语句模仿汇编逻辑</span>
-</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="c1">// 区分出代码块，根据条件执行相应代码块</span>
-</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="kt">long</span><span class="w"> </span><span class="nf">absdiff_j</span><span class="p">(</span><span class="kt">long</span><span class="w"> </span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="kt">long</span><span class="w"> </span><span class="n">y</span><span class="p">){</span>
-</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="w">    </span><span class="kt">long</span><span class="w"> </span><span class="n">result</span><span class="p">;</span>
-</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">ntest</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="n">y</span><span class="p">;</span>
-</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">ntest</span><span class="p">)</span><span class="w"> </span><span class="k">goto</span><span class="w"> </span><span class="n">Else</span><span class="p">;</span>
-</span><span id="__span-6-7"><a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a><span class="w">    </span><span class="n">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">x</span><span class="o">-</span><span class="n">y</span><span class="p">;</span>
-</span><span id="__span-6-8"><a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a><span class="w">    </span><span class="k">goto</span><span class="w"> </span><span class="n">Done</span><span class="p">;</span>
-</span><span id="__span-6-9"><a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a><span class="w"> </span><span class="nl">Else</span><span class="p">:</span>
-</span><span id="__span-6-10"><a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a><span class="w">    </span><span class="n">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">y</span><span class="o">-</span><span class="n">x</span><span class="p">;</span>
-</span><span id="__span-6-11"><a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a><span class="w"> </span><span class="nl">Done</span><span class="p">:</span>
-</span><span id="__span-6-12"><a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">result</span><span class="p">;</span>
-</span><span id="__span-6-13"><a id="__codelineno-6-13" name="__codelineno-6-13" href="#__codelineno-6-13"></a><span class="p">}</span>
-</span></code></pre></div>
+<div class="language-c++ highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-6-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-6-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-6-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-6-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-6-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-6-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-6-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-6-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-6-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-6-10">10</a></span>
+<span class="normal"><a href="#__codelineno-6-11">11</a></span>
+<span class="normal"><a href="#__codelineno-6-12">12</a></span>
+<span class="normal"><a href="#__codelineno-6-13">13</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1"></a><span class="c1">// 用 goto 语句模仿汇编逻辑</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2"></a><span class="c1">// 区分出代码块，根据条件执行相应代码块</span>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3"></a><span class="kt">long</span><span class="w"> </span><span class="nf">absdiff_j</span><span class="p">(</span><span class="kt">long</span><span class="w"> </span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="kt">long</span><span class="w"> </span><span class="n">y</span><span class="p">){</span>
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4"></a><span class="w">    </span><span class="kt">long</span><span class="w"> </span><span class="n">result</span><span class="p">;</span>
+</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5"></a><span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">ntest</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="n">y</span><span class="p">;</span>
+</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">ntest</span><span class="p">)</span><span class="w"> </span><span class="k">goto</span><span class="w"> </span><span class="n">Else</span><span class="p">;</span>
+</span><span id="__span-6-7"><a id="__codelineno-6-7" name="__codelineno-6-7"></a><span class="w">    </span><span class="n">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">x</span><span class="o">-</span><span class="n">y</span><span class="p">;</span>
+</span><span id="__span-6-8"><a id="__codelineno-6-8" name="__codelineno-6-8"></a><span class="w">    </span><span class="k">goto</span><span class="w"> </span><span class="n">Done</span><span class="p">;</span>
+</span><span id="__span-6-9"><a id="__codelineno-6-9" name="__codelineno-6-9"></a><span class="w"> </span><span class="nl">Else</span><span class="p">:</span>
+</span><span id="__span-6-10"><a id="__codelineno-6-10" name="__codelineno-6-10"></a><span class="w">    </span><span class="n">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">y</span><span class="o">-</span><span class="n">x</span><span class="p">;</span>
+</span><span id="__span-6-11"><a id="__codelineno-6-11" name="__codelineno-6-11"></a><span class="w"> </span><span class="nl">Done</span><span class="p">:</span>
+</span><span id="__span-6-12"><a id="__codelineno-6-12" name="__codelineno-6-12"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">result</span><span class="p">;</span>
+</span><span id="__span-6-13"><a id="__codelineno-6-13" name="__codelineno-6-13"></a><span class="p">}</span>
+</span></code></pre></div></td></tr></table></div>
 </details>
 <hr />
 <h3 id="2">2、条件移动指令</h3>
 <ul>
 <li>思想：计算出<strong>所有分支</strong>结果，之后选择哪一种来输出（<strong>优化</strong>算法）</li>
 </ul>
-<div class="language-asm highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="nl">absdiff:</span>
-</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="w">    </span><span class="nf">movq</span><span class="w">  </span><span class="nv">%rdi</span><span class="p">,</span><span class="w"> </span><span class="nv">%rax</span><span class="w">     </span><span class="c1"># x -&gt; %rax</span>
-</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="w">    </span><span class="nf">subq</span><span class="w">  </span><span class="nv">%rsi</span><span class="p">,</span><span class="w"> </span><span class="nv">%rax</span><span class="w">     </span><span class="c1"># %rax（result = x - y）</span>
-</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="w">    </span><span class="nf">movq</span><span class="w">  </span><span class="nv">%rsi</span><span class="p">,</span><span class="w"> </span><span class="nv">%rdx</span><span class="w">     </span><span class="c1"># y -&gt; %rdx</span>
-</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="w">    </span><span class="nf">subq</span><span class="w">  </span><span class="nv">%rdi</span><span class="p">,</span><span class="w"> </span><span class="nv">%rdx</span><span class="w">     </span><span class="c1"># %rdx（eval = y - x）</span>
-</span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="w">    </span><span class="nf">cmpq</span><span class="w">  </span><span class="nv">%rsi</span><span class="p">,</span><span class="w"> </span><span class="nv">%rdi</span><span class="w">     </span><span class="c1"># cmp x, y</span>
-</span><span id="__span-7-7"><a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a><span class="w">    </span><span class="nf">cmovle</span><span class="w"> </span><span class="nv">%rdx</span><span class="p">,</span><span class="w"> </span><span class="nv">%rax</span><span class="w">    </span><span class="c1"># 如果 x &lt;= y（即 %rsi &lt;= %rdi），则将 %rdx 的值移动到 %rax（result = eval）</span>
-</span><span id="__span-7-8"><a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a><span class="w">    </span><span class="nf">ret</span><span class="w">                 </span>
-</span></code></pre></div>
+<div class="language-asm highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-7-1">1</a></span>
+<span class="normal"><a href="#__codelineno-7-2">2</a></span>
+<span class="normal"><a href="#__codelineno-7-3">3</a></span>
+<span class="normal"><a href="#__codelineno-7-4">4</a></span>
+<span class="normal"><a href="#__codelineno-7-5">5</a></span>
+<span class="normal"><a href="#__codelineno-7-6">6</a></span>
+<span class="normal"><a href="#__codelineno-7-7">7</a></span>
+<span class="normal"><a href="#__codelineno-7-8">8</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1"></a><span class="nl">absdiff:</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2"></a><span class="w">    </span><span class="nf">movq</span><span class="w">  </span><span class="nv">%rdi</span><span class="p">,</span><span class="w"> </span><span class="nv">%rax</span><span class="w">     </span><span class="c1"># x -&gt; %rax</span>
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3"></a><span class="w">    </span><span class="nf">subq</span><span class="w">  </span><span class="nv">%rsi</span><span class="p">,</span><span class="w"> </span><span class="nv">%rax</span><span class="w">     </span><span class="c1"># %rax（result = x - y）</span>
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4"></a><span class="w">    </span><span class="nf">movq</span><span class="w">  </span><span class="nv">%rsi</span><span class="p">,</span><span class="w"> </span><span class="nv">%rdx</span><span class="w">     </span><span class="c1"># y -&gt; %rdx</span>
+</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5"></a><span class="w">    </span><span class="nf">subq</span><span class="w">  </span><span class="nv">%rdi</span><span class="p">,</span><span class="w"> </span><span class="nv">%rdx</span><span class="w">     </span><span class="c1"># %rdx（eval = y - x）</span>
+</span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6"></a><span class="w">    </span><span class="nf">cmpq</span><span class="w">  </span><span class="nv">%rsi</span><span class="p">,</span><span class="w"> </span><span class="nv">%rdi</span><span class="w">     </span><span class="c1"># cmp x, y</span>
+</span><span id="__span-7-7"><a id="__codelineno-7-7" name="__codelineno-7-7"></a><span class="w">    </span><span class="nf">cmovle</span><span class="w"> </span><span class="nv">%rdx</span><span class="p">,</span><span class="w"> </span><span class="nv">%rax</span><span class="w">    </span><span class="c1"># 如果 x &lt;= y（即 %rsi &lt;= %rdi），则将 %rdx 的值移动到 %rax（result = eval）</span>
+</span><span id="__span-7-8"><a id="__codelineno-7-8" name="__codelineno-7-8"></a><span class="w">    </span><span class="nf">ret</span><span class="w">                 </span>
+</span></code></pre></div></td></tr></table></div>
 <div class="admonition danger">
 <p class="admonition-title">Danger</p>
 <ul>
@@ -2274,16 +2392,16 @@
 <li>
 <p>有风险</p>
 <ul>
-<li><div class="language-c++ highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="n">val</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">p</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="o">*</span><span class="n">p</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="c1">// 解空指针</span>
-</span></code></pre></div></li>
+<li><div class="language-c++ highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-8-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1"></a><span class="n">val</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">p</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="o">*</span><span class="n">p</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="c1">// 解空指针</span>
+</span></code></pre></div></td></tr></table></div></li>
 </ul>
 </li>
 <li>
 <p>有副作用</p>
 <ul>
 <li>
-<div class="language-c++ highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="n">val</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="n">x</span><span class="o">*=</span><span class="mi">7</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">x</span><span class="o">+=</span><span class="mi">3</span><span class="p">;</span><span class="w">  </span><span class="c1">// 两个值都被计算</span>
-</span></code></pre></div>
+<div class="language-c++ highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-9-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1"></a><span class="n">val</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="n">x</span><span class="o">*=</span><span class="mi">7</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">x</span><span class="o">+=</span><span class="mi">3</span><span class="p">;</span><span class="w">  </span><span class="c1">// 两个值都被计算</span>
+</span></code></pre></div></td></tr></table></div>
 </li>
 </ul>
 </li>
@@ -2296,226 +2414,416 @@
 <p>原循环翻译成汇编与<code>goto</code>语句翻译成汇编，原语句不同，汇编一致，且逻辑为跳转<code>goto</code>的逻辑</p>
 </div>
 <h3 id="1do-whlie">1、<code>do-whlie</code> 循环</h3>
-<div class="language-c++ highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="nl">loop</span><span class="p">:</span>
-</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="w">    </span><span class="n">Body</span>
-</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="w">    </span><span class="k">if</span><span class="p">(</span><span class="n">Test</span><span class="p">)</span>
-</span><span id="__span-10-4"><a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a><span class="w">        </span><span class="k">goto</span><span class="w"> </span><span class="n">loop</span>
-</span></code></pre></div>
+<div class="language-c++ highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-10-1">1</a></span>
+<span class="normal"><a href="#__codelineno-10-2">2</a></span>
+<span class="normal"><a href="#__codelineno-10-3">3</a></span>
+<span class="normal"><a href="#__codelineno-10-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1"></a><span class="nl">loop</span><span class="p">:</span>
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2"></a><span class="w">    </span><span class="n">Body</span>
+</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3"></a><span class="w">    </span><span class="k">if</span><span class="p">(</span><span class="n">Test</span><span class="p">)</span>
+</span><span id="__span-10-4"><a id="__codelineno-10-4" name="__codelineno-10-4"></a><span class="w">        </span><span class="k">goto</span><span class="w"> </span><span class="n">loop</span>
+</span></code></pre></div></td></tr></table></div>
 <details class="example" open="open">
 <summary>Example</summary>
-<div class="language-c++ highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="kt">long</span><span class="w"> </span><span class="nf">pcount_do</span><span class="p">(</span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">long</span><span class="w"> </span><span class="n">x</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="w">    </span><span class="kt">long</span><span class="w"> </span><span class="n">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
-</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="w">    </span><span class="k">do</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-11-4"><a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a><span class="w">    </span><span class="n">result</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="mh">0x1</span><span class="p">;</span>
-</span><span id="__span-11-5"><a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a><span class="w">    </span><span class="n">x</span><span class="w"> </span><span class="o">&gt;&gt;=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
-</span><span id="__span-11-6"><a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a><span class="w">    </span><span class="p">}</span><span class="w"> </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">x</span><span class="p">);</span>
-</span><span id="__span-11-7"><a id="__codelineno-11-7" name="__codelineno-11-7" href="#__codelineno-11-7"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">result</span><span class="p">;</span>
-</span><span id="__span-11-8"><a id="__codelineno-11-8" name="__codelineno-11-8" href="#__codelineno-11-8"></a><span class="p">}</span>
-</span><span id="__span-11-9"><a id="__codelineno-11-9" name="__codelineno-11-9" href="#__codelineno-11-9"></a><span class="kt">long</span><span class="w"> </span><span class="nf">pcount_goto_dw</span><span class="p">(</span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">long</span><span class="w"> </span><span class="n">x</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-11-10"><a id="__codelineno-11-10" name="__codelineno-11-10" href="#__codelineno-11-10"></a><span class="w">    </span><span class="kt">long</span><span class="w"> </span><span class="n">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
-</span><span id="__span-11-11"><a id="__codelineno-11-11" name="__codelineno-11-11" href="#__codelineno-11-11"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">x</span><span class="p">)</span>
-</span><span id="__span-11-12"><a id="__codelineno-11-12" name="__codelineno-11-12" href="#__codelineno-11-12"></a><span class="w">    </span><span class="k">goto</span><span class="w"> </span><span class="n">done</span><span class="p">;</span>
-</span><span id="__span-11-13"><a id="__codelineno-11-13" name="__codelineno-11-13" href="#__codelineno-11-13"></a><span class="w"> </span><span class="nl">loop</span><span class="p">:</span>
-</span><span id="__span-11-14"><a id="__codelineno-11-14" name="__codelineno-11-14" href="#__codelineno-11-14"></a><span class="w">    </span><span class="n">result</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="mh">0x1</span><span class="p">;</span>
-</span><span id="__span-11-15"><a id="__codelineno-11-15" name="__codelineno-11-15" href="#__codelineno-11-15"></a><span class="w">    </span><span class="n">x</span><span class="w"> </span><span class="o">&gt;&gt;=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
-</span><span id="__span-11-16"><a id="__codelineno-11-16" name="__codelineno-11-16" href="#__codelineno-11-16"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-</span><span id="__span-11-17"><a id="__codelineno-11-17" name="__codelineno-11-17" href="#__codelineno-11-17"></a><span class="w">    </span><span class="k">goto</span><span class="w"> </span><span class="n">loop</span><span class="p">;</span>
-</span><span id="__span-11-18"><a id="__codelineno-11-18" name="__codelineno-11-18" href="#__codelineno-11-18"></a><span class="w"> </span><span class="nl">done</span><span class="p">:</span>
-</span><span id="__span-11-19"><a id="__codelineno-11-19" name="__codelineno-11-19" href="#__codelineno-11-19"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">result</span><span class="p">;</span>
-</span><span id="__span-11-20"><a id="__codelineno-11-20" name="__codelineno-11-20" href="#__codelineno-11-20"></a><span class="p">}</span>
-</span></code></pre></div>
-<div class="language-asm highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="nl">pcount_do:</span>
-</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="nl">.LFB12:</span>
-</span><span id="__span-12-3"><a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a><span class="w">    </span><span class="na">.cfi_startproc</span>
-</span><span id="__span-12-4"><a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a><span class="w">    </span><span class="nf">movl</span><span class="w">    </span><span class="no">$0</span><span class="p">,</span><span class="w"> </span><span class="nv">%eax</span>
-</span><span id="__span-12-5"><a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a><span class="nl">.L2:</span>
-</span><span id="__span-12-6"><a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a><span class="w">    </span><span class="nf">movq</span><span class="w">    </span><span class="nv">%rdi</span><span class="p">,</span><span class="w"> </span><span class="nv">%rdx</span>
-</span><span id="__span-12-7"><a id="__codelineno-12-7" name="__codelineno-12-7" href="#__codelineno-12-7"></a><span class="w">    </span><span class="nf">andl</span><span class="w">    </span><span class="no">$1</span><span class="p">,</span><span class="w"> </span><span class="nv">%edx</span>
-</span><span id="__span-12-8"><a id="__codelineno-12-8" name="__codelineno-12-8" href="#__codelineno-12-8"></a><span class="w">    </span><span class="nf">addq</span><span class="w">    </span><span class="nv">%rdx</span><span class="p">,</span><span class="w"> </span><span class="nv">%rax</span>
-</span><span id="__span-12-9"><a id="__codelineno-12-9" name="__codelineno-12-9" href="#__codelineno-12-9"></a><span class="w">    </span><span class="nf">shrq</span><span class="w">    </span><span class="nv">%rdi</span>
-</span><span id="__span-12-10"><a id="__codelineno-12-10" name="__codelineno-12-10" href="#__codelineno-12-10"></a><span class="w">    </span><span class="nf">jne</span><span class="w"> </span><span class="no">.L2</span>
-</span><span id="__span-12-11"><a id="__codelineno-12-11" name="__codelineno-12-11" href="#__codelineno-12-11"></a><span class="w">    </span><span class="na">rep</span><span class="c1">; ret</span>
-</span><span id="__span-12-12"><a id="__codelineno-12-12" name="__codelineno-12-12" href="#__codelineno-12-12"></a><span class="w">    </span><span class="na">.cfi_endproc</span>
-</span><span id="__span-12-13"><a id="__codelineno-12-13" name="__codelineno-12-13" href="#__codelineno-12-13"></a><span class="nl">.LFE12:</span>
-</span><span id="__span-12-14"><a id="__codelineno-12-14" name="__codelineno-12-14" href="#__codelineno-12-14"></a><span class="w">    </span><span class="na">.size</span><span class="w">   </span><span class="no">pcount_do</span><span class="p">,</span><span class="w"> </span><span class="no">.-pcount_do</span>
-</span><span id="__span-12-15"><a id="__codelineno-12-15" name="__codelineno-12-15" href="#__codelineno-12-15"></a><span class="w">    </span><span class="na">.globl</span><span class="w">  </span><span class="no">pcount_goto</span>
-</span><span id="__span-12-16"><a id="__codelineno-12-16" name="__codelineno-12-16" href="#__codelineno-12-16"></a><span class="w">    </span><span class="na">.type</span><span class="w">   </span><span class="no">pcount_goto</span><span class="p">,</span><span class="w"> </span><span class="na">@function</span>
-</span><span id="__span-12-17"><a id="__codelineno-12-17" name="__codelineno-12-17" href="#__codelineno-12-17"></a><span class="nl">pcount_goto:</span>
-</span><span id="__span-12-18"><a id="__codelineno-12-18" name="__codelineno-12-18" href="#__codelineno-12-18"></a><span class="nl">.LFB13:</span>
-</span><span id="__span-12-19"><a id="__codelineno-12-19" name="__codelineno-12-19" href="#__codelineno-12-19"></a><span class="w">    </span><span class="na">.cfi_startproc</span>
-</span><span id="__span-12-20"><a id="__codelineno-12-20" name="__codelineno-12-20" href="#__codelineno-12-20"></a><span class="w">    </span><span class="nf">movl</span><span class="w">    </span><span class="no">$0</span><span class="p">,</span><span class="w"> </span><span class="nv">%eax</span>
-</span><span id="__span-12-21"><a id="__codelineno-12-21" name="__codelineno-12-21" href="#__codelineno-12-21"></a><span class="nl">.L5:</span>
-</span><span id="__span-12-22"><a id="__codelineno-12-22" name="__codelineno-12-22" href="#__codelineno-12-22"></a><span class="w">    </span><span class="nf">movq</span><span class="w">    </span><span class="nv">%rdi</span><span class="p">,</span><span class="w"> </span><span class="nv">%rdx</span>
-</span><span id="__span-12-23"><a id="__codelineno-12-23" name="__codelineno-12-23" href="#__codelineno-12-23"></a><span class="w">    </span><span class="nf">andl</span><span class="w">    </span><span class="no">$1</span><span class="p">,</span><span class="w"> </span><span class="nv">%edx</span>
-</span><span id="__span-12-24"><a id="__codelineno-12-24" name="__codelineno-12-24" href="#__codelineno-12-24"></a><span class="w">    </span><span class="nf">addq</span><span class="w">    </span><span class="nv">%rdx</span><span class="p">,</span><span class="w"> </span><span class="nv">%rax</span>
-</span><span id="__span-12-25"><a id="__codelineno-12-25" name="__codelineno-12-25" href="#__codelineno-12-25"></a><span class="w">    </span><span class="nf">shrq</span><span class="w">    </span><span class="nv">%rdi</span>
-</span><span id="__span-12-26"><a id="__codelineno-12-26" name="__codelineno-12-26" href="#__codelineno-12-26"></a><span class="w">    </span><span class="nf">jne</span><span class="w"> </span><span class="no">.L5</span>
-</span><span id="__span-12-27"><a id="__codelineno-12-27" name="__codelineno-12-27" href="#__codelineno-12-27"></a><span class="w">    </span><span class="na">rep</span><span class="c1">; ret</span>
-</span><span id="__span-12-28"><a id="__codelineno-12-28" name="__codelineno-12-28" href="#__codelineno-12-28"></a><span class="nl">pcount_goto_dw:</span>
-</span><span id="__span-12-29"><a id="__codelineno-12-29" name="__codelineno-12-29" href="#__codelineno-12-29"></a><span class="nl">.LFB15:</span>
-</span><span id="__span-12-30"><a id="__codelineno-12-30" name="__codelineno-12-30" href="#__codelineno-12-30"></a><span class="w">    </span><span class="na">.cfi_startproc</span>
-</span><span id="__span-12-31"><a id="__codelineno-12-31" name="__codelineno-12-31" href="#__codelineno-12-31"></a><span class="w">    </span><span class="nf">movl</span><span class="w">    </span><span class="no">$0</span><span class="p">,</span><span class="w"> </span><span class="nv">%eax</span>
-</span><span id="__span-12-32"><a id="__codelineno-12-32" name="__codelineno-12-32" href="#__codelineno-12-32"></a><span class="w">    </span><span class="nf">testq</span><span class="w">   </span><span class="nv">%rdi</span><span class="p">,</span><span class="w"> </span><span class="nv">%rdi</span>
-</span><span id="__span-12-33"><a id="__codelineno-12-33" name="__codelineno-12-33" href="#__codelineno-12-33"></a><span class="w">    </span><span class="nf">je</span><span class="w">  </span><span class="no">.L11</span>
-</span><span id="__span-12-34"><a id="__codelineno-12-34" name="__codelineno-12-34" href="#__codelineno-12-34"></a><span class="nl">.L12:</span>
-</span><span id="__span-12-35"><a id="__codelineno-12-35" name="__codelineno-12-35" href="#__codelineno-12-35"></a><span class="nl">.L13:</span>
-</span><span id="__span-12-36"><a id="__codelineno-12-36" name="__codelineno-12-36" href="#__codelineno-12-36"></a><span class="w">    </span><span class="nf">movq</span><span class="w">    </span><span class="nv">%rdi</span><span class="p">,</span><span class="w"> </span><span class="nv">%rdx</span>
-</span><span id="__span-12-37"><a id="__codelineno-12-37" name="__codelineno-12-37" href="#__codelineno-12-37"></a><span class="w">    </span><span class="nf">andl</span><span class="w">    </span><span class="no">$1</span><span class="p">,</span><span class="w"> </span><span class="nv">%edx</span>
-</span><span id="__span-12-38"><a id="__codelineno-12-38" name="__codelineno-12-38" href="#__codelineno-12-38"></a><span class="w">    </span><span class="nf">addq</span><span class="w">    </span><span class="nv">%rdx</span><span class="p">,</span><span class="w"> </span><span class="nv">%rax</span>
-</span><span id="__span-12-39"><a id="__codelineno-12-39" name="__codelineno-12-39" href="#__codelineno-12-39"></a><span class="w">    </span><span class="nf">shrq</span><span class="w">    </span><span class="nv">%rdi</span>
-</span><span id="__span-12-40"><a id="__codelineno-12-40" name="__codelineno-12-40" href="#__codelineno-12-40"></a><span class="w">    </span><span class="nf">jne</span><span class="w"> </span><span class="no">.L13</span>
-</span><span id="__span-12-41"><a id="__codelineno-12-41" name="__codelineno-12-41" href="#__codelineno-12-41"></a><span class="nl">.L11:</span>
-</span><span id="__span-12-42"><a id="__codelineno-12-42" name="__codelineno-12-42" href="#__codelineno-12-42"></a><span class="w">    </span><span class="na">rep</span><span class="c1">; ret</span>
-</span></code></pre></div>
+<div class="language-c++ highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-11-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-11-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-11-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-11-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-11-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-11-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-11-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-11-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-11-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-11-10">10</a></span>
+<span class="normal"><a href="#__codelineno-11-11">11</a></span>
+<span class="normal"><a href="#__codelineno-11-12">12</a></span>
+<span class="normal"><a href="#__codelineno-11-13">13</a></span>
+<span class="normal"><a href="#__codelineno-11-14">14</a></span>
+<span class="normal"><a href="#__codelineno-11-15">15</a></span>
+<span class="normal"><a href="#__codelineno-11-16">16</a></span>
+<span class="normal"><a href="#__codelineno-11-17">17</a></span>
+<span class="normal"><a href="#__codelineno-11-18">18</a></span>
+<span class="normal"><a href="#__codelineno-11-19">19</a></span>
+<span class="normal"><a href="#__codelineno-11-20">20</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1"></a><span class="kt">long</span><span class="w"> </span><span class="nf">pcount_do</span><span class="p">(</span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">long</span><span class="w"> </span><span class="n">x</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2"></a><span class="w">    </span><span class="kt">long</span><span class="w"> </span><span class="n">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3"></a><span class="w">    </span><span class="k">do</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-11-4"><a id="__codelineno-11-4" name="__codelineno-11-4"></a><span class="w">    </span><span class="n">result</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="mh">0x1</span><span class="p">;</span>
+</span><span id="__span-11-5"><a id="__codelineno-11-5" name="__codelineno-11-5"></a><span class="w">    </span><span class="n">x</span><span class="w"> </span><span class="o">&gt;&gt;=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+</span><span id="__span-11-6"><a id="__codelineno-11-6" name="__codelineno-11-6"></a><span class="w">    </span><span class="p">}</span><span class="w"> </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">x</span><span class="p">);</span>
+</span><span id="__span-11-7"><a id="__codelineno-11-7" name="__codelineno-11-7"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">result</span><span class="p">;</span>
+</span><span id="__span-11-8"><a id="__codelineno-11-8" name="__codelineno-11-8"></a><span class="p">}</span>
+</span><span id="__span-11-9"><a id="__codelineno-11-9" name="__codelineno-11-9"></a><span class="kt">long</span><span class="w"> </span><span class="nf">pcount_goto_dw</span><span class="p">(</span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">long</span><span class="w"> </span><span class="n">x</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-11-10"><a id="__codelineno-11-10" name="__codelineno-11-10"></a><span class="w">    </span><span class="kt">long</span><span class="w"> </span><span class="n">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+</span><span id="__span-11-11"><a id="__codelineno-11-11" name="__codelineno-11-11"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="n">x</span><span class="p">)</span>
+</span><span id="__span-11-12"><a id="__codelineno-11-12" name="__codelineno-11-12"></a><span class="w">    </span><span class="k">goto</span><span class="w"> </span><span class="n">done</span><span class="p">;</span>
+</span><span id="__span-11-13"><a id="__codelineno-11-13" name="__codelineno-11-13"></a><span class="w"> </span><span class="nl">loop</span><span class="p">:</span>
+</span><span id="__span-11-14"><a id="__codelineno-11-14" name="__codelineno-11-14"></a><span class="w">    </span><span class="n">result</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="mh">0x1</span><span class="p">;</span>
+</span><span id="__span-11-15"><a id="__codelineno-11-15" name="__codelineno-11-15"></a><span class="w">    </span><span class="n">x</span><span class="w"> </span><span class="o">&gt;&gt;=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+</span><span id="__span-11-16"><a id="__codelineno-11-16" name="__codelineno-11-16"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+</span><span id="__span-11-17"><a id="__codelineno-11-17" name="__codelineno-11-17"></a><span class="w">    </span><span class="k">goto</span><span class="w"> </span><span class="n">loop</span><span class="p">;</span>
+</span><span id="__span-11-18"><a id="__codelineno-11-18" name="__codelineno-11-18"></a><span class="w"> </span><span class="nl">done</span><span class="p">:</span>
+</span><span id="__span-11-19"><a id="__codelineno-11-19" name="__codelineno-11-19"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">result</span><span class="p">;</span>
+</span><span id="__span-11-20"><a id="__codelineno-11-20" name="__codelineno-11-20"></a><span class="p">}</span>
+</span></code></pre></div></td></tr></table></div>
+<div class="language-asm highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-12-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-12-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-12-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-12-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-12-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-12-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-12-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-12-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-12-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-12-10">10</a></span>
+<span class="normal"><a href="#__codelineno-12-11">11</a></span>
+<span class="normal"><a href="#__codelineno-12-12">12</a></span>
+<span class="normal"><a href="#__codelineno-12-13">13</a></span>
+<span class="normal"><a href="#__codelineno-12-14">14</a></span>
+<span class="normal"><a href="#__codelineno-12-15">15</a></span>
+<span class="normal"><a href="#__codelineno-12-16">16</a></span>
+<span class="normal"><a href="#__codelineno-12-17">17</a></span>
+<span class="normal"><a href="#__codelineno-12-18">18</a></span>
+<span class="normal"><a href="#__codelineno-12-19">19</a></span>
+<span class="normal"><a href="#__codelineno-12-20">20</a></span>
+<span class="normal"><a href="#__codelineno-12-21">21</a></span>
+<span class="normal"><a href="#__codelineno-12-22">22</a></span>
+<span class="normal"><a href="#__codelineno-12-23">23</a></span>
+<span class="normal"><a href="#__codelineno-12-24">24</a></span>
+<span class="normal"><a href="#__codelineno-12-25">25</a></span>
+<span class="normal"><a href="#__codelineno-12-26">26</a></span>
+<span class="normal"><a href="#__codelineno-12-27">27</a></span>
+<span class="normal"><a href="#__codelineno-12-28">28</a></span>
+<span class="normal"><a href="#__codelineno-12-29">29</a></span>
+<span class="normal"><a href="#__codelineno-12-30">30</a></span>
+<span class="normal"><a href="#__codelineno-12-31">31</a></span>
+<span class="normal"><a href="#__codelineno-12-32">32</a></span>
+<span class="normal"><a href="#__codelineno-12-33">33</a></span>
+<span class="normal"><a href="#__codelineno-12-34">34</a></span>
+<span class="normal"><a href="#__codelineno-12-35">35</a></span>
+<span class="normal"><a href="#__codelineno-12-36">36</a></span>
+<span class="normal"><a href="#__codelineno-12-37">37</a></span>
+<span class="normal"><a href="#__codelineno-12-38">38</a></span>
+<span class="normal"><a href="#__codelineno-12-39">39</a></span>
+<span class="normal"><a href="#__codelineno-12-40">40</a></span>
+<span class="normal"><a href="#__codelineno-12-41">41</a></span>
+<span class="normal"><a href="#__codelineno-12-42">42</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1"></a><span class="nl">pcount_do:</span>
+</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2"></a><span class="nl">.LFB12:</span>
+</span><span id="__span-12-3"><a id="__codelineno-12-3" name="__codelineno-12-3"></a><span class="w">    </span><span class="na">.cfi_startproc</span>
+</span><span id="__span-12-4"><a id="__codelineno-12-4" name="__codelineno-12-4"></a><span class="w">    </span><span class="nf">movl</span><span class="w">    </span><span class="no">$0</span><span class="p">,</span><span class="w"> </span><span class="nv">%eax</span>
+</span><span id="__span-12-5"><a id="__codelineno-12-5" name="__codelineno-12-5"></a><span class="nl">.L2:</span>
+</span><span id="__span-12-6"><a id="__codelineno-12-6" name="__codelineno-12-6"></a><span class="w">    </span><span class="nf">movq</span><span class="w">    </span><span class="nv">%rdi</span><span class="p">,</span><span class="w"> </span><span class="nv">%rdx</span>
+</span><span id="__span-12-7"><a id="__codelineno-12-7" name="__codelineno-12-7"></a><span class="w">    </span><span class="nf">andl</span><span class="w">    </span><span class="no">$1</span><span class="p">,</span><span class="w"> </span><span class="nv">%edx</span>
+</span><span id="__span-12-8"><a id="__codelineno-12-8" name="__codelineno-12-8"></a><span class="w">    </span><span class="nf">addq</span><span class="w">    </span><span class="nv">%rdx</span><span class="p">,</span><span class="w"> </span><span class="nv">%rax</span>
+</span><span id="__span-12-9"><a id="__codelineno-12-9" name="__codelineno-12-9"></a><span class="w">    </span><span class="nf">shrq</span><span class="w">    </span><span class="nv">%rdi</span>
+</span><span id="__span-12-10"><a id="__codelineno-12-10" name="__codelineno-12-10"></a><span class="w">    </span><span class="nf">jne</span><span class="w"> </span><span class="no">.L2</span>
+</span><span id="__span-12-11"><a id="__codelineno-12-11" name="__codelineno-12-11"></a><span class="w">    </span><span class="na">rep</span><span class="c1">; ret</span>
+</span><span id="__span-12-12"><a id="__codelineno-12-12" name="__codelineno-12-12"></a><span class="w">    </span><span class="na">.cfi_endproc</span>
+</span><span id="__span-12-13"><a id="__codelineno-12-13" name="__codelineno-12-13"></a><span class="nl">.LFE12:</span>
+</span><span id="__span-12-14"><a id="__codelineno-12-14" name="__codelineno-12-14"></a><span class="w">    </span><span class="na">.size</span><span class="w">   </span><span class="no">pcount_do</span><span class="p">,</span><span class="w"> </span><span class="no">.-pcount_do</span>
+</span><span id="__span-12-15"><a id="__codelineno-12-15" name="__codelineno-12-15"></a><span class="w">    </span><span class="na">.globl</span><span class="w">  </span><span class="no">pcount_goto</span>
+</span><span id="__span-12-16"><a id="__codelineno-12-16" name="__codelineno-12-16"></a><span class="w">    </span><span class="na">.type</span><span class="w">   </span><span class="no">pcount_goto</span><span class="p">,</span><span class="w"> </span><span class="na">@function</span>
+</span><span id="__span-12-17"><a id="__codelineno-12-17" name="__codelineno-12-17"></a><span class="nl">pcount_goto:</span>
+</span><span id="__span-12-18"><a id="__codelineno-12-18" name="__codelineno-12-18"></a><span class="nl">.LFB13:</span>
+</span><span id="__span-12-19"><a id="__codelineno-12-19" name="__codelineno-12-19"></a><span class="w">    </span><span class="na">.cfi_startproc</span>
+</span><span id="__span-12-20"><a id="__codelineno-12-20" name="__codelineno-12-20"></a><span class="w">    </span><span class="nf">movl</span><span class="w">    </span><span class="no">$0</span><span class="p">,</span><span class="w"> </span><span class="nv">%eax</span>
+</span><span id="__span-12-21"><a id="__codelineno-12-21" name="__codelineno-12-21"></a><span class="nl">.L5:</span>
+</span><span id="__span-12-22"><a id="__codelineno-12-22" name="__codelineno-12-22"></a><span class="w">    </span><span class="nf">movq</span><span class="w">    </span><span class="nv">%rdi</span><span class="p">,</span><span class="w"> </span><span class="nv">%rdx</span>
+</span><span id="__span-12-23"><a id="__codelineno-12-23" name="__codelineno-12-23"></a><span class="w">    </span><span class="nf">andl</span><span class="w">    </span><span class="no">$1</span><span class="p">,</span><span class="w"> </span><span class="nv">%edx</span>
+</span><span id="__span-12-24"><a id="__codelineno-12-24" name="__codelineno-12-24"></a><span class="w">    </span><span class="nf">addq</span><span class="w">    </span><span class="nv">%rdx</span><span class="p">,</span><span class="w"> </span><span class="nv">%rax</span>
+</span><span id="__span-12-25"><a id="__codelineno-12-25" name="__codelineno-12-25"></a><span class="w">    </span><span class="nf">shrq</span><span class="w">    </span><span class="nv">%rdi</span>
+</span><span id="__span-12-26"><a id="__codelineno-12-26" name="__codelineno-12-26"></a><span class="w">    </span><span class="nf">jne</span><span class="w"> </span><span class="no">.L5</span>
+</span><span id="__span-12-27"><a id="__codelineno-12-27" name="__codelineno-12-27"></a><span class="w">    </span><span class="na">rep</span><span class="c1">; ret</span>
+</span><span id="__span-12-28"><a id="__codelineno-12-28" name="__codelineno-12-28"></a><span class="nl">pcount_goto_dw:</span>
+</span><span id="__span-12-29"><a id="__codelineno-12-29" name="__codelineno-12-29"></a><span class="nl">.LFB15:</span>
+</span><span id="__span-12-30"><a id="__codelineno-12-30" name="__codelineno-12-30"></a><span class="w">    </span><span class="na">.cfi_startproc</span>
+</span><span id="__span-12-31"><a id="__codelineno-12-31" name="__codelineno-12-31"></a><span class="w">    </span><span class="nf">movl</span><span class="w">    </span><span class="no">$0</span><span class="p">,</span><span class="w"> </span><span class="nv">%eax</span>
+</span><span id="__span-12-32"><a id="__codelineno-12-32" name="__codelineno-12-32"></a><span class="w">    </span><span class="nf">testq</span><span class="w">   </span><span class="nv">%rdi</span><span class="p">,</span><span class="w"> </span><span class="nv">%rdi</span>
+</span><span id="__span-12-33"><a id="__codelineno-12-33" name="__codelineno-12-33"></a><span class="w">    </span><span class="nf">je</span><span class="w">  </span><span class="no">.L11</span>
+</span><span id="__span-12-34"><a id="__codelineno-12-34" name="__codelineno-12-34"></a><span class="nl">.L12:</span>
+</span><span id="__span-12-35"><a id="__codelineno-12-35" name="__codelineno-12-35"></a><span class="nl">.L13:</span>
+</span><span id="__span-12-36"><a id="__codelineno-12-36" name="__codelineno-12-36"></a><span class="w">    </span><span class="nf">movq</span><span class="w">    </span><span class="nv">%rdi</span><span class="p">,</span><span class="w"> </span><span class="nv">%rdx</span>
+</span><span id="__span-12-37"><a id="__codelineno-12-37" name="__codelineno-12-37"></a><span class="w">    </span><span class="nf">andl</span><span class="w">    </span><span class="no">$1</span><span class="p">,</span><span class="w"> </span><span class="nv">%edx</span>
+</span><span id="__span-12-38"><a id="__codelineno-12-38" name="__codelineno-12-38"></a><span class="w">    </span><span class="nf">addq</span><span class="w">    </span><span class="nv">%rdx</span><span class="p">,</span><span class="w"> </span><span class="nv">%rax</span>
+</span><span id="__span-12-39"><a id="__codelineno-12-39" name="__codelineno-12-39"></a><span class="w">    </span><span class="nf">shrq</span><span class="w">    </span><span class="nv">%rdi</span>
+</span><span id="__span-12-40"><a id="__codelineno-12-40" name="__codelineno-12-40"></a><span class="w">    </span><span class="nf">jne</span><span class="w"> </span><span class="no">.L13</span>
+</span><span id="__span-12-41"><a id="__codelineno-12-41" name="__codelineno-12-41"></a><span class="nl">.L11:</span>
+</span><span id="__span-12-42"><a id="__codelineno-12-42" name="__codelineno-12-42"></a><span class="w">    </span><span class="na">rep</span><span class="c1">; ret</span>
+</span></code></pre></div></td></tr></table></div>
 </details>
 <hr />
 <h3 id="2while">2、<code>while</code> 循环</h3>
-<div class="language-c++ highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="w">    </span><span class="k">goto</span><span class="w"> </span><span class="n">test</span><span class="p">;</span>
-</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a><span class="nl">loop</span><span class="p">:</span>
-</span><span id="__span-13-3"><a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a><span class="w">    </span><span class="n">Body</span>
-</span><span id="__span-13-4"><a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a><span class="w">    </span><span class="k">if</span><span class="p">(</span><span class="n">Test</span><span class="p">)</span>
-</span><span id="__span-13-5"><a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a><span class="w">        </span><span class="k">goto</span><span class="w"> </span><span class="n">loop</span>
-</span><span id="__span-13-6"><a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a><span class="nl">done</span><span class="p">:</span>
-</span></code></pre></div>
+<div class="language-c++ highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-13-1">1</a></span>
+<span class="normal"><a href="#__codelineno-13-2">2</a></span>
+<span class="normal"><a href="#__codelineno-13-3">3</a></span>
+<span class="normal"><a href="#__codelineno-13-4">4</a></span>
+<span class="normal"><a href="#__codelineno-13-5">5</a></span>
+<span class="normal"><a href="#__codelineno-13-6">6</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1"></a><span class="w">    </span><span class="k">goto</span><span class="w"> </span><span class="n">test</span><span class="p">;</span>
+</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2"></a><span class="nl">loop</span><span class="p">:</span>
+</span><span id="__span-13-3"><a id="__codelineno-13-3" name="__codelineno-13-3"></a><span class="w">    </span><span class="n">Body</span>
+</span><span id="__span-13-4"><a id="__codelineno-13-4" name="__codelineno-13-4"></a><span class="w">    </span><span class="k">if</span><span class="p">(</span><span class="n">Test</span><span class="p">)</span>
+</span><span id="__span-13-5"><a id="__codelineno-13-5" name="__codelineno-13-5"></a><span class="w">        </span><span class="k">goto</span><span class="w"> </span><span class="n">loop</span>
+</span><span id="__span-13-6"><a id="__codelineno-13-6" name="__codelineno-13-6"></a><span class="nl">done</span><span class="p">:</span>
+</span></code></pre></div></td></tr></table></div>
 <details class="example" open="open">
 <summary>Example</summary>
-<div class="language-c++ highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="kt">long</span><span class="w"> </span><span class="nf">pcount_while</span><span class="p">(</span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">long</span><span class="w"> </span><span class="n">x</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-14-2"><a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a><span class="w">    </span><span class="kt">long</span><span class="w"> </span><span class="n">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
-</span><span id="__span-14-3"><a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a><span class="w">    </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span>
-</span><span id="__span-14-4"><a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a><span class="w">        </span><span class="n">result</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="mh">0x1</span><span class="p">;</span><span class="w"> </span>
-</span><span id="__span-14-5"><a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a><span class="w">        </span><span class="n">x</span><span class="w"> </span><span class="o">&gt;&gt;=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
-</span><span id="__span-14-6"><a id="__codelineno-14-6" name="__codelineno-14-6" href="#__codelineno-14-6"></a><span class="w">    </span><span class="p">}</span>
-</span><span id="__span-14-7"><a id="__codelineno-14-7" name="__codelineno-14-7" href="#__codelineno-14-7"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">result</span><span class="p">;</span><span class="w"> </span>
-</span><span id="__span-14-8"><a id="__codelineno-14-8" name="__codelineno-14-8" href="#__codelineno-14-8"></a><span class="p">}</span>
-</span><span id="__span-14-9"><a id="__codelineno-14-9" name="__codelineno-14-9" href="#__codelineno-14-9"></a><span class="kt">long</span><span class="w"> </span><span class="nf">pcount_goto_jtm</span><span class="p">(</span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">long</span><span class="w"> </span><span class="n">x</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-14-10"><a id="__codelineno-14-10" name="__codelineno-14-10" href="#__codelineno-14-10"></a><span class="w">    </span><span class="kt">long</span><span class="w"> </span><span class="n">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
-</span><span id="__span-14-11"><a id="__codelineno-14-11" name="__codelineno-14-11" href="#__codelineno-14-11"></a><span class="w">    </span><span class="k">goto</span><span class="w"> </span><span class="n">test</span><span class="p">;</span>
-</span><span id="__span-14-12"><a id="__codelineno-14-12" name="__codelineno-14-12" href="#__codelineno-14-12"></a><span class="w"> </span><span class="nl">loop</span><span class="p">:</span>
-</span><span id="__span-14-13"><a id="__codelineno-14-13" name="__codelineno-14-13" href="#__codelineno-14-13"></a><span class="w">    </span><span class="n">result</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="mh">0x1</span><span class="p">;</span>
-</span><span id="__span-14-14"><a id="__codelineno-14-14" name="__codelineno-14-14" href="#__codelineno-14-14"></a><span class="w">    </span><span class="n">x</span><span class="w"> </span><span class="o">&gt;&gt;=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
-</span><span id="__span-14-15"><a id="__codelineno-14-15" name="__codelineno-14-15" href="#__codelineno-14-15"></a><span class="w"> </span><span class="nl">test</span><span class="p">:</span>
-</span><span id="__span-14-16"><a id="__codelineno-14-16" name="__codelineno-14-16" href="#__codelineno-14-16"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-</span><span id="__span-14-17"><a id="__codelineno-14-17" name="__codelineno-14-17" href="#__codelineno-14-17"></a><span class="w">    </span><span class="k">goto</span><span class="w"> </span><span class="n">loop</span><span class="p">;</span>
-</span><span id="__span-14-18"><a id="__codelineno-14-18" name="__codelineno-14-18" href="#__codelineno-14-18"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">result</span><span class="p">;</span>
-</span><span id="__span-14-19"><a id="__codelineno-14-19" name="__codelineno-14-19" href="#__codelineno-14-19"></a><span class="p">}</span>
-</span></code></pre></div>
-<div class="language-asm highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="nl">pcount_while:</span>
-</span><span id="__span-15-2"><a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a><span class="nl">.LFB14:</span>
-</span><span id="__span-15-3"><a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a><span class="w">    </span><span class="na">.cfi_startproc</span>
-</span><span id="__span-15-4"><a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a><span class="w">    </span><span class="nf">movl</span><span class="w">    </span><span class="no">$0</span><span class="p">,</span><span class="w"> </span><span class="nv">%eax</span>
-</span><span id="__span-15-5"><a id="__codelineno-15-5" name="__codelineno-15-5" href="#__codelineno-15-5"></a><span class="w">    </span><span class="nf">jmp</span><span class="w"> </span><span class="no">.L8</span>
-</span><span id="__span-15-6"><a id="__codelineno-15-6" name="__codelineno-15-6" href="#__codelineno-15-6"></a><span class="nl">.L9:</span>
-</span><span id="__span-15-7"><a id="__codelineno-15-7" name="__codelineno-15-7" href="#__codelineno-15-7"></a><span class="w">    </span><span class="nf">movq</span><span class="w">    </span><span class="nv">%rdi</span><span class="p">,</span><span class="w"> </span><span class="nv">%rdx</span>
-</span><span id="__span-15-8"><a id="__codelineno-15-8" name="__codelineno-15-8" href="#__codelineno-15-8"></a><span class="w">    </span><span class="nf">andl</span><span class="w">    </span><span class="no">$1</span><span class="p">,</span><span class="w"> </span><span class="nv">%edx</span>
-</span><span id="__span-15-9"><a id="__codelineno-15-9" name="__codelineno-15-9" href="#__codelineno-15-9"></a><span class="w">    </span><span class="nf">addq</span><span class="w">    </span><span class="nv">%rdx</span><span class="p">,</span><span class="w"> </span><span class="nv">%rax</span>
-</span><span id="__span-15-10"><a id="__codelineno-15-10" name="__codelineno-15-10" href="#__codelineno-15-10"></a><span class="w">    </span><span class="nf">shrq</span><span class="w">    </span><span class="nv">%rdi</span>
-</span><span id="__span-15-11"><a id="__codelineno-15-11" name="__codelineno-15-11" href="#__codelineno-15-11"></a><span class="nl">.L8:</span>
-</span><span id="__span-15-12"><a id="__codelineno-15-12" name="__codelineno-15-12" href="#__codelineno-15-12"></a><span class="w">    </span><span class="nf">testq</span><span class="w">   </span><span class="nv">%rdi</span><span class="p">,</span><span class="w"> </span><span class="nv">%rdi</span>
-</span><span id="__span-15-13"><a id="__codelineno-15-13" name="__codelineno-15-13" href="#__codelineno-15-13"></a><span class="w">    </span><span class="nf">jne</span><span class="w"> </span><span class="no">.L9</span>
-</span><span id="__span-15-14"><a id="__codelineno-15-14" name="__codelineno-15-14" href="#__codelineno-15-14"></a><span class="w">    </span><span class="na">rep</span><span class="c1">; ret</span>
-</span><span id="__span-15-15"><a id="__codelineno-15-15" name="__codelineno-15-15" href="#__codelineno-15-15"></a><span class="nl">pcount_goto_jtm:</span>
-</span><span id="__span-15-16"><a id="__codelineno-15-16" name="__codelineno-15-16" href="#__codelineno-15-16"></a><span class="nl">.LFB16:</span>
-</span><span id="__span-15-17"><a id="__codelineno-15-17" name="__codelineno-15-17" href="#__codelineno-15-17"></a><span class="w">    </span><span class="na">.cfi_startproc</span>
-</span><span id="__span-15-18"><a id="__codelineno-15-18" name="__codelineno-15-18" href="#__codelineno-15-18"></a><span class="w">    </span><span class="nf">movl</span><span class="w">    </span><span class="no">$0</span><span class="p">,</span><span class="w"> </span><span class="nv">%eax</span>
-</span><span id="__span-15-19"><a id="__codelineno-15-19" name="__codelineno-15-19" href="#__codelineno-15-19"></a><span class="w">    </span><span class="nf">jmp</span><span class="w"> </span><span class="no">.L17</span>
-</span><span id="__span-15-20"><a id="__codelineno-15-20" name="__codelineno-15-20" href="#__codelineno-15-20"></a><span class="nl">.L18:</span>
-</span><span id="__span-15-21"><a id="__codelineno-15-21" name="__codelineno-15-21" href="#__codelineno-15-21"></a><span class="w">    </span><span class="nf">movq</span><span class="w">    </span><span class="nv">%rdi</span><span class="p">,</span><span class="w"> </span><span class="nv">%rdx</span>
-</span><span id="__span-15-22"><a id="__codelineno-15-22" name="__codelineno-15-22" href="#__codelineno-15-22"></a><span class="w">    </span><span class="nf">andl</span><span class="w">    </span><span class="no">$1</span><span class="p">,</span><span class="w"> </span><span class="nv">%edx</span>
-</span><span id="__span-15-23"><a id="__codelineno-15-23" name="__codelineno-15-23" href="#__codelineno-15-23"></a><span class="w">    </span><span class="nf">addq</span><span class="w">    </span><span class="nv">%rdx</span><span class="p">,</span><span class="w"> </span><span class="nv">%rax</span>
-</span><span id="__span-15-24"><a id="__codelineno-15-24" name="__codelineno-15-24" href="#__codelineno-15-24"></a><span class="w">    </span><span class="nf">shrq</span><span class="w">    </span><span class="nv">%rdi</span>
-</span><span id="__span-15-25"><a id="__codelineno-15-25" name="__codelineno-15-25" href="#__codelineno-15-25"></a><span class="nl">.L17:</span>
-</span><span id="__span-15-26"><a id="__codelineno-15-26" name="__codelineno-15-26" href="#__codelineno-15-26"></a><span class="w">    </span><span class="nf">testq</span><span class="w">   </span><span class="nv">%rdi</span><span class="p">,</span><span class="w"> </span><span class="nv">%rdi</span>
-</span><span id="__span-15-27"><a id="__codelineno-15-27" name="__codelineno-15-27" href="#__codelineno-15-27"></a><span class="w">    </span><span class="nf">jne</span><span class="w"> </span><span class="no">.L18</span>
-</span><span id="__span-15-28"><a id="__codelineno-15-28" name="__codelineno-15-28" href="#__codelineno-15-28"></a><span class="w">    </span><span class="na">rep</span><span class="c1">; ret</span>
-</span></code></pre></div>
+<div class="language-c++ highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-14-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-14-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-14-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-14-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-14-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-14-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-14-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-14-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-14-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-14-10">10</a></span>
+<span class="normal"><a href="#__codelineno-14-11">11</a></span>
+<span class="normal"><a href="#__codelineno-14-12">12</a></span>
+<span class="normal"><a href="#__codelineno-14-13">13</a></span>
+<span class="normal"><a href="#__codelineno-14-14">14</a></span>
+<span class="normal"><a href="#__codelineno-14-15">15</a></span>
+<span class="normal"><a href="#__codelineno-14-16">16</a></span>
+<span class="normal"><a href="#__codelineno-14-17">17</a></span>
+<span class="normal"><a href="#__codelineno-14-18">18</a></span>
+<span class="normal"><a href="#__codelineno-14-19">19</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1"></a><span class="kt">long</span><span class="w"> </span><span class="nf">pcount_while</span><span class="p">(</span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">long</span><span class="w"> </span><span class="n">x</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-14-2"><a id="__codelineno-14-2" name="__codelineno-14-2"></a><span class="w">    </span><span class="kt">long</span><span class="w"> </span><span class="n">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+</span><span id="__span-14-3"><a id="__codelineno-14-3" name="__codelineno-14-3"></a><span class="w">    </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span>
+</span><span id="__span-14-4"><a id="__codelineno-14-4" name="__codelineno-14-4"></a><span class="w">        </span><span class="n">result</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="mh">0x1</span><span class="p">;</span><span class="w"> </span>
+</span><span id="__span-14-5"><a id="__codelineno-14-5" name="__codelineno-14-5"></a><span class="w">        </span><span class="n">x</span><span class="w"> </span><span class="o">&gt;&gt;=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+</span><span id="__span-14-6"><a id="__codelineno-14-6" name="__codelineno-14-6"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-14-7"><a id="__codelineno-14-7" name="__codelineno-14-7"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">result</span><span class="p">;</span><span class="w"> </span>
+</span><span id="__span-14-8"><a id="__codelineno-14-8" name="__codelineno-14-8"></a><span class="p">}</span>
+</span><span id="__span-14-9"><a id="__codelineno-14-9" name="__codelineno-14-9"></a><span class="kt">long</span><span class="w"> </span><span class="nf">pcount_goto_jtm</span><span class="p">(</span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">long</span><span class="w"> </span><span class="n">x</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-14-10"><a id="__codelineno-14-10" name="__codelineno-14-10"></a><span class="w">    </span><span class="kt">long</span><span class="w"> </span><span class="n">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+</span><span id="__span-14-11"><a id="__codelineno-14-11" name="__codelineno-14-11"></a><span class="w">    </span><span class="k">goto</span><span class="w"> </span><span class="n">test</span><span class="p">;</span>
+</span><span id="__span-14-12"><a id="__codelineno-14-12" name="__codelineno-14-12"></a><span class="w"> </span><span class="nl">loop</span><span class="p">:</span>
+</span><span id="__span-14-13"><a id="__codelineno-14-13" name="__codelineno-14-13"></a><span class="w">    </span><span class="n">result</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="mh">0x1</span><span class="p">;</span>
+</span><span id="__span-14-14"><a id="__codelineno-14-14" name="__codelineno-14-14"></a><span class="w">    </span><span class="n">x</span><span class="w"> </span><span class="o">&gt;&gt;=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+</span><span id="__span-14-15"><a id="__codelineno-14-15" name="__codelineno-14-15"></a><span class="w"> </span><span class="nl">test</span><span class="p">:</span>
+</span><span id="__span-14-16"><a id="__codelineno-14-16" name="__codelineno-14-16"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+</span><span id="__span-14-17"><a id="__codelineno-14-17" name="__codelineno-14-17"></a><span class="w">    </span><span class="k">goto</span><span class="w"> </span><span class="n">loop</span><span class="p">;</span>
+</span><span id="__span-14-18"><a id="__codelineno-14-18" name="__codelineno-14-18"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">result</span><span class="p">;</span>
+</span><span id="__span-14-19"><a id="__codelineno-14-19" name="__codelineno-14-19"></a><span class="p">}</span>
+</span></code></pre></div></td></tr></table></div>
+<div class="language-asm highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-15-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-15-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-15-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-15-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-15-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-15-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-15-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-15-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-15-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-15-10">10</a></span>
+<span class="normal"><a href="#__codelineno-15-11">11</a></span>
+<span class="normal"><a href="#__codelineno-15-12">12</a></span>
+<span class="normal"><a href="#__codelineno-15-13">13</a></span>
+<span class="normal"><a href="#__codelineno-15-14">14</a></span>
+<span class="normal"><a href="#__codelineno-15-15">15</a></span>
+<span class="normal"><a href="#__codelineno-15-16">16</a></span>
+<span class="normal"><a href="#__codelineno-15-17">17</a></span>
+<span class="normal"><a href="#__codelineno-15-18">18</a></span>
+<span class="normal"><a href="#__codelineno-15-19">19</a></span>
+<span class="normal"><a href="#__codelineno-15-20">20</a></span>
+<span class="normal"><a href="#__codelineno-15-21">21</a></span>
+<span class="normal"><a href="#__codelineno-15-22">22</a></span>
+<span class="normal"><a href="#__codelineno-15-23">23</a></span>
+<span class="normal"><a href="#__codelineno-15-24">24</a></span>
+<span class="normal"><a href="#__codelineno-15-25">25</a></span>
+<span class="normal"><a href="#__codelineno-15-26">26</a></span>
+<span class="normal"><a href="#__codelineno-15-27">27</a></span>
+<span class="normal"><a href="#__codelineno-15-28">28</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1"></a><span class="nl">pcount_while:</span>
+</span><span id="__span-15-2"><a id="__codelineno-15-2" name="__codelineno-15-2"></a><span class="nl">.LFB14:</span>
+</span><span id="__span-15-3"><a id="__codelineno-15-3" name="__codelineno-15-3"></a><span class="w">    </span><span class="na">.cfi_startproc</span>
+</span><span id="__span-15-4"><a id="__codelineno-15-4" name="__codelineno-15-4"></a><span class="w">    </span><span class="nf">movl</span><span class="w">    </span><span class="no">$0</span><span class="p">,</span><span class="w"> </span><span class="nv">%eax</span>
+</span><span id="__span-15-5"><a id="__codelineno-15-5" name="__codelineno-15-5"></a><span class="w">    </span><span class="nf">jmp</span><span class="w"> </span><span class="no">.L8</span>
+</span><span id="__span-15-6"><a id="__codelineno-15-6" name="__codelineno-15-6"></a><span class="nl">.L9:</span>
+</span><span id="__span-15-7"><a id="__codelineno-15-7" name="__codelineno-15-7"></a><span class="w">    </span><span class="nf">movq</span><span class="w">    </span><span class="nv">%rdi</span><span class="p">,</span><span class="w"> </span><span class="nv">%rdx</span>
+</span><span id="__span-15-8"><a id="__codelineno-15-8" name="__codelineno-15-8"></a><span class="w">    </span><span class="nf">andl</span><span class="w">    </span><span class="no">$1</span><span class="p">,</span><span class="w"> </span><span class="nv">%edx</span>
+</span><span id="__span-15-9"><a id="__codelineno-15-9" name="__codelineno-15-9"></a><span class="w">    </span><span class="nf">addq</span><span class="w">    </span><span class="nv">%rdx</span><span class="p">,</span><span class="w"> </span><span class="nv">%rax</span>
+</span><span id="__span-15-10"><a id="__codelineno-15-10" name="__codelineno-15-10"></a><span class="w">    </span><span class="nf">shrq</span><span class="w">    </span><span class="nv">%rdi</span>
+</span><span id="__span-15-11"><a id="__codelineno-15-11" name="__codelineno-15-11"></a><span class="nl">.L8:</span>
+</span><span id="__span-15-12"><a id="__codelineno-15-12" name="__codelineno-15-12"></a><span class="w">    </span><span class="nf">testq</span><span class="w">   </span><span class="nv">%rdi</span><span class="p">,</span><span class="w"> </span><span class="nv">%rdi</span>
+</span><span id="__span-15-13"><a id="__codelineno-15-13" name="__codelineno-15-13"></a><span class="w">    </span><span class="nf">jne</span><span class="w"> </span><span class="no">.L9</span>
+</span><span id="__span-15-14"><a id="__codelineno-15-14" name="__codelineno-15-14"></a><span class="w">    </span><span class="na">rep</span><span class="c1">; ret</span>
+</span><span id="__span-15-15"><a id="__codelineno-15-15" name="__codelineno-15-15"></a><span class="nl">pcount_goto_jtm:</span>
+</span><span id="__span-15-16"><a id="__codelineno-15-16" name="__codelineno-15-16"></a><span class="nl">.LFB16:</span>
+</span><span id="__span-15-17"><a id="__codelineno-15-17" name="__codelineno-15-17"></a><span class="w">    </span><span class="na">.cfi_startproc</span>
+</span><span id="__span-15-18"><a id="__codelineno-15-18" name="__codelineno-15-18"></a><span class="w">    </span><span class="nf">movl</span><span class="w">    </span><span class="no">$0</span><span class="p">,</span><span class="w"> </span><span class="nv">%eax</span>
+</span><span id="__span-15-19"><a id="__codelineno-15-19" name="__codelineno-15-19"></a><span class="w">    </span><span class="nf">jmp</span><span class="w"> </span><span class="no">.L17</span>
+</span><span id="__span-15-20"><a id="__codelineno-15-20" name="__codelineno-15-20"></a><span class="nl">.L18:</span>
+</span><span id="__span-15-21"><a id="__codelineno-15-21" name="__codelineno-15-21"></a><span class="w">    </span><span class="nf">movq</span><span class="w">    </span><span class="nv">%rdi</span><span class="p">,</span><span class="w"> </span><span class="nv">%rdx</span>
+</span><span id="__span-15-22"><a id="__codelineno-15-22" name="__codelineno-15-22"></a><span class="w">    </span><span class="nf">andl</span><span class="w">    </span><span class="no">$1</span><span class="p">,</span><span class="w"> </span><span class="nv">%edx</span>
+</span><span id="__span-15-23"><a id="__codelineno-15-23" name="__codelineno-15-23"></a><span class="w">    </span><span class="nf">addq</span><span class="w">    </span><span class="nv">%rdx</span><span class="p">,</span><span class="w"> </span><span class="nv">%rax</span>
+</span><span id="__span-15-24"><a id="__codelineno-15-24" name="__codelineno-15-24"></a><span class="w">    </span><span class="nf">shrq</span><span class="w">    </span><span class="nv">%rdi</span>
+</span><span id="__span-15-25"><a id="__codelineno-15-25" name="__codelineno-15-25"></a><span class="nl">.L17:</span>
+</span><span id="__span-15-26"><a id="__codelineno-15-26" name="__codelineno-15-26"></a><span class="w">    </span><span class="nf">testq</span><span class="w">   </span><span class="nv">%rdi</span><span class="p">,</span><span class="w"> </span><span class="nv">%rdi</span>
+</span><span id="__span-15-27"><a id="__codelineno-15-27" name="__codelineno-15-27"></a><span class="w">    </span><span class="nf">jne</span><span class="w"> </span><span class="no">.L18</span>
+</span><span id="__span-15-28"><a id="__codelineno-15-28" name="__codelineno-15-28"></a><span class="w">    </span><span class="na">rep</span><span class="c1">; ret</span>
+</span></code></pre></div></td></tr></table></div>
 </details>
 <hr />
 <h3 id="3for">3、<code>for</code> 循环</h3>
-<div class="language-c++ highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="n">Init</span><span class="p">;</span><span class="w"> </span><span class="n">Test</span><span class="p">;</span><span class="w"> </span><span class="n">Update</span><span class="p">)</span>
-</span><span id="__span-16-2"><a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a><span class="w">    </span><span class="n">Body</span>
-</span></code></pre></div>
+<div class="language-c++ highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-16-1">1</a></span>
+<span class="normal"><a href="#__codelineno-16-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1"></a><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="n">Init</span><span class="p">;</span><span class="w"> </span><span class="n">Test</span><span class="p">;</span><span class="w"> </span><span class="n">Update</span><span class="p">)</span>
+</span><span id="__span-16-2"><a id="__codelineno-16-2" name="__codelineno-16-2"></a><span class="w">    </span><span class="n">Body</span>
+</span></code></pre></div></td></tr></table></div>
 <details class="example" open="open">
 <summary>Example</summary>
-<div class="language-c++ highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="kt">long</span><span class="w"> </span><span class="nf">pcount_for</span><span class="p">(</span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">long</span><span class="w"> </span><span class="n">x</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-17-2"><a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a><span class="w">    </span><span class="kt">size_t</span><span class="w"> </span><span class="n">i</span><span class="p">;</span>
-</span><span id="__span-17-3"><a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a><span class="w">    </span><span class="kt">long</span><span class="w"> </span><span class="n">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
-</span><span id="__span-17-4"><a id="__codelineno-17-4" name="__codelineno-17-4" href="#__codelineno-17-4"></a><span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">WSIZE</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-17-5"><a id="__codelineno-17-5" name="__codelineno-17-5" href="#__codelineno-17-5"></a><span class="w">        </span><span class="kt">unsigned</span><span class="w"> </span><span class="n">bit</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">i</span><span class="p">)</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="mh">0x1</span><span class="p">;</span>
-</span><span id="__span-17-6"><a id="__codelineno-17-6" name="__codelineno-17-6" href="#__codelineno-17-6"></a><span class="w">        </span><span class="n">result</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">bit</span><span class="p">;</span>
-</span><span id="__span-17-7"><a id="__codelineno-17-7" name="__codelineno-17-7" href="#__codelineno-17-7"></a><span class="w">    </span><span class="p">}</span>
-</span><span id="__span-17-8"><a id="__codelineno-17-8" name="__codelineno-17-8" href="#__codelineno-17-8"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">result</span><span class="p">;</span>
-</span><span id="__span-17-9"><a id="__codelineno-17-9" name="__codelineno-17-9" href="#__codelineno-17-9"></a><span class="p">}</span>
-</span><span id="__span-17-10"><a id="__codelineno-17-10" name="__codelineno-17-10" href="#__codelineno-17-10"></a><span class="kt">long</span><span class="w"> </span><span class="nf">pcount_for_goto_dw</span><span class="p">(</span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">long</span><span class="w"> </span><span class="n">x</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-17-11"><a id="__codelineno-17-11" name="__codelineno-17-11" href="#__codelineno-17-11"></a><span class="w">    </span><span class="kt">size_t</span><span class="w"> </span><span class="n">i</span><span class="p">;</span>
-</span><span id="__span-17-12"><a id="__codelineno-17-12" name="__codelineno-17-12" href="#__codelineno-17-12"></a><span class="w">    </span><span class="kt">long</span><span class="w"> </span><span class="n">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
-</span><span id="__span-17-13"><a id="__codelineno-17-13" name="__codelineno-17-13" href="#__codelineno-17-13"></a><span class="w">    </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
-</span><span id="__span-17-14"><a id="__codelineno-17-14" name="__codelineno-17-14" href="#__codelineno-17-14"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="p">(</span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">WSIZE</span><span class="p">))</span>
-</span><span id="__span-17-15"><a id="__codelineno-17-15" name="__codelineno-17-15" href="#__codelineno-17-15"></a><span class="w">        </span><span class="k">goto</span><span class="w"> </span><span class="n">done</span><span class="p">;</span>
-</span><span id="__span-17-16"><a id="__codelineno-17-16" name="__codelineno-17-16" href="#__codelineno-17-16"></a><span class="w">    </span><span class="nl">loop</span><span class="p">:</span>
-</span><span id="__span-17-17"><a id="__codelineno-17-17" name="__codelineno-17-17" href="#__codelineno-17-17"></a><span class="w">    </span><span class="p">{</span>
-</span><span id="__span-17-18"><a id="__codelineno-17-18" name="__codelineno-17-18" href="#__codelineno-17-18"></a><span class="w">        </span><span class="kt">unsigned</span><span class="w"> </span><span class="n">bit</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">i</span><span class="p">)</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="mh">0x1</span><span class="p">;</span>
-</span><span id="__span-17-19"><a id="__codelineno-17-19" name="__codelineno-17-19" href="#__codelineno-17-19"></a><span class="w">        </span><span class="n">result</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">bit</span><span class="p">;</span>
-</span><span id="__span-17-20"><a id="__codelineno-17-20" name="__codelineno-17-20" href="#__codelineno-17-20"></a><span class="w">    </span><span class="p">}</span>
-</span><span id="__span-17-21"><a id="__codelineno-17-21" name="__codelineno-17-21" href="#__codelineno-17-21"></a><span class="w">    </span><span class="n">i</span><span class="o">++</span><span class="p">;</span>
-</span><span id="__span-17-22"><a id="__codelineno-17-22" name="__codelineno-17-22" href="#__codelineno-17-22"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">WSIZE</span><span class="p">)</span>
-</span><span id="__span-17-23"><a id="__codelineno-17-23" name="__codelineno-17-23" href="#__codelineno-17-23"></a><span class="w">        </span><span class="k">goto</span><span class="w"> </span><span class="n">loop</span><span class="p">;</span>
-</span><span id="__span-17-24"><a id="__codelineno-17-24" name="__codelineno-17-24" href="#__codelineno-17-24"></a><span class="w">    </span><span class="nl">done</span><span class="p">:</span>
-</span><span id="__span-17-25"><a id="__codelineno-17-25" name="__codelineno-17-25" href="#__codelineno-17-25"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">result</span><span class="p">;</span>
-</span><span id="__span-17-26"><a id="__codelineno-17-26" name="__codelineno-17-26" href="#__codelineno-17-26"></a><span class="p">}</span>
-</span></code></pre></div>
-<div class="language-asm highlight"><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="nl">pcount_for:</span>
-</span><span id="__span-18-2"><a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a><span class="nl">.LFB17:</span>
-</span><span id="__span-18-3"><a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a><span class="w">    </span><span class="na">.cfi_startproc</span>
-</span><span id="__span-18-4"><a id="__codelineno-18-4" name="__codelineno-18-4" href="#__codelineno-18-4"></a><span class="w">    </span><span class="nf">movl</span><span class="w">    </span><span class="no">$0</span><span class="p">,</span><span class="w"> </span><span class="nv">%eax</span>
-</span><span id="__span-18-5"><a id="__codelineno-18-5" name="__codelineno-18-5" href="#__codelineno-18-5"></a><span class="w">    </span><span class="nf">movl</span><span class="w">    </span><span class="no">$0</span><span class="p">,</span><span class="w"> </span><span class="nv">%ecx</span>
-</span><span id="__span-18-6"><a id="__codelineno-18-6" name="__codelineno-18-6" href="#__codelineno-18-6"></a><span class="w">    </span><span class="nf">jmp</span><span class="w"> </span><span class="no">.L20</span>
-</span><span id="__span-18-7"><a id="__codelineno-18-7" name="__codelineno-18-7" href="#__codelineno-18-7"></a><span class="nl">.L21:</span>
-</span><span id="__span-18-8"><a id="__codelineno-18-8" name="__codelineno-18-8" href="#__codelineno-18-8"></a><span class="w">    </span><span class="nf">movq</span><span class="w">    </span><span class="nv">%rdi</span><span class="p">,</span><span class="w"> </span><span class="nv">%rdx</span>
-</span><span id="__span-18-9"><a id="__codelineno-18-9" name="__codelineno-18-9" href="#__codelineno-18-9"></a><span class="w">    </span><span class="nf">shrq</span><span class="w">    </span><span class="nv">%cl</span><span class="p">,</span><span class="w"> </span><span class="nv">%rdx</span>
-</span><span id="__span-18-10"><a id="__codelineno-18-10" name="__codelineno-18-10" href="#__codelineno-18-10"></a><span class="w">    </span><span class="nf">andl</span><span class="w">    </span><span class="no">$1</span><span class="p">,</span><span class="w"> </span><span class="nv">%edx</span>
-</span><span id="__span-18-11"><a id="__codelineno-18-11" name="__codelineno-18-11" href="#__codelineno-18-11"></a><span class="w">    </span><span class="nf">addq</span><span class="w">    </span><span class="nv">%rdx</span><span class="p">,</span><span class="w"> </span><span class="nv">%rax</span>
-</span><span id="__span-18-12"><a id="__codelineno-18-12" name="__codelineno-18-12" href="#__codelineno-18-12"></a><span class="w">    </span><span class="nf">addq</span><span class="w">    </span><span class="no">$1</span><span class="p">,</span><span class="w"> </span><span class="nv">%rcx</span>
-</span><span id="__span-18-13"><a id="__codelineno-18-13" name="__codelineno-18-13" href="#__codelineno-18-13"></a><span class="nl">.L20:</span>
-</span><span id="__span-18-14"><a id="__codelineno-18-14" name="__codelineno-18-14" href="#__codelineno-18-14"></a><span class="w">    </span><span class="nf">cmpq</span><span class="w">    </span><span class="no">$63</span><span class="p">,</span><span class="w"> </span><span class="nv">%rcx</span>
-</span><span id="__span-18-15"><a id="__codelineno-18-15" name="__codelineno-18-15" href="#__codelineno-18-15"></a><span class="w">    </span><span class="nf">jbe</span><span class="w"> </span><span class="no">.L21</span>
-</span><span id="__span-18-16"><a id="__codelineno-18-16" name="__codelineno-18-16" href="#__codelineno-18-16"></a><span class="w">    </span><span class="na">rep</span><span class="c1">; ret</span>
-</span><span id="__span-18-17"><a id="__codelineno-18-17" name="__codelineno-18-17" href="#__codelineno-18-17"></a><span class="nl">pcount_for_goto_dw:</span>
-</span><span id="__span-18-18"><a id="__codelineno-18-18" name="__codelineno-18-18" href="#__codelineno-18-18"></a><span class="nl">.LFB18:</span>
-</span><span id="__span-18-19"><a id="__codelineno-18-19" name="__codelineno-18-19" href="#__codelineno-18-19"></a><span class="w">    </span><span class="na">.cfi_startproc</span>
-</span><span id="__span-18-20"><a id="__codelineno-18-20" name="__codelineno-18-20" href="#__codelineno-18-20"></a><span class="w">    </span><span class="nf">movl</span><span class="w">    </span><span class="no">$0</span><span class="p">,</span><span class="w"> </span><span class="nv">%eax</span>
-</span><span id="__span-18-21"><a id="__codelineno-18-21" name="__codelineno-18-21" href="#__codelineno-18-21"></a><span class="w">    </span><span class="nf">movl</span><span class="w">    </span><span class="no">$0</span><span class="p">,</span><span class="w"> </span><span class="nv">%ecx</span>
-</span><span id="__span-18-22"><a id="__codelineno-18-22" name="__codelineno-18-22" href="#__codelineno-18-22"></a><span class="nl">.L23:</span>
-</span><span id="__span-18-23"><a id="__codelineno-18-23" name="__codelineno-18-23" href="#__codelineno-18-23"></a><span class="w">    </span><span class="nf">movq</span><span class="w">    </span><span class="nv">%rdi</span><span class="p">,</span><span class="w"> </span><span class="nv">%rdx</span>
-</span><span id="__span-18-24"><a id="__codelineno-18-24" name="__codelineno-18-24" href="#__codelineno-18-24"></a><span class="w">    </span><span class="nf">shrq</span><span class="w">    </span><span class="nv">%cl</span><span class="p">,</span><span class="w"> </span><span class="nv">%rdx</span>
-</span><span id="__span-18-25"><a id="__codelineno-18-25" name="__codelineno-18-25" href="#__codelineno-18-25"></a><span class="w">    </span><span class="nf">andl</span><span class="w">    </span><span class="no">$1</span><span class="p">,</span><span class="w"> </span><span class="nv">%edx</span>
-</span><span id="__span-18-26"><a id="__codelineno-18-26" name="__codelineno-18-26" href="#__codelineno-18-26"></a><span class="w">    </span><span class="nf">addq</span><span class="w">    </span><span class="nv">%rdx</span><span class="p">,</span><span class="w"> </span><span class="nv">%rax</span>
-</span><span id="__span-18-27"><a id="__codelineno-18-27" name="__codelineno-18-27" href="#__codelineno-18-27"></a><span class="w">    </span><span class="nf">addq</span><span class="w">    </span><span class="no">$1</span><span class="p">,</span><span class="w"> </span><span class="nv">%rcx</span>
-</span><span id="__span-18-28"><a id="__codelineno-18-28" name="__codelineno-18-28" href="#__codelineno-18-28"></a><span class="w">    </span><span class="nf">cmpq</span><span class="w">    </span><span class="no">$63</span><span class="p">,</span><span class="w"> </span><span class="nv">%rcx</span>
-</span><span id="__span-18-29"><a id="__codelineno-18-29" name="__codelineno-18-29" href="#__codelineno-18-29"></a><span class="w">    </span><span class="nf">jbe</span><span class="w"> </span><span class="no">.L23</span>
-</span><span id="__span-18-30"><a id="__codelineno-18-30" name="__codelineno-18-30" href="#__codelineno-18-30"></a><span class="w">    </span><span class="na">rep</span><span class="c1">; ret</span>
-</span><span id="__span-18-31"><a id="__codelineno-18-31" name="__codelineno-18-31" href="#__codelineno-18-31"></a><span class="nl">.L24:</span>
-</span><span id="__span-18-32"><a id="__codelineno-18-32" name="__codelineno-18-32" href="#__codelineno-18-32"></a><span class="w">    </span><span class="na">.cfi_endproc</span>
-</span><span id="__span-18-33"><a id="__codelineno-18-33" name="__codelineno-18-33" href="#__codelineno-18-33"></a><span class="nl">.LFE18:</span>
-</span><span id="__span-18-34"><a id="__codelineno-18-34" name="__codelineno-18-34" href="#__codelineno-18-34"></a><span class="w">    </span><span class="na">.size</span><span class="w">   </span><span class="no">pcount_for_goto_dw</span><span class="p">,</span><span class="w"> </span><span class="no">.-pcount_for_goto_dw</span>
-</span><span id="__span-18-35"><a id="__codelineno-18-35" name="__codelineno-18-35" href="#__codelineno-18-35"></a><span class="w">    </span><span class="na">.globl</span><span class="w">  </span><span class="no">pcount_for_goto_jtm</span>
-</span><span id="__span-18-36"><a id="__codelineno-18-36" name="__codelineno-18-36" href="#__codelineno-18-36"></a><span class="w">    </span><span class="na">.type</span><span class="w">   </span><span class="no">pcount_for_goto_jtm</span><span class="p">,</span><span class="w"> </span><span class="na">@function</span>
-</span><span id="__span-18-37"><a id="__codelineno-18-37" name="__codelineno-18-37" href="#__codelineno-18-37"></a><span class="nl">pcount_for_goto_jtm:</span>
-</span><span id="__span-18-38"><a id="__codelineno-18-38" name="__codelineno-18-38" href="#__codelineno-18-38"></a><span class="nl">.LFB19:</span>
-</span><span id="__span-18-39"><a id="__codelineno-18-39" name="__codelineno-18-39" href="#__codelineno-18-39"></a><span class="w">    </span><span class="na">.cfi_startproc</span>
-</span><span id="__span-18-40"><a id="__codelineno-18-40" name="__codelineno-18-40" href="#__codelineno-18-40"></a><span class="w">    </span><span class="nf">movl</span><span class="w">    </span><span class="no">$0</span><span class="p">,</span><span class="w"> </span><span class="nv">%eax</span>
-</span><span id="__span-18-41"><a id="__codelineno-18-41" name="__codelineno-18-41" href="#__codelineno-18-41"></a><span class="w">    </span><span class="nf">movl</span><span class="w">    </span><span class="no">$0</span><span class="p">,</span><span class="w"> </span><span class="nv">%ecx</span>
-</span><span id="__span-18-42"><a id="__codelineno-18-42" name="__codelineno-18-42" href="#__codelineno-18-42"></a><span class="w">    </span><span class="nf">jmp</span><span class="w"> </span><span class="no">.L27</span>
-</span><span id="__span-18-43"><a id="__codelineno-18-43" name="__codelineno-18-43" href="#__codelineno-18-43"></a><span class="nl">.L28:</span>
-</span><span id="__span-18-44"><a id="__codelineno-18-44" name="__codelineno-18-44" href="#__codelineno-18-44"></a><span class="w">    </span><span class="nf">movq</span><span class="w">    </span><span class="nv">%rdi</span><span class="p">,</span><span class="w"> </span><span class="nv">%rdx</span>
-</span><span id="__span-18-45"><a id="__codelineno-18-45" name="__codelineno-18-45" href="#__codelineno-18-45"></a><span class="w">    </span><span class="nf">shrq</span><span class="w">    </span><span class="nv">%cl</span><span class="p">,</span><span class="w"> </span><span class="nv">%rdx</span>
-</span><span id="__span-18-46"><a id="__codelineno-18-46" name="__codelineno-18-46" href="#__codelineno-18-46"></a><span class="w">    </span><span class="nf">andl</span><span class="w">    </span><span class="no">$1</span><span class="p">,</span><span class="w"> </span><span class="nv">%edx</span>
-</span><span id="__span-18-47"><a id="__codelineno-18-47" name="__codelineno-18-47" href="#__codelineno-18-47"></a><span class="w">    </span><span class="nf">addq</span><span class="w">    </span><span class="nv">%rdx</span><span class="p">,</span><span class="w"> </span><span class="nv">%rax</span>
-</span><span id="__span-18-48"><a id="__codelineno-18-48" name="__codelineno-18-48" href="#__codelineno-18-48"></a><span class="w">    </span><span class="nf">addq</span><span class="w">    </span><span class="no">$1</span><span class="p">,</span><span class="w"> </span><span class="nv">%rcx</span>
-</span><span id="__span-18-49"><a id="__codelineno-18-49" name="__codelineno-18-49" href="#__codelineno-18-49"></a><span class="nl">.L27:</span>
-</span><span id="__span-18-50"><a id="__codelineno-18-50" name="__codelineno-18-50" href="#__codelineno-18-50"></a><span class="w">    </span><span class="nf">cmpq</span><span class="w">    </span><span class="no">$63</span><span class="p">,</span><span class="w"> </span><span class="nv">%rcx</span>
-</span><span id="__span-18-51"><a id="__codelineno-18-51" name="__codelineno-18-51" href="#__codelineno-18-51"></a><span class="w">    </span><span class="nf">jbe</span><span class="w"> </span><span class="no">.L28</span>
-</span><span id="__span-18-52"><a id="__codelineno-18-52" name="__codelineno-18-52" href="#__codelineno-18-52"></a><span class="w">    </span><span class="na">rep</span><span class="c1">; ret</span>
-</span></code></pre></div>
+<div class="language-c++ highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-17-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-17-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-17-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-17-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-17-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-17-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-17-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-17-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-17-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-17-10">10</a></span>
+<span class="normal"><a href="#__codelineno-17-11">11</a></span>
+<span class="normal"><a href="#__codelineno-17-12">12</a></span>
+<span class="normal"><a href="#__codelineno-17-13">13</a></span>
+<span class="normal"><a href="#__codelineno-17-14">14</a></span>
+<span class="normal"><a href="#__codelineno-17-15">15</a></span>
+<span class="normal"><a href="#__codelineno-17-16">16</a></span>
+<span class="normal"><a href="#__codelineno-17-17">17</a></span>
+<span class="normal"><a href="#__codelineno-17-18">18</a></span>
+<span class="normal"><a href="#__codelineno-17-19">19</a></span>
+<span class="normal"><a href="#__codelineno-17-20">20</a></span>
+<span class="normal"><a href="#__codelineno-17-21">21</a></span>
+<span class="normal"><a href="#__codelineno-17-22">22</a></span>
+<span class="normal"><a href="#__codelineno-17-23">23</a></span>
+<span class="normal"><a href="#__codelineno-17-24">24</a></span>
+<span class="normal"><a href="#__codelineno-17-25">25</a></span>
+<span class="normal"><a href="#__codelineno-17-26">26</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1"></a><span class="kt">long</span><span class="w"> </span><span class="nf">pcount_for</span><span class="p">(</span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">long</span><span class="w"> </span><span class="n">x</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-17-2"><a id="__codelineno-17-2" name="__codelineno-17-2"></a><span class="w">    </span><span class="kt">size_t</span><span class="w"> </span><span class="n">i</span><span class="p">;</span>
+</span><span id="__span-17-3"><a id="__codelineno-17-3" name="__codelineno-17-3"></a><span class="w">    </span><span class="kt">long</span><span class="w"> </span><span class="n">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+</span><span id="__span-17-4"><a id="__codelineno-17-4" name="__codelineno-17-4"></a><span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">WSIZE</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-17-5"><a id="__codelineno-17-5" name="__codelineno-17-5"></a><span class="w">        </span><span class="kt">unsigned</span><span class="w"> </span><span class="n">bit</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">i</span><span class="p">)</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="mh">0x1</span><span class="p">;</span>
+</span><span id="__span-17-6"><a id="__codelineno-17-6" name="__codelineno-17-6"></a><span class="w">        </span><span class="n">result</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">bit</span><span class="p">;</span>
+</span><span id="__span-17-7"><a id="__codelineno-17-7" name="__codelineno-17-7"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-17-8"><a id="__codelineno-17-8" name="__codelineno-17-8"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">result</span><span class="p">;</span>
+</span><span id="__span-17-9"><a id="__codelineno-17-9" name="__codelineno-17-9"></a><span class="p">}</span>
+</span><span id="__span-17-10"><a id="__codelineno-17-10" name="__codelineno-17-10"></a><span class="kt">long</span><span class="w"> </span><span class="nf">pcount_for_goto_dw</span><span class="p">(</span><span class="kt">unsigned</span><span class="w"> </span><span class="kt">long</span><span class="w"> </span><span class="n">x</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-17-11"><a id="__codelineno-17-11" name="__codelineno-17-11"></a><span class="w">    </span><span class="kt">size_t</span><span class="w"> </span><span class="n">i</span><span class="p">;</span>
+</span><span id="__span-17-12"><a id="__codelineno-17-12" name="__codelineno-17-12"></a><span class="w">    </span><span class="kt">long</span><span class="w"> </span><span class="n">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+</span><span id="__span-17-13"><a id="__codelineno-17-13" name="__codelineno-17-13"></a><span class="w">    </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+</span><span id="__span-17-14"><a id="__codelineno-17-14" name="__codelineno-17-14"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="p">(</span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">WSIZE</span><span class="p">))</span>
+</span><span id="__span-17-15"><a id="__codelineno-17-15" name="__codelineno-17-15"></a><span class="w">        </span><span class="k">goto</span><span class="w"> </span><span class="n">done</span><span class="p">;</span>
+</span><span id="__span-17-16"><a id="__codelineno-17-16" name="__codelineno-17-16"></a><span class="w">    </span><span class="nl">loop</span><span class="p">:</span>
+</span><span id="__span-17-17"><a id="__codelineno-17-17" name="__codelineno-17-17"></a><span class="w">    </span><span class="p">{</span>
+</span><span id="__span-17-18"><a id="__codelineno-17-18" name="__codelineno-17-18"></a><span class="w">        </span><span class="kt">unsigned</span><span class="w"> </span><span class="n">bit</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">x</span><span class="w"> </span><span class="o">&gt;&gt;</span><span class="w"> </span><span class="n">i</span><span class="p">)</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="mh">0x1</span><span class="p">;</span>
+</span><span id="__span-17-19"><a id="__codelineno-17-19" name="__codelineno-17-19"></a><span class="w">        </span><span class="n">result</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">bit</span><span class="p">;</span>
+</span><span id="__span-17-20"><a id="__codelineno-17-20" name="__codelineno-17-20"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-17-21"><a id="__codelineno-17-21" name="__codelineno-17-21"></a><span class="w">    </span><span class="n">i</span><span class="o">++</span><span class="p">;</span>
+</span><span id="__span-17-22"><a id="__codelineno-17-22" name="__codelineno-17-22"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">WSIZE</span><span class="p">)</span>
+</span><span id="__span-17-23"><a id="__codelineno-17-23" name="__codelineno-17-23"></a><span class="w">        </span><span class="k">goto</span><span class="w"> </span><span class="n">loop</span><span class="p">;</span>
+</span><span id="__span-17-24"><a id="__codelineno-17-24" name="__codelineno-17-24"></a><span class="w">    </span><span class="nl">done</span><span class="p">:</span>
+</span><span id="__span-17-25"><a id="__codelineno-17-25" name="__codelineno-17-25"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">result</span><span class="p">;</span>
+</span><span id="__span-17-26"><a id="__codelineno-17-26" name="__codelineno-17-26"></a><span class="p">}</span>
+</span></code></pre></div></td></tr></table></div>
+<div class="language-asm highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-18-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-18-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-18-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-18-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-18-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-18-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-18-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-18-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-18-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-18-10">10</a></span>
+<span class="normal"><a href="#__codelineno-18-11">11</a></span>
+<span class="normal"><a href="#__codelineno-18-12">12</a></span>
+<span class="normal"><a href="#__codelineno-18-13">13</a></span>
+<span class="normal"><a href="#__codelineno-18-14">14</a></span>
+<span class="normal"><a href="#__codelineno-18-15">15</a></span>
+<span class="normal"><a href="#__codelineno-18-16">16</a></span>
+<span class="normal"><a href="#__codelineno-18-17">17</a></span>
+<span class="normal"><a href="#__codelineno-18-18">18</a></span>
+<span class="normal"><a href="#__codelineno-18-19">19</a></span>
+<span class="normal"><a href="#__codelineno-18-20">20</a></span>
+<span class="normal"><a href="#__codelineno-18-21">21</a></span>
+<span class="normal"><a href="#__codelineno-18-22">22</a></span>
+<span class="normal"><a href="#__codelineno-18-23">23</a></span>
+<span class="normal"><a href="#__codelineno-18-24">24</a></span>
+<span class="normal"><a href="#__codelineno-18-25">25</a></span>
+<span class="normal"><a href="#__codelineno-18-26">26</a></span>
+<span class="normal"><a href="#__codelineno-18-27">27</a></span>
+<span class="normal"><a href="#__codelineno-18-28">28</a></span>
+<span class="normal"><a href="#__codelineno-18-29">29</a></span>
+<span class="normal"><a href="#__codelineno-18-30">30</a></span>
+<span class="normal"><a href="#__codelineno-18-31">31</a></span>
+<span class="normal"><a href="#__codelineno-18-32">32</a></span>
+<span class="normal"><a href="#__codelineno-18-33">33</a></span>
+<span class="normal"><a href="#__codelineno-18-34">34</a></span>
+<span class="normal"><a href="#__codelineno-18-35">35</a></span>
+<span class="normal"><a href="#__codelineno-18-36">36</a></span>
+<span class="normal"><a href="#__codelineno-18-37">37</a></span>
+<span class="normal"><a href="#__codelineno-18-38">38</a></span>
+<span class="normal"><a href="#__codelineno-18-39">39</a></span>
+<span class="normal"><a href="#__codelineno-18-40">40</a></span>
+<span class="normal"><a href="#__codelineno-18-41">41</a></span>
+<span class="normal"><a href="#__codelineno-18-42">42</a></span>
+<span class="normal"><a href="#__codelineno-18-43">43</a></span>
+<span class="normal"><a href="#__codelineno-18-44">44</a></span>
+<span class="normal"><a href="#__codelineno-18-45">45</a></span>
+<span class="normal"><a href="#__codelineno-18-46">46</a></span>
+<span class="normal"><a href="#__codelineno-18-47">47</a></span>
+<span class="normal"><a href="#__codelineno-18-48">48</a></span>
+<span class="normal"><a href="#__codelineno-18-49">49</a></span>
+<span class="normal"><a href="#__codelineno-18-50">50</a></span>
+<span class="normal"><a href="#__codelineno-18-51">51</a></span>
+<span class="normal"><a href="#__codelineno-18-52">52</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1"></a><span class="nl">pcount_for:</span>
+</span><span id="__span-18-2"><a id="__codelineno-18-2" name="__codelineno-18-2"></a><span class="nl">.LFB17:</span>
+</span><span id="__span-18-3"><a id="__codelineno-18-3" name="__codelineno-18-3"></a><span class="w">    </span><span class="na">.cfi_startproc</span>
+</span><span id="__span-18-4"><a id="__codelineno-18-4" name="__codelineno-18-4"></a><span class="w">    </span><span class="nf">movl</span><span class="w">    </span><span class="no">$0</span><span class="p">,</span><span class="w"> </span><span class="nv">%eax</span>
+</span><span id="__span-18-5"><a id="__codelineno-18-5" name="__codelineno-18-5"></a><span class="w">    </span><span class="nf">movl</span><span class="w">    </span><span class="no">$0</span><span class="p">,</span><span class="w"> </span><span class="nv">%ecx</span>
+</span><span id="__span-18-6"><a id="__codelineno-18-6" name="__codelineno-18-6"></a><span class="w">    </span><span class="nf">jmp</span><span class="w"> </span><span class="no">.L20</span>
+</span><span id="__span-18-7"><a id="__codelineno-18-7" name="__codelineno-18-7"></a><span class="nl">.L21:</span>
+</span><span id="__span-18-8"><a id="__codelineno-18-8" name="__codelineno-18-8"></a><span class="w">    </span><span class="nf">movq</span><span class="w">    </span><span class="nv">%rdi</span><span class="p">,</span><span class="w"> </span><span class="nv">%rdx</span>
+</span><span id="__span-18-9"><a id="__codelineno-18-9" name="__codelineno-18-9"></a><span class="w">    </span><span class="nf">shrq</span><span class="w">    </span><span class="nv">%cl</span><span class="p">,</span><span class="w"> </span><span class="nv">%rdx</span>
+</span><span id="__span-18-10"><a id="__codelineno-18-10" name="__codelineno-18-10"></a><span class="w">    </span><span class="nf">andl</span><span class="w">    </span><span class="no">$1</span><span class="p">,</span><span class="w"> </span><span class="nv">%edx</span>
+</span><span id="__span-18-11"><a id="__codelineno-18-11" name="__codelineno-18-11"></a><span class="w">    </span><span class="nf">addq</span><span class="w">    </span><span class="nv">%rdx</span><span class="p">,</span><span class="w"> </span><span class="nv">%rax</span>
+</span><span id="__span-18-12"><a id="__codelineno-18-12" name="__codelineno-18-12"></a><span class="w">    </span><span class="nf">addq</span><span class="w">    </span><span class="no">$1</span><span class="p">,</span><span class="w"> </span><span class="nv">%rcx</span>
+</span><span id="__span-18-13"><a id="__codelineno-18-13" name="__codelineno-18-13"></a><span class="nl">.L20:</span>
+</span><span id="__span-18-14"><a id="__codelineno-18-14" name="__codelineno-18-14"></a><span class="w">    </span><span class="nf">cmpq</span><span class="w">    </span><span class="no">$63</span><span class="p">,</span><span class="w"> </span><span class="nv">%rcx</span>
+</span><span id="__span-18-15"><a id="__codelineno-18-15" name="__codelineno-18-15"></a><span class="w">    </span><span class="nf">jbe</span><span class="w"> </span><span class="no">.L21</span>
+</span><span id="__span-18-16"><a id="__codelineno-18-16" name="__codelineno-18-16"></a><span class="w">    </span><span class="na">rep</span><span class="c1">; ret</span>
+</span><span id="__span-18-17"><a id="__codelineno-18-17" name="__codelineno-18-17"></a><span class="nl">pcount_for_goto_dw:</span>
+</span><span id="__span-18-18"><a id="__codelineno-18-18" name="__codelineno-18-18"></a><span class="nl">.LFB18:</span>
+</span><span id="__span-18-19"><a id="__codelineno-18-19" name="__codelineno-18-19"></a><span class="w">    </span><span class="na">.cfi_startproc</span>
+</span><span id="__span-18-20"><a id="__codelineno-18-20" name="__codelineno-18-20"></a><span class="w">    </span><span class="nf">movl</span><span class="w">    </span><span class="no">$0</span><span class="p">,</span><span class="w"> </span><span class="nv">%eax</span>
+</span><span id="__span-18-21"><a id="__codelineno-18-21" name="__codelineno-18-21"></a><span class="w">    </span><span class="nf">movl</span><span class="w">    </span><span class="no">$0</span><span class="p">,</span><span class="w"> </span><span class="nv">%ecx</span>
+</span><span id="__span-18-22"><a id="__codelineno-18-22" name="__codelineno-18-22"></a><span class="nl">.L23:</span>
+</span><span id="__span-18-23"><a id="__codelineno-18-23" name="__codelineno-18-23"></a><span class="w">    </span><span class="nf">movq</span><span class="w">    </span><span class="nv">%rdi</span><span class="p">,</span><span class="w"> </span><span class="nv">%rdx</span>
+</span><span id="__span-18-24"><a id="__codelineno-18-24" name="__codelineno-18-24"></a><span class="w">    </span><span class="nf">shrq</span><span class="w">    </span><span class="nv">%cl</span><span class="p">,</span><span class="w"> </span><span class="nv">%rdx</span>
+</span><span id="__span-18-25"><a id="__codelineno-18-25" name="__codelineno-18-25"></a><span class="w">    </span><span class="nf">andl</span><span class="w">    </span><span class="no">$1</span><span class="p">,</span><span class="w"> </span><span class="nv">%edx</span>
+</span><span id="__span-18-26"><a id="__codelineno-18-26" name="__codelineno-18-26"></a><span class="w">    </span><span class="nf">addq</span><span class="w">    </span><span class="nv">%rdx</span><span class="p">,</span><span class="w"> </span><span class="nv">%rax</span>
+</span><span id="__span-18-27"><a id="__codelineno-18-27" name="__codelineno-18-27"></a><span class="w">    </span><span class="nf">addq</span><span class="w">    </span><span class="no">$1</span><span class="p">,</span><span class="w"> </span><span class="nv">%rcx</span>
+</span><span id="__span-18-28"><a id="__codelineno-18-28" name="__codelineno-18-28"></a><span class="w">    </span><span class="nf">cmpq</span><span class="w">    </span><span class="no">$63</span><span class="p">,</span><span class="w"> </span><span class="nv">%rcx</span>
+</span><span id="__span-18-29"><a id="__codelineno-18-29" name="__codelineno-18-29"></a><span class="w">    </span><span class="nf">jbe</span><span class="w"> </span><span class="no">.L23</span>
+</span><span id="__span-18-30"><a id="__codelineno-18-30" name="__codelineno-18-30"></a><span class="w">    </span><span class="na">rep</span><span class="c1">; ret</span>
+</span><span id="__span-18-31"><a id="__codelineno-18-31" name="__codelineno-18-31"></a><span class="nl">.L24:</span>
+</span><span id="__span-18-32"><a id="__codelineno-18-32" name="__codelineno-18-32"></a><span class="w">    </span><span class="na">.cfi_endproc</span>
+</span><span id="__span-18-33"><a id="__codelineno-18-33" name="__codelineno-18-33"></a><span class="nl">.LFE18:</span>
+</span><span id="__span-18-34"><a id="__codelineno-18-34" name="__codelineno-18-34"></a><span class="w">    </span><span class="na">.size</span><span class="w">   </span><span class="no">pcount_for_goto_dw</span><span class="p">,</span><span class="w"> </span><span class="no">.-pcount_for_goto_dw</span>
+</span><span id="__span-18-35"><a id="__codelineno-18-35" name="__codelineno-18-35"></a><span class="w">    </span><span class="na">.globl</span><span class="w">  </span><span class="no">pcount_for_goto_jtm</span>
+</span><span id="__span-18-36"><a id="__codelineno-18-36" name="__codelineno-18-36"></a><span class="w">    </span><span class="na">.type</span><span class="w">   </span><span class="no">pcount_for_goto_jtm</span><span class="p">,</span><span class="w"> </span><span class="na">@function</span>
+</span><span id="__span-18-37"><a id="__codelineno-18-37" name="__codelineno-18-37"></a><span class="nl">pcount_for_goto_jtm:</span>
+</span><span id="__span-18-38"><a id="__codelineno-18-38" name="__codelineno-18-38"></a><span class="nl">.LFB19:</span>
+</span><span id="__span-18-39"><a id="__codelineno-18-39" name="__codelineno-18-39"></a><span class="w">    </span><span class="na">.cfi_startproc</span>
+</span><span id="__span-18-40"><a id="__codelineno-18-40" name="__codelineno-18-40"></a><span class="w">    </span><span class="nf">movl</span><span class="w">    </span><span class="no">$0</span><span class="p">,</span><span class="w"> </span><span class="nv">%eax</span>
+</span><span id="__span-18-41"><a id="__codelineno-18-41" name="__codelineno-18-41"></a><span class="w">    </span><span class="nf">movl</span><span class="w">    </span><span class="no">$0</span><span class="p">,</span><span class="w"> </span><span class="nv">%ecx</span>
+</span><span id="__span-18-42"><a id="__codelineno-18-42" name="__codelineno-18-42"></a><span class="w">    </span><span class="nf">jmp</span><span class="w"> </span><span class="no">.L27</span>
+</span><span id="__span-18-43"><a id="__codelineno-18-43" name="__codelineno-18-43"></a><span class="nl">.L28:</span>
+</span><span id="__span-18-44"><a id="__codelineno-18-44" name="__codelineno-18-44"></a><span class="w">    </span><span class="nf">movq</span><span class="w">    </span><span class="nv">%rdi</span><span class="p">,</span><span class="w"> </span><span class="nv">%rdx</span>
+</span><span id="__span-18-45"><a id="__codelineno-18-45" name="__codelineno-18-45"></a><span class="w">    </span><span class="nf">shrq</span><span class="w">    </span><span class="nv">%cl</span><span class="p">,</span><span class="w"> </span><span class="nv">%rdx</span>
+</span><span id="__span-18-46"><a id="__codelineno-18-46" name="__codelineno-18-46"></a><span class="w">    </span><span class="nf">andl</span><span class="w">    </span><span class="no">$1</span><span class="p">,</span><span class="w"> </span><span class="nv">%edx</span>
+</span><span id="__span-18-47"><a id="__codelineno-18-47" name="__codelineno-18-47"></a><span class="w">    </span><span class="nf">addq</span><span class="w">    </span><span class="nv">%rdx</span><span class="p">,</span><span class="w"> </span><span class="nv">%rax</span>
+</span><span id="__span-18-48"><a id="__codelineno-18-48" name="__codelineno-18-48"></a><span class="w">    </span><span class="nf">addq</span><span class="w">    </span><span class="no">$1</span><span class="p">,</span><span class="w"> </span><span class="nv">%rcx</span>
+</span><span id="__span-18-49"><a id="__codelineno-18-49" name="__codelineno-18-49"></a><span class="nl">.L27:</span>
+</span><span id="__span-18-50"><a id="__codelineno-18-50" name="__codelineno-18-50"></a><span class="w">    </span><span class="nf">cmpq</span><span class="w">    </span><span class="no">$63</span><span class="p">,</span><span class="w"> </span><span class="nv">%rcx</span>
+</span><span id="__span-18-51"><a id="__codelineno-18-51" name="__codelineno-18-51"></a><span class="w">    </span><span class="nf">jbe</span><span class="w"> </span><span class="no">.L28</span>
+</span><span id="__span-18-52"><a id="__codelineno-18-52" name="__codelineno-18-52"></a><span class="w">    </span><span class="na">rep</span><span class="c1">; ret</span>
+</span></code></pre></div></td></tr></table></div>
 </details>
 <hr />
 <h2 id="switch">四、<code>Switch</code>语句</h2>
@@ -2552,68 +2860,126 @@
 </tr>
 </tbody>
 </table>
-<div class="language-c++ highlight"><pre><span></span><code><span id="__span-19-1"><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a><span class="kt">long</span><span class="w"> </span><span class="nf">switch_eg</span><span class="p">(</span><span class="kt">long</span><span class="w"> </span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="kt">long</span><span class="w"> </span><span class="n">y</span><span class="p">,</span><span class="w"> </span><span class="kt">long</span><span class="w"> </span><span class="n">z</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-19-2"><a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a><span class="w">    </span><span class="kt">long</span><span class="w"> </span><span class="n">w</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
-</span><span id="__span-19-3"><a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a><span class="w">    </span><span class="k">switch</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-19-4"><a id="__codelineno-19-4" name="__codelineno-19-4" href="#__codelineno-19-4"></a><span class="w">        </span><span class="k">case</span><span class="w"> </span><span class="mi">1</span><span class="p">:</span>
-</span><span id="__span-19-5"><a id="__codelineno-19-5" name="__codelineno-19-5" href="#__codelineno-19-5"></a><span class="w">            </span><span class="n">w</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">y</span><span class="o">*</span><span class="n">z</span><span class="p">;</span>
-</span><span id="__span-19-6"><a id="__codelineno-19-6" name="__codelineno-19-6" href="#__codelineno-19-6"></a><span class="w">            </span><span class="k">break</span><span class="p">;</span>
-</span><span id="__span-19-7"><a id="__codelineno-19-7" name="__codelineno-19-7" href="#__codelineno-19-7"></a><span class="w">        </span><span class="k">case</span><span class="w"> </span><span class="mi">2</span><span class="p">:</span>
-</span><span id="__span-19-8"><a id="__codelineno-19-8" name="__codelineno-19-8" href="#__codelineno-19-8"></a><span class="w">            </span><span class="n">w</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">y</span><span class="o">/</span><span class="n">z</span><span class="p">;</span>
-</span><span id="__span-19-9"><a id="__codelineno-19-9" name="__codelineno-19-9" href="#__codelineno-19-9"></a><span class="w">            </span><span class="cm">/* Fall through */</span>
-</span><span id="__span-19-10"><a id="__codelineno-19-10" name="__codelineno-19-10" href="#__codelineno-19-10"></a><span class="w">        </span><span class="k">case</span><span class="w"> </span><span class="mi">3</span><span class="p">:</span>
-</span><span id="__span-19-11"><a id="__codelineno-19-11" name="__codelineno-19-11" href="#__codelineno-19-11"></a><span class="w">            </span><span class="n">w</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">z</span><span class="p">;</span>
-</span><span id="__span-19-12"><a id="__codelineno-19-12" name="__codelineno-19-12" href="#__codelineno-19-12"></a><span class="w">            </span><span class="k">break</span><span class="p">;</span>
-</span><span id="__span-19-13"><a id="__codelineno-19-13" name="__codelineno-19-13" href="#__codelineno-19-13"></a><span class="w">        </span><span class="k">case</span><span class="w"> </span><span class="mi">5</span><span class="p">:</span>
-</span><span id="__span-19-14"><a id="__codelineno-19-14" name="__codelineno-19-14" href="#__codelineno-19-14"></a><span class="w">        </span><span class="k">case</span><span class="w"> </span><span class="mi">6</span><span class="p">:</span>
-</span><span id="__span-19-15"><a id="__codelineno-19-15" name="__codelineno-19-15" href="#__codelineno-19-15"></a><span class="w">            </span><span class="n">w</span><span class="w"> </span><span class="o">-=</span><span class="w"> </span><span class="n">z</span><span class="p">;</span>
-</span><span id="__span-19-16"><a id="__codelineno-19-16" name="__codelineno-19-16" href="#__codelineno-19-16"></a><span class="w">            </span><span class="k">break</span><span class="p">;</span>
-</span><span id="__span-19-17"><a id="__codelineno-19-17" name="__codelineno-19-17" href="#__codelineno-19-17"></a><span class="w">        </span><span class="k">default</span><span class="o">:</span>
-</span><span id="__span-19-18"><a id="__codelineno-19-18" name="__codelineno-19-18" href="#__codelineno-19-18"></a><span class="w">            </span><span class="n">w</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span>
-</span><span id="__span-19-19"><a id="__codelineno-19-19" name="__codelineno-19-19" href="#__codelineno-19-19"></a><span class="w">    </span><span class="p">}</span>
-</span><span id="__span-19-20"><a id="__codelineno-19-20" name="__codelineno-19-20" href="#__codelineno-19-20"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">w</span><span class="p">;</span>
-</span><span id="__span-19-21"><a id="__codelineno-19-21" name="__codelineno-19-21" href="#__codelineno-19-21"></a><span class="p">}</span>
-</span></code></pre></div>
-<div class="language-asm highlight"><pre><span></span><code><span id="__span-20-1"><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a><span class="nl">switch_eg:</span>
-</span><span id="__span-20-2"><a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a><span class="nl">.LFB34:</span>
-</span><span id="__span-20-3"><a id="__codelineno-20-3" name="__codelineno-20-3" href="#__codelineno-20-3"></a><span class="w">    </span><span class="na">.cfi_startproc</span>
-</span><span id="__span-20-4"><a id="__codelineno-20-4" name="__codelineno-20-4" href="#__codelineno-20-4"></a><span class="w">    </span><span class="nf">movq</span><span class="w">    </span><span class="nv">%rdx</span><span class="p">,</span><span class="w"> </span><span class="nv">%rcx</span>
-</span><span id="__span-20-5"><a id="__codelineno-20-5" name="__codelineno-20-5" href="#__codelineno-20-5"></a><span class="w">    </span><span class="nf">cmpq</span><span class="w">    </span><span class="no">$6</span><span class="p">,</span><span class="w"> </span><span class="nv">%rdi</span>
-</span><span id="__span-20-6"><a id="__codelineno-20-6" name="__codelineno-20-6" href="#__codelineno-20-6"></a><span class="w">    </span><span class="nf">ja</span><span class="w">  </span><span class="no">.L8</span><span class="w">     </span><span class="c1"># ja 用于 unsigned 比较，但如果出现 signed ,被当成很大的正数也会跳转（ signed 应该要用 jg 比较，这里属于trick）</span>
-</span><span id="__span-20-7"><a id="__codelineno-20-7" name="__codelineno-20-7" href="#__codelineno-20-7"></a><span class="w">    </span><span class="nf">jmp</span><span class="w"> </span><span class="p">*.</span><span class="no">L4</span><span class="p">(,</span><span class="nv">%rdi</span><span class="p">,</span><span class="mi">8</span><span class="p">)</span><span class="w"> </span><span class="c1"># goto *JTab[x] ，跳转到由 %rdi 索引的跳转表地址（乘以8是因为指针大小）</span>
-</span><span id="__span-20-8"><a id="__codelineno-20-8" name="__codelineno-20-8" href="#__codelineno-20-8"></a><span class="w">    </span><span class="na">.section</span><span class="w">    </span><span class="no">.rodata</span>
-</span><span id="__span-20-9"><a id="__codelineno-20-9" name="__codelineno-20-9" href="#__codelineno-20-9"></a><span class="w">    </span><span class="na">.align</span><span class="w"> </span><span class="mi">8</span>
-</span><span id="__span-20-10"><a id="__codelineno-20-10" name="__codelineno-20-10" href="#__codelineno-20-10"></a><span class="nl">.L4:</span>
-</span><span id="__span-20-11"><a id="__codelineno-20-11" name="__codelineno-20-11" href="#__codelineno-20-11"></a><span class="w">    </span><span class="na">.quad</span><span class="w">   </span><span class="no">.L8</span><span class="w"> </span><span class="c1"># x = 0 default</span>
-</span><span id="__span-20-12"><a id="__codelineno-20-12" name="__codelineno-20-12" href="#__codelineno-20-12"></a><span class="w">    </span><span class="na">.quad</span><span class="w">   </span><span class="no">.L3</span><span class="w"> </span><span class="c1"># x = 1</span>
-</span><span id="__span-20-13"><a id="__codelineno-20-13" name="__codelineno-20-13" href="#__codelineno-20-13"></a><span class="w">    </span><span class="na">.quad</span><span class="w">   </span><span class="no">.L5</span><span class="w"> </span><span class="c1"># x = 2</span>
-</span><span id="__span-20-14"><a id="__codelineno-20-14" name="__codelineno-20-14" href="#__codelineno-20-14"></a><span class="w">    </span><span class="na">.quad</span><span class="w">   </span><span class="no">.L9</span><span class="w"> </span><span class="c1"># x = 3</span>
-</span><span id="__span-20-15"><a id="__codelineno-20-15" name="__codelineno-20-15" href="#__codelineno-20-15"></a><span class="w">    </span><span class="na">.quad</span><span class="w">   </span><span class="no">.L8</span><span class="w"> </span><span class="c1"># x = 4 default</span>
-</span><span id="__span-20-16"><a id="__codelineno-20-16" name="__codelineno-20-16" href="#__codelineno-20-16"></a><span class="w">    </span><span class="na">.quad</span><span class="w">   </span><span class="no">.L7</span><span class="w"> </span><span class="c1"># x = 5</span>
-</span><span id="__span-20-17"><a id="__codelineno-20-17" name="__codelineno-20-17" href="#__codelineno-20-17"></a><span class="w">    </span><span class="na">.quad</span><span class="w">   </span><span class="no">.L7</span><span class="w"> </span><span class="c1"># x = 6</span>
-</span><span id="__span-20-18"><a id="__codelineno-20-18" name="__codelineno-20-18" href="#__codelineno-20-18"></a><span class="w">    </span><span class="na">.text</span>
-</span><span id="__span-20-19"><a id="__codelineno-20-19" name="__codelineno-20-19" href="#__codelineno-20-19"></a><span class="nl">.L3:</span>
-</span><span id="__span-20-20"><a id="__codelineno-20-20" name="__codelineno-20-20" href="#__codelineno-20-20"></a><span class="w">    </span><span class="nf">movq</span><span class="w">    </span><span class="nv">%rsi</span><span class="p">,</span><span class="w"> </span><span class="nv">%rax</span><span class="w">  </span><span class="c1"># y</span>
-</span><span id="__span-20-21"><a id="__codelineno-20-21" name="__codelineno-20-21" href="#__codelineno-20-21"></a><span class="w">    </span><span class="nf">imulq</span><span class="w">   </span><span class="nv">%rdx</span><span class="p">,</span><span class="w"> </span><span class="nv">%rax</span><span class="w">  </span><span class="c1"># y * z</span>
-</span><span id="__span-20-22"><a id="__codelineno-20-22" name="__codelineno-20-22" href="#__codelineno-20-22"></a><span class="w">    </span><span class="nf">ret</span>
-</span><span id="__span-20-23"><a id="__codelineno-20-23" name="__codelineno-20-23" href="#__codelineno-20-23"></a><span class="nl">.L5:</span><span class="w">    </span><span class="c1"># Case 2</span>
-</span><span id="__span-20-24"><a id="__codelineno-20-24" name="__codelineno-20-24" href="#__codelineno-20-24"></a><span class="w">    </span><span class="nf">movq</span><span class="w">    </span><span class="nv">%rsi</span><span class="p">,</span><span class="w"> </span><span class="nv">%rax</span>
-</span><span id="__span-20-25"><a id="__codelineno-20-25" name="__codelineno-20-25" href="#__codelineno-20-25"></a><span class="w">    </span><span class="nf">cqto</span>
-</span><span id="__span-20-26"><a id="__codelineno-20-26" name="__codelineno-20-26" href="#__codelineno-20-26"></a><span class="w">    </span><span class="nf">idivq</span><span class="w">   </span><span class="nv">%rcx</span>
-</span><span id="__span-20-27"><a id="__codelineno-20-27" name="__codelineno-20-27" href="#__codelineno-20-27"></a><span class="w">    </span><span class="nf">jmp</span><span class="w"> </span><span class="no">.L6</span><span class="w"> </span><span class="c1"># goto merge</span>
-</span><span id="__span-20-28"><a id="__codelineno-20-28" name="__codelineno-20-28" href="#__codelineno-20-28"></a><span class="nl">.L9:</span>
-</span><span id="__span-20-29"><a id="__codelineno-20-29" name="__codelineno-20-29" href="#__codelineno-20-29"></a><span class="w">    </span><span class="nf">movl</span><span class="w">    </span><span class="no">$1</span><span class="p">,</span><span class="w"> </span><span class="nv">%eax</span><span class="w">    </span><span class="c1"># w = 1</span>
-</span><span id="__span-20-30"><a id="__codelineno-20-30" name="__codelineno-20-30" href="#__codelineno-20-30"></a><span class="nl">.L6:</span><span class="w">    </span><span class="c1"># merge</span>
-</span><span id="__span-20-31"><a id="__codelineno-20-31" name="__codelineno-20-31" href="#__codelineno-20-31"></a><span class="w">    </span><span class="nf">addq</span><span class="w">    </span><span class="nv">%rcx</span><span class="p">,</span><span class="w"> </span><span class="nv">%rax</span><span class="w">  </span><span class="c1"># w += z</span>
-</span><span id="__span-20-32"><a id="__codelineno-20-32" name="__codelineno-20-32" href="#__codelineno-20-32"></a><span class="w">    </span><span class="nf">ret</span>
-</span><span id="__span-20-33"><a id="__codelineno-20-33" name="__codelineno-20-33" href="#__codelineno-20-33"></a><span class="nl">.L7:</span>
-</span><span id="__span-20-34"><a id="__codelineno-20-34" name="__codelineno-20-34" href="#__codelineno-20-34"></a><span class="w">    </span><span class="nf">movl</span><span class="w">    </span><span class="no">$1</span><span class="p">,</span><span class="w"> </span><span class="nv">%eax</span>
-</span><span id="__span-20-35"><a id="__codelineno-20-35" name="__codelineno-20-35" href="#__codelineno-20-35"></a><span class="w">    </span><span class="nf">subq</span><span class="w">    </span><span class="nv">%rdx</span><span class="p">,</span><span class="w"> </span><span class="nv">%rax</span>
-</span><span id="__span-20-36"><a id="__codelineno-20-36" name="__codelineno-20-36" href="#__codelineno-20-36"></a><span class="w">    </span><span class="nf">ret</span>
-</span><span id="__span-20-37"><a id="__codelineno-20-37" name="__codelineno-20-37" href="#__codelineno-20-37"></a><span class="nl">.L8:</span>
-</span><span id="__span-20-38"><a id="__codelineno-20-38" name="__codelineno-20-38" href="#__codelineno-20-38"></a><span class="w">    </span><span class="nf">movl</span><span class="w">    </span><span class="no">$2</span><span class="p">,</span><span class="w"> </span><span class="nv">%eax</span>
-</span><span id="__span-20-39"><a id="__codelineno-20-39" name="__codelineno-20-39" href="#__codelineno-20-39"></a><span class="w">    </span><span class="nf">ret</span>
-</span></code></pre></div>
+<div class="language-c++ highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-19-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-19-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-19-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-19-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-19-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-19-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-19-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-19-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-19-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-19-10">10</a></span>
+<span class="normal"><a href="#__codelineno-19-11">11</a></span>
+<span class="normal"><a href="#__codelineno-19-12">12</a></span>
+<span class="normal"><a href="#__codelineno-19-13">13</a></span>
+<span class="normal"><a href="#__codelineno-19-14">14</a></span>
+<span class="normal"><a href="#__codelineno-19-15">15</a></span>
+<span class="normal"><a href="#__codelineno-19-16">16</a></span>
+<span class="normal"><a href="#__codelineno-19-17">17</a></span>
+<span class="normal"><a href="#__codelineno-19-18">18</a></span>
+<span class="normal"><a href="#__codelineno-19-19">19</a></span>
+<span class="normal"><a href="#__codelineno-19-20">20</a></span>
+<span class="normal"><a href="#__codelineno-19-21">21</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-19-1"><a id="__codelineno-19-1" name="__codelineno-19-1"></a><span class="kt">long</span><span class="w"> </span><span class="nf">switch_eg</span><span class="p">(</span><span class="kt">long</span><span class="w"> </span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="kt">long</span><span class="w"> </span><span class="n">y</span><span class="p">,</span><span class="w"> </span><span class="kt">long</span><span class="w"> </span><span class="n">z</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-19-2"><a id="__codelineno-19-2" name="__codelineno-19-2"></a><span class="w">    </span><span class="kt">long</span><span class="w"> </span><span class="n">w</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+</span><span id="__span-19-3"><a id="__codelineno-19-3" name="__codelineno-19-3"></a><span class="w">    </span><span class="k">switch</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-19-4"><a id="__codelineno-19-4" name="__codelineno-19-4"></a><span class="w">        </span><span class="k">case</span><span class="w"> </span><span class="mi">1</span><span class="p">:</span>
+</span><span id="__span-19-5"><a id="__codelineno-19-5" name="__codelineno-19-5"></a><span class="w">            </span><span class="n">w</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">y</span><span class="o">*</span><span class="n">z</span><span class="p">;</span>
+</span><span id="__span-19-6"><a id="__codelineno-19-6" name="__codelineno-19-6"></a><span class="w">            </span><span class="k">break</span><span class="p">;</span>
+</span><span id="__span-19-7"><a id="__codelineno-19-7" name="__codelineno-19-7"></a><span class="w">        </span><span class="k">case</span><span class="w"> </span><span class="mi">2</span><span class="p">:</span>
+</span><span id="__span-19-8"><a id="__codelineno-19-8" name="__codelineno-19-8"></a><span class="w">            </span><span class="n">w</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">y</span><span class="o">/</span><span class="n">z</span><span class="p">;</span>
+</span><span id="__span-19-9"><a id="__codelineno-19-9" name="__codelineno-19-9"></a><span class="w">            </span><span class="cm">/* Fall through */</span>
+</span><span id="__span-19-10"><a id="__codelineno-19-10" name="__codelineno-19-10"></a><span class="w">        </span><span class="k">case</span><span class="w"> </span><span class="mi">3</span><span class="p">:</span>
+</span><span id="__span-19-11"><a id="__codelineno-19-11" name="__codelineno-19-11"></a><span class="w">            </span><span class="n">w</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">z</span><span class="p">;</span>
+</span><span id="__span-19-12"><a id="__codelineno-19-12" name="__codelineno-19-12"></a><span class="w">            </span><span class="k">break</span><span class="p">;</span>
+</span><span id="__span-19-13"><a id="__codelineno-19-13" name="__codelineno-19-13"></a><span class="w">        </span><span class="k">case</span><span class="w"> </span><span class="mi">5</span><span class="p">:</span>
+</span><span id="__span-19-14"><a id="__codelineno-19-14" name="__codelineno-19-14"></a><span class="w">        </span><span class="k">case</span><span class="w"> </span><span class="mi">6</span><span class="p">:</span>
+</span><span id="__span-19-15"><a id="__codelineno-19-15" name="__codelineno-19-15"></a><span class="w">            </span><span class="n">w</span><span class="w"> </span><span class="o">-=</span><span class="w"> </span><span class="n">z</span><span class="p">;</span>
+</span><span id="__span-19-16"><a id="__codelineno-19-16" name="__codelineno-19-16"></a><span class="w">            </span><span class="k">break</span><span class="p">;</span>
+</span><span id="__span-19-17"><a id="__codelineno-19-17" name="__codelineno-19-17"></a><span class="w">        </span><span class="k">default</span><span class="o">:</span>
+</span><span id="__span-19-18"><a id="__codelineno-19-18" name="__codelineno-19-18"></a><span class="w">            </span><span class="n">w</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2</span><span class="p">;</span>
+</span><span id="__span-19-19"><a id="__codelineno-19-19" name="__codelineno-19-19"></a><span class="w">    </span><span class="p">}</span>
+</span><span id="__span-19-20"><a id="__codelineno-19-20" name="__codelineno-19-20"></a><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">w</span><span class="p">;</span>
+</span><span id="__span-19-21"><a id="__codelineno-19-21" name="__codelineno-19-21"></a><span class="p">}</span>
+</span></code></pre></div></td></tr></table></div>
+<div class="language-asm highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-20-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-20-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-20-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-20-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-20-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-20-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-20-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-20-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-20-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-20-10">10</a></span>
+<span class="normal"><a href="#__codelineno-20-11">11</a></span>
+<span class="normal"><a href="#__codelineno-20-12">12</a></span>
+<span class="normal"><a href="#__codelineno-20-13">13</a></span>
+<span class="normal"><a href="#__codelineno-20-14">14</a></span>
+<span class="normal"><a href="#__codelineno-20-15">15</a></span>
+<span class="normal"><a href="#__codelineno-20-16">16</a></span>
+<span class="normal"><a href="#__codelineno-20-17">17</a></span>
+<span class="normal"><a href="#__codelineno-20-18">18</a></span>
+<span class="normal"><a href="#__codelineno-20-19">19</a></span>
+<span class="normal"><a href="#__codelineno-20-20">20</a></span>
+<span class="normal"><a href="#__codelineno-20-21">21</a></span>
+<span class="normal"><a href="#__codelineno-20-22">22</a></span>
+<span class="normal"><a href="#__codelineno-20-23">23</a></span>
+<span class="normal"><a href="#__codelineno-20-24">24</a></span>
+<span class="normal"><a href="#__codelineno-20-25">25</a></span>
+<span class="normal"><a href="#__codelineno-20-26">26</a></span>
+<span class="normal"><a href="#__codelineno-20-27">27</a></span>
+<span class="normal"><a href="#__codelineno-20-28">28</a></span>
+<span class="normal"><a href="#__codelineno-20-29">29</a></span>
+<span class="normal"><a href="#__codelineno-20-30">30</a></span>
+<span class="normal"><a href="#__codelineno-20-31">31</a></span>
+<span class="normal"><a href="#__codelineno-20-32">32</a></span>
+<span class="normal"><a href="#__codelineno-20-33">33</a></span>
+<span class="normal"><a href="#__codelineno-20-34">34</a></span>
+<span class="normal"><a href="#__codelineno-20-35">35</a></span>
+<span class="normal"><a href="#__codelineno-20-36">36</a></span>
+<span class="normal"><a href="#__codelineno-20-37">37</a></span>
+<span class="normal"><a href="#__codelineno-20-38">38</a></span>
+<span class="normal"><a href="#__codelineno-20-39">39</a></span></pre></div></td><td class="code"><div><pre><span></span><code><span id="__span-20-1"><a id="__codelineno-20-1" name="__codelineno-20-1"></a><span class="nl">switch_eg:</span>
+</span><span id="__span-20-2"><a id="__codelineno-20-2" name="__codelineno-20-2"></a><span class="nl">.LFB34:</span>
+</span><span id="__span-20-3"><a id="__codelineno-20-3" name="__codelineno-20-3"></a><span class="w">    </span><span class="na">.cfi_startproc</span>
+</span><span id="__span-20-4"><a id="__codelineno-20-4" name="__codelineno-20-4"></a><span class="w">    </span><span class="nf">movq</span><span class="w">    </span><span class="nv">%rdx</span><span class="p">,</span><span class="w"> </span><span class="nv">%rcx</span>
+</span><span id="__span-20-5"><a id="__codelineno-20-5" name="__codelineno-20-5"></a><span class="w">    </span><span class="nf">cmpq</span><span class="w">    </span><span class="no">$6</span><span class="p">,</span><span class="w"> </span><span class="nv">%rdi</span>
+</span><span id="__span-20-6"><a id="__codelineno-20-6" name="__codelineno-20-6"></a><span class="w">    </span><span class="nf">ja</span><span class="w">  </span><span class="no">.L8</span><span class="w">     </span><span class="c1"># ja 用于 unsigned 比较，但如果出现 signed ,被当成很大的正数也会跳转（ signed 应该要用 jg 比较，这里属于trick）</span>
+</span><span id="__span-20-7"><a id="__codelineno-20-7" name="__codelineno-20-7"></a><span class="w">    </span><span class="nf">jmp</span><span class="w"> </span><span class="p">*.</span><span class="no">L4</span><span class="p">(,</span><span class="nv">%rdi</span><span class="p">,</span><span class="mi">8</span><span class="p">)</span><span class="w"> </span><span class="c1"># goto *JTab[x] ，跳转到由 %rdi 索引的跳转表地址（乘以8是因为指针大小）</span>
+</span><span id="__span-20-8"><a id="__codelineno-20-8" name="__codelineno-20-8"></a><span class="w">    </span><span class="na">.section</span><span class="w">    </span><span class="no">.rodata</span>
+</span><span id="__span-20-9"><a id="__codelineno-20-9" name="__codelineno-20-9"></a><span class="w">    </span><span class="na">.align</span><span class="w"> </span><span class="mi">8</span>
+</span><span id="__span-20-10"><a id="__codelineno-20-10" name="__codelineno-20-10"></a><span class="nl">.L4:</span>
+</span><span id="__span-20-11"><a id="__codelineno-20-11" name="__codelineno-20-11"></a><span class="w">    </span><span class="na">.quad</span><span class="w">   </span><span class="no">.L8</span><span class="w"> </span><span class="c1"># x = 0 default</span>
+</span><span id="__span-20-12"><a id="__codelineno-20-12" name="__codelineno-20-12"></a><span class="w">    </span><span class="na">.quad</span><span class="w">   </span><span class="no">.L3</span><span class="w"> </span><span class="c1"># x = 1</span>
+</span><span id="__span-20-13"><a id="__codelineno-20-13" name="__codelineno-20-13"></a><span class="w">    </span><span class="na">.quad</span><span class="w">   </span><span class="no">.L5</span><span class="w"> </span><span class="c1"># x = 2</span>
+</span><span id="__span-20-14"><a id="__codelineno-20-14" name="__codelineno-20-14"></a><span class="w">    </span><span class="na">.quad</span><span class="w">   </span><span class="no">.L9</span><span class="w"> </span><span class="c1"># x = 3</span>
+</span><span id="__span-20-15"><a id="__codelineno-20-15" name="__codelineno-20-15"></a><span class="w">    </span><span class="na">.quad</span><span class="w">   </span><span class="no">.L8</span><span class="w"> </span><span class="c1"># x = 4 default</span>
+</span><span id="__span-20-16"><a id="__codelineno-20-16" name="__codelineno-20-16"></a><span class="w">    </span><span class="na">.quad</span><span class="w">   </span><span class="no">.L7</span><span class="w"> </span><span class="c1"># x = 5</span>
+</span><span id="__span-20-17"><a id="__codelineno-20-17" name="__codelineno-20-17"></a><span class="w">    </span><span class="na">.quad</span><span class="w">   </span><span class="no">.L7</span><span class="w"> </span><span class="c1"># x = 6</span>
+</span><span id="__span-20-18"><a id="__codelineno-20-18" name="__codelineno-20-18"></a><span class="w">    </span><span class="na">.text</span>
+</span><span id="__span-20-19"><a id="__codelineno-20-19" name="__codelineno-20-19"></a><span class="nl">.L3:</span>
+</span><span id="__span-20-20"><a id="__codelineno-20-20" name="__codelineno-20-20"></a><span class="w">    </span><span class="nf">movq</span><span class="w">    </span><span class="nv">%rsi</span><span class="p">,</span><span class="w"> </span><span class="nv">%rax</span><span class="w">  </span><span class="c1"># y</span>
+</span><span id="__span-20-21"><a id="__codelineno-20-21" name="__codelineno-20-21"></a><span class="w">    </span><span class="nf">imulq</span><span class="w">   </span><span class="nv">%rdx</span><span class="p">,</span><span class="w"> </span><span class="nv">%rax</span><span class="w">  </span><span class="c1"># y * z</span>
+</span><span id="__span-20-22"><a id="__codelineno-20-22" name="__codelineno-20-22"></a><span class="w">    </span><span class="nf">ret</span>
+</span><span id="__span-20-23"><a id="__codelineno-20-23" name="__codelineno-20-23"></a><span class="nl">.L5:</span><span class="w">    </span><span class="c1"># Case 2</span>
+</span><span id="__span-20-24"><a id="__codelineno-20-24" name="__codelineno-20-24"></a><span class="w">    </span><span class="nf">movq</span><span class="w">    </span><span class="nv">%rsi</span><span class="p">,</span><span class="w"> </span><span class="nv">%rax</span>
+</span><span id="__span-20-25"><a id="__codelineno-20-25" name="__codelineno-20-25"></a><span class="w">    </span><span class="nf">cqto</span>
+</span><span id="__span-20-26"><a id="__codelineno-20-26" name="__codelineno-20-26"></a><span class="w">    </span><span class="nf">idivq</span><span class="w">   </span><span class="nv">%rcx</span>
+</span><span id="__span-20-27"><a id="__codelineno-20-27" name="__codelineno-20-27"></a><span class="w">    </span><span class="nf">jmp</span><span class="w"> </span><span class="no">.L6</span><span class="w"> </span><span class="c1"># goto merge</span>
+</span><span id="__span-20-28"><a id="__codelineno-20-28" name="__codelineno-20-28"></a><span class="nl">.L9:</span>
+</span><span id="__span-20-29"><a id="__codelineno-20-29" name="__codelineno-20-29"></a><span class="w">    </span><span class="nf">movl</span><span class="w">    </span><span class="no">$1</span><span class="p">,</span><span class="w"> </span><span class="nv">%eax</span><span class="w">    </span><span class="c1"># w = 1</span>
+</span><span id="__span-20-30"><a id="__codelineno-20-30" name="__codelineno-20-30"></a><span class="nl">.L6:</span><span class="w">    </span><span class="c1"># merge</span>
+</span><span id="__span-20-31"><a id="__codelineno-20-31" name="__codelineno-20-31"></a><span class="w">    </span><span class="nf">addq</span><span class="w">    </span><span class="nv">%rcx</span><span class="p">,</span><span class="w"> </span><span class="nv">%rax</span><span class="w">  </span><span class="c1"># w += z</span>
+</span><span id="__span-20-32"><a id="__codelineno-20-32" name="__codelineno-20-32"></a><span class="w">    </span><span class="nf">ret</span>
+</span><span id="__span-20-33"><a id="__codelineno-20-33" name="__codelineno-20-33"></a><span class="nl">.L7:</span>
+</span><span id="__span-20-34"><a id="__codelineno-20-34" name="__codelineno-20-34"></a><span class="w">    </span><span class="nf">movl</span><span class="w">    </span><span class="no">$1</span><span class="p">,</span><span class="w"> </span><span class="nv">%eax</span>
+</span><span id="__span-20-35"><a id="__codelineno-20-35" name="__codelineno-20-35"></a><span class="w">    </span><span class="nf">subq</span><span class="w">    </span><span class="nv">%rdx</span><span class="p">,</span><span class="w"> </span><span class="nv">%rax</span>
+</span><span id="__span-20-36"><a id="__codelineno-20-36" name="__codelineno-20-36"></a><span class="w">    </span><span class="nf">ret</span>
+</span><span id="__span-20-37"><a id="__codelineno-20-37" name="__codelineno-20-37"></a><span class="nl">.L8:</span>
+</span><span id="__span-20-38"><a id="__codelineno-20-38" name="__codelineno-20-38"></a><span class="w">    </span><span class="nf">movl</span><span class="w">    </span><span class="no">$2</span><span class="p">,</span><span class="w"> </span><span class="nv">%eax</span>
+</span><span id="__span-20-39"><a id="__codelineno-20-39" name="__codelineno-20-39"></a><span class="w">    </span><span class="nf">ret</span>
+</span></code></pre></div></td></tr></table></div>
 </details>
 <hr />
 
@@ -2670,13 +3036,13 @@
         
         
           
-          <a href="../../ML/1%20%E3%80%81%E7%9B%91%E7%9D%A3%E5%AD%A6%E4%B9%A0/" class="md-footer__link md-footer__link--next" aria-label="Next: 1 、监督学习">
+          <a href="../bomblab/" class="md-footer__link md-footer__link--next" aria-label="Next: Bomblab">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                1 、监督学习
+                Bomblab
               </div>
             </div>
             <div class="md-footer__button md-icon">
