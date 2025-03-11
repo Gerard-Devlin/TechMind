@@ -54,6 +54,7 @@
 /*}*/
 .md-typeset table:not([class]) {
     border-radius: .5em;
+    border: var(--md-default-bg-color);
 }
 
 /* 图片居中 */
