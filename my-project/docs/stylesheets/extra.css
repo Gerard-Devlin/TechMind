@@ -1,4 +1,5 @@
 :root > * {
+
 /*  !* 背景色 *!*/
 /*  --md-code-bg-color: #282a36;*/
 /*  !* 数字 *!*/
@@ -28,8 +29,8 @@
 /*  !* 标点符号 *!*/
 /*  --md-code-hl-punctuation-color: #f8f8f2;*/
 
-  /* 注释 */
-  --md-code-hl-comment-color: #f3a16d;
+  /*!* 注释 *!*/
+  /*--md-code-hl-comment-color: #f3a16d;*/
 
 /*  !* 泛型 *!*/
 /*  --md-code-hl-generic-color: #f8f8f2;*/
@@ -38,22 +39,23 @@
 /*  --md-code-hl-variable-color: #f8f8f2;*/
 
 .admonition p {
-    font-size: 1.2em;  /* 你可以根据需要调整大小 */
+    font-size: 1.2em;
 }
 
 /* 表格居中 */
 
-td {
-    width: 50em;
-}
+/*td {*/
+/*    width: 50em;*/
+/*}*/
 
-.md-typeset__table {
-    margin: 0 auto;
-    display: table;
-    width: 100%;
-}
+/*.md-typeset__table {*/
+/*    margin: 0 auto;*/
+/*    display: table;*/
+/*    width: 100%;*/
+/*}*/
 .md-typeset table:not([class]) {
     border-radius: .5em;
+    border: var(--md-default-bg-color);
 }
 
 /* 图片居中 */
@@ -72,6 +74,9 @@ img {
 .md-typeset hr {
     border-bottom: .1rem solid var(--md-default-fg-color--lightest);
 }
+
+
+
 }
 
 

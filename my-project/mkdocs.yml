@@ -18,7 +18,9 @@ theme:
     - navigation.instant
     - navigation.tabs
     - navigation.footer
-    - navigation.instant.progress
+    - navigation.tracking
+    - navigation.sections
+#    - navigation.instant.progress
     # 代码块功能
     - content.code.copy
     - content.code.select
@@ -37,14 +39,14 @@ theme:
     # 暗色模式
     - scheme: slate
       primary: black
-      accent : teal
+      accent : indigo
       toggle:
         icon: material/toggle-switch
         name: Switch to light mode
     # 亮色模式
     - scheme: default
       primary: white
-      accent : teal
+      accent : indigo
       toggle:
         icon: material/toggle-switch-off-outline
         name: Switch to dark mode
@@ -73,6 +75,7 @@ markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true
       line_spans: __span
+      linenums: true
       pygments_lang_class: true
   - pymdownx.inlinehilite
   - pymdownx.snippets
@@ -179,13 +182,17 @@ nav:
 
   - CSAPP:
       - CSAPP/1 、信息的表示和处理.md
-      - CSAPP/2 、机器级编程：基础.md
-      - CSAPP/3 、机器级编程：控制.md
+      - 2 、机器级编程 :
+        - CSAPP/2.1 机器级编程：基础.md
+        - CSAPP/2.2 机器级编程：控制.md
+        - CSAPP/2.3 机器级编程：过程.md
+      - Lab:
+        - CSAPP/bomblab.md
 
-
-  - ML:
-    - ML/1 、监督学习.md
-    - ML/2 、高级学习算法.md
-    - ML/3 、无监督学习.md
+  - ML ＆ DL:
+      - ML:
+        - ML ＆ DL/1 、监督学习.md
+        - ML ＆ DL/2 、高级学习算法.md
+        - ML ＆ DL/3 、无监督学习.md
 
 
