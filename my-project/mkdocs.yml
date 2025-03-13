@@ -68,6 +68,10 @@ plugins:
   - glightbox:
       width: 80%
       background: white
+  - minify:
+      minify_html: true
+      minify_js: true
+      minify_css: true
   - git-revision-date-localized:
       enable_creation_date: true
 
@@ -198,10 +202,10 @@ nav:
       - Lab:
         - CSAPP/bomblab.md
 
-  - ML ＆ DL:
+  - ML＆DL:
       - ML:
-        - ML ＆ DL/1 、监督学习.md
-        - ML ＆ DL/2 、高级学习算法.md
-        - ML ＆ DL/3 、无监督学习.md
+        - ML＆DL/1 、监督学习.md
+        - ML＆DL/2 、高级学习算法.md
+        - ML＆DL/3 、无监督学习.md
 
 
