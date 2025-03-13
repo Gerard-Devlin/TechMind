@@ -4,6 +4,7 @@ repo_url: https://github.com/Gerard-Devlin/TechMind
 repo_name: Gerard-Devlin/TechMind
 # 自定义页脚文本
 copyright: "Copyright © 2025 Devlin"
+edit_uri: edit/master/my-project/docs/
 theme:
   name: material
   custom_dir: material
@@ -12,24 +13,24 @@ theme:
     repo: fontawesome/brands/github-alt
     favicon: images/favicon.png
     annotation: material/google-circles
-
   features:
+    - content.action.edit
+    - content.action.view
     - navigation.top
     - navigation.instant
     - navigation.tabs
     - navigation.footer
     - navigation.tracking
     - navigation.sections
-#    - navigation.instant.progress
+    - navigation.instant.progress
     # 代码块功能
-    - content.code.copy
     - content.code.select
+    - content.code.copy
     - content.code.annotate
     - content.tabs.link
     # 提示功能
     - content.tooltips
     - header.autohide
-    - toc
     # 搜索提示
     - search.suggest
     - search.highlight
@@ -39,7 +40,7 @@ theme:
     # 暗色模式
     - scheme: slate
       primary: black
-      accent : indigo
+      accent : deep purple
       toggle:
         icon: material/toggle-switch
         name: Switch to light mode
@@ -52,13 +53,35 @@ theme:
         name: Switch to dark mode
 
 
+# 插件支持
+plugins:
+  - tags
+  - search:
+      pipeline:
+        - stemmer
+        - stopWordFilter
+        - trimmer
+      separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
+      lang:
+        - en
+        - zh
+  - glightbox:
+      width: 80%
+      background: white
+  - git-revision-date-localized:
+      enable_creation_date: true
+
 # Markdown 扩展
 markdown_extensions:
+  - abbr
   - attr_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: ⚓︎
   - pymdownx.emoji:
         emoji_index: !!python/name:material.extensions.emoji.twemoji
         emoji_generator: !!python/name:material.extensions.emoji.to_svg
-  - md_in_html
   - pymdownx.blocks.caption
   # Admonitions 支持
   - admonition
@@ -73,16 +96,17 @@ markdown_extensions:
 
   # 代码高亮
   - pymdownx.highlight:
-      anchor_linenums: true
-      line_spans: __span
-      linenums: true
+      use_pygments: true
       pygments_lang_class: true
+      line_spans: __span
+      anchor_linenums: true
+      linenums: true
+
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.superfences
   - pymdownx.tabbed:
         alternate_style: true
-
   # 图表支持
   - pymdownx.superfences:
       custom_fences:
@@ -117,23 +141,8 @@ extra_css:
   - https://unpkg.com/katex@0/dist/katex.min.css
   - stylesheets/extra.css
 
-# 插件支持
-plugins:
-  - search:
-      pipeline:
-        - stemmer
-        - stopWordFilter
-        - trimmer
-      separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
-      lang:
-        - en
-        - zh
-  - glightbox:
-      width: 80%
-      background: white
-  - tags
 
-
+# ---------------------------------------------------------------------------------------------------------
 # 导航
 nav:
   - Home: index.md
