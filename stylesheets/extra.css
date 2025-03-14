@@ -92,6 +92,9 @@
     }
     /* 搜索框圆角 */
     .md-search__form {
+        margin-bottom: 0.5em;
+        margin-top: 0.5em;
+        background-color: var(--md-default-fg-color--lightest);
         border-radius: 9px;
     }
 }
