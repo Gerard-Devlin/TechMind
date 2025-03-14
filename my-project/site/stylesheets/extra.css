@@ -85,9 +85,10 @@ img {
     box-shadow: var(--md-shadow-z2);
 }
 
-/* 代码阴影 */
+/* 行内代码阴影 */
 .md-typeset *:not(pre)>code {
     box-shadow: var(--md-shadow-z2);
+    border-radius: .2em;
 }
 }
 

@@ -1,94 +1,99 @@
 :root > * {
-  /*!* 背景色 *!*/
-  /*--md-code-bg-color: #282a36;*/
-  /*!* 数字 *!*/
-  /*--md-code-hl-number-color: #bd93f9;*/
+    /*!* 背景色 *!*/
+    /*--md-code-bg-color: #282a36;*/
+    /*!* 数字 *!*/
+    /*--md-code-hl-number-color: #bd93f9;*/
 
-  /*!* 特殊字符 *!*/
-  /*--md-code-hl-special-color: #ff79c6;*/
+    /*!* 特殊字符 *!*/
+    /*--md-code-hl-special-color: #ff79c6;*/
 
-  /*!* 函数名 *!*/
-  /*--md-code-hl-function-color: #50fa7b;*/
+    /*!* 函数名 *!*/
+    /*--md-code-hl-function-color: #50fa7b;*/
 
-  /*!* 常量/类型 *!*/
-  /*--md-code-hl-constant-color: #bd93f9;*/
+    /*!* 常量/类型 *!*/
+    /*--md-code-hl-constant-color: #bd93f9;*/
 
-  /*!* 关键字 *!*/
-  /*--md-code-hl-keyword-color: #ff79c6;*/
+    /*!* 关键字 *!*/
+    /*--md-code-hl-keyword-color: #ff79c6;*/
 
-  /*!* 字符串 *!*/
-  /*--md-code-hl-string-color: #f1fa8c;*/
+    /*!* 字符串 *!*/
+    /*--md-code-hl-string-color: #f1fa8c;*/
 
-  /*!* 标识符/名称 *!*/
-  /*--md-code-hl-name-color: #f8f8f2;*/
+    /*!* 标识符/名称 *!*/
+    /*--md-code-hl-name-color: #f8f8f2;*/
 
-  /*!* 运算符 *!*/
-  /*--md-code-hl-operator-color: #ff79c6;*/
+    /*!* 运算符 *!*/
+    /*--md-code-hl-operator-color: #ff79c6;*/
 
-  /*!* 标点符号 *!*/
-  /*--md-code-hl-punctuation-color: #f8f8f2;*/
+    /*!* 标点符号 *!*/
+    /*--md-code-hl-punctuation-color: #f8f8f2;*/
 
-  /* 注释 */
-  --md-code-hl-comment-color: #f3a16d;
+    /* 注释 */
+    --md-code-hl-comment-color: #f3a16d;
 
-  /*!* 泛型 *!*/
-  /*--md-code-hl-generic-color: #f8f8f2;*/
+    /*!* 泛型 *!*/
+    /*--md-code-hl-generic-color: #f8f8f2;*/
 
-  /*!* 变量 *!*/
-  /*--md-code-hl-variable-color: #f8f8f2;*/
+    /*!* 变量 *!*/
+    /*--md-code-hl-variable-color: #f8f8f2;*/
 
-.admonition p {
-    font-size: 1.2em;
-}
+    .admonition p {
+        font-size: 1.2em;
+    }
 
-/* 表格居中，阴影 */
+    /* 表格居中，阴影 */
 
-.md-typeset table:not([class])  td {
-    width: 50em;
-}
+    .md-typeset table:not([class])  td {
+        width: 50em;
+    }
 
-.md-typeset table:not([class]) th {
-    border-bottom: .05rem solid #7E56C2FF;
-}
+    .md-typeset table:not([class]) th {
+        border-bottom: .05rem solid #7E56C2FF;
+    }
 
-.md-typeset table:not([class]) th {
+    .md-typeset table:not([class]) th {
         background-color: var(--md-primary-fg-color);
-}
+    }
 
-.md-typeset__table {
-    margin: 0 auto;
-    display: table;
-    width: 100%;
-}
+    .md-typeset__table {
+        margin: 0 auto;
+        display: table;
+        width: 100%;
+    }
 
-.md-typeset table:not([class]) {
-    border-radius: .5em;
-    border: var(--md-default-bg-color);
-    box-shadow: var(--md-shadow-z2);
-}
+    .md-typeset table:not([class]) {
+        border-radius: .5em;
+        border: var(--md-default-bg-color);
+        box-shadow: var(--md-shadow-z2);
+    }
 
-/* 图片居中 */
-img {
-    display: block;
-    margin: 0 auto;
-    border-radius: .3em;
-}
+    /* 图片居中 */
+    img {
+        display: block;
+        margin: 0 auto;
+        border-radius: .3em;
+    }
 
-/* 代码块圆角 */
-.md-code__content {
-    border-radius: .5em;
-}
+    /* 代码块圆角 */
+    .md-code__content {
+        border-radius: .5em;
+    }
 
 
-/* 提示框阴影 */
-.md-typeset .admonition {
-    box-shadow: var(--md-shadow-z2);
-}
+    /* 提示框阴影 */
+    .md-typeset .admonition {
+        box-shadow: var(--md-shadow-z2);
+    }
 
-/* 行内代码阴影 */
-.md-typeset *:not(pre)>code {
-    box-shadow: var(--md-shadow-z2);
-}
+    /* 行内代码阴影 */
+    .md-typeset *:not(pre)>code {
+        box-shadow: var(--md-shadow-z2);
+        border-radius: .2em;
+    }
+    /* 搜索框圆角 */
+    .md-search__form {
+        border-radius: 9px;
+    }
 }
 
 

@@ -3,7 +3,7 @@ site_url: https://Gerard-Devlin.github.io/TechMind/
 repo_url: https://github.com/Gerard-Devlin/TechMind
 repo_name: Gerard-Devlin/TechMind
 # 自定义页脚文本
-copyright: "Copyright © 2025 Devlin"
+copyright: "Copyright © 2024 - 2025 Devlin"
 edit_uri: edit/master/my-project/docs/
 theme:
   name: material
@@ -14,7 +14,7 @@ theme:
     favicon: images/favicon.png
     annotation: material/google-circles
   features:
-    - content.action.edit
+#    - content.action.edit
     - content.action.view
     - navigation.top
     - navigation.instant
@@ -23,6 +23,9 @@ theme:
     - navigation.tracking
     - navigation.sections
     - navigation.instant.progress
+    - navigation.path
+    - navigation.prune
+    - navigation.indexes
     # 代码块功能
     - content.code.select
     - content.code.copy
@@ -37,21 +40,28 @@ theme:
     - search.share
   # 配色方案
   palette:
-    # 暗色模式
-    - scheme: slate
-      primary: black
-      accent : deep purple
+    - media: "(prefers-color-scheme)"
       toggle:
-        icon: material/toggle-switch
+        icon: material/theme-light-dark
         name: Switch to light mode
-    # 亮色模式
-    - scheme: default
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
       primary: white
-      accent : indigo
+      accent: indigo
       toggle:
-        icon: material/toggle-switch-off-outline
+        icon: material/weather-sunny
         name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: deep purple
+      toggle:
+        icon: material/weather-night
+        name: Switch to system preference
 
+  font:
+    text: Roboto
+    code: Roboto Mono
 
 # 插件支持
 plugins:
@@ -70,8 +80,6 @@ plugins:
       background: white
   - minify:
       minify_html: true
-      minify_js: true
-      minify_css: true
   - git-revision-date-localized:
       enable_creation_date: true
 
@@ -131,6 +139,13 @@ markdown_extensions:
   - pymdownx.snippets:
       auto_append:
         - includes/abbreviations.md
+
+# 页面分析/页尾社交
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/Gerard-Devlin
+  generator: false
 
 # JavaScript 支持
 extra_javascript:
