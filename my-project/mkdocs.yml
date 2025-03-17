@@ -17,13 +17,13 @@ theme:
     #    - content.action.edit
     - content.action.view
     - navigation.top
+    - navigation.path
     - navigation.instant
     - navigation.tabs
     - navigation.footer
     - navigation.tracking
     - navigation.sections
     - navigation.instant.progress
-    - navigation.path
     - navigation.prune
     - navigation.indexes
     # 代码块功能
@@ -167,60 +167,60 @@ nav:
   - Home: index.md
 
   - Overview:
-      - Overview/计算机数据.md
-      - Overview/计算机网络.md
-      - Overview/计算机操作系统.md
-      - Overview/软件工程.md
-      - Overview/算法与数据结构.md
+      - 计算机数据: Overview/计算机数据.md
+      - 计算机网络: Overview/计算机网络.md
+      - 计算机操作系统: Overview/计算机操作系统.md
+      - 软件工程: Overview/软件工程.md
+      - 算法与数据结构: Overview/算法与数据结构.md
 
   - C:
-      - C/1 、入门.md
-      - C/2 、变量与运算符.md
-      - C/3 、if-else判断.md
-      - C/4 、while循环.md
-      - C/5 、for循环.md
-      - C/6 、数据类型和运算.md
-      - C/7 、函数.md
-      - C/8 、数组.md
-      - C/9 、指针.md
-      - C/10 、字符串.md
-      - C/11 、结构体.md
+      - 1 、入门: C/1 、入门.md
+      - 2 、变量与运算符: C/2 、变量与运算符.md
+      - 3 、if-else判断: C/3 、if-else判断.md
+      - 4 、while循环: C/4 、while循环.md
+      - 5 、for循环: C/5 、for循环.md
+      - 6 、数据类型和运算: C/6 、数据类型和运算.md
+      - 7 、函数: C/7 、函数.md
+      - 8 、数组: C/8 、数组.md
+      - 9 、指针: C/9 、指针.md
+      - 10 、字符串: C/10 、字符串.md
+      - 11 、结构体: C/11 、结构体.md
 
   - DataStruct:
-      - DataStruct/1 、概述.md
-      - DataStruct/2 、输入输出.md
-      - DataStruct/3 、链表.md
-      - DataStruct/4 、队列.md
-      - DataStruct/5 、栈.md
-      - DataStruct/6 、二叉树.md
-      - DataStruct/7 、并查集.md
-      - DataStruct/8 、排序.md
-      - DataStruct/9 、排列.md
-      - DataStruct/10 、前缀和.md
-      - DataStruct/11 、差分数组.md
-      - DataStruct/12 、二分.md
-      - DataStruct/13 、DFS.md
-      - DataStruct/14 、BFS.md
-      - DataStruct/15 、数论.md
-      - DataStruct/16 、贪心.md
-      - DataStruct/17 、动态规划.md
-      - DataStruct/18 、图.md
-      - DataStruct/19 、最小生成树.md
-      - DataStruct/综合.md
+      - 1 、概述: DataStruct/1 、概述.md
+      - 2 、输入输出: DataStruct/2 、输入输出.md
+      - 3 、链表: DataStruct/3 、链表.md
+      - 4 、队列: DataStruct/4 、队列.md
+      - 5 、栈: DataStruct/5 、栈.md
+      - 6 、二叉树: DataStruct/6 、二叉树.md
+      - 7 、并查集: DataStruct/7 、并查集.md
+      - 8 、排序: DataStruct/8 、排序.md
+      - 9 、排列: DataStruct/9 、排列.md
+      - 10 、前缀和: DataStruct/10 、前缀和.md
+      - 11 、差分数组: DataStruct/11 、差分数组.md
+      - 12 、二分: DataStruct/12 、二分.md
+      - 13 、DFS: DataStruct/13 、DFS.md
+      - 14 、BFS: DataStruct/14 、BFS.md
+      - 15 、数论: DataStruct/15 、数论.md
+      - 16 、贪心: DataStruct/16 、贪心.md
+      - 17 、动态规划: DataStruct/17 、动态规划.md
+      - 18 、图: DataStruct/18 、图.md
+      - 19 、最小生成树: DataStruct/19 、最小生成树.md
+      - 综合: DataStruct/综合.md
 
   - CSAPP:
-      - CSAPP/1 、信息的表示和处理.md
+      - 1 、信息的表示和处理: CSAPP/1 、信息的表示和处理.md
       - 2 、机器级编程 :
-          - CSAPP/2.1 机器级编程：基础.md
-          - CSAPP/2.2 机器级编程：控制.md
-          - CSAPP/2.3 机器级编程：过程.md
+          - 2.1 机器级编程：基础: CSAPP/2.1 机器级编程：基础.md
+          - 2.2 机器级编程：控制: CSAPP/2.2 机器级编程：控制.md
+          - 2.3 机器级编程：过程: CSAPP/2.3 机器级编程：过程.md
       - Lab:
-          - CSAPP/bomblab.md
+          - bomblab: CSAPP/bomblab.md
 
   - ML＆DL:
       - ML:
-          - ML＆DL/1 、监督学习.md
-          - ML＆DL/2 、高级学习算法.md
-          - ML＆DL/3 、无监督学习.md
+          - 1 、监督学习: ML＆DL/1 、监督学习.md
+          - 2 、高级学习算法: ML＆DL/2 、高级学习算法.md
+          - 3 、无监督学习: ML＆DL/3 、无监督学习.md
 
 
