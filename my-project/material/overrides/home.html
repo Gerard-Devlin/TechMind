@@ -255,6 +255,7 @@
   @media screen and (min-width: 36rem) {
     .secondary-section .g .section .component-wrapper .responsive-grid .card {
       padding: 1rem 1.5rem;
+      border-radius: .3em;
     }
   }
 
@@ -317,7 +318,13 @@
     font-weight: bold;
   }
 
-
+  .gradient-text {
+    font-size: 48px!important;
+    font-weight: bold;
+    background: linear-gradient(to right, #808080, #4284f8) !important;
+    -webkit-background-clip: text!important; /* 背景裁剪到文字 */
+    color: transparent!important; /* 文字颜色设置为透明，显示背景渐变 */
+  }
 </style>
 
 <!-- Hero for landing page -->
@@ -325,7 +332,7 @@
   <div class="md-grid md-typeset">
     <div class="md-main__inner" >
       <div>
-        <h1>Computer Science, Simplified</h1>
+        <h1 class="gradient-text">Computer Science, Simplified</h1>
         <p>TechMind is an open source resource that helps you <span class="em">understand</span>, <span class="em">explore</span>, and <span class="em">master</span> essential computer science concepts with ease. From computing languages to deep learning, we make learning accessible for all.
         </p>
         <a

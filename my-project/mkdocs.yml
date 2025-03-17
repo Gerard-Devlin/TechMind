@@ -14,7 +14,7 @@ theme:
     favicon: images/favicon.png
     annotation: material/google-circles
   features:
-#    - content.action.edit
+    #    - content.action.edit
     - content.action.view
     - navigation.top
     - navigation.instant
@@ -92,8 +92,8 @@ markdown_extensions:
   - toc:
       permalink: ⚓︎
   - pymdownx.emoji:
-        emoji_index: !!python/name:material.extensions.emoji.twemoji
-        emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.blocks.caption
   # Admonitions 支持
   - admonition
@@ -118,7 +118,7 @@ markdown_extensions:
   - pymdownx.snippets
   - pymdownx.superfences
   - pymdownx.tabbed:
-        alternate_style: true
+      alternate_style: true
   # 图表支持
   - pymdownx.superfences:
       custom_fences:
@@ -126,7 +126,7 @@ markdown_extensions:
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
 
-  # LaTeX 支持
+          # LaTeX 支持
   - pymdownx.arithmatex:
       generic: true
 
@@ -167,60 +167,60 @@ nav:
   - Home: index.md
 
   - Overview:
-    - Overview/计算机数据.md
-    - Overview/计算机网络.md
-    - Overview/计算机操作系统.md
-    - Overview/软件工程.md
-    - Overview/算法与数据结构.md
+      - Overview/计算机数据.md
+      - Overview/计算机网络.md
+      - Overview/计算机操作系统.md
+      - Overview/软件工程.md
+      - Overview/算法与数据结构.md
 
   - C:
-    - C/1 、入门.md
-    - C/2 、变量与运算符.md
-    - C/3 、if-else判断.md
-    - C/4 、while循环.md
-    - C/5 、for循环.md
-    - C/6 、数据类型和运算.md
-    - C/7 、函数.md
-    - C/8 、数组.md
-    - C/9 、指针.md
-    - C/10 、字符串.md
-    - C/11 、结构体.md
+      - C/1 、入门.md
+      - C/2 、变量与运算符.md
+      - C/3 、if-else判断.md
+      - C/4 、while循环.md
+      - C/5 、for循环.md
+      - C/6 、数据类型和运算.md
+      - C/7 、函数.md
+      - C/8 、数组.md
+      - C/9 、指针.md
+      - C/10 、字符串.md
+      - C/11 、结构体.md
 
   - DataStruct:
-    - DataStruct/1 、概述.md
-    - DataStruct/2 、输入输出.md
-    - DataStruct/3 、链表.md
-    - DataStruct/4 、队列.md
-    - DataStruct/5 、栈.md
-    - DataStruct/6 、二叉树.md
-    - DataStruct/7 、并查集.md
-    - DataStruct/8 、排序.md
-    - DataStruct/9 、排列.md
-    - DataStruct/10 、前缀和.md
-    - DataStruct/11 、差分数组.md
-    - DataStruct/12 、二分.md
-    - DataStruct/13 、DFS.md
-    - DataStruct/14 、BFS.md
-    - DataStruct/15 、数论.md
-    - DataStruct/16 、贪心.md
-    - DataStruct/17 、动态规划.md
-    - DataStruct/18 、图.md
-    - DataStruct/19 、最小生成树.md
-    - DataStruct/综合.md
+      - DataStruct/1 、概述.md
+      - DataStruct/2 、输入输出.md
+      - DataStruct/3 、链表.md
+      - DataStruct/4 、队列.md
+      - DataStruct/5 、栈.md
+      - DataStruct/6 、二叉树.md
+      - DataStruct/7 、并查集.md
+      - DataStruct/8 、排序.md
+      - DataStruct/9 、排列.md
+      - DataStruct/10 、前缀和.md
+      - DataStruct/11 、差分数组.md
+      - DataStruct/12 、二分.md
+      - DataStruct/13 、DFS.md
+      - DataStruct/14 、BFS.md
+      - DataStruct/15 、数论.md
+      - DataStruct/16 、贪心.md
+      - DataStruct/17 、动态规划.md
+      - DataStruct/18 、图.md
+      - DataStruct/19 、最小生成树.md
+      - DataStruct/综合.md
 
   - CSAPP:
       - CSAPP/1 、信息的表示和处理.md
       - 2 、机器级编程 :
-        - CSAPP/2.1 机器级编程：基础.md
-        - CSAPP/2.2 机器级编程：控制.md
-        - CSAPP/2.3 机器级编程：过程.md
+          - CSAPP/2.1 机器级编程：基础.md
+          - CSAPP/2.2 机器级编程：控制.md
+          - CSAPP/2.3 机器级编程：过程.md
       - Lab:
-        - CSAPP/bomblab.md
+          - CSAPP/bomblab.md
 
   - ML＆DL:
       - ML:
-        - ML＆DL/1 、监督学习.md
-        - ML＆DL/2 、高级学习算法.md
-        - ML＆DL/3 、无监督学习.md
+          - ML＆DL/1 、监督学习.md
+          - ML＆DL/2 、高级学习算法.md
+          - ML＆DL/3 、无监督学习.md
 
 
