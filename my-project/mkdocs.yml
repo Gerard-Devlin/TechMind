@@ -222,5 +222,6 @@ nav:
           - 1 、监督学习: ML＆DL/1 、监督学习.md
           - 2 、高级学习算法: ML＆DL/2 、高级学习算法.md
           - 3 、无监督学习: ML＆DL/3 、无监督学习.md
-
+      - DL:
+          - PyTorch: ML＆DL/PyTorch.md
 
