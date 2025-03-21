@@ -1,6 +1,5 @@
 ---
 icon: material/torch
-  
 ---
 
 
