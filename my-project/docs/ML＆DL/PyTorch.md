@@ -35,15 +35,15 @@ class MyDataset(Dataset):
 
 ## 二、`tensor`
 
-- 概念：高纬矩阵
-  - 1-D：声音
-  - 2-D：黑白图片
-  - 3-D：彩色照片
-  - ……
+- 概念：高维矩阵
+    - 1-D：声音
+      - 2-D：黑白图片
+      - 3-D：彩色照片
+      - ……
 
 ---
 
-### （1）常见操作
+### 1、常见操作
 
 - 查看大小、维度
 
@@ -84,7 +84,7 @@ class MyDataset(Dataset):
 
 ---
 
-### （2）设备
+### 2、设备
 
 - 默认情况下，张量和模块将在**CPU**上进行计算，使用 `.to()` 方法将张量移动到适当的设备
 
@@ -108,7 +108,7 @@ class MyDataset(Dataset):
 
 ---
 
-### （3）自动求导
+### 3、自动求导
 
 ```python
 x = torch.tensor([[1., 0.], [-1., 1.]], requires_grad=True)	# 创建张量并设置 requires_grad=True
@@ -121,7 +121,7 @@ x.grad		# 查看梯度
 
 ## 三、`torch.nn`
 
-### （1）激活函数
+### 1、激活函数
 
 ```python
 nn.sigmoid()
@@ -147,7 +147,7 @@ class MyModel(nn.Module):
 
 ---
 
-### （2）损失函数
+### 2、损失函数
 
 - **均方误差（Mean Squared Error）**：用于回归任务。
 
