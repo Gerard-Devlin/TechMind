@@ -94,6 +94,18 @@
     .md-search__form {
         border-radius: 9px;
     }
+    /* 卡片圆角 */
+    .md-typeset .grid.cards>ol>li, .md-typeset .grid.cards>ul>li, .md-typeset .grid>.card{
+        border-radius: .5em;
+    }
+    .md-typeset .emojione, .md-typeset .gemoji, .md-typeset .twemoji {
+        padding-right: 1em;
+        --md-icon-size: 3em;
+        vertical-align: middle;
+    }
+    .md-typeset .emojione svg, .md-typeset .gemoji svg, .md-typeset .twemoji svg {
+        fill: #F1502F;
+    }
 }
 
 
