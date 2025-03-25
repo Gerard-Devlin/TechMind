@@ -106,6 +106,12 @@
     .md-typeset .emojione svg, .md-typeset .gemoji svg, .md-typeset .twemoji svg {
         fill: #F1502F;
     }
+    /* 旧版提示框 */
+    .md-typeset .admonition,
+    .md-typeset details {
+        border-width: 0;
+        border-left-width: 4px;
+    }
 }
 
 
