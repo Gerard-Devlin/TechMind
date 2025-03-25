@@ -226,6 +226,7 @@ nav:
           - 1 、概述: ML＆DL/1 、概述.md
           - 2 、网络无法训练怎么办？: ML＆DL/2 、网络无法训练怎么办？.md
           - 3 、图像作为输入: ML＆DL/3 、图像作为输入.md
+          - 4 、序列作为输入: ML＆DL/4 、序列作为输入.md
       - Tool:
           - PyTorch: ML＆DL/PyTorch.md
           - Colab: ML＆DL/Colab.md
