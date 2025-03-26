@@ -1,5 +1,7 @@
 # Devlin's Technical Blog
 
+![TechMind](https://github.com/user-attachments/assets/57a93f58-2a6d-40cb-bdf0-c9e3996b4fe8)
+
 Welcome to **Devlin's Technical Blog**! This blog is a collection of insights, tutorials, and guides ranging from fundamental computer science concepts to advanced topics in Machine Learning. Whether you're a beginner just starting your journey or an advanced learner looking for more in-depth knowledge, there's something here for everyone.
 
 ## Instructions
