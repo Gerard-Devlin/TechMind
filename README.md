@@ -4,7 +4,7 @@
 
 Welcome to **Devlin's Technical Blog**! This blog is a collection of insights, tutorials, and guides ranging from fundamental computer science concepts to advanced topics in Machine Learning. Whether you're a beginner just starting your journey or an advanced learner looking for more in-depth knowledge, there's something here for everyone.
 
-## Instructions
+## 🧭 Instructions
 
 1. **Start with the Basics**: If you're new to computer science, I recommend starting with the foundational topics like data structures, algorithms, and basic programming syntax. These will serve as the building blocks for everything else.
    
