@@ -1,4 +1,4 @@
-# Devlin's Technical Blog
+# 👋 Devlin's Technical Blog
 
 ![TechMind](https://github.com/user-attachments/assets/57a93f58-2a6d-40cb-bdf0-c9e3996b4fe8)
 
