@@ -12,7 +12,7 @@ Welcome to **Devlin's Technical Blog**! This blog is a collection of insights, t
 
 3. **Machine Learning and AI**: Once you're comfortable with the fundamentals, check out the machine learning section for insights into algorithms, neural networks, and cutting-edge AI technologies.
 
-## A CS Beginner Guide
+## 💻 A CS Beginner Guide
 
 If you're just starting out in computer science, here are some topics you'll want to explore:
 
@@ -20,7 +20,7 @@ If you're just starting out in computer science, here are some topics you'll wan
 - **Data Structures**: Get familiar with arrays, linked lists, stacks, queues, and trees.
 - **Algorithms**: Understand how to solve problems efficiently using different algorithms like sorting and searching.
 
-## Learn from Basic Grammar to Higher-Level Machine Learning Knowledge
+## 🧠 Learn from Basic Grammar to Higher-Level Machine Learning Knowledge
 
 This blog is organized to take you from basic programming grammar all the way to advanced machine learning topics:
 
