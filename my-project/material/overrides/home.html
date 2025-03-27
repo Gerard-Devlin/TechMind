@@ -22,7 +22,7 @@
   }
 
   .md-container{
-    background-color: white;
+    background-color: var(--md-default-bg-color);
     overflow: hidden;
   }
 
@@ -74,7 +74,7 @@
     color: rgb(38, 38, 38);
   }
   .tx-hero p {
-    color: rgb(92, 92, 92);
+    color: var(--md-typeset-color);
     font-weight: 400;
     font-size: 20px;
     line-height: 32px;
@@ -97,9 +97,9 @@
 
   /* Secondary content styles */
   .secondary-section {
-    background: rgb(245, 245, 245) none repeat scroll 0% 0%;
-    border-top: 1px solid rgb(222, 222, 222);
-    border-bottom: 1px solid rgb(222, 222, 222)
+    background: var(--md-code-bg-color);
+    border-top: 1px solid var(--md-code-bg-color);
+    border-bottom: 1px solid var(--md-code-bg-color)
   }
   @media screen and (max-width: 1012px) {
     .secondary-section {
@@ -141,7 +141,7 @@
   }
 
   .secondary-section .g .section .component-wrapper h3 {
-    color: rgb(38, 38, 38);
+    /*color: rgb(38, 38, 38);*/
     font-size: 36px;
     font-weight: 700;
     line-height: 46px;
@@ -150,11 +150,11 @@
   }
 
   .secondary-section .g .section .component-wrapper h4 {
-    color: rgb(38, 38, 38);
+    /*color: rgb(38, 38, 38);*/
   }
 
   .secondary-section .g .section .component-wrapper p {
-    color: rgb(92, 92, 92);
+    /*color: rgb(92, 92, 92);*/
     font-size: 18px;
     font-weight: 400;
     line-height: 30px;
@@ -273,14 +273,14 @@
   }
 
   .secondary-section .g .section .component-wrapper .responsive-grid .card .card-content h5 {
-    color: rgb(61, 61, 61);
+    /*color: rgb(61, 61, 61);*/
     margin: 0;
   }
 
   .secondary-section .g .section .component-wrapper .responsive-grid .card .card-content p {
     margin-top: 0.25em;
     margin-bottom: 0;
-    color: rgb(92, 92, 92);
+    /*color: rgb(92, 92, 92);*/
     font-size: 0.65rem;
     font-weight: 300;
     line-height: normal;
@@ -294,13 +294,13 @@
 
 
   .component-wrapper span.em {
-    color: rgb(61, 61, 61);
+    /*color: rgb(61, 61, 61);*/
   }
 
   .component-wrapper a {
     transition: color 125ms;
-    color: rgb(61, 61, 61);
-    background: rgba(0, 0, 0, 0.05) none repeat scroll 0% 0%;
+    /*color: rgb(61, 61, 61);*/
+    background: var(--md-default-fg-color--lightest) none repeat scroll 0% 0%;
     padding: 2px 6px;
     margin: 0px 1px;
     border-radius: 4px;
@@ -319,12 +319,62 @@
   }
 
   .gradient-text {
+    margin: 0.35em 0 0.8em 0 !important;
     font-size: 45px!important;
-    font-weight: bold;
-    background: linear-gradient(to right, rgb(92,92,92), #6297cf) !important;
+    font-weight: bolder;
+    background: linear-gradient(to right, rgb(206, 136, 239), #6297cf) !important;
     -webkit-background-clip: text!important; /* 背景裁剪到文字 */
     color: transparent!important; /* 文字颜色设置为透明，显示背景渐变 */
   }
+
+
+  /* 招手符号的样式 */
+  .swing {
+    font-size: 50px;  /* 调整招手符号的大小 */
+    display: inline-block;  /* 确保招手符号可以应用动画 */
+    color: black;
+    animation: wave 2s infinite alternate;  /* 添加挥手动画 */
+  }
+
+  /* 摇动动画 */
+  @keyframes wave {
+    0% {
+      transform: rotate(0deg);
+    }
+    10% {
+      transform: rotate(15deg); /* 轻微向右摆动 */
+    }
+    20% {
+      transform: rotate(-10deg); /* 轻微向左摆动 */
+    }
+    30% {
+      transform: rotate(20deg); /* 更大幅度向右摆动 */
+    }
+    40% {
+      transform: rotate(-15deg); /* 更大幅度向左摆动 */
+    }
+    50% {
+      transform: rotate(10deg); /* 缓和回到右侧 */
+    }
+    60% {
+      transform: rotate(-5deg); /* 缓和回到左侧 */
+    }
+    70% {
+      transform: rotate(5deg); /* 轻微回到右侧 */
+    }
+    80% {
+      transform: rotate(0deg); /* 回到中心 */
+    }
+    100% {
+      transform: rotate(0deg); /* 稍作停顿再循环 */
+    }
+  }
+
+  .twemoji{
+    fill: var(--md-typeset-color);
+  }
+
+
 </style>
 
 <!-- Hero for landing page -->
@@ -332,7 +382,9 @@
   <div class="md-grid md-typeset">
     <div class="md-main__inner" >
       <div>
-        <h1 class="gradient-text">Computer Science, Simplified</h1>
+        <h1 class="gradient-text">
+          <span class="swing">👋</span> Computer Science, Simplified
+        </h1>
         <p>TechMind is an open source resource that helps you <span class="em">understand</span>, <span class="em">explore</span>, and <span class="em">master</span> essential computer science concepts with ease. From computing languages to deep learning, we make learning accessible for all.
         </p>
         <a
@@ -446,7 +498,7 @@
             <div class="card">
               <div class="logo">
                   <span class="twemoji">
-                    {% include ".icons/octicons/cpu-24.svg" %}
+                    {% include ".icons/material/cpu-64-bit.svg" %}
                   </span>
               </div>
               <div class="card-content">
@@ -462,7 +514,7 @@
             <div class="card">
               <div class="logo">
                   <span class="twemoji">
-                    {% include ".icons/octicons/hubot-24.svg" %}
+                    {% include ".icons/material/brain.svg" %}
                   </span>
               </div>
               <div class="card-content">
