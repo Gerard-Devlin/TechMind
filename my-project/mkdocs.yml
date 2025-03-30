@@ -217,18 +217,18 @@ nav:
       - Lab:
           - bomblab: CSAPP/bomblab.md
 
-  - ML＆DL:
+  - ML&DL:
       - ML:
-          - 1 、监督学习: ML＆DL/1 、监督学习.md
-          - 2 、高级学习算法: ML＆DL/2 、高级学习算法.md
-          - 3 、无监督学习: ML＆DL/3 、无监督学习.md
+          - 1 、监督学习: ML&DL/1 、监督学习.md
+          - 2 、高级学习算法: ML&DL/2 、高级学习算法.md
+          - 3 、无监督学习: ML&DL/3 、无监督学习.md
       - DL:
-          - 1 、概述: ML＆DL/1 、概述.md
-          - 2 、网络无法训练怎么办？: ML＆DL/2 、网络无法训练怎么办？.md
-          - 3 、图像作为输入: ML＆DL/3 、图像作为输入.md
-          - 4 、序列作为输入: ML＆DL/4 、序列作为输入.md
-          - 5 、Seq2seq: ML＆DL/5 、Seq2seq.md
+          - 1 、概述: ML&DL/1 、概述.md
+          - 2 、网络无法训练怎么办？: ML&DL/2 、网络无法训练怎么办？.md
+          - 3 、图像作为输入: ML&DL/3 、图像作为输入.md
+          - 4 、序列作为输入: ML&DL/4 、序列作为输入.md
+          - 5 、Seq2seq: ML&DL/5 、Seq2seq.md
+          - 6 、生成: ML&DL/6 、生成.md
       - Tool:
-          - PyTorch: ML＆DL/PyTorch.md
-          - Colab: ML＆DL/Colab.md
-
+          - PyTorch: ML&DL/PyTorch.md
+          - Colab: ML&DL/Colab.md

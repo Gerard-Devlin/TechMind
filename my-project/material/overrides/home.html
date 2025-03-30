@@ -373,7 +373,60 @@
   .twemoji{
     fill: var(--md-typeset-color);
   }
+  .cssbuttons-io-button {
+    margin:0 auto;
+    background: #0081ff;
+    color: white;
+    font-family: "Arial Black";
+    padding: 0.35em;
+    padding-left: 1.2em;
+    font-size: 17px;
+    font-weight: 500;
+    border-radius: 0.9em;
+    border: none;
+    letter-spacing: 0.05em;
+    display: flex;
+    align-items: center;
+    box-shadow: inset 0 0 1.6em -0.6em #0081ff;
+    overflow: hidden;
+    position: relative;
+    height: 2.8em;
+    padding-right: 3.3em;
+    cursor: pointer;
+  }
 
+  .cssbuttons-io-button .icon {
+    background: white;
+    margin-left: 1em;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.2em;
+    width: 2.2em;
+    border-radius: 0.7em;
+    box-shadow: 0.1em 0.1em 0.6em 0.2em #0081ff;
+    right: 0.3em;
+    transition: all 0.3s;
+  }
+
+  .cssbuttons-io-button:hover .icon {
+    width: calc(100% - 0.6em);
+  }
+
+  .cssbuttons-io-button .icon svg {
+    width: 1.1em;
+    transition: transform 0.3s;
+    color: #0081ff;
+  }
+
+  .cssbuttons-io-button:hover .icon svg {
+    transform: translateX(0.1em);
+  }
+
+  .cssbuttons-io-button:active .icon {
+    transform: scale(0.95);
+  }
 
 </style>
 
@@ -385,16 +438,27 @@
         <h1 class="gradient-text">
           <span class="swing">👋</span> Computer Science, Simplified
         </h1>
-        <p>TechMind is an open source resource that helps you <span class="em">understand</span>, <span class="em">explore</span>, and <span class="em">master</span> essential computer science concepts with ease. From computing languages to deep learning, we make learning accessible for all.
+        <p>TechMind is an open-source resource designed to help you <span class="em">understand</span>, <span class="em">explore</span>, and <span class="em">master</span> essential computer science concepts with ease. From computing languages to deep learning, we make learning accessible for all.
         </p>
-        <a
-                href="/TechMind/Overview/计算机数据/"
-                title="Get Started"
-                class="md-button md-button--primary"
-        >
+        <!--  Button  -->
+        <button class="cssbuttons-io-button" onclick="window.location.href='/TechMind/Overview/计算机数据/'" title="Get Started">
           Get started
-          <svg width="11" height="10" viewBox="0 0 11 10" fill="none" style="margin-left:2px"><path d="M1 5.16772H9.5M9.5 5.16772L6.5 1.66772M9.5 5.16772L6.5 8.66772" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-        </a>
+          <div class="icon">
+            <svg
+                    height="24"
+                    width="24"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M0 0h24v24H0z" fill="none"></path>
+              <path
+                      d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                      fill="currentColor"
+              ></path>
+            </svg>
+          </div>
+        </button>
+
       </div>
     </div>
   </div>
@@ -425,7 +489,7 @@
             <a href="Overview/计算机数据/">course overviews</a>,
             <a href="C/1%20、入门/">basic programming languages</a>,and
             <a href="DataStruct/1%20、概述/">complex data structures</a>,to the intriguing realms of
-            <a href="ML/1%20、监督学习/">deep learning and neural networks</a>.
+            <a href="ML&DL/1%20、监督学习/">deep learning and neural networks</a>.
             You won't just learn through theory; by engaging in practical labs, you can dive deep into the core of computer science and ultimately become a pro.
           </p>
         </div>
@@ -509,8 +573,8 @@
               </div>
             </div>
           </a>
-          <!-- ML＆DL -->
-          <a class="card-wrapper" href="ML＆DL/1%20、监督学习/">
+          <!-- ML&DL -->
+          <a class="card-wrapper" href="ML&DL/1%20、监督学习/">
             <div class="card">
               <div class="logo">
                   <span class="twemoji">
