@@ -40,10 +40,6 @@ theme:
     - search.share
   # 配色方案
   palette:
-    - media: "(prefers-color-scheme)"
-      toggle:
-        icon: material/theme-light-dark
-        name: Switch to light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
       primary: white

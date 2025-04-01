@@ -373,57 +373,61 @@
   .twemoji{
     fill: var(--md-typeset-color);
   }
-  .cssbuttons-io-button {
-    margin:0 auto;
-    background: #0081ff;
-    color: white;
-    padding: 0.35em;
-    padding-left: 1.2em;
-    font-size: 17px;
-    font-weight: bold;
-    border-radius: 0.9em;
-    border: none;
-    letter-spacing: 0.05em;
-    display: flex;
-    align-items: center;
-    box-shadow: inset 0 0 1.6em -0.6em #0081ff;
-    overflow: hidden;
+
+  .cssbuttons-io {
+    margin-top: 1.5em;
     position: relative;
-    height: 2.8em;
-    padding-right: 3.3em;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 0.05em;
+    border-radius: 0.8em;
     cursor: pointer;
+    border: none;
+    background: linear-gradient(to right, #8e2de2, #4a00e0);
+    color: ghostwhite;
+    overflow: hidden;
   }
 
-  .cssbuttons-io-button .icon {
-    background: white;
-    margin-left: 1em;
-    position: absolute;
-    display: flex;
+  .cssbuttons-io svg {
+    width: 1.2em;
+    height: 1.2em;
+    margin-right: 0.5em;
+  }
+
+  .cssbuttons-io span {
+    position: relative;
+    z-index: 10;
+    transition: color 0.4s;
+    display: inline-flex;
     align-items: center;
-    justify-content: center;
-    height: 2.2em;
-    width: 2.2em;
-    border-radius: 0.7em;
-    box-shadow: 0.1em 0.1em 0.6em 0.2em #0081ff;
-    right: 0.3em;
-    transition: all 0.3s;
+    padding: 0.8em 1.2em 0.8em 1.05em;
   }
 
-  .cssbuttons-io-button:hover .icon {
-    width: calc(100% - 0.6em);
+  .cssbuttons-io::before,
+  .cssbuttons-io::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
   }
 
-  .cssbuttons-io-button .icon svg {
-    width: 1.1em;
-    transition: transform 0.3s;
-    color: #0081ff;
+  .cssbuttons-io::before {
+    content: "";
+    background: #000;
+    width: 120%;
+    left: -10%;
+    transform: skew(30deg);
+    transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
   }
 
-  .cssbuttons-io-button:hover .icon svg {
-    transform: translateX(0.1em);
+  .cssbuttons-io:hover::before {
+    transform: translate3d(100%, 0, 0);
   }
 
-  .cssbuttons-io-button:active .icon {
+  .cssbuttons-io:active {
     transform: scale(0.95);
   }
 
@@ -431,6 +435,7 @@
 
 <!-- Hero for landing page -->
 <div class="md-container tx-hero">
+  <script src="https://cdn.tailwindcss.com"></script>
   <div class="md-grid md-typeset">
     <div class="md-main__inner" >
       <div>
@@ -440,24 +445,20 @@
         <p>TechMind is an open-source resource designed to help you <span class="em">understand</span>, <span class="em">explore</span>, and <span class="em">master</span> essential computer science concepts with ease. From computing languages to deep learning, we make learning accessible for all.
         </p>
         <!--  Button  -->
-        <button class="cssbuttons-io-button" onclick="window.location.href='/TechMind/Overview/计算机数据/'" title="Get Started">
-          Get started
-          <div class="icon">
-            <svg
-                    height="24"
-                    width="24"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-            >
-              <path d="M0 0h24v24H0z" fill="none"></path>
-              <path
-                      d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
-                      fill="currentColor"
-              ></path>
-            </svg>
-          </div>
-        </button>
-
+        <a href="/TechMind/Overview/计算机数据/">
+          <button class="cssbuttons-io">
+            <span>
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0h24v24H0z" fill="none"></path>
+                <path
+                        d="M24 12l-5.657 5.657-1.414-1.414L21.172 12l-4.243-4.243 1.414-1.414L24 12zM2.828 12l4.243 4.243-1.414 1.414L0 12l5.657-5.657L7.07 7.757 2.828 12zm6.96 9H7.66l6.552-18h2.128L9.788 21z"
+                        fill="currentColor"
+                ></path>
+              </svg>
+              Get Started
+            </span>
+          </button>
+        </a>
       </div>
     </div>
   </div>
