@@ -92,7 +92,7 @@
     }
     /* 搜索框圆角 */
     .md-search__form {
-        border-radius: 9px;
+        border-radius: 0.5em;
     }
     /* 卡片圆角 */
     .md-typeset .grid.cards>ol>li, .md-typeset .grid.cards>ul>li, .md-typeset .grid>.card{
@@ -104,7 +104,7 @@
         vertical-align: middle;
     }
     .md-typeset .emojione svg, .md-typeset .gemoji svg, .md-typeset .twemoji svg {
-        fill: #F1502F;
+        fill: var(--md-default-fg-color);
     }
     /* 旧版提示框 */
     .md-typeset .admonition,
