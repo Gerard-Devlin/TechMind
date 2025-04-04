@@ -113,26 +113,6 @@
         border-left-width: 4px;
     }
 
-    /* 背景填充 */
-    .md-nav__item .md-nav__link--active, .md-nav__item .md-nav__link--active code {
-        position: relative;  /* 设置为相对定位 */
-        z-index: 1;  /* 保证文字在上层 */
-        color: var(--md-typeset-a-color);
-    }
-
-    .md-nav__item .md-nav__link--active::before {
-        content: '';
-        position: absolute;
-        top: -0.1em;
-        left: -0.5em;
-        right: -.5em;
-        bottom: -0.1em;
-        background: #526cfe14;
-        border-radius: .3em;
-        z-index: -1;
-    }
-
-
 
 
 }
