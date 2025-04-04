@@ -112,6 +112,29 @@
         border-width: 0;
         border-left-width: 4px;
     }
+
+    /* 背景填充 */
+    .md-nav__item .md-nav__link--active, .md-nav__item .md-nav__link--active code {
+        position: relative;  /* 设置为相对定位 */
+        z-index: 1;  /* 保证文字在上层 */
+        color: var(--md-typeset-a-color);
+    }
+
+    .md-nav__item .md-nav__link--active::before {
+        content: '';
+        position: absolute;
+        top: -0.3em;
+        left: -0.5em;
+        right: -0.1em;
+        bottom: -0.3em;
+        background: #526cfe14;
+        border-radius: .5em;
+        z-index: -1;
+    }
+
+
+
+
 }
 
 
