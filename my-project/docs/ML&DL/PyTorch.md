@@ -252,3 +252,274 @@ model.load_state_dict(ckpt)
 
         - 防止计算被添加到梯度计算图中。通常用于防止在验证/测试数据上意外进行训练。
 
+---
+
+??? example "MNIST"
+    ```python title="Train + Test"
+    # 导入所需的包
+    import torch
+    import torch.nn as nn
+    import torch.optim as optim
+    from torch.utils.data import DataLoader
+    from torchvision import datasets, transforms
+    import matplotlib.pyplot as plt
+    import seaborn as sns
+    from sklearn.metrics import confusion_matrix
+    import numpy as np
+    
+    # 设置超参数
+    config = {
+        "device": torch.device("cuda" if torch.cuda.is_available() else "cpu"),
+        "batch_size": 64,
+        "learning_rate": 0.01,
+        "epochs": 15,
+    }
+    
+    # 加载数据集
+    transform = transforms.Compose([
+        transforms.ToTensor(),
+        transforms.Normalize((0.5,), (0.5,))
+    ])
+    
+    train_dataset = datasets.MNIST(root="./data", train=True, transform=transform, download=True)
+    test_dataset = datasets.MNIST(root="./data", train=False, transform=transform, download=True)
+    train_loader = DataLoader(train_dataset, batch_size=config["batch_size"], shuffle=True)
+    test_loader = DataLoader(test_dataset, batch_size=config["batch_size"], shuffle=True)
+    
+    # 可视化样本数据
+    examples = iter(train_loader)
+    images, labels = next(examples)
+    
+    plt.figure(figsize=(10, 10))
+    for i in range(16):
+        plt.subplot(4, 4, i+1)
+        plt.imshow(images[i][0], cmap='gray')
+        plt.title(f"label:{labels[i]}")
+        plt.axis('off')
+    plt.show()
+    
+    # 构建模型
+    class SimpleNN(nn.Module):
+        def __init__(self):
+            super(SimpleNN, self).__init__()
+            self.model = nn.Sequential(
+                nn.Flatten(),                                 # 展平 28x28 图像
+                nn.Linear(28*28, 512),                        # 输入层
+                nn.BatchNorm1d(512),                          # 批归一化
+                nn.LeakyReLU(0.1),                            # LeakyReLU 防止死神经元
+                nn.Dropout(0.3),                              # Dropout 防止过拟合
+    
+                nn.Linear(512, 256),                          # 中间层1
+                nn.BatchNorm1d(256),
+                nn.LeakyReLU(0.1),
+                nn.Dropout(0.3),
+    
+                nn.Linear(256, 128),                          # 中间层2
+                nn.BatchNorm1d(128),
+                nn.LeakyReLU(0.1),
+                nn.Dropout(0.3),
+    
+                nn.Linear(128, 10),                           # 输出层
+            )
+    
+        def forward(self, x):
+            return self.model(x)
+    
+    model = SimpleNN().to(config["device"])
+    
+    # 定义损失函数和优化器
+    criterion = nn.CrossEntropyLoss()
+    optimizer = optim.Adam(model.parameters(), lr=config["learning_rate"])
+    
+    # 训练模型
+    from tqdm import tqdm
+    
+    for epoch in range(config["epochs"]):
+        total_loss = 0.0
+        model.train()
+    
+        print(f"\n🔄 Epoch {epoch+1}/{config['epochs']}")
+        train_bar = tqdm(train_loader, desc="Training", dynamic_ncols=True, leave=False)
+    
+        for images, labels in train_bar:
+            images, labels = images.to(config["device"]), labels.to(config["device"])
+    
+            outputs = model(images)
+            loss = criterion(outputs, labels)
+    
+            optimizer.zero_grad()
+            loss.backward()
+            optimizer.step()
+    
+            total_loss += loss.item()
+            train_bar.set_postfix(loss=loss.item())
+    
+        avg_loss = total_loss / len(train_loader)
+        print(f"✅ Epoch {epoch+1} finished. Average Loss: {avg_loss:.4f}")
+    
+    # 模型测试
+    with torch.no_grad():
+        total = 0
+        correct = 0
+        model.eval()
+        for images, labels in tqdm(test_loader, desc="Testing", dynamic_ncols=True, leave=False):
+            images, labels = images.to(config["device"]), labels.to(config["device"])
+            outputs = model(images)
+            _, predicted = torch.max(outputs.data, 1)
+            total += labels.size(0)
+            correct += (predicted == labels).sum().item()
+    
+        print(f"Test Accuracy: {100 * correct / total:.2f}%")
+    
+    # 保存模型
+    torch.save(model.state_dict(), "model.pth")
+    
+    # 加载模型并预测
+    model.load_state_dict(torch.load("model.pth"))
+    model.eval()
+    
+    images, labels = next(iter(test_loader))
+    images, labels = images.to(config["device"]), labels.to(config["device"])
+    outputs = model(images)
+    _, predicted = torch.max(outputs.data, 1)
+    print(f"Test Accuracy: {100 * correct / total:.2f}%")
+    
+    # 可视化混淆矩阵
+    model.eval()
+    all_preds = []
+    all_labels = []
+    
+    with torch.no_grad():
+        for images, labels in test_loader:
+            images, labels = images.to(config["device"]), labels.to(config["device"])
+            outputs = model(images)
+            _, preds = torch.max(outputs, 1)
+            all_preds.extend(preds.cpu().numpy())
+            all_labels.extend(labels.cpu().numpy())
+    
+    # 计算混淆矩阵
+    cm = confusion_matrix(all_labels, all_preds)
+    
+    # 显示热力图
+    plt.figure(figsize=(20, 20))
+    sns.heatmap(cm, annot=True, fmt="d", cmap="Blues", xticklabels=range(10), yticklabels=range(10))
+    plt.xlabel("Predicted Label")
+    plt.ylabel("True Label")
+    plt.title("Confusion Matrix")
+    plt.show()
+    ```
+    
+    ```python title="GUI"
+    import tkinter as tk
+    from tkinter import Canvas, Button, Label
+    import torch
+    import torch.nn as nn
+    from PIL import Image, ImageDraw, ImageOps
+    from torchvision import transforms
+    
+    
+    # ======== 1. 模型结构 ========= #
+    class SimpleNN(nn.Module):
+        def __init__(self):
+            super(SimpleNN, self).__init__()
+            self.model = nn.Sequential(
+                nn.Flatten(),                                 # 展平 28x28 图像
+                nn.Linear(28*28, 512),                        # 输入层
+                nn.BatchNorm1d(512),                          # 批归一化
+                nn.LeakyReLU(0.1),                            # LeakyReLU 防止死神经元
+                nn.Dropout(0.3),                              # Dropout 防止过拟合
+    
+                nn.Linear(512, 256),                          # 中间层1
+                nn.BatchNorm1d(256),
+                nn.LeakyReLU(0.1),
+                nn.Dropout(0.3),
+    
+                nn.Linear(256, 128),                          # 中间层2
+                nn.BatchNorm1d(128),
+                nn.LeakyReLU(0.1),
+                nn.Dropout(0.3),
+    
+                nn.Linear(128, 10),                           # 输出层
+            )
+    
+        def forward(self, x):
+            return self.model(x)
+    
+    # ======== 2. 图像预处理函数 ========= #
+    def preprocess_image(img):
+        img = img.convert("L")  # 转换为灰度图 非常重要
+        img = ImageOps.pad(img, (28, 28), color=0)  # 填充图像
+    
+        # 归一化参数：根据 MNIST 数据集的统计信息
+        transform = transforms.Compose([
+            transforms.ToTensor(),
+            transforms.Normalize((0.5,), (0.5,))  # 使用 MNIST 数据集的标准化参数
+        ])
+        return transform(img).unsqueeze(0)
+    
+    # ======== 3. GUI 应用类 ========= #
+    class App:
+        def __init__(self):
+            self.window = tk.Tk()
+            self.window.title("MNIST")
+    
+            self.canvas = Canvas(self.window, width=280, height=280, bg='black')
+            self.canvas.grid(row=0, column=0, columnspan=4)
+            self.canvas.bind('<B1-Motion>', self.draw)
+    
+            self.label = Label(self.window, text="Prediction: None", font=("Arial", 18))
+            self.label.grid(row=1, column=0, columnspan=4)
+            self.prob_label = Label(self.window, text="Probabilities:", font=("Arial", 12), justify="left", anchor="w")
+            self.prob_label.grid(row=3, column=0, columnspan=4, sticky="w")  # 左对齐
+    
+            Button(self.window, text="Predict", command=self.predict).grid(row=2, column=0)
+            Button(self.window, text="Clear", command=self.clear).grid(row=2, column=1)
+            Button(self.window, text="Exit", command=self.window.quit).grid(row=2, column=2)
+    
+            self.image = Image.new("L", (280, 280), color=0)
+            self.draw_interface = ImageDraw.Draw(self.image)
+    
+            # 确保选择设备
+            self.device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+    
+            # 加载模型
+            self.model = SimpleNN().to(self.device)
+            self.model.load_state_dict(torch.load("best_model.pth", map_location=self.device))
+            self.model.eval()  # 切换到评估模式
+    
+            self.window.mainloop()
+    
+        def draw(self, event):
+            x, y = event.x, event.y
+            r = 8
+            self.canvas.create_oval(x - r, y - r, x + r, y + r, fill='white', outline='white')
+            self.draw_interface.ellipse([x - r, y - r, x + r, y + r], fill=255)
+    
+        def clear(self):
+            self.canvas.delete("all")
+            self.image = Image.new("L", (280, 280), color=0)
+            self.draw_interface = ImageDraw.Draw(self.image)
+            self.label.config(text="Prediction: None")
+    
+        def predict(self):
+            img_tensor = preprocess_image(self.image).to(self.device)  # 将图像数据传到设备
+            output = self.model(img_tensor)
+            prob = torch.softmax(output, dim=1)
+            pred = torch.argmax(prob, dim=1).item()
+            conf = prob[0][pred].item()
+            self.label.config(text=f"Prediction: {pred} ({conf:.2%})")
+    
+            # 构建概率文本
+            prob_text = "Probabilities:\n"
+            for i, p in enumerate(prob[0]):
+                prob_text += f"  {i}: {p.item():.2%}\n"
+    
+            # 设置到界面上
+            self.prob_label.config(text=prob_text)
+    
+    
+    if __name__ == '__main__':
+        App()
+    ```
+
+---

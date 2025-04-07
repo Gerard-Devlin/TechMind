@@ -53,7 +53,7 @@ theme:
       accent: deep purple
       toggle:
         icon: material/weather-night
-        name: Switch to system preference
+        name: Switch to light mode
 
   font:
     text: Roboto
@@ -86,7 +86,7 @@ markdown_extensions:
   - footnotes
   - md_in_html
   - toc:
-      permalink: 📍
+      permalink: 📌
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
