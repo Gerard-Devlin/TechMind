@@ -115,7 +115,7 @@
     /* 下划线 */
     .md-tabs__item--active .md-tabs__link {
     padding-bottom: 12px;
-    border-bottom: 2px solid rgba(72, 180, 255, 0.89);
+    border-bottom: 2px solid rgb(0, 150, 255);
     color: inherit;
     opacity: 1;
     }
