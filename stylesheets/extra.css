@@ -103,9 +103,9 @@
         --md-icon-size: 3em;
         vertical-align: middle;
     }
-    .md-typeset .emojione svg, .md-typeset .gemoji svg, .md-typeset .twemoji svg {
-        fill: var(--md-default-fg-color);
-    }
+    /*.md-typeset .emojione svg, .md-typeset .gemoji svg, .md-typeset .twemoji svg {*/
+    /*    fill: var(--md-default-fg-color);*/
+    /*}*/
     /* 旧版提示框 */
     .md-typeset .admonition,
     .md-typeset details {
@@ -115,7 +115,7 @@
     /* 下划线 */
     .md-tabs__item--active .md-tabs__link {
     padding-bottom: 12px;
-    border-bottom: 2px solid rgb(0, 150, 255);
+    border-bottom: 2px solid rgb(0, 102, 255);
     color: inherit;
     opacity: 1;
     }
