@@ -226,6 +226,7 @@ nav:
           - 5 、Seq2seq: ML&DL/5 、Seq2seq.md
           - 6 、生成: ML&DL/6 、生成.md
           - 7 、自监督式学习: ML&DL/7 、自监督式学习.md
+          - 8 、自编码器: ML&DL/8 、自编码器.md
       - Tool:
           - PyTorch: ML&DL/PyTorch.md
           - Colab: ML&DL/Colab.md
