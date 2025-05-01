@@ -182,6 +182,10 @@ nav:
       - 10 、字符串: C/10 、字符串.md
       - 11 、结构体: C/11 、结构体.md
 
+  - Python:
+      - 1 、入门: Python/1 、入门.md
+
+
   - DataStruct:
       - 1 、概述: DataStruct/1 、概述.md
       - 2 、输入输出: DataStruct/2 、输入输出.md
