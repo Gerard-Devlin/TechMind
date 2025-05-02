@@ -184,7 +184,9 @@ nav:
 
   - Python:
       - 1 、入门: Python/1 、入门.md
-
+      - 2 、控制语句: Python/2 、控制语句.md
+      - 3 、字符串: Python/3 、字符串.md
+      - 4 、绘图: Python/4 、绘图.md
 
   - DataStruct:
       - 1 、概述: DataStruct/1 、概述.md
