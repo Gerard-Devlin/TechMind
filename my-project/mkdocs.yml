@@ -188,6 +188,7 @@ nav:
       - 3 、字符串: Python/3 、字符串.md
       - 4 、绘图: Python/4 、绘图.md
       - 5 、列表: Python/5 、列表.md
+      - 6 、集合与字典: Python/6 、集合与字典.md
 
   - DataStruct:
       - 1 、概述: DataStruct/1 、概述.md
