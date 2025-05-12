@@ -1,6 +1,9 @@
+# 二叉树
+
 [TOC]
 
 ---
+
 
 ## 1、定义
 
@@ -38,8 +41,8 @@ graph TD
 每一层节点都是满的
 
 ### （2）完全二叉树
+![tree-binary-proper.svg](../../assets/images/DataStruct/tree-binary-proper.svg)
 
-![tree-binary-proper.svg](../assets/images/DataStruct/tree-binary-proper.svg)
 
 最后一层有缺失
 
@@ -51,7 +54,7 @@ graph TD
 
 所有叶结点的深度均相同，且所有非叶节点的子节点数量均为 2 的二叉树称为完美二叉树。
 
-![tree-binary-perfect.svg](../assets/images/DataStruct/tree-binary-perfect.svg)
+![tree-binary-perfect.svg](../../assets/images/DataStruct/tree-binary-perfect.svg)
 
 ### （5）平衡二叉树
 
@@ -302,33 +305,7 @@ $$
 - 操作：**左旋、右旋**
     - 左旋：冲突的左孩变成右孩
     - 右旋：冲突的右子变成左孩
-    
-  | 类型   | 标志                                | 操作                 |
-  | ------ | ----------------------------------- | -------------------- |
-  | **LL** | 失衡节点：2<br>失衡节点左孩子：1    | 右旋                 |
-  | **RR** | 失衡节点：-2<br/>失衡节点右孩子：-1 | 左旋                 |
-  | **LR** | 失衡节点：2<br/>失衡节点左孩子：-1  | 左旋左孩子，然后右旋 |
-  | **RL** | 失衡节点：-2<br/>失衡节点右孩子：1  | 右旋右孩子，然后左旋 |
-  
-  ```mermaid
-  graph TD
-      A[失衡结点<br>平衡因子=2] --> B[L型]
-      B --> C1[左孩子<br>平衡因子=1]
-      C1 --> D1[LL型]
-      B --> C2[左孩子<br>平衡因子=-1]
-      C2 --> D2[LR型]
-  
-      E[失衡结点<br>平衡因子=-2] --> F[R型]
-      F --> G1[右孩子<br>平衡因子=1]
-      G1 --> H1[RL型]
-      F --> G2[右孩子<br>平衡因子=-1]
-      G2 --> H2[RR型]
-  
-  ```
-  
 
-!!! tip
-    **插入**时遇到多个节点失衡，调整距离插入节点最接近的失衡节点即可
 
 ---
 
@@ -381,7 +358,7 @@ void LevelOrder(BstNode *root) {
           PreOrder(root->right);
       }
     ```
-    - ![tree-basic-preorder.svg](../assets/images/DataStruct/tree-basic-preorder.svg)
+    - ![tree-basic-preorder.svg](../../assets/images/DataStruct/tree-basic-preorder.svg)
 - 中（根）序遍历
     - 先左子树，**再根节点**，再右子树
     ```c++
@@ -394,7 +371,7 @@ void LevelOrder(BstNode *root) {
           InOrder(root->right);
       }
     ```
-    - ![tree-basic-inorder.svg](../assets/images/DataStruct/tree-basic-inorder.svg)
+    - ![tree-basic-inorder.svg](../../assets/images/DataStruct/tree-basic-inorder.svg)
 - 后（根）序遍历
     - 先左子树，再右子树，**再根节点**
     ```c++
@@ -407,7 +384,7 @@ void LevelOrder(BstNode *root) {
           cout << root->data << " "; // 后序遍历
       }
     ```
-    - ![tree-basic-postorder.svg](../assets/images/DataStruct/tree-basic-postorder.svg)
+    - ![tree-basic-postorder.svg](../../assets/images/DataStruct/tree-basic-postorder.svg)
 
 ---
 

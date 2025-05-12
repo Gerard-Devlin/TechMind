@@ -197,7 +197,11 @@ nav:
       - 3 、链表: DataStruct/3 、链表.md
       - 4 、队列: DataStruct/4 、队列.md
       - 5 、栈: DataStruct/5 、栈.md
-      - 6 、二叉树: DataStruct/6 、二叉树.md
+      - 6 、二叉树:
+            - DataStruct/6 、二叉树/index.md
+            - 平衡二叉树: DataStruct/6 、二叉树/平衡二叉树.md
+            - 红黑树: DataStruct/6 、二叉树/红黑树.md
+            - 霍夫曼树: DataStruct/6 、二叉树/霍夫曼树.md
       - 7 、并查集: DataStruct/7 、并查集.md
       - 8 、排序: DataStruct/8 、排序.md
       - 9 、排列: DataStruct/9 、排列.md
