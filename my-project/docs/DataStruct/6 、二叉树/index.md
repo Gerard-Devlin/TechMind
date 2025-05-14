@@ -733,3 +733,153 @@ int main() {
 ```
 
 ---
+
+### e.g. 二叉树的孩子-兄弟表示法
+
+已知一棵树的由根至叶子结点按**层次输入**的结点序列及每个结点的度
+
+（每层中自左至右输入），试写出构造此树的**孩子-兄弟链表**的算法。
+
+输入：一个正整数N结点数；然后输入N行，每行输入两个数字，中间用空格分开，代表**节点及其对应的度**。
+
+输出：若该树有M个叶结点，则输出M行，**每行是一条从根到叶子结点的路径**，然后按照先序遍历的方式输出每一行。
+
+样例
+
+样例输入
+
+```
+10
+R 3
+A 2
+B 0
+C 1
+D 0
+E 0
+F 3
+G 0
+H 0
+K 0
+```
+
+样例输出
+
+```
+R-A-D
+R-A-E
+R-B
+R-C-F-G
+R-C-F-H
+R-C-F-K
+```
+
+```c++
+#include <bits/stdc++.h>
+using namespace std;
+struct treeNode {
+    char data;
+    treeNode *firstChild;   // 第一个孩子
+    treeNode *rightSibling; // 右兄弟
+};
+
+// 创建树节点
+// 创建一个树节点，并返回该节点的指针
+treeNode *createTree(char data) {
+    // 创建一个新节点，并为其分配内存空间
+    treeNode *root = new treeNode;
+    // 将节点的数据域赋值为传入的参数
+    root->data = data;
+    // 将节点的第一个子节点和右兄弟节点都赋值为NULL
+    root->firstChild = root->rightSibling = NULL;
+    // 返回新创建的节点的指针
+    return root;
+}
+
+// 错误接口，不能实现插入，因为不知道插入位置
+// treeNode *insertTree(treeNode *root,char data) {
+// }
+
+// 根据输入构建树
+treeNode *buildTree(int N, vector<pair<char, int>> &inputs) {
+    if (N == 0) {
+        return nullptr;
+    }
+    vector<treeNode *> nodes;
+    for (int i = 0; i < N; ++i) {
+        nodes.push_back(createTree(inputs[i].first));
+    }
+
+    queue<treeNode *> q; // 由于输入是层序遍历，使用队列结构
+    q.push(nodes[0]);    // 根节点
+    int idx = 1;         // 当前节点索引
+
+    for (int i = 0; i < N && idx < N; ++i) {
+        int degree = inputs[i].second; // 节点的度数
+        treeNode *parent = nodes[i];   // 父节点
+
+        treeNode *prev = nullptr;
+        for (int j = 0; j < degree; ++j) {
+            if (prev == nullptr)
+                parent->firstChild = nodes[idx]; // 如果prev为空，说明是第一个孩子
+            else
+                prev->rightSibling = nodes[idx]; // 否则，是右兄弟
+
+            prev = nodes[idx];  // 更新prev
+            q.push(nodes[idx]); // 将当前节点加入队列
+            idx++;              // 更新索引
+        }
+    }
+    return nodes[0];
+}
+
+void preOrder(treeNode *root) {
+    if (root == NULL) {
+        return;
+    }
+    cout << root->data << "-";
+    preOrder(root->firstChild);
+    preOrder(root->rightSibling);
+}
+
+void printPaths(treeNode *root, string path) {
+    if (!root) // 空节点，直接返回
+        return;
+
+    path += root->data; // 添加当前节点到路径
+
+    if (root->firstChild == nullptr) {
+        // 是叶子，输出路径
+        for (int i = 0; i < path.size() - 1; i++) {
+            cout << path[i] << "-"; // 除了最后一个节点，其他节点后面都跟一个“-”
+        }
+        cout << path[path.size() - 1]; // 最后一个节点后面不跟“-”
+        cout << endl;
+    } else {
+        // 遍历所有孩子
+        treeNode *child = root->firstChild;
+        while (child) {
+            printPaths(child, path);
+            child = child->rightSibling;
+        }
+    }
+}
+
+int main() {
+    treeNode *root = nullptr;
+    int N;
+    cin >> N;
+    vector<pair<char, int>> inputs(N);
+
+    for (int i = 0; i < N; i++) {
+        cin >> inputs[i].first >> inputs[i].second;
+    }
+
+    root = buildTree(N, inputs);
+    preOrder(root); // 一般的先序遍历
+    cout << endl;
+    printPaths(root, "");
+}
+```
+
+---
+
