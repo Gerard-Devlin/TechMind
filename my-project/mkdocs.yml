@@ -172,7 +172,7 @@ nav:
   - C:
       - 1 、入门: C/1 、入门.md
       - 2 、变量与运算符: C/2 、变量与运算符.md
-      - 3 、if-else判断: C/3 、if-else判断.md
+      - 3 、判断语句: C/3 、判断语句.md
       - 4 、while循环: C/4 、while循环.md
       - 5 、for循环: C/5 、for循环.md
       - 6 、数据类型和运算: C/6 、数据类型和运算.md
@@ -191,34 +191,34 @@ nav:
       - 6 、集合与字典: Python/6 、集合与字典.md
       - 7 、面向对象: Python/7 、面向对象.md
 
-  - DataStruct:
-      - 1 、概述: DataStruct/1 、概述.md
-      - 2 、输入输出: DataStruct/2 、输入输出.md
-      - 3 、链表: DataStruct/3 、链表.md
-      - 4 、队列: DataStruct/4 、队列.md
-      - 5 、栈: DataStruct/5 、栈.md
+  - DSA:
+      - 1 、概述: DSA/1 、概述.md
+      - 2 、输入输出: DSA/2 、输入输出.md
+      - 3 、链表: DSA/3 、链表.md
+      - 4 、队列: DSA/4 、队列.md
+      - 5 、栈: DSA/5 、栈.md
       - 6 、二叉树:
-          - DataStruct/6 、二叉树/index.md
-          - 平衡二叉树: DataStruct/6 、二叉树/平衡二叉树.md
-          - 红黑树: DataStruct/6 、二叉树/红黑树.md
-          - 霍夫曼树: DataStruct/6 、二叉树/霍夫曼树.md
-      - 7 、并查集: DataStruct/7 、并查集.md
-      - 8 、排序: DataStruct/8 、排序.md
-      - 9 、排列: DataStruct/9 、排列.md
-      - 10 、前缀和: DataStruct/10 、前缀和.md
-      - 11 、差分数组: DataStruct/11 、差分数组.md
-      - 12 、二分: DataStruct/12 、二分.md
-      - 13 、DFS: DataStruct/13 、DFS.md
-      - 14 、BFS: DataStruct/14 、BFS.md
-      - 15 、数论: DataStruct/15 、数论.md
-      - 16 、贪心: DataStruct/16 、贪心.md
-      - 17 、动态规划: DataStruct/17 、动态规划.md
+          - DSA/6 、二叉树/index.md
+          - 平衡二叉树: DSA/6 、二叉树/平衡二叉树.md
+          - 红黑树: DSA/6 、二叉树/红黑树.md
+          - 霍夫曼树: DSA/6 、二叉树/霍夫曼树.md
+      - 7 、并查集: DSA/7 、并查集.md
+      - 8 、排序: DSA/8 、排序.md
+      - 9 、排列: DSA/9 、排列.md
+      - 10 、前缀和: DSA/10 、前缀和.md
+      - 11 、差分数组: DSA/11 、差分数组.md
+      - 12 、二分: DSA/12 、二分.md
+      - 13 、DFS: DSA/13 、DFS.md
+      - 14 、BFS: DSA/14 、BFS.md
+      - 15 、数论: DSA/15 、数论.md
+      - 16 、贪心: DSA/16 、贪心.md
+      - 17 、动态规划: DSA/17 、动态规划.md
       - 18 、图:
-          - DataStruct/18 、图/index.md
-          - 图的存储: DataStruct/18 、图/图的存储.md
-          - 最短路算法: DataStruct/18 、图/最短路算法.md
-      - 19 、最小生成树: DataStruct/19 、最小生成树.md
-      - 其他: DataStruct/其他.md
+          - DSA/18 、图/index.md
+          - 图的存储: DSA/18 、图/图的存储.md
+          - 最短路算法: DSA/18 、图/最短路算法.md
+      - 19 、最小生成树: DSA/19 、最小生成树.md
+      - 其他: DSA/其他.md
 
   - CSAPP:
       - 1 、信息的表示和处理: CSAPP/1 、信息的表示和处理.md
