@@ -198,10 +198,10 @@ nav:
       - 4 、队列: DataStruct/4 、队列.md
       - 5 、栈: DataStruct/5 、栈.md
       - 6 、二叉树:
-            - DataStruct/6 、二叉树/index.md
-            - 平衡二叉树: DataStruct/6 、二叉树/平衡二叉树.md
-            - 红黑树: DataStruct/6 、二叉树/红黑树.md
-            - 霍夫曼树: DataStruct/6 、二叉树/霍夫曼树.md
+          - DataStruct/6 、二叉树/index.md
+          - 平衡二叉树: DataStruct/6 、二叉树/平衡二叉树.md
+          - 红黑树: DataStruct/6 、二叉树/红黑树.md
+          - 霍夫曼树: DataStruct/6 、二叉树/霍夫曼树.md
       - 7 、并查集: DataStruct/7 、并查集.md
       - 8 、排序: DataStruct/8 、排序.md
       - 9 、排列: DataStruct/9 、排列.md
@@ -213,7 +213,10 @@ nav:
       - 15 、数论: DataStruct/15 、数论.md
       - 16 、贪心: DataStruct/16 、贪心.md
       - 17 、动态规划: DataStruct/17 、动态规划.md
-      - 18 、图: DataStruct/18 、图.md
+      - 18 、图:
+          - DataStruct/18 、图/index.md
+          - 图的存储: DataStruct/18 、图/图的存储.md
+          - 最短路算法: DataStruct/18 、图/最短路算法.md
       - 19 、最小生成树: DataStruct/19 、最小生成树.md
       - 其他: DataStruct/其他.md
 
