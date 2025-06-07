@@ -6,7 +6,7 @@ icon: material/math-compass
 
 ---
 
-## 1、安装导入
+## 一、安装导入
 
 ```python
 !pip install matplotlib
@@ -15,7 +15,7 @@ import matplotlib
 
 ---
 
-## 2、`PyPlot`
+## 二、`PyPlot`
 
 - `plt()` 函数从点绘制直线
 - 参数一是 $x$ 的一串坐标，参数二是 $y$ 的一串坐标
@@ -43,56 +43,57 @@ plt.show()
 
 ---
 
-## 3、标记
+## 三、标记
 
-### （1）点标记 `marker`
+### 1、点标记 `marker`
 
 ```python
 plt.plot(x, y, marker="o")
 plt.show()
 ```
 
-| marker                 | description                   |
-| ---------------------- | ----------------------------- |
-| `"."`                  | point                         |
-| `","`                  | pixel                         |
-| `"o"`                  | circle                        |
-| `"v"`                  | triangle_down                 |
-| `"^"`                  | triangle_up                   |
-| `"<"`                  | triangle_left                 |
-| `">"`                  | triangle_right                |
-| `"1"`                  | tri_down                      |
-| `"2"`                  | tri_up                        |
-| `"3"`                  | tri_left                      |
-| `"4"`                  | tri_right                     |
-| `"8"`                  | octagon                       |
-| `"s"`                  | square                        |
-| `"p"`                  | pentagon                      |
-| `"P"`                  | plus (filled)                 |
-| `"*"`                  | star                          |
-| `"h"`                  | hexagon1                      |
-| `"H"`                  | hexagon2                      |
-| `"+"`                  | plus                          |
-| `"x"`                  | x                             |
-| `"X"`                  | x (filled)                    |
-| `"D"`                  | diamond                       |
-| `"d"`                  | thin_diamond                  |
-| `"|"`                  | vline                         |
-| `"_"`                  | hline                         |
-| `0` (`TICKLEFT`)       | tickleft                      |
-| `1` (`TICKRIGHT`)      | tickright                     |
-| `2` (`TICKUP`)         | tickup                        |
-| `3` (`TICKDOWN`)       | tickdown                      |
-| `4` (`CARETLEFT`)      | caretleft                     |
-| `5` (`CARETRIGHT`)     | caretright                    |
-| `6` (`CARETUP`)        | caretup                       |
-| `7` (`CARETDOWN`)      | caretdown                     |
-| `8` (`CARETLEFTBASE`)  | caretleft (centered at base)  |
-| `9` (`CARETRIGHTBASE`) | caretright (centered at base) |
-| `10` (`CARETUPBASE`)   | caretup (centered at base)    |
-| `11` (`CARETDOWNBASE`) | caretdown (centered at base)  |
+??? success "标记样式"
+    | marker                 | description                   |
+    | ---------------------- | ----------------------------- |
+    | `"."`                  | point                         |
+    | `","`                  | pixel                         |
+    | `"o"`                  | circle                        |
+    | `"v"`                  | triangle_down                 |
+    | `"^"`                  | triangle_up                   |
+    | `"<"`                  | triangle_left                 |
+    | `">"`                  | triangle_right                |
+    | `"1"`                  | tri_down                      |
+    | `"2"`                  | tri_up                        |
+    | `"3"`                  | tri_left                      |
+    | `"4"`                  | tri_right                     |
+    | `"8"`                  | octagon                       |
+    | `"s"`                  | square                        |
+    | `"p"`                  | pentagon                      |
+    | `"P"`                  | plus (filled)                 |
+    | `"*"`                  | star                          |
+    | `"h"`                  | hexagon1                      |
+    | `"H"`                  | hexagon2                      |
+    | `"+"`                  | plus                          |
+    | `"x"`                  | x                             |
+    | `"X"`                  | x (filled)                    |
+    | `"D"`                  | diamond                       |
+    | `"d"`                  | thin_diamond                  |
+    | `"|"`                  | vline                         |
+    | `"_"`                  | hline                         |
+    | `0` (`TICKLEFT`)       | tickleft                      |
+    | `1` (`TICKRIGHT`)      | tickright                     |
+    | `2` (`TICKUP`)         | tickup                        |
+    | `3` (`TICKDOWN`)       | tickdown                      |
+    | `4` (`CARETLEFT`)      | caretleft                     |
+    | `5` (`CARETRIGHT`)     | caretright                    |
+    | `6` (`CARETUP`)        | caretup                       |
+    | `7` (`CARETDOWN`)      | caretdown                     |
+    | `8` (`CARETLEFTBASE`)  | caretleft (centered at base)  |
+    | `9` (`CARETRIGHTBASE`) | caretright (centered at base) |
+    | `10` (`CARETUPBASE`)   | caretup (centered at base)    |
+    | `11` (`CARETDOWNBASE`) | caretdown (centered at base)  |
 
-### （2）线标记 `linestyle`
+### 2、线标记 `linestyle`
 
 | Line Syntax | description   |
 | ----------- | ------------- |
@@ -101,7 +102,7 @@ plt.show()
 | `'--'`      | Dashed line   |
 | `'-.'`      | Dash-dot line |
 
-### （3）线颜色 `color`
+### 3、线颜色 `color`
 
 | color | description |
 | ----- | ----------- |
@@ -114,7 +115,7 @@ plt.show()
 | k     | black       |
 | w     | white       |
 
-### （4）格式化字符串
+### 4、格式化字符串
 
 ```python
 plt.plot(x, y, "marker | line | color")
@@ -122,11 +123,11 @@ plt.plot(x, y, "o:r")  # 红色虚线
 plt.show()
 ```
 
-### （5）点大小 `ms`
+### 5、点大小 `ms`
 
 - `markersize` 简称 `ms`
 
-### （6）点颜色 `mec/mfc`
+### 6、点颜色 `mec/mfc`
 
 - `markeredgecolor` 简称 `mec`
 - `markerfacecolor` 简称 `mfc`
@@ -136,13 +137,13 @@ plt.show()
 
 ---
 
-## 4、线
+## 四、线
 
-### （1）线宽 `linewidth`
+### 1、线宽 `linewidth`
 
 - `linewidth` 简称 `lw`
 
-### （2）多行
+### 2、多行
 
 ```python
 y1 = np.array([2, 10, 23, 25])
@@ -156,9 +157,9 @@ plt.show()
 
 ---
 
-## 5、标签
+## 五、标签
 
-### （1）横纵坐标标题
+### 1、横纵坐标标题
 
 ```python
 plt.title("report")  # 图表标题
@@ -168,7 +169,7 @@ plt.ylabel("price")  # 纵坐标
 plt.show()
 ```
 
-### （1）图表标题定位
+### 2、图表标题定位
 
 ```python
 plt.title("report", loc="left")  # 图表标题居左
@@ -176,7 +177,7 @@ plt.title("report", loc="left")  # 图表标题居左
 
 ---
 
-## 6、网格线
+## 六、网格线
 
 - 同样可以设置 `linewidth`、`linestyle`、`color` 等参数
 
@@ -189,7 +190,7 @@ plt.grid(axis="both")
 
 ---
 
-## 7、`subplot()`
+## 七、`subplot()`
 
 ```python
 # Subplot 1
@@ -212,11 +213,11 @@ plt.show()
 
 ---
 
-## 8、散点图 `scatter()`
+## 八、散点图 `scatter()`
 
 - 把 `plt.plot` 一句改成 `plt.scatter` 即可
 
-### （1）多组
+### 1、多组
 
 ```python
 # 第一组散点
@@ -235,7 +236,7 @@ plt.grid(True)
 plt.show()
 ```
 
-### （2）单独上色
+### 2、单独上色
 
 - 不能使用 `color` 参数，只能用 `c` 参数为每个点设置特定颜色
 
@@ -252,7 +253,7 @@ plt.title("Muti-color plot")
 plt.show()
 ```
 
-### （3）颜色图
+### 3、颜色图
 
 - 可以使用带有颜色图值的关键字参数 `cmap` 指定颜色图。在本例中为 `'viridis'`，它是 Matplotlib 中可用的**内置颜色图**之一
 - 此外，必须创建一个包含值（从 0 到 100）的数组，散点图中的每个点都有一个值
@@ -274,7 +275,7 @@ plt.title("color-bar")
 plt.show()
 ```
 
-### （4）大小、透明度
+### 4、大小、透明度
 
 - 大小用 `s` 参数，同一样要开一个 `size` 数组，确保大小和 `x,y` 的数组长度相同
 - 透明度用 `alpha` 参数
@@ -291,7 +292,7 @@ plt.show()
 
 ---
 
-## 9、柱状图 `bar()`
+## 九、柱状图 `bar()`
 
 - 把 `plt.plot` 一句改成 `plt.bar` 即可
 - `barh()` 函数绘制水平柱状图
@@ -308,7 +309,7 @@ plt.show()
 
 ---
 
-## 10、直方图 `hist()`
+## 十、直方图 `hist()`
 
 ```python
 x = np.random.normal(0, 1, 100) # 正态分布，期望为0，方差为1，生成100个
@@ -320,7 +321,7 @@ plt.show()
 
 ---
 
-## 11、饼图 `pie()`
+## 十一、饼图 `pie()`
 
 - 传入标题 `labels`
 - 起始角度 `startangle`，默认从 $x$ 轴开始

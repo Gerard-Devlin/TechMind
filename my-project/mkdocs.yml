@@ -248,4 +248,5 @@ nav:
           - PyTorch: ML&DL/PyTorch.md
           - Colab: ML&DL/Colab.md
           - Matplotlib: ML&DL/Matplotlib.md
+          - NumPy: ML&DL/NumPy.md
 

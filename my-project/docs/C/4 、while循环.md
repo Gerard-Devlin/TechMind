@@ -2,7 +2,7 @@
 
 ---
 
-## 1、`while` 循环
+## 一、`while` 循环
 
 ```c++
 while () {
@@ -42,7 +42,7 @@ while () {
 
 ---
 
-## 2、`do-while` 循环
+## 二、`do-while` 循环
 
 ```c++
 do {

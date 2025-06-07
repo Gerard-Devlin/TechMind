@@ -2,7 +2,7 @@
 
 ---
 
-## 1、`for` 循环
+## 一、`for` 循环
 
 ```c++
 for (i = 1; i <= n; i++) {
@@ -23,7 +23,7 @@ for (i = 1; i <= n; i++) {
 
 ---
 
-## 2、`for`  与 `while`
+## 二、`for`  与 `while`
 
 
 === "`while`"
@@ -61,6 +61,7 @@ for (i = 1; i <= n; i++) {
             fact = fact * i
         }
         printf("The factorial of %d is %d", n, fact);
+    ```
 
         return 0;
     }
@@ -84,7 +85,7 @@ for (i = 1; i <= n; i++) {
 
 ---
 
-## 3、`break` 与 `continue`
+## 三、`break` 与 `continue`
 
 ```c
 int main() {
@@ -145,7 +146,7 @@ int main() {
 
 ---
 
-## 4、⚠️~~`goto`~~
+## 四、⚠️~~`goto`~~
 
 `goto` 会破坏程序结构，导致流程混乱、可读性差，增加维护和调试难度，容易引发隐藏错误，因此现代编程中应尽量避免使用。
 
