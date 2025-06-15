@@ -348,6 +348,8 @@ void LevelOrder(BstNode *root) {
 
     给定前序和后序遍历没有办法确定一棵二叉树，必须要有中序
 
+![round.png](../../assets/images/DSA/round.png)
+
 - 先（根）序遍历
     - **先根节点**，再左子树，再右子树
     ```c++
