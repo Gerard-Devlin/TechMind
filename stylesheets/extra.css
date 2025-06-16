@@ -113,12 +113,12 @@
         border-left-width: 4px;
     }
     /* 下划线 */
-    .md-tabs__item--active .md-tabs__link {
-    padding-bottom: 12px;
-    border-bottom: 2px solid rgb(0, 102, 255);
-    color: inherit;
-    opacity: 1;
-    }
+    /*.md-tabs__item--active .md-tabs__link {*/
+    /*padding-bottom: 12px;*/
+    /*border-bottom: 2px solid rgb(0, 102, 255);*/
+    /*color: inherit;*/
+    /*opacity: 1;*/
+    /*}*/
 
 }
 
