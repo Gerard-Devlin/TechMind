@@ -33,3 +33,13 @@ This blog is organized to take you from basic programming grammar all the way to
 4. **Advanced Topics**: Get into the weeds with cutting-edge research in AI, neural networks, natural language processing, and more.
 
 
+## Contributor
+
+<p>
+  <a href="https://github.com/Gerard-Devlin" title="Gerard-Devlin">
+    <img src="https://github.com/Gerard-Devlin.png" width="64" height="64" style="border-radius:50%;margin:4px;"/>
+  </a>
+  <a href="https://github.com/Thirstarfish" title="Thirstarfish">
+    <img src="https://github.com/Thirstarfish.png" width="64" height="64" style="border-radius:50%;margin:4px;"/>
+  </a>
+</p>
