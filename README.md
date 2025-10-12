@@ -55,7 +55,7 @@ This blog is organized to take you from basic programming grammar all the way to
 
 ## Contributor
 
-| [![Gerard-Devlin](https://github.com/Gerard-Devlin.png?size=64)](https://github.com/Gerard-Devlin) | [![Thirstarfish](https://github.com/Thirstarfish.png?size=64)](https://github.com/Thirstarfish) |
-|----------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
+| [![Gerard-Devlin](https://github.com/Gerard-Devlin.png?size=64)](https://github.com/Gerard-Devlin) | [![Thirstarfish](https://github.com/Thirstarfish.png?size=64)](https://github.com/Thirstarfish) | [![Liuguang-Ji](https://github.com/Liuguang-Ji.png?size=64)](https://github.com/Liuguang-Ji) |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
 
 
