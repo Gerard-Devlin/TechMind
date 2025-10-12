@@ -6,7 +6,6 @@
   ![GitHub forks](https://img.shields.io/github/forks/Gerard-Devlin/TechMind?style=for-the-badge&logo=github&labelColor=302D41&color=91d7e3)
   ![License](https://img.shields.io/github/license/Gerard-Devlin/TechMind?style=for-the-badge&logo=github&labelColor=302D41&color=8aadf4)
   ![Last commit](https://img.shields.io/github/last-commit/Gerard-Devlin/TechMind?style=for-the-badge&logo=github&labelColor=302D41&color=c6a0f6)
-  ![Repo size](https://img.shields.io/github/repo-size/Gerard-Devlin/TechMind?style=for-the-badge&logo=github&labelColor=302D41&color=e0af68)
   
 </p>
 
