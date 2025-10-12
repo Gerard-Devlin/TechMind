@@ -45,11 +45,7 @@ This blog is organized to take you from basic programming grammar all the way to
 
 ## Contributor
 
-<p>
-  <a href="https://github.com/Gerard-Devlin" title="Gerard-Devlin">
-    <img src="https://github.com/Gerard-Devlin.png" width="64" height="64" style="border-radius:50%;margin:4px;"/>
-  </a>
-  <a href="https://github.com/Thirstarfish" title="Thirstarfish">
-    <img src="https://github.com/Thirstarfish.png" width="64" height="64" style="border-radius:50%;margin:4px;"/>
-  </a>
-</p>
+| [![Gerard-Devlin](https://github.com/Gerard-Devlin.png?size=64)](https://github.com/Gerard-Devlin) | [![Thirstarfish](https://github.com/Thirstarfish.png?size=64)](https://github.com/Thirstarfish) |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+
+
