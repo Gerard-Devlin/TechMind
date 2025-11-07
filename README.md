@@ -53,8 +53,3 @@ This blog is organized to take you from basic programming grammar all the way to
 4. **Advanced Topics**: Get into the weeds with cutting-edge research in AI, neural networks, natural language
    processing, and more.
 
-## 🌟 Contributor
-
-<a href="https://github.com/Gerard-Devlin/TechMind/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=Gerard-Devlin/TechMind" />
-</a>
