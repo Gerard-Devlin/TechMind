@@ -62,6 +62,9 @@ theme:
 # 插件支持
 plugins:
   - tags
+  - git-committers:
+        repository: Gerard-Devlin/TechMind
+        branch: master
   - search:
       pipeline:
         - stemmer
