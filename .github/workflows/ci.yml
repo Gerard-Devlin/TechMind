@@ -28,4 +28,4 @@ jobs:
 
       - name: Deploy to GitHub Pages
         run: |
-          mkdocs gh-deploy --config-file my-project/docs/mkdocs.yml --force
+          mkdocs gh-deploy --config-file my-project/mkdocs.yml --force
