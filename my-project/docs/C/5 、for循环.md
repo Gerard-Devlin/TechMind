@@ -8,6 +8,7 @@
 for (i = 1; i <= n; i++) {
     // 循环体内容
 }
+
 /*
  * ① 初始条件：i = 1
  * 在循环开始之前，初始化循环变量 i 为 1。
@@ -52,6 +53,7 @@ for (i = 1; i <= n; i++) {
         int i = 1;
         printf("Enter the number of factorial: ");
         scanf("%d", &n);
+
         // ①从1开始乘
         for (i = 1; i <= n; i++) {
             fact = fact * i;
@@ -61,7 +63,7 @@ for (i = 1; i <= n; i++) {
             fact = fact * i
         }
         printf("The factorial of %d is %d", n, fact);
-    ```
+    
 
         return 0;
     }
@@ -278,6 +280,3 @@ int main() {
             cout << __gcd(a, b) << endl; // 求最大公约数
         }
         ```
-
----
-

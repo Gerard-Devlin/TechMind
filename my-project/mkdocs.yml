@@ -62,9 +62,6 @@ theme:
 # 插件支持
 plugins:
   - tags
-  - git-committers:
-        repository: Gerard-Devlin/TechMind
-        branch: master
   - search:
       pipeline:
         - stemmer
@@ -144,6 +141,10 @@ extra:
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/Gerard-Devlin
+    - icon: fontawesome/brands/steam
+      link: https://steamcommunity.com/id/GerardDevlin
+    - icon: simple/gmail
+      link: mailto:alwenxuyouwen@gmail.com
   generator: false
 
 # JavaScript 支持
@@ -260,8 +261,8 @@ nav:
           - 7 、自监督式学习: ML&DL/7 、自监督式学习.md
           - 8 、自编码器: ML&DL/8 、自编码器.md
       - Tool:
-          - PyTorch: ML&DL/PyTorch.md
-          - Colab: ML&DL/Colab.md
           - Matplotlib: ML&DL/Matplotlib.md
           - NumPy: ML&DL/NumPy.md
+          - PyTorch: ML&DL/PyTorch.md
+          - Colab: ML&DL/Colab.md
 
