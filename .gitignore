@@ -1,0 +1,8 @@
+# Ignore everything at the repo root by default
+/*
+
+# Allow this file to ensure rules stay in the repo
+!.gitignore
+
+# Allow the my-project directory (and its contents)
+!my-project/
