@@ -1,8 +1,15 @@
 # Ignore everything at the repo root by default
 /*
 
-# Allow this file to ensure rules stay in the repo
+# Allow this file so the ignore rules remain versioned
 !.gitignore
 
-# Allow the my-project directory (and its contents)
+# Allow the folder that will host the tracked files
 !my-project/
+
+# Re-ignore everything inside that folder…
+my-project/*
+
+# …and explicitly un-ignore only the files/subfolders you want to track.
+# Examples (remove the ones you don't need, add your own):
+!my-project/docs
