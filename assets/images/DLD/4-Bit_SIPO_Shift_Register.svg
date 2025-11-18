@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384.21 135.04">
+	<rect width="100%" height="100%" fill="white"/>
+    <defs>
+		<style>
+			.black { fill: none; } /* black wire lines */
+			.black, .dot { stroke: #000; } /* black wire lines and dots */
+			.green { /* green fill */
+				fill: #cfc;
+				stroke: #000;
+			}
+			.grey { /* grey wire lines */
+				fill: none;
+				stroke: #ccc;
+			}
+			text { /* all text elements */
+				font-size: 7px;
+				font-family: sans-serif;
+				font-weight: 700;
+			}
+		</style>
+	</defs>
+	<line class="grey" x1="290.42" y1="131.02" x2="38.92" y2="131.02"/>
+	<line class="grey" x1="309.42" y1="51.02" x2="38.92" y2="51.02"/>
+	<text transform="translate(0 52.99)">Data In</text>
+	<line class="black" x1="44.42" y1="51.01" x2="29.42" y2="51.01"/>
+	<circle class="green" cx="29.42" cy="51.01" r="1.5"/>
+	<text transform="translate(0 132.99)">Clock</text>
+	<line class="black" x1="44.42" y1="131.01" x2="29.42" y2="131.01"/>
+	<circle class="green" cx="29.42" cy="131.01" r="1.5"/>
+	<path class="grey" d="M302.33,110.5v-12a5.52,5.52,0,0,1,5.5-5.5h5.5" transform="translate(-2.91 -1.98)"/>
+	<path class="grey" d="M302.33,110.5v17a5.52,5.52,0,0,1-5.5,5.5h-5.5" transform="translate(-2.91 -1.98)"/>
+	<path class="grey" d="M222.33,133V98.5a5.52,5.52,0,0,1,5.5-5.5h5.5" transform="translate(-2.91 -1.98)"/>
+	<circle class="dot" cx="219.42" cy="131.02" r="1.5"/>
+	<path class="grey" d="M142.33,133V98.5a5.52,5.52,0,0,1,5.5-5.5h5.5" transform="translate(-2.91 -1.98)"/>
+	<circle class="dot" cx="139.42" cy="131.02" r="1.5"/>
+	<path class="grey" d="M62.33,133V98.5a5.52,5.52,0,0,1,5.5-5.5h5.5" transform="translate(-2.91 -1.98)"/>
+	<circle class="dot" cx="59.42" cy="131.02" r="1.5"/>
+	<text transform="translate(374.64 6)">Q4</text>
+	<path class="grey" d="M365.83,53h11a5.51,5.51,0,0,0,5.5-5.5v-20" transform="translate(-2.91 -1.98)"/>
+	<line class="black" x1="379.42" y1="26.02" x2="379.42" y2="11.02"/>
+	<circle class="green" cx="379.42" cy="11.02" r="1.5"/>
+	<text transform="translate(294.64 6)">Q3</text>
+	<line class="grey" x1="299.42" y1="26.02" x2="299.42" y2="51.02"/>
+	<circle class="dot" cx="299.42" cy="51.02" r="1.5"/>
+	<line class="black" x1="299.42" y1="26.02" x2="299.42" y2="11.02"/>
+	<circle class="green" cx="299.42" cy="11.02" r="1.5"/>
+	<text transform="translate(214.64 6)">Q2</text>
+	<line class="grey" x1="219.42" y1="26.02" x2="219.42" y2="51.02"/>
+	<circle class="dot" cx="219.42" cy="51.02" r="1.5"/>
+	<line class="black" x1="219.42" y1="26.02" x2="219.42" y2="11.02"/>
+	<circle class="green" cx="219.42" cy="11.02" r="1.5"/>
+	<text transform="translate(134.64 6)">Q1</text>
+	<line class="grey" x1="139.42" y1="26.02" x2="139.42" y2="51.02"/>
+	<circle class="dot" cx="139.42" cy="51.02" r="1.5"/>
+	<line class="black" x1="139.42" y1="26.02" x2="139.42" y2="11.02"/>
+	<circle class="green" cx="139.42" cy="11.02" r="1.5"/>
+	<line class="black" x1="99.42" y1="31.02" x2="99.42" y2="111.02"/>
+	<line class="black" x1="69.42" y1="91.02" x2="129.42" y2="91.02"/>
+	<line class="black" x1="69.42" y1="51.02" x2="129.42" y2="51.02"/>
+	<rect class="green" x="79.42" y="41.02" width="40" height="60"/>
+	<text transform="translate(83.42 54.15)">D</text>
+	<text transform="translate(109.85 54.15)">Q</text>
+	<text transform="translate(109.85 94.15)">Q</text>
+	<text transform="translate(97.5 49.15)">S</text>
+	<text transform="translate(97.11 97.15)">R</text>
+	<circle class="green" cx="119.42" cy="91.02" r="1.5"/>
+	<polygon class="black" points="84.42 91.02 79.42 86.52 79.42 95.52 84.42 91.02"/>
+	<line class="black" x1="179.42" y1="31.02" x2="179.42" y2="111.02"/>
+	<line class="black" x1="149.42" y1="91.02" x2="209.42" y2="91.02"/>
+	<line class="black" x1="149.42" y1="51.02" x2="209.42" y2="51.02"/>
+	<rect class="green" x="159.42" y="41.02" width="40" height="60"/>
+	<text transform="translate(163.42 54.15)">D</text>
+	<text transform="translate(189.85 54.15)">Q</text>
+	<text transform="translate(189.85 94.15)">Q</text>
+	<text transform="translate(177.5 49.15)">S</text>
+	<text transform="translate(177.11 97.15)">R</text>
+	<circle class="green" cx="199.42" cy="91.02" r="1.5"/>
+	<polygon class="black" points="164.43 91.02 159.43 86.52 159.43 95.52 164.43 91.02"/>
+	<line class="black" x1="259.42" y1="31.02" x2="259.42" y2="111.02"/>
+	<line class="black" x1="229.42" y1="91.02" x2="289.42" y2="91.02"/>
+	<line class="black" x1="229.42" y1="51.02" x2="289.42" y2="51.02"/>
+	<rect class="green" x="239.42" y="41.02" width="40" height="60"/>
+	<text transform="translate(243.42 54.15)">D</text>
+	<text transform="translate(269.85 54.15)">Q</text>
+	<text transform="translate(269.85 94.15)">Q</text>
+	<text transform="translate(257.5 49.15)">S</text>
+	<text transform="translate(257.11 97.15)">R</text>
+	<circle class="green" cx="279.42" cy="91.02" r="1.5"/>
+	<polygon class="black" points="244.43 91.02 239.43 86.52 239.43 95.52 244.43 91.02"/>
+	<line class="black" x1="339.42" y1="31.02" x2="339.42" y2="111.02"/>
+	<line class="black" x1="309.42" y1="91.02" x2="369.42" y2="91.02"/>
+	<line class="black" x1="309.42" y1="51.02" x2="369.42" y2="51.02"/>
+	<rect class="green" x="319.42" y="41.02" width="40" height="60"/>
+	<text transform="translate(323.42 54.15)">D</text>
+	<text transform="translate(349.85 54.15)">Q</text>
+	<text transform="translate(349.85 94.15)">Q</text>
+	<text transform="translate(337.5 49.15)">S</text>
+	<text transform="translate(337.11 97.15)">R</text>
+	<circle class="green" cx="359.42" cy="91.02" r="1.5"/>
+	<polygon class="black" points="324.43 91.02 319.43 86.52 319.43 95.52 324.43 91.02"/>
+</svg>
