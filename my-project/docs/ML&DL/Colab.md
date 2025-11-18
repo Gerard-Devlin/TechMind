@@ -1,5 +1,5 @@
 ---
-icon: material/test-tube
+icon: simple/googlecolab
 ---
 
 Colab，即“Colaboratory”，允许你在浏览器中编写和执行 Python，具有以下特点：

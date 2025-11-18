@@ -1,5 +1,5 @@
 ---
-icon: material/torch
+icon: simple/pytorch
 ---
 
 

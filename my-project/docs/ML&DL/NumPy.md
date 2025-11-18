@@ -1,5 +1,5 @@
 ---
-icon: material/abacus
+icon: simple/numpy
 ---
 
 
