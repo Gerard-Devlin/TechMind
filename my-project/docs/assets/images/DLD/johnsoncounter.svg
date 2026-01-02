@@ -5,20 +5,21 @@
    version="1.1"
    id="svg1"
    width="600"
-   height="480"
-   viewBox="0 0 600.00002 480"
+   height="400"
+   viewBox="0 0 600.00002 400"
    sodipodi:docname="johnsoncounter.svg"
    inkscape:version="1.4.2 (f4327f4, 2025-05-13)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
-   xmlns:svg="http://www.w3.org/2000/svg"><rect
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <rect
      width="100%"
      height="100%"
      fill="#ffffff"
      id="rect1"
-     x="0"
-     y="0" />
+     x="1.8633162"
+     y="3.7266324" />
   <sodipodi:namedview
      id="namedview1"
      pagecolor="#ffffff"
@@ -36,7 +37,7 @@
      inkscape:window-x="-6"
      inkscape:window-y="-6"
      inkscape:window-maximized="1"
-     inkscape:current-layer="g1" />
+     inkscape:current-layer="svg1" />
   <defs
      id="defs1">
     <clipPath
@@ -1157,7 +1158,7 @@
   </defs>
   <g
      id="g1"
-     transform="translate(-265.34765,-259.94598)">
+     transform="translate(-267.21097,-297.2123)">
     <path
        id="path1"
        d="M 1093.23,28.799999 H 28.799999 V 535.46997 H 1093.23 Z"
