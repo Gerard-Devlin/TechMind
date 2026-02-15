@@ -1,0 +1,259 @@
+site_name: Tech Mind
+site_url: https://Gerard-Devlin.github.io/TechMind/
+repo_url: https://github.com/Gerard-Devlin/TechMind
+repo_name: Gerard-Devlin/TechMind
+# 自定义页脚文本
+copyright: "Copyright © 2024 - 2025 Devlin"
+edit_uri: edit/master/my-project/docs/
+theme:
+  name: material
+  custom_dir: material
+  icon:
+    logo: material/application-braces-outline
+    repo: fontawesome/brands/github-alt
+    favicon: images/favicon.png
+    annotation: material/google-circles
+  features:
+    #    - content.action.edit
+    - content.action.view
+    - navigation.top
+    - navigation.path
+    - navigation.instant
+    - navigation.tabs
+    - navigation.footer
+    - navigation.tracking
+    - navigation.sections
+    - navigation.instant.progress
+    - navigation.prune
+    - navigation.indexes
+    # 代码块功能
+    - content.code.select
+    - content.code.copy
+    - content.code.annotate
+    - content.tabs.link
+    # 提示功能
+    - content.tooltips
+    - header.autohide
+    # 搜索提示
+    - search.suggest
+    - search.highlight
+    - search.share
+  # 配色方案
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: white
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: deep purple
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+
+  font:
+    text: Roboto
+    code: Roboto Mono
+
+# 插件支持
+plugins:
+  - tags
+  - search:
+      pipeline:
+        - stemmer
+        - stopWordFilter
+        - trimmer
+      separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
+      lang:
+        - en
+        - zh
+  - glightbox:
+      width: 80%
+      background: white
+  - minify:
+      minify_html: true
+  - git-revision-date-localized:
+      enable_creation_date: true
+
+# Markdown 扩展
+markdown_extensions:
+  - abbr
+  - attr_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: 🧀
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.blocks.caption
+  # Admonitions 支持
+  - admonition
+  - pymdownx.details
+
+  # 格式化支持
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+
+  # 代码高亮
+  - pymdownx.highlight:
+      use_pygments: true
+      pygments_lang_class: true
+      line_spans: __span
+      anchor_linenums: true
+      linenums: true
+
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  # 图表支持
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+          # LaTeX 支持
+  - pymdownx.arithmatex:
+      generic: true
+
+  # 列表支持
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+  # 提示支持
+  - pymdownx.snippets:
+      auto_append:
+        - includes/abbreviations.md
+
+# 页面分析/页尾社交
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/Gerard-Devlin
+  generator: false
+
+# JavaScript 支持
+extra_javascript:
+  - javascripts/mathjax.js
+  - javascripts/katex.js
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  - https://cdn.jsdelivr.net/npm/katex@0/dist/katex.min.js
+  - https://cdn.jsdelivr.net/npm/katex@0/dist/contrib/auto-render.min.js
+
+# CSS 支持
+extra_css:
+  - https://unpkg.com/katex@0/dist/katex.min.css
+  - stylesheets/extra.css
+
+
+# ---------------------------------------------------------------------------------------------------------
+# 导航
+nav:
+  - Home: index.md
+
+  - C:
+      - 1 、入门: C/1 、入门.md
+      - 2 、变量与运算符: C/2 、变量与运算符.md
+      - 3 、判断语句: C/3 、判断语句.md
+      - 4 、while循环: C/4 、while循环.md
+      - 5 、for循环: C/5 、for循环.md
+      - 6 、数据类型和运算: C/6 、数据类型和运算.md
+      - 7 、函数: C/7 、函数.md
+      - 8 、数组: C/8 、数组.md
+      - 9 、指针: C/9 、指针.md
+      - 10 、字符串: C/10 、字符串.md
+      - 11 、结构体: C/11 、结构体.md
+
+  - Python:
+      - 1 、入门: Python/1 、入门.md
+      - 2 、控制语句: Python/2 、控制语句.md
+      - 3 、字符串: Python/3 、字符串.md
+      - 4 、绘图: Python/4 、绘图.md
+      - 5 、列表: Python/5 、列表.md
+      - 6 、集合与字典: Python/6 、集合与字典.md
+      - 7 、面向对象: Python/7 、面向对象.md
+
+  - DSA:
+      - 1 、概述: DSA/1 、概述.md
+      - 2 、输入输出: DSA/2 、输入输出.md
+      - 3 、链表: DSA/3 、链表.md
+      - 4 、队列: DSA/4 、队列.md
+      - 5 、栈: DSA/5 、栈.md
+      - 6 、二叉树:
+          - DSA/6 、二叉树/index.md
+          - 平衡二叉树: DSA/6 、二叉树/平衡二叉树.md
+          - 红黑树: DSA/6 、二叉树/红黑树.md
+          - 霍夫曼树: DSA/6 、二叉树/霍夫曼树.md
+      - 7 、并查集: DSA/7 、并查集.md
+      - 8 、排序:
+          - DSA/8 、排序/index.md
+          - 拓扑排序: DSA/8 、排序/拓扑排序.md
+      - 9 、排列: DSA/9 、排列.md
+      - 10 、前缀和: DSA/10 、前缀和.md
+      - 11 、差分数组: DSA/11 、差分数组.md
+      - 12 、二分: DSA/12 、二分.md
+      - 13 、DFS: DSA/13 、DFS.md
+      - 14 、BFS: DSA/14 、BFS.md
+      - 15 、数论: DSA/15 、数论.md
+      - 16 、贪心: DSA/16 、贪心.md
+      - 17 、动态规划: DSA/17 、动态规划.md
+      - 18 、图:
+          - DSA/18 、图/index.md
+          - 图的存储: DSA/18 、图/图的存储.md
+          - 图的遍历: DSA/18 、图/图的遍历.md
+          - 最短路算法: DSA/18 、图/最短路算法.md
+      - 19 、最小生成树: DSA/19 、最小生成树.md
+      - 20 、散列查找: DSA/20 、散列查找.md
+      - 21 、双指针: DSA/21 、双指针.md
+
+
+  - DLD:
+      - 1 、数字逻辑基础: DLD/1 、数字逻辑基础.md
+      - 2 、组合逻辑电路: DLD/2 、组合逻辑电路.md
+      - 3 、触发器: DLD/3 、触发器.md
+      - 4 、时序逻辑电路: DLD/4 、时序逻辑电路.md
+      - 5 、常用集成时序逻辑器件: DLD/5 、常用集成时序逻辑器件.md
+      - 6 、集成逻辑门: DLD/6 、集成逻辑门.md
+
+
+  - ICS:
+      - 1 、信息的表示和处理: ICS/1 、信息的表示和处理.md
+      - 2 、机器级编程:
+          - 2.1 机器级编程：基础: ICS/2.1 机器级编程：基础.md
+          - 2.2 机器级编程：控制: ICS/2.2 机器级编程：控制.md
+          - 2.3 机器级编程：过程: ICS/2.3 机器级编程：过程.md
+      - Lab:
+          - bomblab: ICS/bomblab.md
+
+  - ML&DL:
+      - ML:
+          - 1 、监督学习: ML&DL/1 、监督学习.md
+          - 2 、基础算法: ML&DL/2 、基础算法.md
+          - 3 、无监督学习: ML&DL/3 、无监督学习.md
+      - DL:
+          - 1 、概述: ML&DL/1 、概述.md
+          - 2 、网络无法训练怎么办？: ML&DL/2 、网络无法训练怎么办？.md
+          - 3 、图像作为输入: ML&DL/3 、图像作为输入.md
+          - 4 、序列作为输入: ML&DL/4 、序列作为输入.md
+          - 5 、Seq2seq: ML&DL/5 、Seq2seq.md
+          - 6 、生成: ML&DL/6 、生成.md
+          - 7 、自监督式学习: ML&DL/7 、自监督式学习.md
+          - 8 、自编码器: ML&DL/8 、自编码器.md
+      - Tool:
+          - PyTorch: ML&DL/PyTorch.md
+          - Colab: ML&DL/Colab.md
+          - Matplotlib: ML&DL/Matplotlib.md
+          - NumPy: ML&DL/NumPy.md
+          - Anaconda: ML&DL/Anaconda.md
+
