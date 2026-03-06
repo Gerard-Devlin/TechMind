@@ -1,4 +1,4 @@
-site_name: Tech Mind
+site_name: TechMind
 site_url: https://Gerard-Devlin.github.io/TechMind/
 repo_url: https://github.com/Gerard-Devlin/TechMind
 repo_name: Gerard-Devlin/TechMind
@@ -78,6 +78,9 @@ plugins:
       minify_html: true
   - git-revision-date-localized:
       enable_creation_date: true
+  - git-committers:
+      repository: Gerard-Devlin/TechMind
+      branch: master
 
 # Markdown 扩展
 markdown_extensions:
