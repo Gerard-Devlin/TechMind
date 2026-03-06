@@ -383,7 +383,7 @@ FROM courses, enrollment;
 ```sql
 SELECT S.sid
 FROM Sailors S, Reserves R
-WHERE S.sid = R.sid; # 找出预订过船的水手
+WHERE S.sid = R.sid; -- 找出预订过船的水手
 ```
 
 先做笛卡尔积得到一共 $S\times R$ 行，然后保留符合要求的行
@@ -497,3 +497,193 @@ WHERE S1.age = S2.age
 AND S1.sid < S2.sid;
 ```
 
+----
+
+### 5、`UNION/UNION ALL`
+
+- `UNION` 会做 **去重 (DISTINCT)**。
+- `UNION ALL` **不会去重**，只是简单拼接结果。
+
+???+ example
+
+    Students_CS
+    
+    | name  |
+    | ----- |
+    | Alice |
+    | Bob   |
+    
+    Students_Math
+    
+    | name |
+    | ---- |
+    | Bob  |
+    | Tom  |
+    
+    `UNION` 结果：
+    
+    | name  |
+    | ----- |
+    | Alice |
+    | Bob   |
+    | Tom   |
+    
+    `UNION ALL` 结果：
+    
+    | name  |
+    | ----- |
+    | Alice |
+    | Bob   |
+    | Bob   |
+    | Tom   |
+
+
+| 特性     | UNION    | UNION ALL |
+| -------- | -------- | --------- |
+| 去重     | 会       | 不会      |
+| 执行速度 | 较慢     | 更快      |
+| 本质     | DISTINCT | CONCAT    |
+
+数据库需要 **排序或哈希去重**，所以更慢。
+
+---
+
+### 6、`INTERSECT`
+
+问题：找既订过 red 又订过 green 的 sailor
+
+❌逻辑：
+
+```sql
+WHERE B.color='red' AND B.color='green'
+```
+
+这是不可能的：**一条船不可能同时是 red 和 green**，所以要换思路。
+
+正确写法：
+
+```sql
+SELECT R.sid
+FROM Boats B, Reserves R
+WHERE R.bid = B.bid
+AND B.color = 'red'
+
+INTERSECT
+
+SELECT R.sid
+FROM Boats B, Reserves R
+WHERE R.bid = B.bid
+AND B.color = 'green';
+```
+
+---
+
+## 五、子查询
+
+### 1、`IN`
+
+```sql
+-- 找预订过 boat 102 的 sailor
+SELECT S.sname
+FROM Sailors S
+WHERE S.sid IN (
+    SELECT R.sid
+    FROM Reserves R
+    WHERE R.bid = 102
+);
+```
+
+### 2、`NOT IN`
+
+```sql
+-- 找没有预订 boat 103 的 sailors
+SELECT S.sname
+FROM Sailors S
+WHERE S.sid NOT IN (
+    SELECT R.sid
+    FROM Reserves R
+    WHERE R.bid = 103
+);
+```
+
+### 3、`EXISTS`
+
+`EXISTS` 判断**子查询是否返回至少一行**，如果子查询返回任何行 → TRUE
+
+### 4、相关子查询
+
+✳这是子查询里**最重要的概念**
+
+```sql
+-- 找预订过 boat 102 的 sailors
+SELECT S.sname
+FROM Sailors S
+WHERE EXISTS (
+    SELECT *
+    FROM Reserves R
+    WHERE R.bid = 102
+    AND S.sid = R.sid
+);
+```
+
+这里：`S.sid` 来自**外层查询**，子查询必须**对每一行重新执行**。
+
+------
+
+### 5、`ANY / ALL`
+
+- `>ANY` ：大于集合中的某一个
+- `>ALL` ：大于集合中的所有
+
+```sql
+-- 找 rating > 某个 Popeye 的 sailor
+SELECT *
+FROM Sailors S
+WHERE S.rating > ANY (
+    SELECT S2.rating
+    FROM Sailors S2
+    WHERE S2.sname = 'Popeye'
+);
+```
+
+---
+
+## 六、视图
+
+### 1、`VIEW`
+
+**View（视图）**在 SQL 中本质上是：**一个保存起来的查询**。
+
+它看起来像一张表，但其实 **不存数据**，只是一个查询定义。
+
+```sql
+CREATE VIEW Redcount AS
+SELECT B.bid, COUNT(*) AS scount
+FROM Boats2 B, Reserves2 R
+WHERE R.bid = B.bid
+AND B.color = 'red'
+GROUP BY B.bid;
+```
+
+- 简化 SQL 查询
+- 安全控制
+- 逻辑抽象
+
+### 2、`WITH`
+
+```sql
+WITH Reds AS (
+    SELECT bid, COUNT(*)
+    FROM Boats2 B, Reserves2 R
+    WHERE R.bid = B.bid
+    GROUP BY bid
+)
+SELECT *
+FROM Reds;
+```
+
+|          | View        | WITH     |
+| -------- | ----------- | -------- |
+| 生命周期 | 永久        | 当前查询 |
+| 创建方式 | CREATE VIEW | WITH     |
+| 用途     | 长期使用    | 临时查询 |
