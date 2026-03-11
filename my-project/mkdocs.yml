@@ -247,6 +247,7 @@ nav:
   - COA:
       - 1 、数字表示: COA/1 、数字表示.md
       - 2 、C语言与内存: COA/2 、C语言与内存.md
+      - 3 、RISC-V汇编语言: COA/3 、RISC-V汇编语言.md
 
 
   - ML&DL:
