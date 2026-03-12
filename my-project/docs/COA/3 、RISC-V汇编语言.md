@@ -140,6 +140,8 @@ CPU内部只有 **寄存器**，但寄存器数量很少：
 
 总共只有：128 Bytes，而内存：2GB – 64GB
 
+![load-store.svg](../assets/images/COA/load-store.svg)
+
 因此 CPU设计原则是：
 
 - 计算 → 在寄存器
@@ -151,7 +153,7 @@ CPU内部只有 **寄存器**，但寄存器数量很少：
 
 ```bash
 1 byte = 8 bits
-1 word = 4 bytes
+1 word = 4 bytes = 32 bits
 # word 地址间隔 = 4
 ```
 
