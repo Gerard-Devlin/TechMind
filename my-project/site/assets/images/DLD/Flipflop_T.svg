@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="460"
+   height="190"
+   id="svg2"
+   sodipodi:version="0.32"
+   inkscape:version="0.48.0 r9654"
+   sodipodi:docname="Flipflop_T4.svg"
+   version="1.0"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape">
+  <rect width="100%" height="100%" fill="white"/>
+  <defs
+     id="defs4">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 150 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="660 : 150 : 1"
+       inkscape:persp3d-origin="330 : 100 : 1"
+       id="perspective68" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.5968749"
+     inkscape:cx="222.31125"
+     inkscape:cy="118.67503"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     gridtolerance="10000"
+     inkscape:grid-bbox="false"
+     inkscape:grid-points="true"
+     inkscape:window-width="1280"
+     inkscape:window-height="975"
+     inkscape:window-x="-4"
+     inkscape:window-y="-4"
+     inkscape:guide-bbox="true"
+     width="660px"
+     height="300px"
+     inkscape:object-paths="false"
+     showguides="true"
+     inkscape:window-maximized="1">
+    <inkscape:grid
+       id="GridFromPre046Settings"
+       type="xygrid"
+       originx="0px"
+       originy="0px"
+       spacingx="10px"
+       spacingy="10px"
+       color="#0000ff"
+       empcolor="#ff3f00"
+       opacity="0.2"
+       empopacity="0.37647059"
+       empspacing="5"
+       visible="true"
+       enabled="true" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-48.5, -160.862)">
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot1894"
+       transform="translate(-12.6035,-12.04554)"><flowRegion
+         id="flowRegion1896"><rect
+           id="rect1898"
+           width="50.507626"
+           height="29.294424"
+           x="181.82745"
+           y="94.737572" /></flowRegion><flowPara
+         id="flowPara1900"
+         style="font-size:20px">SRG8</flowPara></flowRoot>    <path
+       style="fill: none; fill-opacity: 0.75; fill-rule: evenodd; stroke: rgb(0, 0, 0); stroke-width: 3; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;"
+       d="M 278.5,250.8622 L 88.5,250.86221"
+       id="path2048"
+       sodipodi:nodetypes="cc" />
+    <rect
+       style="fill: rgb(255, 255, 255); fill-opacity: 0.215686; fill-rule: evenodd; stroke: rgb(0, 0, 0); stroke-width: 3; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;"
+       id="rect1885"
+       width="40"
+       height="40.000004"
+       x="178.5"
+       y="190.8622"
+       ry="0" />
+    <text
+       xml:space="preserve"
+       style="font-size: 12px; font-style: normal; font-weight: normal; fill: rgb(0, 0, 0); fill-opacity: 1; stroke: none; stroke-width: 3; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1; font-family: Arial;"
+       x="188.5"
+       y="220.862"
+       id="text1887"><tspan
+         sodipodi:role="line"
+         id="tspan1889"
+         x="188.5"
+         y="220.862"
+         style="font-size: 32px; stroke-width: 3; stroke-miterlimit: 4; stroke-dasharray: none; font-family: Arial;">&amp;</tspan></text>
+    <rect
+       style="fill: rgb(255, 255, 255); fill-opacity: 0.215686; fill-rule: evenodd; stroke: rgb(0, 0, 0); stroke-width: 3; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;"
+       id="rect1891"
+       width="39.368778"
+       height="38.962143"
+       x="178.81561"
+       y="271.44315"
+       ry="0" />
+    <text
+       xml:space="preserve"
+       style="font-size: 12px; font-style: normal; font-weight: normal; fill: rgb(0, 0, 0); fill-opacity: 1; stroke: none; stroke-width: 3; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1; font-family: Arial;"
+       x="188.5"
+       y="300.862"
+       id="text1893"><tspan
+         sodipodi:role="line"
+         id="tspan1895"
+         x="188.5"
+         y="300.862"
+         style="font-size: 32px; stroke-width: 3; stroke-miterlimit: 4; stroke-dasharray: none; font-family: Arial;">&amp;</tspan></text>
+    <path
+       style="fill: none; fill-opacity: 0.75; fill-rule: evenodd; stroke: rgb(0, 0, 0); stroke-width: 3; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;"
+       d="M 178.5,220.8622 L 88.5,220.8622"
+       id="path1901"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill: none; fill-opacity: 0.75; fill-rule: evenodd; stroke: rgb(0, 0, 0); stroke-width: 3; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;"
+       d="M 178.5,280.8622 L 158.5,280.8622 L 158.5,220.8622"
+       id="path1903"
+       sodipodi:nodetypes="ccc" />
+    <text
+       xml:space="preserve"
+       style="font-size: 12px; font-style: normal; font-weight: normal; fill: rgb(0, 0, 0); fill-opacity: 1; stroke: none; stroke-width: 3; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1; font-family: Arial;"
+       x="58.5"
+       y="232.862"
+       id="text1905"><tspan
+         sodipodi:role="line"
+         id="tspan1907"
+         x="58.5"
+         y="232.862"
+         style="font-size: 32px; stroke-width: 3; stroke-miterlimit: 4; stroke-dasharray: none; font-family: Arial;">T</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size: 12px; font-style: normal; font-weight: normal; fill: rgb(0, 0, 0); fill-opacity: 1; stroke: none; stroke-width: 3; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1; font-family: Arial;"
+       x="58.5"
+       y="260.862"
+       id="text1913"><tspan
+         sodipodi:role="line"
+         id="tspan1915"
+         x="58.5"
+         y="260.862"
+         style="font-size: 32px; stroke-width: 3; stroke-miterlimit: 4; stroke-dasharray: none; font-family: Arial;">C</tspan></text>
+    <rect
+       style="fill: rgb(255, 255, 255); fill-opacity: 0.215686; fill-rule: evenodd; stroke: rgb(0, 0, 0); stroke-width: 3; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;"
+       id="rect1914"
+       width="69.851997"
+       height="99.760223"
+       x="278.5"
+       y="200.8622"
+       ry="0" />
+    <text
+       xml:space="preserve"
+       style="font-size: 12px; font-style: normal; font-weight: normal; fill: rgb(0, 0, 0); fill-opacity: 1; stroke: none; stroke-width: 3; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1; font-family: Arial;"
+       x="468.5"
+       y="230.862"
+       id="text2897"><tspan
+         sodipodi:role="line"
+         id="tspan2899"
+         x="468.5"
+         y="230.862"
+         style="font-size: 32px; stroke-width: 3; stroke-miterlimit: 4; stroke-dasharray: none; font-family: Arial;">Q</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size: 12px; font-style: normal; font-weight: normal; fill: rgb(0, 0, 0); fill-opacity: 1; stroke: none; stroke-width: 3; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1; font-family: Arial;"
+       x="468.5"
+       y="290.862"
+       id="text2901"><tspan
+         sodipodi:role="line"
+         id="tspan2903"
+         x="468.5"
+         y="290.862"
+         style="font-size: 32px; stroke-width: 3; stroke-miterlimit: 4; stroke-dasharray: none; font-family: Arial;">Q</tspan></text>
+    <path
+       style="fill: none; fill-opacity: 0.75; fill-rule: evenodd; stroke: rgb(0, 0, 0); stroke-width: 3; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;"
+       d="M 468.5,200.8622 L 488.5,200.8622"
+       id="path2905"
+       sodipodi:nodetypes="cc" />
+    <text
+       xml:space="preserve"
+       style="font-size: 12px; font-style: normal; font-weight: normal; fill: rgb(0, 0, 0); fill-opacity: 1; stroke: none; stroke-width: 3; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1; font-family: Arial;"
+       x="288.307"
+       y="230.668"
+       id="text1946"><tspan
+         sodipodi:role="line"
+         id="tspan1948"
+         x="288.307"
+         y="230.668"
+         style="font-size: 32px; stroke-width: 3; stroke-miterlimit: 4; stroke-dasharray: none; font-family: Arial;">S</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size: 12px; font-style: normal; font-weight: normal; fill: rgb(0, 0, 0); fill-opacity: 1; stroke: none; stroke-width: 3; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1; font-family: Arial;"
+       x="288.307"
+       y="290.668"
+       id="text1950"><tspan
+         sodipodi:role="line"
+         id="tspan1952"
+         x="288.307"
+         y="290.668"
+         style="font-size: 32px; stroke-width: 3; stroke-miterlimit: 4; stroke-dasharray: none; font-family: Arial;">R</tspan></text>
+    <path
+       style="fill: none; fill-opacity: 0.75; fill-rule: evenodd; stroke: rgb(0, 0, 0); stroke-width: 3; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;"
+       d="M 218.5,210.8622 L 248.5,210.8622 L 248.5,220.8622 L 278.5,220.8622"
+       id="path1966"
+       sodipodi:nodetypes="cccc" />
+    <path
+       style="fill: none; fill-opacity: 0.75; fill-rule: evenodd; stroke: rgb(0, 0, 0); stroke-width: 3; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;"
+       d="M 278.5,280.8622 L 248.5,280.8622 L 248.5,290.8622 L 218.5,290.8622"
+       id="path1968"
+       sodipodi:nodetypes="cccc" />
+    <path
+       style="fill: none; fill-opacity: 0.75; fill-rule: evenodd; stroke: rgb(0, 0, 0); stroke-width: 3; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;"
+       d="M 348.5,220.8622 L 398.5,220.8622 L 398.5,170.8622 L 158.5,170.8622 L 158.5,200.8622 L 178.5,200.8622"
+       id="path1998"
+       sodipodi:nodetypes="cccccc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 348.5,280.862 50,2e-4 0,50 -240,0 0,-30 20,0"
+       id="path2000"
+       sodipodi:nodetypes="cccccc"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill: none; fill-opacity: 0.75; fill-rule: evenodd; stroke: rgb(0, 0, 0); stroke-width: 3; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;"
+       d="M 398.5,220.8622 L 458.5,220.8622"
+       id="path2002"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill: none; fill-opacity: 0.75; fill-rule: evenodd; stroke: rgb(0, 0, 0); stroke-width: 3; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;"
+       d="M 398.5,280.8622 L 458.5,280.8622"
+       id="path2004"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill: none; fill-rule: evenodd; stroke: rgb(0, 0, 0); stroke-width: 3; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;"
+       d="M 230,110 L 260,120 L 230,130"
+       id="path2441"
+       transform="translate(48.5, 130.862)"
+       sodipodi:nodetypes="ccc" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="path1920"
+       sodipodi:cx="90"
+       sodipodi:cy="160"
+       sodipodi:rx="10"
+       sodipodi:ry="10"
+       d="m 100,160 a 10,10 0 1 1 -20,0 10,10 0 1 1 20,0 z"
+       transform="matrix(1,0,0,-1,268.5,380.862)" />
+  </g>
+</svg>

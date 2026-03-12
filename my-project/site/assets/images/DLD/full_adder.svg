@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="780" height="289" overflow="hidden">
+  <rect width="100%" height="100%" fill="white"/>
+
+  <g transform="translate(-25 -251)">
+    <text font-family="Noto Sans JP,Noto Sans JP_MSFontService,sans-serif" font-weight="400" font-size="18" transform="translate(64.0856 325)">1</text>
+    <text font-family="Noto Sans JP,Noto Sans JP_MSFontService,sans-serif" font-weight="400" font-size="18" transform="translate(64.0856 347)">1</text>
+    <text font-family="Noto Sans JP,Noto Sans JP_MSFontService,sans-serif" font-weight="400" font-size="18" transform="translate(36.0856 369)">＋</text>
+    <text font-family="Noto Sans JP,Noto Sans JP_MSFontService,sans-serif" font-weight="400" font-size="18" transform="translate(64.0856 369)">1</text>
+    <text font-family="Noto Sans JP,Noto Sans JP_MSFontService,sans-serif" font-weight="400" font-size="18" transform="translate(50.0856 398)">1</text>
+    <text font-family="Noto Sans JP,Noto Sans JP_MSFontService,sans-serif" font-weight="400" font-size="18" transform="translate(64.0856 398)">1</text>
+    <path d="M36.5001 376.5 77.2445 376.5" stroke="#000000" stroke-width="0.666667" stroke-miterlimit="8" fill="none" fill-rule="evenodd"></path>
+    <rect x="93.5001" y="325.5" width="28" height="23" stroke="#43A047" stroke-width="0.666667" stroke-miterlimit="8" fill="#E8F5E9"></rect>
+    <path d="M93.4813 348.754 78.8292 341.17" stroke="#43A047" stroke-width="0.666667" stroke-miterlimit="8" fill="none" fill-rule="evenodd"></path>
+    <text font-family="Noto Sans JP,Noto Sans JP_MSFontService,sans-serif" font-weight="400" font-size="14" transform="translate(102.708 341)">A</text>
+    <rect x="93.5001" y="353.5" width="28" height="22" stroke="#43A047" stroke-width="0.666667" stroke-miterlimit="8" fill="#E8F5E9"></rect>
+    <path d="M93.4813 375.743 78.8292 368.488" stroke="#43A047" stroke-width="0.666667" stroke-miterlimit="8" fill="none" fill-rule="evenodd"></path>
+    <text font-family="Noto Sans JP,Noto Sans JP_MSFontService,sans-serif" font-weight="400" font-size="14" transform="translate(102.374 369)">B</text>
+    <rect x="93.5001" y="380.5" width="28" height="23" stroke="#43A047" stroke-width="0.666667" stroke-miterlimit="8" fill="#E8F5E9"></rect>
+    <path d="M93.4813 403.754 78.8292 396.17" stroke="#43A047" stroke-width="0.666667" stroke-miterlimit="8" fill="none" fill-rule="evenodd"></path>
+    <text font-family="Noto Sans JP,Noto Sans JP_MSFontService,sans-serif" font-weight="400" font-size="14" transform="translate(102.791 396)">S</text>
+    <rect x="37.5001" y="412.5" width="111" height="23" stroke="#43A047" stroke-width="0.666667" stroke-miterlimit="8" fill="#E8F5E9"></rect>
+    <path d="M37.9063 412.106 51.3151 401.012" stroke="#43A047" stroke-width="0.666667" stroke-miterlimit="8" fill="none" fill-rule="evenodd"></path>
+    <text font-family="Noto Sans JP,Noto Sans JP_MSFontService,sans-serif" font-weight="400" font-size="14" transform="translate(46.0215 428)">C</text>
+    <text font-family="Noto Sans JP,Noto Sans JP_MSFontService,sans-serif" font-weight="400" font-size="14" transform="translate(55.0215 428)">（桁上がり）</text>
+    <rect x="50.5001" y="252.5" width="119" height="44" stroke="#43A047" stroke-width="0.666667" stroke-miterlimit="8" fill="#E8F5E9"></rect>
+    <path d="M50.9356 295.523 62.2775 306.723" stroke="#43A047" stroke-width="0.666667" stroke-miterlimit="8" fill="none" fill-rule="evenodd"></path>
+    <text font-family="Noto Sans JP,Noto Sans JP_MSFontService,sans-serif" font-weight="400" font-size="14" transform="translate(55.8426 270)">C</text>
+    <text font-family="Noto Sans JP,Noto Sans JP_MSFontService,sans-serif" font-weight="400" font-size="14" transform="translate(64.8426 270)">´</text>
+    <text font-family="Noto Sans JP,Noto Sans JP_MSFontService,sans-serif" font-weight="400" font-size="14" transform="translate(74.316 270)">（</text>
+    <text font-family="Noto Sans JP,Noto Sans JP_MSFontService,sans-serif" font-weight="400" font-size="14" transform="translate(89.2893 270)">下位の桁か</text>
+    <text font-family="Noto Sans JP,Noto Sans JP_MSFontService,sans-serif" font-weight="400" font-size="14" transform="translate(55.8426 287)">らの桁上がり</text>
+    <text font-family="Noto Sans JP,Noto Sans JP_MSFontService,sans-serif" font-weight="400" font-size="14" transform="translate(139.843 287)">）</text>
+    <path d="M208.577 252.402 239.947 252.402 239.947 283.602 208.577 283.602Z" fill="#E8F5E9" fill-rule="evenodd"></path>
+    <path d="M239.947 252.402 271.318 252.402 271.318 283.602 239.947 283.602Z" fill="#E8F5E9" fill-rule="evenodd"></path>
+    <path d="M271.318 252.402 302.688 252.402 302.688 283.602 271.318 283.602Z" fill="#E8F5E9" fill-rule="evenodd"></path>
+    <path d="M302.688 252.402 334.058 252.402 334.058 283.602 302.688 283.602Z" fill="#E8F5E9" fill-rule="evenodd"></path>
+    <path d="M334.058 252.402 365.428 252.402 365.428 283.602 334.058 283.602Z" fill="#E8F5E9" fill-rule="evenodd"></path>
+    <path d="M239.947 252.069 239.947 533.535" stroke="#000000" stroke-width="0.666667" stroke-linejoin="round" stroke-miterlimit="10" fill="none" fill-rule="evenodd"></path>
+    <path d="M271.318 252.069 271.318 533.535" stroke="#000000" stroke-width="0.666667" stroke-linejoin="round" stroke-miterlimit="10" fill="none" fill-rule="evenodd"></path>
+    <path d="M302.688 252.069 302.688 533.535" stroke="#000000" stroke-width="0.666667" stroke-linejoin="round" stroke-miterlimit="10" fill="none" fill-rule="evenodd"></path>
+    <path d="M334.058 252.069 334.058 533.535" stroke="#000000" stroke-width="0.666667" stroke-linejoin="round" stroke-miterlimit="10" fill="none" fill-rule="evenodd"></path>
+    <path d="M208.244 283.602 365.761 283.602" stroke="#000000" stroke-width="0.666667" stroke-linejoin="round" stroke-miterlimit="10" fill="none" fill-rule="evenodd"></path>
+    <path d="M208.244 314.802 365.761 314.802" stroke="#000000" stroke-width="0.666667" stroke-linejoin="round" stroke-miterlimit="10" fill="none" fill-rule="evenodd"></path>
+    <path d="M208.244 346.002 365.761 346.002" stroke="#000000" stroke-width="0.666667" stroke-linejoin="round" stroke-miterlimit="10" fill="none" fill-rule="evenodd"></path>
+    <path d="M208.244 377.202 365.761 377.202" stroke="#000000" stroke-width="0.666667" stroke-linejoin="round" stroke-miterlimit="10" fill="none" fill-rule="evenodd"></path>
+    <path d="M208.244 408.402 365.761 408.402" stroke="#000000" stroke-width="0.666667" stroke-linejoin="round" stroke-miterlimit="10" fill="none" fill-rule="evenodd"></path>
+    <path d="M208.244 439.602 365.761 439.602" stroke="#000000" stroke-width="0.666667" stroke-linejoin="round" stroke-miterlimit="10" fill="none" fill-rule="evenodd"></path>
+    <path d="M208.244 470.802 365.761 470.802" stroke="#000000" stroke-width="0.666667" stroke-linejoin="round" stroke-miterlimit="10" fill="none" fill-rule="evenodd"></path>
+    <path d="M208.244 502.002 365.761 502.002" stroke="#000000" stroke-width="0.666667" stroke-linejoin="round" stroke-miterlimit="10" fill="none" fill-rule="evenodd"></path>
+    <path d="M208.577 252.069 208.577 533.535" stroke="#000000" stroke-width="0.666667" stroke-linejoin="round" stroke-miterlimit="10" fill="none" fill-rule="evenodd"></path>
+    <path d="M365.428 252.069 365.428 533.535" stroke="#000000" stroke-width="0.666667" stroke-linejoin="round" stroke-miterlimit="10" fill="none" fill-rule="evenodd"></path>
+    <path d="M208.244 252.402 365.761 252.402" stroke="#000000" stroke-width="0.666667" stroke-linejoin="round" stroke-miterlimit="10" fill="none" fill-rule="evenodd"></path>
+    <path d="M208.244 533.202 365.761 533.202" stroke="#000000" stroke-width="0.666667" stroke-linejoin="round" stroke-miterlimit="10" fill="none" fill-rule="evenodd"></path>
+    <g>
+      <text fill="#212529" font-family="Noto Sans JP,Noto Sans JP_MSFontService,sans-serif" font-weight="400" font-size="18" transform="translate(344.409 274)">S</text>
+    </g>
+    <g>
+      <text fill="#212529" font-family="Noto Sans JP,Noto Sans JP_MSFontService,sans-serif" font-weight="400" font-size="18" transform="translate(312.623 274)">C</text>
+    </g>
+    <g>
+      <text fill="#212529" font-family="Noto Sans JP,Noto Sans JP_MSFontService,sans-serif" font-weight="400" font-size="18" transform="translate(275.836 274)">C</text>
+    </g>
+    <g>
+      <text fill="#212529" font-family="Noto Sans JP,Noto Sans JP_MSFontService,sans-serif" font-weight="400" font-size="18" transform="translate(287.336 274)">´</text>
+    </g>
+    <g>
+      <text fill="#212529" font-family="Noto Sans JP,Noto Sans JP_MSFontService,sans-serif" font-weight="400" font-size="18" transform="translate(249.716 274)">B</text>
+    </g>
+    <g>
+      <text fill="#212529" font-family="Noto Sans JP,Noto Sans JP_MSFontService,sans-serif" font-weight="400" font-size="18" transform="translate(218.762 274)">A</text>
+    </g>
+    <g>
+      <text fill="#212529" font-family="Noto Sans JP,Noto Sans JP_MSFontService,sans-serif" font-weight="400" font-size="18" transform="translate(344.743 305)">0</text>
+    </g>
+    <g>
+      <text fill="#212529" font-family="Noto Sans JP,Noto Sans JP_MSFontService,sans-serif" font-weight="400" font-size="18" transform="translate(313.373 305)">0</text>
+    </g>
+    <g>
+      <text fill="#212529" font-family="Noto Sans JP,Noto Sans JP_MSFontService,sans-serif" font-weight="400" font-size="18" transform="translate(282.003 305)">0</text>
+    </g>
+    <g>
+      <text fill="#212529" font-family="Noto Sans JP,Noto Sans JP_MSFontService,sans-serif" font-weight="400" font-size="18" transform="translate(250.633 305)">0</text>
+    </g>
+    <g>
+      <text fill="#212529" font-family="Noto Sans JP,Noto Sans JP_MSFontService,sans-serif" font-weight="400" font-size="18" transform="translate(219.262 305)">0</text>
+    </g>
+    <g>
+      <text fill="#212529" font-family="Noto Sans JP,Noto Sans JP_MSFontService,sans-serif" font-weight="400" font-size="18" transform="translate(344.743 337)">1</text>
+    </g>
+    <g>
+      <text fill="#212529" font-family="Noto Sans JP,Noto Sans JP_MSFontService,sans-serif" font-weight="400" font-size="18" transform="translate(313.373 337)">0</text>
+    </g>
+    <g>
+      <text fill="#212529" font-family="Noto Sans JP,Noto Sans JP_MSFontService,sans-serif" font-weight="400" font-size="18" transform="translate(282.003 337)">1</text>
+    </g>
+    <g>
+      <text fill="#212529" font-family="Noto Sans JP,Noto Sans JP_MSFontService,sans-serif" font-weight="400" font-size="18" transform="translate(250.633 337)">0</text>
+    </g>
+    <g>
+      <text fill="#212529" font-family="Noto Sans JP,Noto Sans JP_MSFontService,sans-serif" font-weight="400" font-size="18" transform="translate(219.262 337)">0</text>
+    </g>
+    <g>
+      <text fill="#212529" font-family="Noto Sans JP,Noto Sans JP_MSFontService,sans-serif" font-weight="400" font-size="18" transform="translate(344.743 368)">1</text>
+    </g>
+    <g>
+      <text fill="#212529" font-family="Noto Sans JP,Noto Sans JP_MSFontService,sans-serif" font-weight="400" font-size="18" transform="translate(313.373 368)">0</text>
+    </g>
+    <g>
+      <text fill="#212529" font-family="Noto Sans JP,Noto Sans JP_MSFontService,sans-serif" font-weight="400" font-size="18" transform="translate(282.003 368)">0</text>
+    </g>
+    <g>
+      <text fill="#212529" font-family="Noto Sans JP,Noto Sans JP_MSFontService,sans-serif" font-weight="400" font-size="18" transform="translate(250.633 368)">1</text>
+    </g>
+    <g>
+      <text fill="#212529" font-family="Noto Sans JP,Noto Sans JP_MSFontService,sans-serif" font-weight="400" font-size="18" transform="translate(219.262 368)">0</text>
+    </g>
+    <g>
+      <text fill="#212529" font-family="Noto Sans JP,Noto Sans JP_MSFontService,sans-serif" font-weight="400" font-size="18" transform="translate(344.743 399)">0</text>
+    </g>
+    <g>
+      <text fill="#212529" font-family="Noto Sans JP,Noto Sans JP_MSFontService,sans-serif" font-weight="400" font-size="18" transform="translate(313.373 399)">1</text>
+    </g>
+    <g>
+      <text fill="#212529" font-family="Noto Sans JP,Noto Sans JP_MSFontService,sans-serif" font-weight="400" font-size="18" transform="translate(282.003 399)">1</text>
+    </g>
+    <g>
+      <text fill="#212529" font-family="Noto Sans JP,Noto Sans JP_MSFontService,sans-serif" font-weight="400" font-size="18" transform="translate(250.633 399)">1</text>
+    </g>
+    <g>
+      <text fill="#212529" font-family="Noto Sans JP,Noto Sans JP_MSFontService,sans-serif" font-weight="400" font-size="18" transform="translate(219.262 399)">0</text>
+    </g>
+    <g>
+      <text fill="#212529" font-family="Noto Sans JP,Noto Sans JP_MSFontService,sans-serif" font-weight="400" font-size="18" transform="translate(344.743 430)">1</text>
+    </g>
+    <g>
+      <text fill="#212529" font-family="Noto Sans JP,Noto Sans JP_MSFontService,sans-serif" font-weight="400" font-size="18" transform="translate(313.373 430)">0</text>
+    </g>
+    <g>
+      <text fill="#212529" font-family="Noto Sans JP,Noto Sans JP_MSFontService,sans-serif" font-weight="400" font-size="18" transform="translate(282.003 430)">0</text>
+    </g>
+    <g>
+      <text fill="#212529" font-family="Noto Sans JP,Noto Sans JP_MSFontService,sans-serif" font-weight="400" font-size="18" transform="translate(250.633 430)">0</text>
+    </g>
+    <g>
+      <text fill="#212529" font-family="Noto Sans JP,Noto Sans JP_MSFontService,sans-serif" font-weight="400" font-size="18" transform="translate(219.262 430)">1</text>
+    </g>
+    <g>
+      <text fill="#212529" font-family="Noto Sans JP,Noto Sans JP_MSFontService,sans-serif" font-weight="400" font-size="18" transform="translate(344.743 461)">0</text>
+    </g>
+    <g>
+      <text fill="#212529" font-family="Noto Sans JP,Noto Sans JP_MSFontService,sans-serif" font-weight="400" font-size="18" transform="translate(313.373 461)">1</text>
+    </g>
+    <g>
+      <text fill="#212529" font-family="Noto Sans JP,Noto Sans JP_MSFontService,sans-serif" font-weight="400" font-size="18" transform="translate(282.003 461)">1</text>
+    </g>
+    <g>
+      <text fill="#212529" font-family="Noto Sans JP,Noto Sans JP_MSFontService,sans-serif" font-weight="400" font-size="18" transform="translate(250.633 461)">0</text>
+    </g>
+    <g>
+      <text fill="#212529" font-family="Noto Sans JP,Noto Sans JP_MSFontService,sans-serif" font-weight="400" font-size="18" transform="translate(219.262 461)">1</text>
+    </g>
+    <g>
+      <text fill="#212529" font-family="Noto Sans JP,Noto Sans JP_MSFontService,sans-serif" font-weight="400" font-size="18" transform="translate(344.743 493)">0</text>
+    </g>
+    <g>
+      <text fill="#212529" font-family="Noto Sans JP,Noto Sans JP_MSFontService,sans-serif" font-weight="400" font-size="18" transform="translate(313.373 493)">1</text>
+    </g>
+    <g>
+      <text fill="#212529" font-family="Noto Sans JP,Noto Sans JP_MSFontService,sans-serif" font-weight="400" font-size="18" transform="translate(282.003 493)">0</text>
+    </g>
+    <g>
+      <text fill="#212529" font-family="Noto Sans JP,Noto Sans JP_MSFontService,sans-serif" font-weight="400" font-size="18" transform="translate(250.633 493)">1</text>
+    </g>
+    <g>
+      <text fill="#212529" font-family="Noto Sans JP,Noto Sans JP_MSFontService,sans-serif" font-weight="400" font-size="18" transform="translate(219.262 493)">1</text>
+    </g>
+    <g>
+      <text fill="#212529" font-family="Noto Sans JP,Noto Sans JP_MSFontService,sans-serif" font-weight="400" font-size="18" transform="translate(344.743 524)">1</text>
+    </g>
+    <g>
+      <text fill="#212529" font-family="Noto Sans JP,Noto Sans JP_MSFontService,sans-serif" font-weight="400" font-size="18" transform="translate(313.373 524)">1</text>
+    </g>
+    <g>
+      <text fill="#212529" font-family="Noto Sans JP,Noto Sans JP_MSFontService,sans-serif" font-weight="400" font-size="18" transform="translate(282.003 524)">1</text>
+    </g>
+    <g>
+      <text fill="#212529" font-family="Noto Sans JP,Noto Sans JP_MSFontService,sans-serif" font-weight="400" font-size="18" transform="translate(250.633 524)">1</text>
+    </g>
+    <g>
+      <text fill="#212529" font-family="Noto Sans JP,Noto Sans JP_MSFontService,sans-serif" font-weight="400" font-size="18" transform="translate(219.262 524)">1</text>
+    </g>
+    <rect x="450.5" y="282.5" width="300" height="97" stroke="#000000" stroke-width="0.666667" stroke-miterlimit="8" fill="none"></rect>
+    <path d="M428.5 330.5 697.647 330.5" stroke="#212529" stroke-width="0.666667" stroke-miterlimit="8" fill="none" fill-rule="evenodd"></path>
+    <path d="M428.5 352.5 697.647 352.5" stroke="#212529" stroke-width="0.666667" stroke-miterlimit="8" fill="none" fill-rule="evenodd"></path>
+    <path d="M734.5 341.5 773.135 341.5" stroke="#212529" stroke-width="0.666667" stroke-miterlimit="8" fill="none" fill-rule="evenodd"></path>
+    <text fill="#212529" font-family="Noto Sans JP,Noto Sans JP_MSFontService,sans-serif" font-weight="400" font-size="18" transform="translate(405.182 314)">C</text>
+    <text fill="#212529" font-family="Noto Sans JP,Noto Sans JP_MSFontService,sans-serif" font-weight="400" font-size="18" transform="translate(416.682 314)">´</text>
+    <text fill="#212529" font-family="Noto Sans JP,Noto Sans JP_MSFontService,sans-serif" font-weight="400" font-size="18" transform="translate(410.848 336)">A</text>
+    <text fill="#212529" font-family="Noto Sans JP,Noto Sans JP_MSFontService,sans-serif" font-weight="400" font-size="18" transform="translate(410.428 358)">B</text>
+    <path d="M691.5 319.5 706.226 319.5C718.376 319.5 735.5 334.167 735.5 341.5 735.5 348.833 718.377 363.5 706.227 363.5L691.5 363.5C694.892 356.745 698.997 352.211 698.908 341.456 698.848 329.87 695.844 326.285 691.5 319.5Z" stroke="#212529" stroke-width="0.666667" stroke-miterlimit="8" fill="#FFFFFF" fill-rule="evenodd"></path>
+    <text fill="#212529" font-family="Noto Sans JP,Noto Sans JP_MSFontService,sans-serif" font-weight="400" font-size="18" transform="translate(781.794 317)">S</text>
+    <text fill="#212529" font-family="Noto Sans JP,Noto Sans JP_MSFontService,sans-serif" font-weight="400" font-size="18" transform="translate(781.374 350)">C</text>
+    <path d="M428.5 306.5 773.5 306.5" stroke="#212529" stroke-width="0.666667" stroke-miterlimit="8" fill="none" fill-rule="evenodd"></path>
+    <rect x="464.5" y="320.5" width="98" height="47" stroke="#000000" stroke-width="0.666667" stroke-miterlimit="8" fill="#E8F5E9"></rect>
+    <text font-family="Noto Sans JP,Noto Sans JP_MSFontService,sans-serif" font-weight="400" font-size="18" transform="translate(477.101 350)">半加算器</text>
+    <rect x="578.5" y="295.5" width="98" height="46" stroke="#000000" stroke-width="0.666667" stroke-miterlimit="8" fill="#E8F5E9"></rect>
+    <text font-family="Noto Sans JP,Noto Sans JP_MSFontService,sans-serif" font-weight="400" font-size="18" transform="translate(590.781 324)">半加算器</text>
+    <text font-family="Noto Sans JP,Noto Sans JP_MSFontService,sans-serif" font-weight="400" font-size="18" transform="translate(564.235 274)">全加算器</text>
+  </g>
+</svg>
