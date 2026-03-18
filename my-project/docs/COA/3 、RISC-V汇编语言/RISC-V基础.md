@@ -212,7 +212,7 @@ lw rd, offset(rs1) # R[rd] = Memory[ R[rs1] + offset ]
     
         👉 **数组下标 × 4（word大小）**
 
-#### （2） `sw`（寄存器 → 内存）
+#### （2）`sw`（寄存器 → 内存）
 
 `store-word`
 
