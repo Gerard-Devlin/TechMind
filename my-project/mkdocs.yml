@@ -247,27 +247,28 @@ nav:
   - COA:
       - 1 、数字表示: COA/1 、数字表示.md
       - 2 、C语言与内存: COA/2 、C语言与内存.md
-      - 3 、RISC-V汇编语言: COA/3 、RISC-V汇编语言.md
+      - 3 、RISC-V汇编语言:
+          - COA/3 、RISC-V汇编语言/RISC-V基础.md
 
 
   - ML&DL:
       - ML:
-          - 1 、监督学习: ML&DL/1 、监督学习.md
-          - 2 、基础算法: ML&DL/2 、基础算法.md
-          - 3 、无监督学习: ML&DL/3 、无监督学习.md
+          - 1 、监督学习: ML&DL/ML/1 、监督学习.md
+          - 2 、基础算法: ML&DL/ML/2 、基础算法.md
+          - 3 、无监督学习: ML&DL/ML/3 、无监督学习.md
       - DL:
-          - 1 、概述: ML&DL/1 、概述.md
-          - 2 、网络无法训练怎么办？: ML&DL/2 、网络无法训练怎么办？.md
-          - 3 、图像作为输入: ML&DL/3 、图像作为输入.md
-          - 4 、序列作为输入: ML&DL/4 、序列作为输入.md
-          - 5 、Seq2seq: ML&DL/5 、Seq2seq.md
-          - 6 、生成: ML&DL/6 、生成.md
-          - 7 、自监督式学习: ML&DL/7 、自监督式学习.md
-          - 8 、自编码器: ML&DL/8 、自编码器.md
+          - 1 、概述: ML&DL/DL/1 、概述.md
+          - 2 、网络无法训练怎么办？: ML&DL/DL/2 、网络无法训练怎么办？.md
+          - 3 、图像作为输入: ML&DL/DL/3 、图像作为输入.md
+          - 4 、序列作为输入: ML&DL/DL/4 、序列作为输入.md
+          - 5 、Seq2seq: ML&DL/DL/5 、Seq2seq.md
+          - 6 、生成: ML&DL/DL/6 、生成.md
+          - 7 、自监督式学习: ML&DL/DL/7 、自监督式学习.md
+          - 8 、自编码器: ML&DL/DL/8 、自编码器.md
       - Tool:
-          - PyTorch: ML&DL/PyTorch.md
-          - Colab: ML&DL/Colab.md
-          - Matplotlib: ML&DL/Matplotlib.md
-          - NumPy: ML&DL/NumPy.md
-          - Anaconda: ML&DL/Anaconda.md
+          - PyTorch: ML&DL/Tool/PyTorch.md
+          - Colab: ML&DL/Tool/Colab.md
+          - Matplotlib: ML&DL/Tool/Matplotlib.md
+          - NumPy: ML&DL/Tool/NumPy.md
+          - Anaconda: ML&DL/Tool/Anaconda.md
 

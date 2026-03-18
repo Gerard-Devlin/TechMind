@@ -19,16 +19,16 @@ subtitle: Transformer
 
 ## 二、Transformer模型
 
-![transformer-3.png](../assets/images/DL/transformer-3.png)
+![transformer-3.png](../../assets/images/DL/transformer-3.png)
 
 
 ### 1、`Encoder`
 
 输入和进入self-attention block之后做残差连接（residual），在做normalization（layer normalization，只对一个向量即可不需要batch）。之后再经过FC layer，同样也有一个残差连接，再做一个layer normalization。
 
-![transformer-1.png](../assets/images/DL/transformer-1.png)
+![transformer-1.png](../../assets/images/DL/transformer-1.png)
 
-![transformer-2.png](../assets/images/DL/transformer-2.png)
+![transformer-2.png](../../assets/images/DL/transformer-2.png)
 
 !!! warning
     但是这边原始的网络架构也不是最优的
@@ -50,7 +50,7 @@ __过程:__
 - AT Decoder：逐步生成，质量较高但速度较慢。
 - NAT Decoder：一次性并行生成，速度较快但可能牺牲质量。
 
-![AT-NAT.png](../assets/images/DL/AT-NAT.png)
+![AT-NAT.png](../../assets/images/DL/AT-NAT.png)
 
 ---
 
@@ -64,7 +64,7 @@ Masked Muti-head Attention
 
 - **因果性**：这种机制防止未来的词元影响当前词元，保持序列生成过程中的因果关系。
 
-![masked-self-attention.png](../assets/images/DL/masked-self-attention.png)
+![masked-self-attention.png](../../assets/images/DL/masked-self-attention.png)
 
 
 ---
@@ -83,7 +83,7 @@ Masked Muti-head Attention
 !!! warning
     `cross attention`不一定是`encoder`最后一层和`decoder`连接，也可以有各种其他的连接方式
 
-![cross-attention.png](../assets/images/DL/cross-attention.png)
+![cross-attention.png](../../assets/images/DL/cross-attention.png)
 
 
 ---

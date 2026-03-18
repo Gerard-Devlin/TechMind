@@ -140,7 +140,7 @@ CPU内部只有 **寄存器**，但寄存器数量很少：
 
 总共只有：128 Bytes，而内存：2GB – 64GB
 
-![load-store.svg](../assets/images/COA/load-store.svg)
+![load-store.svg](../../assets/images/COA/load-store.svg)
 
 因此 CPU设计原则是：
 
