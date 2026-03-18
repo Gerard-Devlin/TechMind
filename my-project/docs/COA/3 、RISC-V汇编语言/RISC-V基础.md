@@ -79,7 +79,7 @@ RISC = Reduced Instruction Set Computing
 
     x0永远是 $0$
     
-    ```assembly
+    ```asm
     add x3,x4,x0 # x3 = x4
     ```
 
@@ -89,7 +89,7 @@ RISC = Reduced Instruction Set Computing
 
 RISC-V 算术指令遵循统一格式：
 
-```assembly
+```asm
 op rd, rs1, rs2 # rd = rs1 op rs2
 ```
 
@@ -104,7 +104,7 @@ op rd, rs1, rs2 # rd = rs1 op rs2
 
 ### 1、加减法指令
 
-```assembly
+```asm
 add x1, x2, x3 # x1 = x2 + x3
 sub x3, x4, x5 # x3 = x4 - x5
 ```
@@ -123,7 +123,7 @@ sub x3, x4, x5 # x3 = x4 - x5
 
 没有立即数就必须把数存进寄存器再操作，这样多一条指令而且占用多一个寄存器。
 
-```assembly
+```asm
 addi x10, x10, 4 # x10 = x10 + 4
 ```
 
@@ -190,7 +190,7 @@ RISC-V 使用的就是**小端序**
 
 `load-word`
 
-```assembly
+```asm
 lw rd, offset(rs1) # R[rd] = Memory[ R[rs1] + offset ]
 ```
 !!! example
@@ -216,7 +216,7 @@ lw rd, offset(rs1) # R[rd] = Memory[ R[rs1] + offset ]
 
 `store-word`
 
-```assembly
+```asm
 sw rs2, offset(rs1) # Memory[ R[rs1] + offset ] = R[rs2]
 ```
 
@@ -226,7 +226,7 @@ sw rs2, offset(rs1) # Memory[ R[rs1] + offset ] = R[rs2]
     A[10] = h + A[3];
     ```
     
-    ```assembly
+    ```asm
     lw x10,12(x15)
     add x10,x12,x10
     sw x10,40(x15)
@@ -249,7 +249,7 @@ sw rs2, offset(rs1) # Memory[ R[rs1] + offset ] = R[rs2]
 | `lb`  | 符号扩展 | 保持正负 |
 | `lbu` | $0$ 扩展 | 一律变正 |
 
-```assembly
+```asm
 byte = 11111111
 lb  → 11111111 11111111 11111111 11111111 = -1
 lbu → 00000000 00000000 00000000 11111111 = 255
@@ -263,7 +263,7 @@ lbu → 00000000 00000000 00000000 11111111 = 255
 
 `branch if equal`
 
-```assembly
+```asm
 beq rs1, rs2, label # if (rs1 == rs2) jump to label
 bne rs1, rs2, label # if (rs1 != rs2) jump to label
 blt rs1, rs2, label  # < 
@@ -279,7 +279,7 @@ if (i == j)
 
 === "使用 `beq`"
 
-    ```assembly
+    ```asm
     beq x13, x14, Then
     j Exit
     Then:
@@ -289,7 +289,7 @@ if (i == j)
 
 === "使用 `bne`"
 
-    ```assembly
+    ```asm
     bne x13, x14, Exit
     add x10, x11, x12
     Exit:
@@ -302,7 +302,7 @@ for (i = 0; i < 20; i++)
     sum += A[i];
 ```
 
-```assembly
+```asm
 Loop:
 bge x11,x13,Done   # 结束条件
 
@@ -323,13 +323,13 @@ j Loop
 
 ### 1、基本按位运算
 
-```assembly
+```asm
 and x5, x6, x7   # x5 = x6 & x7
 ```
 
 #### （1）立即数做mask
 
-```assembly
+```asm
 andi x5, x6, 0xFF # 保留最低八位，因为 FF 表示 1
 ```
 
@@ -337,7 +337,7 @@ andi x5, x6, 0xFF # 保留最低八位，因为 FF 表示 1
 
     异或 $1$ 即可等价于 `not`
     
-    ```assembly
+    ```asm
     xor x5, x6, -1   # 全1
     ```
 
@@ -345,7 +345,7 @@ andi x5, x6, 0xFF # 保留最低八位，因为 FF 表示 1
 
 #### （1）左移 `sll / slli`
 
-```assembly
+```asm
 slli x11, x12, 2 # x11 = x12 << 2，右边补 0
 ```
 
@@ -353,13 +353,13 @@ slli x11, x12, 2 # x11 = x12 << 2，右边补 0
 
 ##### `srl`（逻辑右移）
 
-```assembly
+```asm
 srl x5, x6, 2 # 高位补 0
 ```
 
 ##### `sra`（算术右移）
 
-```assembly
+```asm
 sra x5, x6, 2 # 高位补符号位
 ```
 
