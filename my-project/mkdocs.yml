@@ -250,6 +250,7 @@ nav:
       - 3 、RISC-V汇编语言:
           - COA/3 、RISC-V汇编语言/汇编基础.md
           - COA/3 、RISC-V汇编语言/函数调用.md
+          - COA/3 、RISC-V汇编语言/指令表示.md
 
 
   - ML&DL:
