@@ -20,6 +20,7 @@ dist/
 pip-wheel-metadata/
 
 # MkDocs generated site
+/my-project/site/
 site/
 
 # Coverage output
