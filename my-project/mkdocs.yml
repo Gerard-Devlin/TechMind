@@ -255,6 +255,10 @@ nav:
           - COA/3 、RISC-V汇编语言/指令表示.md
       - 4 、存储器: COA/4 、存储器.md
 
+  - Compilers:
+      - 1 、编译器简介: Compilers/1 、编译器简介.md
+      - 2 、词法分析: Compilers/2 、词法分析.md
+
 
   - ML&DL:
       - ML:
