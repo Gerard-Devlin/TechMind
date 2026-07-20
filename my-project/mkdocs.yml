@@ -3,7 +3,7 @@ site_url: https://Gerard-Devlin.github.io/TechMind/
 repo_url: https://github.com/Gerard-Devlin/TechMind
 repo_name: Gerard-Devlin/TechMind
 # 自定义页脚文本
-copyright: "Copyright © 2024 - 2025 Devlin"
+copyright: "Copyright © 2024 - 2026 Devlin"
 edit_uri: edit/master/my-project/docs/
 theme:
   name: material
