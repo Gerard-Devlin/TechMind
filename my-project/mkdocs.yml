@@ -258,6 +258,7 @@ nav:
   - Compilers:
       - 1 、编译器简介: Compilers/1 、编译器简介.md
       - 2 、词法分析: Compilers/2 、词法分析.md
+      - 3 、基础算法: Compilers/3 、基础算法.md
 
 
   - ML&DL:
