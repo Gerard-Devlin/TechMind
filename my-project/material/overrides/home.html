@@ -48,9 +48,12 @@
   <section class="tm-showcase" aria-label="Understand, explore, and master computer science" data-tm-showcase>
     <div class="tm-showcase__sticky">
       <div class="tm-showcase__art" aria-hidden="true">
-        <div class="tm-showcase__frame is-active" data-tm-frame="0">
+        <div class="tm-showcase__frame tm-showcase__frame--intro is-active" data-tm-frame="0">
           <img class="tm-image--dark" src="{{ 'assets/landing/overview-hero.webp' | url }}" alt="" width="1920" height="1231" fetchpriority="high" decoding="async">
           <img class="tm-image--light" src="{{ 'assets/landing/overview-hero-light.webp' | url }}" alt="" width="1920" height="1231" fetchpriority="high" decoding="async">
+          <video class="tm-showcase__intro-video" data-tm-intro-video muted playsinline preload="auto" aria-hidden="true">
+            <source src="{{ 'assets/landing/anthropic-hero.webm' | url }}" type="video/webm">
+          </video>
         </div>
         <div class="tm-showcase__frame" data-tm-frame="1">
           <img class="tm-image--dark" src="{{ 'assets/landing/overview-hero-work.webp' | url }}" alt="" width="1920" height="1230" loading="lazy" decoding="async">

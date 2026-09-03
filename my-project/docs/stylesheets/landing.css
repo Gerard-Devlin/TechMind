@@ -145,6 +145,21 @@ body:has(.tm-landing) .md-tabs { border-bottom: 1px solid var(--tm-rule); }
 .tm-showcase__frame.is-active { z-index: 1; opacity: 1; transform: translateY(0); }
 .tm-showcase__frame.is-past { transform: translateY(-9%); }
 .tm-showcase__frame img { width: 100%; height: 100%; object-fit: contain; }
+.tm-showcase__frame--intro { overflow: hidden; border-radius: clamp(10px, 1.2vw, 20px); }
+.tm-showcase__intro-video {
+  position: absolute;
+  z-index: 2;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  background: #050505;
+  object-fit: cover;
+  opacity: 1;
+  pointer-events: none;
+  transition: opacity 480ms ease, visibility 0s linear 480ms;
+}
+.tm-showcase__frame--intro.is-video-complete .tm-showcase__intro-video { visibility: hidden; opacity: 0; }
 .tm-landing .tm-image--light { display: none; }
 body[data-md-color-scheme="default"] .tm-landing .tm-image--light { display: block; }
 body[data-md-color-scheme="default"] .tm-landing .tm-image--dark { display: none; }

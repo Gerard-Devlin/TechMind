@@ -1,5 +1,5 @@
 {
-  "references": ["https://chatgpt.com/zh-Hans-CN/overview/?openaicom_referred=true", "https://openai.com/zh-Hans-CN/research/"],
+  "references": ["https://chatgpt.com/zh-Hans-CN/overview/?openaicom_referred=true", "https://openai.com/zh-Hans-CN/research/", "https://www.anthropic.com/"],
   "retrieved": "2026-09-04",
   "note": "Third-party assets reused at the site owner's request. Source attribution is not a license grant; review rights before public or commercial redistribution.",
   "assets": [
@@ -63,6 +63,10 @@
     {
       "file": "overview-hero.webp",
       "source": "https://images.ctfassets.net/8su2tbn87fck/2xYBCD3PoQOWTR7xAp41vu/cfa61c4d6fa4454a92c3e2e7676c2de1/Chat.png?w=1920&q=80&fm=webp"
+    },
+    {
+      "file": "anthropic-hero.webm",
+      "source": "https://cdn.sanity.io/files/4zrzovbb/website/c366490be9cec9f759551733810da19103c0be33.webm"
     },
     {
       "file": "overview-hero-work.webp",

@@ -15,6 +15,49 @@
     const behavior = () => reduced.matches ? 'instant' : 'smooth';
     const clamp = (n, min = 0, max = 1) => Math.min(max, Math.max(min, n));
 
+    const introVideo = home.querySelector('[data-tm-intro-video]');
+    if (introVideo) {
+      const introFrame = introVideo.closest('.tm-showcase__frame--intro');
+      let started = false;
+      let finished = false;
+      let observer;
+
+      const finish = () => {
+        if (finished) return;
+        finished = true;
+        introVideo.pause();
+        introFrame.classList.add('is-video-complete');
+        observer?.disconnect();
+      };
+
+      const start = () => {
+        if (started || finished) return;
+        if (reduced.matches) {
+          finish();
+          return;
+        }
+        started = true;
+        introVideo.currentTime = 0;
+        const playback = introVideo.play();
+        playback?.catch(finish);
+      };
+
+      introVideo.addEventListener('ended', finish, { once: true, signal });
+      introVideo.addEventListener('error', finish, { once: true, signal });
+      reduced.addEventListener('change', () => {
+        if (reduced.matches) finish();
+      }, { signal });
+
+      if (reduced.matches) finish();
+      else {
+        observer = new IntersectionObserver(entries => {
+          if (entries.some(entry => entry.isIntersecting && entry.intersectionRatio >= .25)) start();
+        }, { threshold: .25 });
+        observer.observe(introFrame);
+        cleanups.push(() => observer.disconnect());
+      }
+    }
+
     home.querySelectorAll('[data-tm-carousel]').forEach(carousel => {
       const track = carousel.querySelector('.tm-carousel__track');
       const prev = carousel.querySelector('[data-tm-prev]');
