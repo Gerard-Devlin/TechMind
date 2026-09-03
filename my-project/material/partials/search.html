@@ -1,0 +1,46 @@
+{# Keep Material's search components so indexing, suggestions and navigation stay native. #}
+{% macro search_icon() -%}
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" aria-hidden="true"><circle cx="10.8" cy="10.8" r="7.3"/><path d="m16.1 16.1 4.4 4.4"/></svg>
+{%- endmacro %}
+<div class="md-search tm-search" data-md-component="search">
+  <button class="tm-search__trigger" type="button" aria-label="Search notes" aria-haspopup="dialog" aria-controls="tm-search-panel" aria-expanded="false">
+    <span>Search documentation...</span>
+    <kbd data-tm-search-shortcut>Ctrl K</kbd>
+  </button>
+  <label class="md-search__overlay" for="__search" aria-hidden="true"></label>
+  <div class="md-search__inner" id="tm-search-panel" role="dialog" aria-modal="true" aria-label="Search TechMind" aria-hidden="true">
+    <form class="md-search__form" name="search" role="search">
+      <span class="tm-search__magnifier">{{ search_icon() }}</span>
+      <input type="text" class="md-search__input" name="query"
+        aria-label="{{ lang.t('search.placeholder') }}" placeholder="Search documentation..."
+        autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false"
+        data-md-component="search-query" tabindex="-1" required>
+      <nav class="md-search__options" aria-label="{{ lang.t('search') }}">
+        {% if "search.share" in features %}
+          <a href="javascript:void(0)" class="md-search__icon md-icon"
+            title="{{ lang.t('search.share') }}" aria-label="{{ lang.t('search.share') }}"
+            data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            {% include ".icons/material/link-variant.svg" %}
+          </a>
+        {% endif %}
+        <button type="reset" class="md-search__icon md-icon" title="{{ lang.t('search.reset') }}" aria-label="{{ lang.t('search.reset') }}" tabindex="-1">
+          {% include ".icons/material/close.svg" %}
+        </button>
+      </nav>
+      {% if "search.suggest" in features %}
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      {% endif %}
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="-1" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta" aria-live="polite">{{ lang.t("search.result.initializer") }}</div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+    <footer class="tm-search__footer">
+      <span aria-hidden="true"><kbd><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 10-5 5 5 5M20 4v7a4 4 0 0 1-4 4H4"/></svg></kbd> Go to Page</span>
+    </footer>
+  </div>
+</div>

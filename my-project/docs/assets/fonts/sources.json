@@ -1,0 +1,8 @@
+{
+  "Geist-Latin.woff2": {
+    "source": "https://ui.shadcn.com/_next/static/immutable/media/caa3a2e1cccd8315-s.p.0zr6hhvz-h9nw.woff2",
+    "project": "https://github.com/vercel/geist-font",
+    "license": "Geist-OFL.txt",
+    "usage": "Search interface only; Latin variable font subset."
+  }
+}
