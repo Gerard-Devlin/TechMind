@@ -1,3 +1,89 @@
+/* Site-wide neutral interaction colors; syntax highlighting keeps its own palette. */
+body[data-md-color-scheme="default"][data-md-color-primary] {
+    --md-accent-fg-color: #171717;
+    --md-accent-fg-color--transparent: rgb(23 23 23 / .08);
+    --md-accent-bg-color: #fff;
+    --md-accent-bg-color--light: rgb(255 255 255 / .7);
+    --md-typeset-a-color: #333;
+}
+
+/* A shared, neutral dark palette for documentation and the landing page. */
+body[data-md-color-scheme="slate"][data-md-color-primary] {
+    --tm-dark-bg: #171717;
+    --tm-dark-surface: #212121;
+    --tm-dark-hover: #2c2c2c;
+    --tm-dark-rule: #3a3a3a;
+
+    --md-accent-fg-color: #f3f3f3;
+    --md-accent-fg-color--transparent: rgb(243 243 243 / .12);
+    --md-accent-bg-color: #171717;
+    --md-accent-bg-color--light: rgb(23 23 23 / .7);
+    --md-typeset-a-color: #e5e5e5;
+
+    --md-default-bg-color: var(--tm-dark-bg);
+    --md-default-bg-color--light: rgb(23 23 23 / .54);
+    --md-default-bg-color--lighter: rgb(23 23 23 / .26);
+    --md-default-bg-color--lightest: rgb(23 23 23 / .07);
+
+    --md-primary-fg-color: var(--tm-dark-bg);
+    --md-primary-fg-color--light: var(--tm-dark-surface);
+    --md-primary-fg-color--dark: var(--tm-dark-bg);
+
+    --md-code-bg-color: var(--tm-dark-surface);
+    --md-code-bg-color--light: rgb(33 33 33 / .9);
+    --md-code-bg-color--lighter: rgb(33 33 33 / .54);
+    --md-typeset-kbd-color: var(--tm-dark-hover);
+    --md-typeset-kbd-accent-color: var(--tm-dark-rule);
+    --md-typeset-kbd-border-color: var(--tm-dark-bg);
+    --md-typeset-table-color--light: rgb(237 237 237 / .04);
+    --md-admonition-bg-color: var(--tm-dark-surface);
+    --md-footer-bg-color: var(--tm-dark-bg);
+    --md-footer-bg-color--dark: var(--tm-dark-bg);
+}
+
+body[data-md-color-scheme="slate"] :is(.md-header, .md-tabs, .md-nav--primary .md-nav__title[for="__drawer"]) {
+    background-color: var(--md-default-bg-color);
+    box-shadow: none;
+}
+body[data-md-color-scheme="slate"] .md-tabs {
+    border-bottom: 1px solid var(--tm-dark-rule);
+}
+body[data-md-color-scheme="slate"] .md-nav__source {
+    background-color: var(--tm-dark-surface);
+}
+body[data-md-color-scheme="slate"] .md-search__form {
+    background-color: var(--tm-dark-surface);
+}
+@media (max-width: 76.234375em) {
+    body[data-md-color-scheme="slate"] .md-header {
+        border-bottom: 1px solid var(--tm-dark-rule);
+    }
+}
+
+/* Both adjacent icons include 12px of their own spacing: balance the outer gaps. */
+@media (min-width: 60em) {
+    .md-header .md-header__option {
+        margin-inline-end: 12px;
+    }
+    .md-header .md-header__source {
+        margin-inline-start: 12px;
+    }
+    [data-md-toggle="search"]:checked ~ .md-header .md-header__option {
+        margin-inline-end: 0;
+    }
+}
+
+/* Sidebar TOC lives outside .md-typeset; give code spans the same theme-aware treatment. */
+.md-nav--secondary .md-nav__link code {
+    background-color: var(--md-code-bg-color);
+    border-radius: .2em;
+    font-size: .85em;
+    font-variant-ligatures: none;
+    padding: 0 .2941176471em;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+}
+
 :root > * {
     /*!* 背景色 *!*/
     /*--md-code-bg-color: #282a36;*/
@@ -48,7 +134,7 @@
     }
 
     .md-typeset table:not([class]) th {
-        border-bottom: .05rem solid #7E56C2FF;
+        border-bottom: .05rem solid var(--md-default-fg-color--lightest);
     }
 
     .md-typeset table:not([class]) th {

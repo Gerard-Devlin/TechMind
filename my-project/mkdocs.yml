@@ -43,14 +43,14 @@ theme:
     - media: "(prefers-color-scheme: light)"
       scheme: default
       primary: white
-      accent: indigo
+      accent: custom
       toggle:
         icon: material/weather-sunny
         name: Switch to dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: black
-      accent: deep purple
+      accent: custom
       toggle:
         icon: material/weather-night
         name: Switch to light mode
@@ -81,6 +81,9 @@ plugins:
   - git-committers:
       repository: Gerard-Devlin/TechMind
       branch: master
+
+hooks:
+  - hooks/toc_inline_code.py
 
 # Markdown 扩展
 markdown_extensions:
@@ -149,6 +152,7 @@ extra:
 # JavaScript 支持
 extra_javascript:
   - javascripts/landing.js
+  - javascripts/toc.js
   - javascripts/mathjax.js
   - javascripts/katex.js
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
@@ -160,6 +164,7 @@ extra_css:
   - https://unpkg.com/katex@0/dist/katex.min.css
   - stylesheets/extra.css
   - stylesheets/landing.css
+  - stylesheets/toc.css
 
 
 # ---------------------------------------------------------------------------------------------------------
