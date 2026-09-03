@@ -1,55 +1,46 @@
-# 👋 TechMind
+<div align="center">
+  <img src="my-project/docs/assets/images/favicon.png" width="72" alt="TechMind logo">
+  <h1>TechMind</h1>
+  <p><strong>From source code to silicon, from data to intelligence.</strong></p>
+  <p>
+    <a href="https://gerard-devlin.github.io/TechMind/">Read the notes</a> &middot;
+    <a href="https://github.com/Gerard-Devlin/TechMind">Browse the source</a> &middot;
+    <a href="https://github.com/Gerard-Devlin/TechMind/issues">Share feedback</a>
+  </p>
+  <p>
+    <a href="https://github.com/Gerard-Devlin/TechMind/stargazers"><img src="https://img.shields.io/github/stars/Gerard-Devlin/TechMind?style=flat-square&amp;color=e3b341&amp;logo=github&amp;logoColor=white" alt="GitHub stars"></a>
+    <a href="LICENSE"><img src="https://img.shields.io/github/license/Gerard-Devlin/TechMind?style=flat-square&amp;color=0969da" alt="License"></a>
+    <a href="https://github.com/Gerard-Devlin/TechMind/commits/master/"><img src="https://img.shields.io/github/last-commit/Gerard-Devlin/TechMind?style=flat-square&amp;color=8250df" alt="Last commit"></a>
+  </p>
+</div>
 
-<p align="center">
+![TechMind preview](https://github.com/user-attachments/assets/57a93f58-2a6d-40cb-bdf0-c9e3996b4fe8)
 
-![GitHub stars](https://img.shields.io/github/stars/Gerard-Devlin/TechMind?style=for-the-badge&logo=github&labelColor=302D41&color=f4dbd6)
-![GitHub forks](https://img.shields.io/github/forks/Gerard-Devlin/TechMind?style=for-the-badge&logo=github&labelColor=302D41&color=91d7e3)
-![License](https://img.shields.io/github/license/Gerard-Devlin/TechMind?style=for-the-badge&logo=github&labelColor=302D41&color=8aadf4)
-![Last commit](https://img.shields.io/github/last-commit/Gerard-Devlin/TechMind?style=for-the-badge&logo=github&labelColor=302D41&color=c6a0f6)
-![Contributors](https://img.shields.io/github/contributors/Gerard-Devlin/TechMind?style=for-the-badge&logo=github&labelColor=302D41&color=ee99a0)
-![Languages](https://img.shields.io/github/languages/count/Gerard-Devlin/TechMind?style=for-the-badge&logo=github&labelColor=302D41&color=91d7e3)
+## 🧭 About
 
-</p>
+TechMind is my technical notebook: a place to turn scattered facts into a connected understanding of computer science.
 
+The notes begin with programming fundamentals and follow the abstractions in both directions—down toward logic, memory, architecture, and compilers; up toward algorithms, databases, machine learning, and deep learning. Most chapters grow out of a question I encountered while studying or building something, then evolve as my understanding improves.
 
-![TechMind](https://github.com/user-attachments/assets/57a93f58-2a6d-40cb-bdf0-c9e3996b4fe8)
+This is not a finished textbook. It is a living record of how I learn.
 
-Welcome to **Devlin's Technical Blog**! This blog is a collection of insights, tutorials, and guides ranging from
-fundamental computer science concepts to advanced topics in Machine Learning. Whether you're a beginner just starting
-your journey or an advanced learner looking for more in-depth knowledge, there's something here for everyone.
+## ✍️ How these notes are written
 
-## 🧭 Instructions
+- **Start with the idea.** Terminology matters, but intuition comes first.
+- **Make it concrete.** Code, diagrams, formulas, and worked examples turn concepts into tools.
+- **Connect the layers.** A language feature makes more sense when you can trace it through the compiler and into the machine.
+- **Revise in public.** The notes are updated whenever I find a clearer explanation or a better example.
 
-1. **Start with the Basics**: If you're new to computer science, I recommend starting with the foundational topics like
-   data structures, algorithms, and basic programming syntax. These will serve as the building blocks for everything
-   else.
+## 📚 Start reading
 
-2. **Explore Advanced Topics**: After you've got the basics down, dive into more complex subjects such as
-   object-oriented programming, databases, and web development.
+The latest version is available at **[gerard-devlin.github.io/TechMind](https://gerard-devlin.github.io/TechMind/)**.
 
-3. **Machine Learning and AI**: Once you're comfortable with the fundamentals, check out the machine learning section
-   for insights into algorithms, neural networks, and cutting-edge AI technologies.
+Use the navigation to browse by subject, or search for a specific concept. There is no required reading order—start with the question that brought you here and follow the links outward.
 
-## 💻 A CS Beginner Guide
+## 🤝 Contributing
 
-If you're just starting out in computer science, here are some topics you'll want to explore:
+Corrections, clearer explanations, and better examples are always welcome. If something is inaccurate or confusing, open an [issue](https://github.com/Gerard-Devlin/TechMind/issues) or submit a pull request.
 
-- **Introduction to Programming**: Learn basic programming concepts like variables, loops, and functions.
-- **Data Structures**: Get familiar with arrays, linked lists, stacks, queues, and trees.
-- **Algorithms**: Understand how to solve problems efficiently using different algorithms like sorting and searching.
+## 📄 License
 
-## 🧠 Learn from Basic Grammar to Higher-Level Machine Learning Knowledge
-
-This blog is organized to take you from basic programming grammar all the way to advanced machine learning topics:
-
-1. **Basic Programming Grammar**: Understand the syntax of popular programming languages (e.g., Python, JavaScript).
-
-2. **Intermediate Topics**: Once you're comfortable with the basics, dive into object-oriented programming, functional
-   programming, and database management.
-
-3. **Machine Learning**: Explore topics like supervised learning, unsupervised learning, deep learning, and
-   reinforcement learning. I provide tutorials and resources to help you implement machine learning models from scratch.
-
-4. **Advanced Topics**: Get into the weeds with cutting-edge research in AI, neural networks, natural language
-   processing, and more.
-
+Released under the [MIT License](LICENSE).
