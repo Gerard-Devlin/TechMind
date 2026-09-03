@@ -50,6 +50,11 @@ body:has(.tm-landing) :is(.md-header, .md-tabs) {
   color: var(--tm-text);
   box-shadow: none;
 }
+body:has(.tm-landing) .md-tabs { border-bottom: 1px solid var(--tm-rule); }
+
+@media (max-width: 76.234375em) {
+  body:has(.tm-landing) .md-header { border-bottom: 1px solid var(--tm-rule); }
+}
 
 /* Keep Material's primary sidebar available as the native mobile drawer. */
 @media (min-width: 76.25em) {
@@ -83,7 +88,17 @@ body:has(.tm-landing) :is(.md-header, .md-tabs) {
 .tm-pill--primary:hover { opacity: .8; }
 .tm-pill svg { width: 16px; height: 16px; }
 
-.tm-hero { position: relative; max-width: 1440px; margin: 0 auto; padding: 66px 24px 36px; }
+.tm-hero { position: relative; isolation: isolate; overflow: clip; max-width: 1440px; margin: 0 auto; padding: 66px 24px 36px; }
+/* Share the reference's code-themed artwork across desktop and mobile. */
+.tm-hero__art { position: absolute; z-index: 0; inset: 0; pointer-events: none; user-select: none; }
+.tm-hero__ornament { --tm-art-angle: 0deg; --tm-art-speed: -1; position: absolute; transform: translate(-50%, calc(-50% + var(--tm-hero-drift, 0px) * var(--tm-art-speed))) rotate(var(--tm-art-angle)); }
+.tm-hero__ornament img { width: 100%; height: auto; }
+.tm-hero__ornament--star-top { --tm-art-angle: 5deg; left: 59%; top: 12px; width: 68px; }
+.tm-hero__ornament--star-bottom { --tm-art-angle: -3.5deg; --tm-art-speed: 1; left: 87%; top: 84%; width: 76px; }
+.tm-hero__ornament--ascii { --tm-art-angle: 7deg; --tm-art-speed: .7; left: 2%; top: 66%; width: 155px; }
+.tm-hero__ornament--code { --tm-art-angle: 9.74deg; --tm-art-speed: -.5; left: 100%; top: 58%; width: 200px; }
+.tm-hero__ornament--globe { --tm-art-angle: -8deg; left: 85%; top: 42px; width: 96px; }
+.tm-hero__ornament--badge { --tm-art-angle: -26.79deg; left: 15%; top: 44px; width: 170px; }
 .tm-hero__copy { position: relative; z-index: 1; max-width: 900px; margin: 0 auto; text-align: center; }
 .tm-eyebrow { font-size: 14px; font-weight: 500; line-height: 1.4; }
 .tm-hero h1 { max-width: 1000px; margin: 30px auto; font-size: clamp(52px, 6.95vw, 102px); font-weight: 700; line-height: 1; letter-spacing: -.047em; text-wrap: balance; }
@@ -133,12 +148,6 @@ body:has(.tm-landing) :is(.md-header, .md-tabs) {
 .tm-landing .tm-image--light { display: none; }
 body[data-md-color-scheme="default"] .tm-landing .tm-image--light { display: block; }
 body[data-md-color-scheme="default"] .tm-landing .tm-image--dark { display: none; }
-.tm-showcase__decor { position: absolute; inset: 0; pointer-events: none; opacity: calc(1 - var(--tm-shift)); transform: scale(calc(1 - var(--tm-shift) * .04)); }
-.tm-decor { position: absolute; height: auto; object-fit: contain; transform: translateY(var(--tm-parallax, 0px)); }
-.tm-decor--scribble { top: 6%; left: 1%; width: 20%; }
-.tm-decor--flower { top: 12%; right: 4%; width: 15%; }
-.tm-decor--tomato { bottom: 4%; left: 5%; width: 13%; }
-.tm-decor--shape { bottom: 7%; right: 2%; width: 15%; }
 .tm-showcase__steps { position: absolute; z-index: 3; left: max(6%, calc(50% - 560px)); top: 50%; width: min(25%, 312px); opacity: var(--tm-step-opacity); transform: translate(calc((1 - var(--tm-shift)) * -60px), -50%); }
 .tm-showcase:not([data-enhanced]) .tm-showcase__steps { display: none; }
 .tm-showcase__step { --tm-step-progress: 0; position: relative; border-top: 1px solid var(--tm-rule); }
@@ -245,9 +254,15 @@ body[data-md-color-scheme="default"] .tm-landing .tm-image--dark { display: none
 
 /* The reference uses a swipeable artwork presentation below desktop size. */
 @media (max-width: 1023px) {
+  .tm-hero__art { bottom: auto; height: clamp(310px, 46vw, 460px); }
+  .tm-hero__ornament--star-top { --tm-art-angle: 5deg; left: 58.73%; top: 8px; width: 8.015%; }
+  .tm-hero__ornament--star-bottom { --tm-art-angle: -3.5deg; --tm-art-speed: 1; left: 92%; top: 84%; width: 8.866%; }
+  .tm-hero__ornament--ascii { --tm-art-angle: 7deg; --tm-art-speed: .7; left: -1.69%; top: 78%; width: 17%; }
+  .tm-hero__ornament--code { --tm-art-angle: 9.74deg; --tm-art-speed: -.5; left: 105.82%; top: 44%; width: 23.451%; }
+  .tm-hero__ornament--globe { --tm-art-angle: -8deg; left: 81.3%; top: 46px; width: 12.117%; }
+  .tm-hero__ornament--badge { --tm-art-angle: -26.79deg; left: 17.67%; top: 40px; width: 21.695%; }
   .tm-showcase, .tm-showcase[data-enhanced] { height: auto; margin-block: 24px 70px; }
   .tm-showcase__sticky { position: relative; top: auto; height: auto; min-height: 0; overflow: visible; }
-  .tm-showcase__decor { display: none; }
   .tm-showcase__art { position: relative; top: auto; left: auto; display: flex; gap: 24px; width: 100%; aspect-ratio: auto; padding: 12px 32px 24px; overflow-x: auto; overscroll-behavior-x: contain; scroll-snap-type: x mandatory; scroll-padding-inline: 32px; scrollbar-width: none; transform: none; filter: none; }
   .tm-showcase__art::-webkit-scrollbar { display: none; }
   .tm-showcase__frame, .tm-showcase__frame.is-past { position: relative; flex: 0 0 calc(100vw - 64px); aspect-ratio: 2562 / 1642; opacity: 1; transform: none; scroll-snap-align: start; }
@@ -256,10 +271,14 @@ body[data-md-color-scheme="default"] .tm-landing .tm-image--dark { display: none
   .tm-showcase__detail p { margin-bottom: 14px; }
 }
 
+@media (min-width: 761px) and (max-width: 1023px) {
+  .tm-hero { padding-top: 96px; }
+}
+
 @media (max-width: 760px) {
   .tm-landing { --tm-card-gap: 24px; }
   .tm-brand { font-size: 22px; }
-  .tm-hero { padding-top: 64px; }
+  .tm-hero { padding-top: 84px; }
   .tm-hero h1 { max-width: 620px; font-size: 56px; }
   .tm-hero__description { max-width: 550px; font-size: 16px; }
   .tm-intro { padding-top: 50px; }
@@ -292,7 +311,7 @@ body[data-md-color-scheme="default"] .tm-landing .tm-image--dark { display: none
 }
 
 @media (max-width: 450px) {
-  .tm-hero { padding-top: 52px; }
+  .tm-hero { padding-top: 84px; }
   .tm-hero h1 { max-width: 350px; margin: 28px auto 24px; font-size: 44px; line-height: 1.02; letter-spacing: -.055em; }
   .tm-carousel__track .tm-card__body { padding: 28px; }
   .tm-actions { gap: 15px; margin-top: 30px; }
@@ -303,7 +322,6 @@ body[data-md-color-scheme="default"] .tm-landing .tm-image--dark { display: none
 
 @media (prefers-reduced-motion: reduce) {
   .tm-landing *, .tm-landing *::before, .tm-landing *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
-  .tm-decor { transform: none; }
 }
 
 @media (min-width: 1024px) and (prefers-reduced-motion: reduce) {

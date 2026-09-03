@@ -17,9 +17,24 @@
 </a>
 {%- endmacro %}
 
+{% macro hero_ornament(name, light, dark) -%}
+<div class="tm-hero__ornament tm-hero__ornament--{{ name }}">
+  <img class="tm-image--light" src="{{ ('assets/landing/' ~ light) | url }}" alt="" loading="lazy" decoding="async">
+  <img class="tm-image--dark" src="{{ ('assets/landing/' ~ dark) | url }}" alt="" loading="lazy" decoding="async">
+</div>
+{%- endmacro %}
+
 {% block container %}
 <div class="md-content tm-landing" data-md-component="content" id="top">
   <section class="tm-hero" id="tm-content" aria-labelledby="hero-title">
+    <div class="tm-hero__art" aria-hidden="true">
+      {{ hero_ornament('star-top', 'mobile-star-large-light.svg', 'mobile-star-large-dark.svg') }}
+      {{ hero_ornament('star-bottom', 'mobile-star-small-light.svg', 'mobile-star-small-dark.svg') }}
+      {{ hero_ornament('ascii', 'mobile-ascii-light.webp', 'overview-ascii.webp') }}
+      {{ hero_ornament('code', 'mobile-code-light.svg', 'mobile-code-dark.svg') }}
+      {{ hero_ornament('globe', 'mobile-globe-light.svg', 'mobile-globe-dark.svg') }}
+      {{ hero_ornament('badge', 'mobile-badge-light.webp', 'mobile-badge-dark.webp') }}
+    </div>
     <div class="tm-hero__copy">
       <h1 id="hero-title"><span>Computer Science,</span> <span class="tm-title-accent"><span>Simpl</span><span>ified</span></span></h1>
       <p class="tm-hero__description">TechMind is an open-source resource designed to help you <strong>understand</strong>, <strong>explore</strong>, and <strong>master</strong> essential computer science concepts with ease. From computing languages to deep learning, we make learning accessible for all.</p>
@@ -32,12 +47,6 @@
 
   <section class="tm-showcase" aria-label="Understand, explore, and master computer science" data-tm-showcase>
     <div class="tm-showcase__sticky">
-      <div class="tm-showcase__decor" aria-hidden="true">
-      <img class="tm-decor tm-decor--scribble" src="{{ 'assets/landing/overview-scribble.webp' | url }}" alt="" width="624" height="354" fetchpriority="high">
-      <img class="tm-decor tm-decor--flower" src="{{ 'assets/landing/overview-flower.webp' | url }}" alt="" width="408" height="432">
-      <img class="tm-decor tm-decor--tomato" src="{{ 'assets/landing/overview-tomato.webp' | url }}" alt="" width="465" height="465">
-      <img class="tm-decor tm-decor--shape" src="{{ 'assets/landing/overview-shape.svg' | url }}" alt="" width="400" height="400">
-      </div>
       <div class="tm-showcase__art" aria-hidden="true">
         <div class="tm-showcase__frame is-active" data-tm-frame="0">
           <img class="tm-image--dark" src="{{ 'assets/landing/overview-hero.webp' | url }}" alt="" width="1920" height="1231" fetchpriority="high" decoding="async">
