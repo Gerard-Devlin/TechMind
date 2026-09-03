@@ -1,0 +1,204 @@
+/* Desktop-only shadcn-style single-row header. */
+.tm-header-nav { display: none; }
+
+/* shadcn's split-circle mode glyph, shared by both palette states. */
+.md-header .md-header__option .md-header__button svg { display: none; }
+.md-header .md-header__option .md-header__button::before {
+  background: currentColor;
+  content: "";
+  display: block;
+  height: 20px;
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0-18 0'/%3E%3Cpath d='M12 3v18'/%3E%3Cpath d='m12 9 4.65-4.65'/%3E%3Cpath d='m12 14.3 7.37-7.37'/%3E%3Cpath d='m12 19.6 8.85-8.85'/%3E%3C/svg%3E") center / contain no-repeat;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0-18 0'/%3E%3Cpath d='M12 3v18'/%3E%3Cpath d='m12 9 4.65-4.65'/%3E%3Cpath d='m12 14.3 7.37-7.37'/%3E%3Cpath d='m12 19.6 8.85-8.85'/%3E%3C/svg%3E") center / contain no-repeat;
+  width: 20px;
+}
+
+@media (min-width: 60em) {
+  .md-header {
+    background: var(--md-default-bg-color);
+    border: 0 !important;
+    box-shadow: none !important;
+    color: var(--md-default-fg-color);
+  }
+  .md-header .md-header__inner {
+    gap: 0;
+    max-width: 1440px;
+    min-height: 56px;
+    padding-inline: 24px;
+  }
+  .md-header .md-logo {
+    color: inherit;
+    display: block;
+    margin: 0;
+    padding: 8px;
+  }
+  .md-header label[for="__drawer"] { display: none; }
+  .md-header .md-header__title {
+    flex: 0 0 96px;
+    font-family: "TechMind Geist", var(--md-text-font-family);
+    font-size: 16px;
+    font-weight: 600;
+    height: 32px;
+    line-height: 32px;
+    margin: 0 0 0 8px;
+    max-width: 96px;
+    width: 96px;
+  }
+  .md-header .md-header__topic:first-child {
+    opacity: 1;
+    pointer-events: auto;
+    transform: none;
+  }
+  .md-header .md-header__topic + .md-header__topic { display: none; }
+  .tm-header-nav {
+    align-items: center;
+    display: flex;
+    flex: 1 1 auto;
+    gap: 0;
+    margin-inline: 18px 12px;
+    min-width: 0;
+  }
+  .tm-header-nav__link {
+    border-radius: 7px;
+    color: var(--md-default-fg-color--light);
+    flex: none;
+    font: 500 14px/20px "TechMind Geist", var(--md-text-font-family);
+    padding: 6px 5px;
+    text-decoration: none;
+    transition: background-color .15s, color .15s;
+  }
+  .tm-header-nav__link:is(:hover, :focus-visible),
+  .tm-header-nav__link.is-active {
+    color: var(--md-default-fg-color);
+  }
+  .tm-header-nav__link:hover { background: var(--md-code-bg-color); }
+  .tm-header-nav__link:focus-visible { outline: 2px solid var(--md-default-fg-color--light); outline-offset: 1px; }
+
+  /* The original second navigation row is represented inline above. */
+  .md-tabs { display: none !important; border: 0 !important; }
+
+  .md-header .md-header__source {
+    margin-inline: 12px 4px;
+    max-width: 40px;
+    width: 40px;
+  }
+  .md-header .md-source {
+    border-radius: 8px;
+    color: inherit;
+    height: 32px;
+    transition: background-color .15s;
+  }
+  .md-header .md-source:hover { background: var(--md-code-bg-color); opacity: 1; }
+  .md-header .md-source__icon { height: 32px; width: 40px; }
+  .md-header .md-source__icon svg { margin: 4px 8px; }
+  .md-header .md-source__repository { display: none; }
+
+  .md-header .md-header__option {
+    flex: none;
+    margin: 0;
+  }
+  .md-header .md-header__option .md-header__button {
+    align-items: center;
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: inherit;
+    height: 32px;
+    justify-content: center;
+    margin: 0;
+    padding: 8px;
+    transition: background-color .15s;
+    width: 32px;
+  }
+  .md-header .md-header__option .md-header__button:hover { background: var(--md-code-bg-color); }
+  .md-header .md-header__option .md-header__button svg {
+    fill: none;
+    height: 18px;
+    stroke: currentColor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 2;
+    width: 18px;
+  }
+  .md-header .md-header__option .md-header__button::before {
+    height: 18px;
+    width: 18px;
+  }
+}
+
+@media (min-width: 76.25em) {
+  .md-header .md-header__source,
+  .md-header .md-header__option {
+    align-items: center;
+    display: flex;
+  }
+  .md-header .md-header__source::before,
+  .md-header .md-header__option::before {
+    background: var(--md-default-fg-color--lightest);
+    content: "";
+    display: inline-block;
+    flex: 0 0 1px;
+    height: 16px;
+    width: 1px;
+  }
+  .md-header .md-header__source {
+    gap: 12px;
+    margin-inline: 12px 0;
+    max-width: none;
+    width: auto;
+  }
+  .md-header .md-header__option {
+    gap: 12px;
+    margin-inline-start: 12px;
+  }
+  .md-header .md-source {
+    align-items: center;
+    box-sizing: border-box;
+    display: inline-flex;
+    gap: 8px;
+    padding-inline: 10px;
+  }
+  .md-header .md-source__icon {
+    flex: 0 0 24px;
+    height: 24px;
+    width: 24px;
+  }
+  .md-header .md-source__icon svg {
+    height: 24px;
+    margin: 0;
+    width: 24px;
+  }
+  .md-header .md-source__repository {
+    display: none;
+    font: 500 13px/20px "TechMind Geist", var(--md-text-font-family);
+    margin: 0;
+    max-width: none;
+    padding: 0 !important;
+    vertical-align: middle;
+  }
+  .md-header .md-source__icon + .md-source__repository {
+    margin-inline-start: 0;
+    padding-inline-start: 0 !important;
+  }
+  .md-header .md-source__facts { display: none; }
+}
+
+@media (max-width: 59.984375em) {
+  .md-header {
+    border: 0 !important;
+    box-shadow: none !important;
+  }
+  .md-header .md-logo { order: 1; }
+  .md-header label[for="__drawer"] { order: 2; }
+  .md-header .md-header__title { order: 3; }
+  .md-header .md-header__option { order: 4; }
+  .md-header .md-header__option .md-header__button svg {
+    fill: none;
+    stroke: currentColor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 2;
+  }
+  .md-header label[for="__search"] { order: 5; }
+  .md-header .tm-search { order: 6; }
+  .md-header .md-header__source { order: 7; }
+}
