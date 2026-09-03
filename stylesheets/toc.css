@@ -1,0 +1,104 @@
+/* The reference's quiet rail navigation, scoped to the desktop/right TOC only. */
+.md-sidebar--secondary {
+    --tm-toc-muted: #737373;
+    --tm-toc-current: #202020;
+    --tm-toc-rail: #e5e5e5;
+    --tm-toc-marker: #171717;
+}
+
+body[data-md-color-scheme="slate"] .md-sidebar--secondary {
+    --tm-toc-muted: #8f8f8f;
+    --tm-toc-current: #dcdcdc;
+    --tm-toc-rail: #303030;
+    --tm-toc-marker: #f3f3f3;
+}
+
+.md-sidebar--secondary .md-nav {
+    margin: 0;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.md-sidebar--secondary .md-nav--secondary > .md-nav__title {
+    display: none;
+}
+
+.md-sidebar--secondary .md-nav--secondary > .md-nav__list {
+    position: relative;
+    margin: 0;
+    padding: 0 4px 0 20px;
+}
+
+.md-sidebar--secondary .md-nav--secondary > .md-nav__list::before,
+.md-sidebar--secondary .md-nav--secondary > .md-nav__list::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2px;
+    pointer-events: none;
+    content: "";
+}
+
+.md-sidebar--secondary .md-nav--secondary > .md-nav__list::before {
+    bottom: 0;
+    background: var(--tm-toc-rail);
+}
+
+.md-sidebar--secondary .md-nav--secondary > .md-nav__list::after {
+    height: var(--tm-toc-height, 20px);
+    background: var(--tm-toc-marker);
+    opacity: 0;
+    transform: translateY(var(--tm-toc-offset, 0px));
+    transition: transform 200ms ease-out, height 200ms ease-out;
+}
+
+.md-sidebar--secondary .md-nav--secondary > .md-nav__list[data-tm-toc-ready]::after {
+    opacity: 1;
+}
+
+.md-sidebar--secondary .md-nav__item + .md-nav__item {
+    margin-top: 12px;
+}
+
+.md-sidebar--secondary .md-nav__item > .md-nav > .md-nav__list {
+    margin: 12px 0 0;
+    padding: 0 0 0 12px;
+}
+
+.md-sidebar--secondary .md-nav__item > .md-nav__link {
+    display: block;
+    margin: 0;
+    padding: 0;
+    color: var(--tm-toc-muted);
+    font-weight: 400;
+    line-height: 20px;
+    transition: color 150ms ease;
+}
+
+.md-sidebar--secondary .md-nav__link .md-ellipsis {
+    display: block;
+    overflow: visible;
+    white-space: normal;
+    overflow-wrap: anywhere;
+}
+
+.md-sidebar--secondary .md-nav__link:is(:hover, :focus-visible, .focus-visible, .md-nav__link--active, [aria-current="location"]) {
+    color: var(--tm-toc-current);
+}
+
+.md-sidebar--secondary .md-nav__item > .md-nav__link code {
+    color: inherit;
+    background-color: var(--md-code-bg-color);
+}
+
+.md-sidebar--secondary .md-nav__link:is(:focus-visible, .focus-visible) {
+    outline: 2px solid var(--tm-toc-current);
+    outline-offset: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .md-sidebar--secondary .md-nav--secondary > .md-nav__list::after,
+    .md-sidebar--secondary .md-nav__link {
+        transition: none;
+    }
+}
