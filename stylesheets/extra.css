@@ -7,6 +7,58 @@ body[data-md-color-scheme="default"][data-md-color-primary] {
     --md-typeset-a-color: #333;
 }
 
+/* Keep rendered Mermaid diagrams centered without letting wide graphs overflow. */
+.md-typeset .mermaid {
+    text-align: center;
+}
+
+.md-typeset .mermaid > svg,
+.md-typeset .mermaid > div > svg {
+    display: block;
+    height: auto;
+    margin-inline: auto;
+    max-width: 100%;
+}
+
+/* Display equations stay inside the article; inline equations scroll only when
+   the rendered formula is genuinely wider than the remaining line. */
+.md-typeset div.arithmatex,
+.md-typeset .katex-display,
+.md-typeset mjx-container[display="true"],
+.md-typeset span.arithmatex.tm-math-overflow {
+    box-sizing: border-box;
+    max-width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    overscroll-behavior-inline: contain;
+    -webkit-overflow-scrolling: touch;
+}
+
+.md-typeset span.arithmatex {
+    vertical-align: middle;
+}
+
+.md-typeset span.arithmatex.tm-math-overflow {
+    display: inline-block;
+}
+
+@media (max-width: 59.984375em) {
+  .md-typeset div.arithmatex,
+  .md-typeset .katex-display,
+  .md-typeset mjx-container[display="true"],
+  .md-typeset span.arithmatex.tm-math-overflow {
+      padding-block-end: .15em;
+      scrollbar-width: none;
+  }
+
+  .md-typeset div.arithmatex::-webkit-scrollbar,
+  .md-typeset .katex-display::-webkit-scrollbar,
+  .md-typeset mjx-container[display="true"]::-webkit-scrollbar,
+  .md-typeset span.arithmatex.tm-math-overflow::-webkit-scrollbar {
+      display: none;
+  }
+}
+
 /* A shared, neutral dark palette for documentation and the landing page. */
 body[data-md-color-scheme="slate"][data-md-color-primary] {
     --tm-dark-bg: #171717;
