@@ -48,13 +48,15 @@
       const artwork = showcase.querySelector('.tm-showcase__art');
       const steps = [...showcase.querySelectorAll('[data-tm-step]')];
       const frames = [...showcase.querySelectorAll('[data-tm-frame]')];
-      const decorations = [...showcase.querySelectorAll('.tm-decor')];
       const stepList = showcase.querySelector('.tm-showcase__steps');
+      const hero = home.querySelector('.tm-hero');
       let active = -1;
       let raf = 0;
       let start = 0;
       let distance = 1;
       let stickyTop = 80;
+      let heroStart = 0;
+      let heroHeight = 1;
       showcase.dataset.enhanced = 'true';
 
       function activate(index) {
@@ -72,6 +74,8 @@
 
       function render() {
         raf = 0;
+        const drift = reduced.matches ? 0 : clamp((scrollY - heroStart) / heroHeight) * 24;
+        hero.style.setProperty('--tm-hero-drift', `${drift.toFixed(2)}px`);
         if (!desktop.matches) return;
         if (reduced.matches) {
           showcase.style.setProperty('--tm-shift', '1');
@@ -89,7 +93,6 @@
         showcase.style.setProperty('--tm-step-opacity', clamp((shift - .4) / .6).toFixed(4));
         // Invisible copy must not intercept clicks or keyboard focus during the introduction.
         stepList.inert = shift < .75;
-        decorations.forEach((image, i) => image.style.setProperty('--tm-parallax', `${reduced.matches ? 0 : entrance * (36 + i * 6)}px`));
         activate(index);
         steps.forEach((step, i) => step.style.setProperty('--tm-step-progress', String(clamp(sequence - i))));
       }
@@ -100,6 +103,8 @@
 
       function measure() {
         showcase.dataset.scrollMotion = String(desktop.matches && !reduced.matches);
+        heroStart = hero.getBoundingClientRect().top + scrollY;
+        heroHeight = Math.max(1, hero.offsetHeight);
         stickyTop = parseFloat(getComputedStyle(showcase).getPropertyValue('--tm-sticky-top')) || 80;
         start = showcase.getBoundingClientRect().top + scrollY - stickyTop;
         distance = Math.max(1, showcase.offsetHeight - sticky.offsetHeight);
@@ -108,6 +113,7 @@
         else {
           const width = frames[0].getBoundingClientRect().width + 24;
           activate(clamp(Math.round(artwork.scrollLeft / width), 0, 2));
+          schedule();
         }
       }
 
@@ -134,7 +140,7 @@
       desktop.addEventListener('change', measure, { signal });
       reduced.addEventListener('change', measure, { signal });
       const observer = new ResizeObserver(measure);
-      observer.observe(home.querySelector('.tm-hero'));
+      observer.observe(hero);
       cleanups.push(() => { observer.disconnect(); cancelAnimationFrame(raf); });
       measure();
     }

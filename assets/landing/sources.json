@@ -4,6 +4,50 @@
   "note": "Third-party assets reused at the site owner's request. Source attribution is not a license grant; review rights before public or commercial redistribution.",
   "assets": [
     {
+      "file": "mobile-star-large-dark.svg",
+      "source": "https://images.ctfassets.net/8su2tbn87fck/46wiuW4Q8b55VuW7kiOlJc/c0a982d9f81d12b9a7799ca569c49f4a/star-large-dark.svg"
+    },
+    {
+      "file": "mobile-star-small-dark.svg",
+      "source": "https://images.ctfassets.net/8su2tbn87fck/7zYKWwz8dQFLsiaAuHEETj/5e36787f1ec04232ca5f6428c1c94804/star-small-dark.svg"
+    },
+    {
+      "file": "mobile-star-large-light.svg",
+      "source": "https://images.ctfassets.net/8su2tbn87fck/57FeBcFXgPOKDCxMLOK6zi/971fb95b0e3429e3b8fd00392633f022/star-large-light.svg"
+    },
+    {
+      "file": "mobile-star-small-light.svg",
+      "source": "https://images.ctfassets.net/8su2tbn87fck/2VZNskwrVw1zCRzdRqkuIv/2f53ce7519e9fd076da0d9a15e3afaf7/star-small-light.svg"
+    },
+    {
+      "file": "mobile-ascii-light.webp",
+      "source": "https://images.ctfassets.net/8su2tbn87fck/OfeFsbDMqSO7SofA1BTvr/ba2c0d1722bd19740badd42f93f0bd03/merge-code-ascii.png?w=427&q=80&fm=webp"
+    },
+    {
+      "file": "mobile-code-light.svg",
+      "source": "https://images.ctfassets.net/8su2tbn87fck/1Yy4ZuiECCNqCKagaz9c26/a30982bb64f73821a006370effb35b5b/code-light.svg"
+    },
+    {
+      "file": "mobile-code-dark.svg",
+      "source": "https://images.ctfassets.net/8su2tbn87fck/5H0EGDA81UgIUunjp5MXVj/76231f7f635b81c67ea9a4d616c33626/code-dark.svg"
+    },
+    {
+      "file": "mobile-globe-light.svg",
+      "source": "https://images.ctfassets.net/8su2tbn87fck/1yFnBTm7luLXge4TIWSiyg/6622540216e02d5f4c6973a8b38a4a51/globe-light.svg"
+    },
+    {
+      "file": "mobile-globe-dark.svg",
+      "source": "https://images.ctfassets.net/8su2tbn87fck/4XfA41RZOR6JBV7EZRf7Kb/92b9b8e2ddc657b5ae81da8eb67736ff/globe-dark.svg"
+    },
+    {
+      "file": "mobile-badge-light.webp",
+      "source": "https://images.ctfassets.net/8su2tbn87fck/21Euyi6IPikyjAULhHdeLa/cbd84266d64879d0c1a1f4722d262ca1/merge-code-picker.png?w=668&q=80&fm=webp"
+    },
+    {
+      "file": "mobile-badge-dark.webp",
+      "source": "https://images.ctfassets.net/8su2tbn87fck/4gvFeOBuGT6MdYkZXZ7mCa/977dbfe025bc6de087fabe211d9b7e05/merge-code-picker-1.png?w=668&q=80&fm=webp"
+    },
+    {
       "file": "fonts/Caveat-Variable.ttf",
       "source": "https://github.com/google/fonts/blob/main/ofl/caveat/Caveat%5Bwght%5D.ttf",
       "license": "SIL Open Font License 1.1; see fonts/OFL.txt"
