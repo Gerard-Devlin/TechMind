@@ -5,6 +5,14 @@ body[data-md-color-scheme="default"][data-md-color-primary] {
     --md-accent-bg-color: #fff;
     --md-accent-bg-color--light: rgb(255 255 255 / .7);
     --md-typeset-a-color: #333;
+    --tm-table-heading: #171717;
+    --tm-table-text: #525252;
+    --tm-table-rule: rgb(23 23 23 / .16);
+    --tm-quote-bg: #fafafa;
+    --tm-quote-border: #d4d4d4;
+    --tm-quote-shadow: #e5e5e5;
+    --tm-quote-text: #525252;
+    --tm-quote-mark: #dedede;
 }
 
 /* Keep rendered Mermaid diagrams centered without letting wide graphs overflow. */
@@ -91,6 +99,14 @@ body[data-md-color-scheme="slate"][data-md-color-primary] {
     --md-admonition-bg-color: var(--tm-dark-surface);
     --md-footer-bg-color: var(--tm-dark-bg);
     --md-footer-bg-color--dark: var(--tm-dark-bg);
+    --tm-table-heading: #fafafa;
+    --tm-table-text: #bcbcc2;
+    --tm-table-rule: #313135;
+    --tm-quote-bg: var(--tm-dark-bg);
+    --tm-quote-border: #3f3f46;
+    --tm-quote-shadow: #2d2d31;
+    --tm-quote-text: #c4c4ca;
+    --tm-quote-mark: #303036;
 }
 
 /* Documentation footer follows the active light palette instead of staying black. */
@@ -188,30 +204,93 @@ body[data-md-color-scheme="slate"] .md-nav__source {
         font-size: 1.2em;
     }
 
-    /* 表格居中，阴影 */
-
-    .md-typeset table:not([class])  td {
-        width: 50em;
-    }
-
-    .md-typeset table:not([class]) th {
-        border-bottom: .05rem solid var(--md-default-fg-color--lightest);
-    }
-
-    .md-typeset table:not([class]) th {
-        background-color: var(--md-primary-fg-color);
-    }
-
-    .md-typeset__table {
-        margin: 0 auto;
-        display: table;
-        width: 100%;
+    /* Quiet, article-like tables: typography and hairlines do the structure. */
+    .md-typeset .md-typeset__table {
+        display: block;
+        margin: 1.1rem .6rem;
+        max-width: calc(100% - 1.2rem);
+        overflow-x: auto;
+        overscroll-behavior-inline: contain;
+        padding: 0;
+        scrollbar-width: thin;
+        width: calc(100% - 1.2rem);
+        -webkit-overflow-scrolling: touch;
     }
 
     .md-typeset table:not([class]) {
-        border-radius: .5em;
-        border: var(--md-default-bg-color);
-        box-shadow: var(--md-shadow-z2);
+        background: transparent;
+        border: 0;
+        border-collapse: collapse;
+        border-radius: 0;
+        box-shadow: none;
+        display: table;
+        font-size: .7rem;
+        line-height: 1.7;
+        margin: 0;
+        min-width: 100%;
+        overflow: visible;
+        width: 100%;
+    }
+
+    .md-typeset table:not([class]) :is(th, td) {
+        background: transparent;
+        border: 0;
+        border-bottom: 1px solid var(--tm-table-rule);
+        padding: .4rem .4rem .4rem 0;
+        text-align: start;
+        vertical-align: middle;
+    }
+
+    .md-typeset table:not([class]) :is(th, td):last-child {
+        padding-inline-end: 0;
+    }
+
+    .md-typeset table:not([class]) th {
+        color: var(--tm-table-heading);
+        font-weight: 600;
+    }
+
+    .md-typeset table:not([class]) td {
+        color: var(--tm-table-text);
+    }
+
+    .md-typeset table:not([class]) tbody tr:last-child td {
+        border-bottom: 0;
+    }
+
+    /* Framed pull quotes with a quiet offset base and oversized closing mark. */
+    .md-typeset blockquote {
+        background: var(--tm-quote-bg);
+        border: 1px solid var(--tm-quote-border);
+        border-radius: .55rem;
+        box-shadow: 0 .22rem 0 0 var(--tm-quote-shadow);
+        color: var(--tm-quote-text);
+        font-style: normal;
+        margin: 1.4rem 0;
+        overflow: hidden;
+        padding: .95rem 3.4rem .95rem 1.2rem;
+        position: relative;
+    }
+
+    .md-typeset blockquote::after {
+        color: var(--tm-quote-mark);
+        content: "”";
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: 5.2rem;
+        font-weight: 700;
+        inset-inline-end: .7rem;
+        line-height: 1;
+        pointer-events: none;
+        position: absolute;
+        top: -.75rem;
+    }
+
+    .md-typeset blockquote > :first-child {
+        margin-top: 0;
+    }
+
+    .md-typeset blockquote > :last-child {
+        margin-bottom: 0;
     }
 
     /* 图片居中 */
