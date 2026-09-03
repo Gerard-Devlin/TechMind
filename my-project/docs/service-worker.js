@@ -1,4 +1,4 @@
-const CACHE_VERSION = "techmind-v1";
+const CACHE_VERSION = "techmind-v2";
 const PAGE_CACHE = `${CACHE_VERSION}-pages`;
 const ASSET_CACHE = `${CACHE_VERSION}-assets`;
 const SITE_ROOT = new URL("./", self.registration.scope);
@@ -37,6 +37,10 @@ self.addEventListener("fetch", event => {
 
   const url = new URL(request.url);
   if (url.origin !== self.location.origin || !url.pathname.startsWith(SITE_ROOT.pathname)) return;
+
+  // Media elements rely on Range requests. Caching a partial 206 response as a
+  // normal asset can leave subsequent reloads with an unusable, black video.
+  if (request.headers.has("range") || request.destination === "video" || request.destination === "audio") return;
 
   if (request.mode === "navigate") {
     event.respondWith(networkFirstPage(request));

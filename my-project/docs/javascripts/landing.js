@@ -22,6 +22,12 @@
       let finished = false;
       let observer;
 
+      introFrame.classList.remove('is-video-ready', 'is-video-complete');
+
+      const reveal = () => {
+        if (!finished) introFrame.classList.add('is-video-ready');
+      };
+
       const finish = () => {
         if (finished) return;
         finished = true;
@@ -42,11 +48,15 @@
         playback?.catch(finish);
       };
 
+      introVideo.addEventListener('loadeddata', reveal, { signal });
+      introVideo.addEventListener('playing', reveal, { signal });
       introVideo.addEventListener('ended', finish, { once: true, signal });
       introVideo.addEventListener('error', finish, { once: true, signal });
       reduced.addEventListener('change', () => {
         if (reduced.matches) finish();
       }, { signal });
+
+      if (introVideo.readyState >= 2) reveal();
 
       if (reduced.matches) finish();
       else {

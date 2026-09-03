@@ -153,12 +153,13 @@ body:has(.tm-landing) .md-tabs { border-bottom: 1px solid var(--tm-rule); }
   width: 100%;
   height: 100%;
   border-radius: inherit;
-  background: #050505;
+  background: transparent;
   object-fit: cover;
-  opacity: 1;
+  opacity: 0;
   pointer-events: none;
   transition: opacity 480ms ease, visibility 0s linear 480ms;
 }
+.tm-showcase__frame--intro.is-video-ready .tm-showcase__intro-video { opacity: 1; }
 .tm-showcase__frame--intro.is-video-complete .tm-showcase__intro-video { visibility: hidden; opacity: 0; }
 .tm-landing .tm-image--light { display: none; }
 body[data-md-color-scheme="default"] .tm-landing .tm-image--light { display: block; }
