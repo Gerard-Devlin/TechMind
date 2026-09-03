@@ -1,0 +1,12 @@
+<!-- Elements added to main will be displayed on all pages -->
+{% extends "base.html" %}
+
+{% block extrahead %}
+  {{ super() }}
+  <link rel="manifest" href="{{ 'manifest.webmanifest' | url }}">
+  <link rel="apple-touch-icon" href="{{ 'assets/images/pwa/icon-192.png' | url }}">
+  <meta name="application-name" content="TechMind">
+  <meta name="apple-mobile-web-app-title" content="TechMind">
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0a0a0a" media="(prefers-color-scheme: dark)">
+{% endblock %}
