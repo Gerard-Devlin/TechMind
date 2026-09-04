@@ -157,7 +157,6 @@ int main() {
 ??? example "凑硬币"
     ```c++
     #include <stdio.h>
-    ```
 
     int main() {
         int target;

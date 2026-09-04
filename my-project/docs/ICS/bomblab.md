@@ -22,7 +22,7 @@ int main(int argc, char *argv[]){
 
 首先让我们来**反编译**一下整个 bomb 这个二进制程序：
 
-``` bash
+```bash
 objdump -d bomb > bomb.asm
 ```
 
