@@ -200,7 +200,7 @@ nav:
       - 6 、集合与字典: Python/6 、集合与字典.md
       - 7 、面向对象: Python/7 、面向对象.md
 
-  - DSA:
+  - Data Structures & Algorithms:
       - 1 、概述: DSA/1 、概述.md
       - 2 、输入输出: DSA/2 、输入输出.md
       - 3 、链表: DSA/3 、链表.md
@@ -233,7 +233,7 @@ nav:
       - 20 、散列查找: DSA/20 、散列查找.md
       - 21 、双指针: DSA/21 、双指针.md
 
-  - PC:
+  - Competitive Programming:
       - 1 、常用模板: PC/1 、常用模板.md
       - 2 、字符串算法: PC/2 、字符串算法.md
       - 3 、图论: PC/3 、图论.md
@@ -242,7 +242,7 @@ nav:
       - 6 、数据结构: PC/6 、数据结构.md
 
 
-  - DLD:
+  - Digital Logic & Design:
       - 1 、数字逻辑基础: DLD/1 、数字逻辑基础.md
       - 2 、组合逻辑电路: DLD/2 、组合逻辑电路.md
       - 3 、触发器: DLD/3 、触发器.md
@@ -250,7 +250,7 @@ nav:
       - 5 、常用集成时序逻辑器件: DLD/5 、常用集成时序逻辑器件.md
       - 6 、集成逻辑门: DLD/6 、集成逻辑门.md
 
-  - DBS:
+  - Database Systems:
       - 1 、关系模型与SQL: DBS/1 、关系模型与SQL.md
       - 2 、存储与索引: DBS/2 、存储与索引.md
       - 3 、缓冲区管理: DBS/3 、缓冲区管理.md
@@ -267,7 +267,7 @@ nav:
   #      - Lab:
   #          - bomblab: ICS/bomblab.md
 
-  - COA:
+  - Computer Organization and Architecture:
       - 0 、计算机系统概述: COA/0 、计算机系统概述.md
       - 1 、数字表示: COA/1 、数字表示.md
       - 2 、C语言与内存: COA/2 、C语言与内存.md
@@ -286,7 +286,7 @@ nav:
       - 3 、基础算法: Compilers/3 、基础算法.md
 
 
-  - ML&DL:
+  - Machine Learning & Deep Learning:
       - ML:
           - 1 、监督学习: ML&DL/ML/1 、监督学习.md
           - 2 、基础算法: ML&DL/ML/2 、基础算法.md

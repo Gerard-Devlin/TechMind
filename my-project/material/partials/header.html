@@ -4,7 +4,7 @@
   {% if nav_item.children %}
     {{ nav_link(nav_item.children | first, ref) }}
   {% else %}
-    <a href="{{ nav_item.url | url }}" class="tm-header-nav__link{% if ref.active %} is-active{% endif %}">{{ ref.title }}</a>
+    <a href="{{ nav_item.url | url }}" class="tm-header-nav__link{% if ref.active %} is-active{% endif %}">{{ config.extra.start_course_short_names.get(ref.title, ref.title) }}</a>
   {% endif %}
 {%- endmacro %}
 {% set class = "md-header" %}

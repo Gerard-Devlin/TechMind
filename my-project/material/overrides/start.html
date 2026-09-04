@@ -2,35 +2,30 @@
 
 {% set course_data = {
   'C': {
-    'title': 'C',
     'description': 'Values, functions, arrays, pointers, and memory.',
     'category': 'Programming',
     'source': 'assets/start/courses/c.webp',
     'local': true
   },
   'Python': {
-    'title': 'Python',
     'description': 'Control flow, collections, objects, and practical plotting.',
     'category': 'Programming',
     'source': 'assets/start/courses/python.webp',
     'local': true
   },
   'DSA': {
-    'title': 'Data Structures & Algorithms',
     'description': 'Trees, graphs, sorting, search, and dynamic programming.',
     'category': 'Algorithms',
     'source': 'assets/start/courses/dsa.webp',
     'local': true
   },
   'PC': {
-    'title': 'Competitive Programming',
     'description': 'Contest-ready templates for strings, graphs, flow, mathematics, and data structures.',
     'category': 'Algorithms',
     'source': 'assets/start/courses/pc.webp',
     'local': true
   },
   'DLD': {
-    'title': 'Digital Logic & Design',
     'description': 'Gates, Boolean algebra, combinational logic, and sequential circuits.',
     'category': 'Hardware',
     'source': 'assets/start/electricity.mp4',
@@ -38,42 +33,36 @@
     'local': true
   },
   'DBS': {
-    'title': 'Database Systems',
     'description': 'Relational models, SQL, storage, indexing, buffering, and relational algebra.',
     'category': 'Data',
     'source': 'assets/start/courses/dbs.webp',
     'local': true
   },
   'COA': {
-    'title': 'Computer Organization and Architecture',
     'description': 'Numbers, instructions, memory, processors, and pipelines as one working system.',
     'category': 'Architecture',
     'source': 'assets/start/courses/coa.webp',
     'local': true
   },
   'Compilers': {
-    'title': 'Compilers',
     'description': 'From source text to tokens, syntax, intermediate forms, and executable behavior.',
     'category': 'Language systems',
     'source': 'assets/start/courses/compilers.webp',
     'local': true
   },
   'ML&DL': {
-    'title': 'Machine Learning & Deep Learning',
     'description': 'Learning algorithms, neural networks, generative models, and the tools used to build them.',
     'category': 'Artificial intelligence',
     'source': 'assets/start/courses/mldl.webp',
     'local': true
   },
   'ML': {
-    'title': 'Machine Learning',
     'description': 'Supervised and unsupervised learning, core algorithms, and practical model building.',
     'category': 'Artificial intelligence',
     'source': 'assets/start/fallback/math-breakthroughs.webp',
     'local': true
   },
   'DL': {
-    'title': 'Deep Learning',
     'description': 'Neural networks for images, sequences, generation, and representation learning.',
     'category': 'Artificial intelligence',
     'source': 'assets/start/fallback/performance-frontier.webp',
@@ -125,7 +114,8 @@
 {% macro course_details(item, index) -%}
   {%- set stats = namespace(count=0, url='') -%}
   {{- collect_pages(item, stats) -}}
-  {%- set info = course_data.get(item.title, {}) -%}
+  {%- set short_title = config.extra.start_course_short_names.get(item.title, item.title) -%}
+  {%- set info = course_data.get(short_title, {}) -%}
   {%- set fallback = fallback_media[index % (fallback_media | length)] -%}
   {%- set configured_source = info.get('source') -%}
   {%- set source = configured_source or fallback.get('source') -%}
@@ -133,7 +123,7 @@
   <a class="tm-start-subject" id="subject-{{ index + 1 }}" href="{{ stats.url | url }}">
   <span class="tm-start-subject__media">{{ media(source, info.get('media_type', 'image'), source_local, info.get('poster', '')) }}</span>
   <span class="tm-start-subject__copy">
-    <strong>{{ info.get('title', item.title) }}</strong>
+    <strong>{{ item.title }}</strong>
     <small><span>Updated {{ config.extra.start_course_dates.get(item.title, 'recently') }}</span><span>{{ stats.count }} {{ 'chapter' if stats.count == 1 else 'chapters' }}</span>{{ arrow() }}</small>
   </span>
 </a>
@@ -142,7 +132,8 @@
 {% macro featured_course(item, index, lead=false) -%}
   {%- set stats = namespace(count=0, url='') -%}
   {{- collect_pages(item, stats) -}}
-  {%- set info = course_data.get(item.title, {}) -%}
+  {%- set short_title = config.extra.start_course_short_names.get(item.title, item.title) -%}
+  {%- set info = course_data.get(short_title, {}) -%}
   {%- set fallback = fallback_media[index % (fallback_media | length)] -%}
   {%- set configured_source = info.get('source') -%}
   {%- set source = configured_source or fallback.get('source') -%}
@@ -156,7 +147,7 @@
       {% endif %}
     </span>
     <span class="tm-start-featured__copy">
-      <strong>{{ info.get('title', item.title) }}</strong>
+      <strong>{{ item.title }}</strong>
       <small><span>{{ info.get('category', 'Course') }}</span><span>{{ stats.count }} {{ 'chapter' if stats.count == 1 else 'chapters' }}</span></small>
     </span>
   </a>
@@ -170,19 +161,20 @@
     {% set course_position = namespace(value=0) %}
     {% for item in nav %}
       {% if item.children %}
-        {% if item.title == 'COA' %}
+        {% set short_title = config.extra.start_course_short_names.get(item.title, item.title) %}
+        {% if short_title == 'COA' %}
           {% set featured.lead = item %}
           {% set featured.lead_index = course_position.value %}
         {% endif %}
-        {% if item.title == 'PC' %}
+        {% if short_title == 'PC' %}
           {% set featured.pc = item %}
           {% set featured.pc_index = course_position.value %}
         {% endif %}
-        {% if item.title == 'DLD' %}
+        {% if short_title == 'DLD' %}
           {% set featured.dld = item %}
           {% set featured.dld_index = course_position.value %}
         {% endif %}
-        {% if item.title == 'ML&DL' %}
+        {% if short_title == 'ML&DL' %}
           {% for track in item.children %}
             {% if track.title == 'DL' %}{% set featured.dl = track %}{% set featured.dl_index = loop.index0 %}{% endif %}
             {% if track.title == 'ML' %}{% set featured.ml = track %}{% set featured.ml_index = loop.index0 %}{% endif %}
