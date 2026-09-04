@@ -84,6 +84,7 @@ plugins:
 
 hooks:
   - hooks/toc_inline_code.py
+  - hooks/start_catalog.py
 
 # Markdown 扩展
 markdown_extensions:
