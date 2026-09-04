@@ -36,8 +36,10 @@
       {{ hero_ornament('badge', 'mobile-badge-light.webp', 'mobile-badge-dark.webp') }}
     </div>
     <div class="tm-hero__copy">
-      <h1 id="hero-title"><span>Computer Science,</span> <span class="tm-title-accent"><span>Simpl</span><span>ified</span></span></h1>
-      <p class="tm-hero__description">TechMind is an open-source resource designed to help you <strong>understand</strong>, <strong>explore</strong>, and <strong>master</strong> essential computer science concepts with ease. From computing languages to deep learning, we make learning accessible for all.</p>
+      <h1 id="hero-title" data-tm-headline>
+        <span data-tm-headline-lead>Stop memorizing.</span>
+        <span class="tm-title-accent"><span data-tm-headline-accent-start>Think </span><span data-tm-headline-accent-end>deeper.</span></span>
+      </h1>
       <div class="tm-actions">
         <a class="tm-pill tm-pill--primary" href="{{ 'C/1%20、入门/' | url }}">Get Started {{ arrow() }}</a>
         <a class="tm-text-link" href="#explore">Explore features {{ arrow() }}</a>

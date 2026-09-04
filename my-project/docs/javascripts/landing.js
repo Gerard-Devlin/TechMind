@@ -15,6 +15,48 @@
     const behavior = () => reduced.matches ? 'instant' : 'smooth';
     const clamp = (n, min = 0, max = 1) => Math.min(max, Math.max(min, n));
 
+    const headline = home.querySelector('[data-tm-headline]');
+    if (headline) {
+      const variants = [
+        { lead: 'Stop memorizing.', start: 'Think ', end: 'deeper.', highlight: 'start' },
+        { lead: 'Learn the machine.', start: 'Shape the ', end: 'future.', highlight: 'end' },
+        { lead: 'Code is only the start.', start: 'Go ', end: 'beyond.', highlight: 'start' },
+        { lead: 'Master the foundations.', start: 'Build ', end: 'anything.', highlight: 'end' },
+        { lead: "Don\'t just use it.", start: 'Understand ', end: 'it.', highlight: 'start' },
+        { lead: 'Know what runs beneath.', start: 'Own the ', end: 'system.', highlight: 'start' }
+      ];
+      const storageKey = 'techmind.hero-headline';
+      let previous = -1;
+
+      try {
+        previous = Number.parseInt(sessionStorage.getItem(storageKey) ?? '-1', 10);
+      } catch (_) {
+        // Storage can be unavailable in hardened browser contexts; randomness still works.
+      }
+
+      let index;
+      if (previous >= 0 && previous < variants.length && variants.length > 1) {
+        index = Math.floor(Math.random() * (variants.length - 1));
+        if (index >= previous) index += 1;
+      } else {
+        index = Math.floor(Math.random() * variants.length);
+      }
+
+      const selected = variants[index];
+      headline.querySelector('[data-tm-headline-lead]').textContent = selected.lead;
+      headline.querySelector('[data-tm-headline-accent-start]').textContent = selected.start;
+      headline.querySelector('[data-tm-headline-accent-end]').textContent = selected.end;
+      headline.dataset.tmHeadlineVariant = String(index);
+      headline.classList.toggle('is-accent-first', selected.highlight === 'start');
+      headline.classList.add('is-randomized');
+
+      try {
+        sessionStorage.setItem(storageKey, String(index));
+      } catch (_) {
+        // The headline does not depend on storage being writable.
+      }
+    }
+
     const introVideo = home.querySelector('[data-tm-intro-video]');
     if (introVideo) {
       const introFrame = introVideo.closest('.tm-showcase__frame--intro');

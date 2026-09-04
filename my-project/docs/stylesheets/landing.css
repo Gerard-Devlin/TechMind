@@ -88,7 +88,7 @@ body:has(.tm-landing) .md-tabs { border-bottom: 1px solid var(--tm-rule); }
 .tm-pill--primary:hover { opacity: .8; }
 .tm-pill svg { width: 16px; height: 16px; }
 
-.tm-hero { position: relative; isolation: isolate; overflow: clip; max-width: 1440px; margin: 0 auto; padding: 66px 24px 36px; }
+.tm-hero { position: relative; isolation: isolate; overflow: clip; max-width: 1440px; margin: 0 auto; padding: 66px 24px 48px; }
 /* Share the reference's code-themed artwork across desktop and mobile. */
 .tm-hero__art { position: absolute; z-index: 0; inset: 0; pointer-events: none; user-select: none; }
 .tm-hero__ornament { --tm-art-angle: 0deg; --tm-art-speed: -1; position: absolute; transform: translate(-50%, calc(-50% + var(--tm-hero-drift, 0px) * var(--tm-art-speed))) rotate(var(--tm-art-angle)); }
@@ -119,6 +119,8 @@ body:has(.tm-landing) .md-tabs { border-bottom: 1px solid var(--tm-rule); }
 }
 .tm-title-accent > span:first-child { color: #04b84c; }
 .tm-title-accent > span:last-child { color: #10a0e8; }
+.tm-hero h1.is-accent-first .tm-title-accent > span:first-child { color: #10a0e8; }
+.tm-hero h1.is-accent-first .tm-title-accent > span:last-child { color: #04b84c; }
 .tm-title-accent::after {
   position: absolute;
   left: -.015em;
@@ -129,9 +131,13 @@ body:has(.tm-landing) .md-tabs { border-bottom: 1px solid var(--tm-rule); }
   pointer-events: none;
   content: "";
 }
-.tm-hero__description { max-width: 620px; margin: 0 auto !important; color: var(--tm-copy); font-size: 17px; line-height: 1.65; letter-spacing: -.2px; text-wrap: pretty; }
-.tm-hero__description strong { font-weight: 500; }
-.tm-actions { display: flex; align-items: center; justify-content: center; gap: 22px; margin-top: 32px; }
+.tm-hero h1[data-tm-headline].is-randomized { animation: tm-headline-in 520ms cubic-bezier(.22, 1, .36, 1) both; }
+@keyframes tm-headline-in {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.tm-actions { display: flex; align-items: center; justify-content: center; gap: 22px; margin-top: 8px; }
+.tm-hero .tm-pill { width: auto; height: 40px; min-height: 40px; padding: 0 20px; line-height: 1; }
 .tm-text-link { display: inline-flex; align-items: center; gap: 5px; font-size: 14px; }
 .tm-text-link svg { transition: transform 180ms; }
 .tm-text-link:hover svg { transform: translateX(3px); }
@@ -264,7 +270,7 @@ body[data-md-color-scheme="default"] .tm-landing .tm-image--dark { display: none
 @media (max-width: 1100px) {
   .tm-landing { --tm-card-gap: 20px; }
   .tm-topic { padding-inline: 24px; }
-  .tm-hero { padding-bottom: 36px; }
+  .tm-hero { padding-bottom: 48px; }
   .tm-cta { margin-inline: 24px; }
 }
 
@@ -294,9 +300,11 @@ body[data-md-color-scheme="default"] .tm-landing .tm-image--dark { display: none
 @media (max-width: 760px) {
   .tm-landing { --tm-card-gap: 24px; }
   .tm-brand { font-size: 22px; }
-  .tm-hero { padding-top: 84px; }
+  .tm-hero { padding-top: 84px; padding-bottom: 20px; }
   .tm-hero h1 { max-width: 620px; font-size: 56px; }
-  .tm-hero__description { max-width: 550px; font-size: 16px; }
+  .tm-hero .tm-pill { height: 36px; min-height: 36px; padding-inline: 16px; font-size: 13px; }
+  .tm-showcase, .tm-showcase[data-enhanced] { margin-top: 8px; }
+  .tm-showcase__art { padding-top: 8px; }
   .tm-intro { padding-top: 50px; }
   .tm-intro h2 { margin-top: 25px; font-size: 34px; }
   .tm-intro p:last-child { font-size: 17px; }
@@ -327,10 +335,12 @@ body[data-md-color-scheme="default"] .tm-landing .tm-image--dark { display: none
 }
 
 @media (max-width: 450px) {
-  .tm-hero { padding-top: 84px; }
-  .tm-hero h1 { max-width: 350px; margin: 28px auto 24px; font-size: 44px; line-height: 1.02; letter-spacing: -.055em; }
+  .tm-hero { padding-top: 84px; padding-bottom: 12px; }
+  .tm-hero h1 { max-width: 350px; margin: 28px auto 32px; font-size: 44px; line-height: 1.02; letter-spacing: -.055em; }
+  .tm-hero h1 > .tm-title-accent { font-size: .78em; }
+  .tm-showcase, .tm-showcase[data-enhanced] { margin-top: 4px; }
   .tm-carousel__track .tm-card__body { padding: 28px; }
-  .tm-actions { gap: 15px; margin-top: 30px; }
+  .tm-actions { gap: 15px; margin-top: 6px; }
   .tm-pill { padding-inline: 18px; }
   .tm-text-link { font-size: 13px; }
   .tm-intro h2, .tm-section-heading h2 { font-size: 30px; }
