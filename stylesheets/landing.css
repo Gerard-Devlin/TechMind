@@ -1,5 +1,21 @@
 /* OpenAI/ChatGPT-inspired Home only. Native Material navigation stays untouched. */
 @font-face {
+  font-family: "OpenAI Sans";
+  src: url("../assets/fonts/openai-sans/OpenAISans-Regular.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "OpenAI Sans";
+  src: url("../assets/fonts/openai-sans/OpenAISans-Medium.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
   font-family: "TechMind Handwritten";
   src: url("../assets/landing/fonts/Caveat-Variable.ttf") format("truetype");
   font-style: normal;
@@ -21,6 +37,7 @@ body:has(.tm-landing) {
   --tm-scheme: dark;
   background: var(--tm-bg);
   color: var(--tm-text);
+  font-family: "OpenAI Sans", Arial, Helvetica, sans-serif;
 }
 
 /* The existing MkDocs palette switch controls both versions, including instant navigation. */
@@ -67,10 +84,11 @@ body:has(.tm-landing) .md-tabs { border-bottom: 1px solid var(--tm-rule); }
   min-width: 0;
   color: var(--tm-text);
   background: var(--tm-bg);
-  font-family: Arial, Helvetica, "PingFang SC", "Microsoft YaHei", sans-serif;
-  font-size: 16px;
-  line-height: 1.55;
+  font-family: "OpenAI Sans", Arial, Helvetica, "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-size: 17px;
+  line-height: 1.647;
   font-weight: 400;
+  letter-spacing: -.01em;
   -webkit-font-smoothing: antialiased;
   color-scheme: var(--tm-scheme);
 }
