@@ -166,6 +166,7 @@ extra_css:
   - https://unpkg.com/katex@0/dist/katex.min.css
   - stylesheets/extra.css
   - stylesheets/landing.css
+  - stylesheets/start.css
   - stylesheets/toc.css
   - stylesheets/search.css
   - stylesheets/header.css

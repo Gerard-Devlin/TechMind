@@ -69,29 +69,29 @@ body[data-md-color-scheme="default"][data-md-color-primary] {
 
 /* A shared, neutral dark palette for documentation and the landing page. */
 body[data-md-color-scheme="slate"][data-md-color-primary] {
-    --tm-dark-bg: #171717;
-    --tm-dark-surface: #212121;
-    --tm-dark-hover: #2c2c2c;
-    --tm-dark-rule: #3a3a3a;
+    --tm-dark-bg: #000;
+    --tm-dark-surface: #171717;
+    --tm-dark-hover: #212121;
+    --tm-dark-rule: #2a2a2a;
 
     --md-accent-fg-color: #f3f3f3;
     --md-accent-fg-color--transparent: rgb(243 243 243 / .12);
-    --md-accent-bg-color: #171717;
-    --md-accent-bg-color--light: rgb(23 23 23 / .7);
+    --md-accent-bg-color: #000;
+    --md-accent-bg-color--light: rgb(0 0 0 / .7);
     --md-typeset-a-color: #e5e5e5;
 
     --md-default-bg-color: var(--tm-dark-bg);
-    --md-default-bg-color--light: rgb(23 23 23 / .54);
-    --md-default-bg-color--lighter: rgb(23 23 23 / .26);
-    --md-default-bg-color--lightest: rgb(23 23 23 / .07);
+    --md-default-bg-color--light: rgb(0 0 0 / .54);
+    --md-default-bg-color--lighter: rgb(0 0 0 / .26);
+    --md-default-bg-color--lightest: rgb(0 0 0 / .07);
 
     --md-primary-fg-color: var(--tm-dark-bg);
     --md-primary-fg-color--light: var(--tm-dark-surface);
     --md-primary-fg-color--dark: var(--tm-dark-bg);
 
     --md-code-bg-color: var(--tm-dark-surface);
-    --md-code-bg-color--light: rgb(33 33 33 / .9);
-    --md-code-bg-color--lighter: rgb(33 33 33 / .54);
+    --md-code-bg-color--light: rgb(23 23 23 / .9);
+    --md-code-bg-color--lighter: rgb(23 23 23 / .54);
     --md-typeset-kbd-color: var(--tm-dark-hover);
     --md-typeset-kbd-accent-color: var(--tm-dark-rule);
     --md-typeset-kbd-border-color: var(--tm-dark-bg);
