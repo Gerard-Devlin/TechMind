@@ -197,8 +197,15 @@ body[data-md-color-scheme="slate"] .md-nav__source {
     /*!* 变量 *!*/
     /*--md-code-hl-variable-color: #f8f8f2;*/
 
-    .admonition p {
+    /* Give static and collapsible callouts the same text scale. */
+    .md-typeset .admonition,
+    .md-typeset details {
         font-size: 1.2em;
+    }
+
+    /* Nested callouts keep the outer size instead of compounding it. */
+    .md-typeset :is(.admonition, details) :is(.admonition, details) {
+        font-size: inherit;
     }
 
     /* Quiet, article-like tables: typography and hairlines do the structure. */
