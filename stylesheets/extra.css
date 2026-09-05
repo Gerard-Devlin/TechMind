@@ -158,49 +158,68 @@ body[data-md-color-scheme="slate"] .md-nav__source {
     -webkit-box-decoration-break: clone;
 }
 
+/* Catppuccin syntax colors: https://catppuccin.com/palette/
+   Keep the site's neutral backgrounds. Deepen Latte accents where needed
+   for readable text on the existing #f5f5f5 code surface. */
+body[data-md-color-scheme="default"] {
+    --md-code-fg-color: #4c4f69;
+    --md-code-hl-keyword-color: #8839ef;
+    --md-code-hl-function-color: #1e66f5;
+    --md-code-hl-string-color: color-mix(in srgb, #40a02b 78%, #000);
+    --md-code-hl-number-color: color-mix(in srgb, #fe640b 75%, #000);
+    --md-code-hl-constant-color: var(--md-code-hl-number-color);
+    --md-code-hl-special-color: color-mix(in srgb, #ea76cb 70%, #000);
+    --md-code-hl-operator-color: color-mix(in srgb, #04a5e5 70%, #000);
+    --md-code-hl-punctuation-color: #6c6f85;
+    --md-code-hl-comment-color: #6c6f85;
+    --md-code-hl-name-color: var(--md-code-fg-color);
+    --md-code-hl-variable-color: var(--md-code-fg-color);
+    --md-code-hl-generic-color: #5c5f77;
+    --md-code-hl-color: #1e66f5;
+    --md-code-hl-color--light: #1e66f51a;
+    --tm-code-type-color: color-mix(in srgb, #df8e1d 70%, #000);
+    --tm-code-builtin-color: #d20f39;
+}
+
+body[data-md-color-scheme="slate"] {
+    --md-code-fg-color: #cdd6f4;
+    --md-code-hl-keyword-color: #cba6f7;
+    --md-code-hl-function-color: #89b4fa;
+    --md-code-hl-string-color: #a6e3a1;
+    --md-code-hl-number-color: #fab387;
+    --md-code-hl-constant-color: var(--md-code-hl-number-color);
+    --md-code-hl-special-color: #f5c2e7;
+    --md-code-hl-operator-color: #89dceb;
+    --md-code-hl-punctuation-color: #9399b2;
+    --md-code-hl-comment-color: #9399b2;
+    --md-code-hl-name-color: var(--md-code-fg-color);
+    --md-code-hl-variable-color: var(--md-code-fg-color);
+    --md-code-hl-generic-color: #bac2de;
+    --md-code-hl-color: #89b4fa;
+    --md-code-hl-color--light: #89b4fa1a;
+    --tm-code-type-color: #f9e2af;
+    --tm-code-builtin-color: #f38ba8;
+}
+
+/* Refine Pygments groups that Material otherwise shares with names/functions. */
+.md-typeset .highlight :is(.kc, .no) {
+    color: var(--md-code-hl-constant-color);
+}
+
+.md-typeset .highlight :is(.nc, .ne, .kt) {
+    color: var(--tm-code-type-color);
+}
+
+.md-typeset .highlight :is(.nb, .bp) {
+    color: var(--tm-code-builtin-color);
+}
+
 :root > * {
-    /*!* 背景色 *!*/
-    /*--md-code-bg-color: #282a36;*/
-    /*!* 数字 *!*/
-    /*--md-code-hl-number-color: #bd93f9;*/
-
-    /*!* 特殊字符 *!*/
-    /*--md-code-hl-special-color: #ff79c6;*/
-
-    /*!* 函数名 *!*/
-    /*--md-code-hl-function-color: #50fa7b;*/
-
-    /*!* 常量/类型 *!*/
-    /*--md-code-hl-constant-color: #bd93f9;*/
-
-    /*!* 关键字 *!*/
-    /*--md-code-hl-keyword-color: #ff79c6;*/
-
-    /*!* 字符串 *!*/
-    /*--md-code-hl-string-color: #f1fa8c;*/
-
-    /*!* 标识符/名称 *!*/
-    /*--md-code-hl-name-color: #f8f8f2;*/
-
-    /*!* 运算符 *!*/
-    /*--md-code-hl-operator-color: #ff79c6;*/
-
-    /*!* 标点符号 *!*/
-    /*--md-code-hl-punctuation-color: #f8f8f2;*/
-
-    /* 注释 */
-    --md-code-hl-comment-color: #f3a16d;
-
-    /*!* 泛型 *!*/
-    /*--md-code-hl-generic-color: #f8f8f2;*/
-
-    /*!* 变量 *!*/
-    /*--md-code-hl-variable-color: #f8f8f2;*/
 
     /* Give static and collapsible callouts the same text scale. */
     .md-typeset .admonition,
     .md-typeset details {
-        font-size: 1.2em;
+        font-size: 1em;
     }
 
     /* Nested callouts keep the outer size instead of compounding it. */
