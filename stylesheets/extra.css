@@ -15,17 +15,6 @@ body[data-md-color-scheme="default"][data-md-color-primary] {
     --tm-quote-mark: #dedede;
 }
 
-/* Paper figure attribution stays quiet, but remains visibly clickable. */
-.md-typeset .aie-source-link {
-    text-decoration-line: underline;
-    text-decoration-thickness: .07em;
-    text-underline-offset: .16em;
-}
-
-.md-typeset .aie-source-link:hover {
-    text-decoration-thickness: .11em;
-}
-
 /* Keep rendered Mermaid diagrams centered without letting wide graphs overflow. */
 .md-typeset .mermaid {
     text-align: center;
