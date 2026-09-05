@@ -307,3 +307,11 @@ nav:
           - NumPy: ML&DL/Tool/NumPy.md
           - Anaconda: ML&DL/Tool/Anaconda.md
 
+  - AI Efficiency:
+      - 1 、VLLM效率基础: AIE/1 、VLLM效率基础.md
+      - 2 、VisionZip: AIE/2 、VisionZip.md
+      - 3 、PruneVid: AIE/3 、PruneVid.md
+      - 4 、FastVID: AIE/4 、FastVID.md
+      - 5 、HoliTom: AIE/5 、HoliTom.md
+      - 6 、FlashVID: AIE/6 、FlashVID.md
+
