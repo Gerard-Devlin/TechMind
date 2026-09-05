@@ -216,15 +216,13 @@ body[data-md-color-scheme="slate"] {
 
 :root > * {
 
-    /* Give static and collapsible callouts the same text scale. */
-    .md-typeset .admonition,
-    .md-typeset details {
-        font-size: 1em;
+    /* Keep !!! and ??? callouts on the article's exact body-text scale. */
+    .md-typeset :is(.admonition, details) {
+        font-size: .8rem;
     }
 
-    /* Nested callouts keep the outer size instead of compounding it. */
-    .md-typeset :is(.admonition, details) :is(.admonition, details) {
-        font-size: inherit;
+    .md-typeset :is(.admonition, details) > :is(.admonition-title, summary, p, ul, ol) {
+        font-size: 1em;
     }
 
     /* Quiet, article-like tables: typography and hairlines do the structure. */

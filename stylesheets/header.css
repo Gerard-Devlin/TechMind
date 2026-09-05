@@ -13,7 +13,10 @@
   width: 20px;
 }
 
-@media (min-width: 60em) {
+/* Material switches the primary navigation from a drawer to a fixed sidebar at
+   76.25em. Keep the custom desktop header on the same breakpoint so tablets
+   never lose both the sidebar and its drawer button. */
+@media (min-width: 76.25em) {
   .md-header {
     background: var(--md-default-bg-color);
     border: 0 !important;
@@ -182,7 +185,7 @@
   .md-header .md-source__facts { display: none; }
 }
 
-@media (max-width: 59.984375em) {
+@media (max-width: 76.234375em) {
   .md-header {
     border: 0 !important;
     box-shadow: none !important;
