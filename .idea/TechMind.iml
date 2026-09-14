@@ -6,6 +6,7 @@
       <excludeFolder url="file://$MODULE_DIR$/my-project/.venv/Include" />
       <excludeFolder url="file://$MODULE_DIR$/my-project/.venv/Lib" />
       <excludeFolder url="file://$MODULE_DIR$/my-project/.venv/Scripts" />
+      <excludeFolder url="file://$MODULE_DIR$/my-project/.venv" />
     </content>
     <orderEntry type="jdk" jdkName="Python 3.10 (TechMind)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
