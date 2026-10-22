@@ -1,0 +1,37 @@
+{% macro menu_items(items, prefix='root') -%}
+  <ul class="tm-mobile-nav__list">
+    {% for item in items %}
+      {% set id = prefix ~ '-' ~ loop.index %}
+      <li>{% if item.children %}<button type="button" class="tm-mobile-nav__link" data-tm-nav-target="{{ id }}" aria-controls="tm-nav-{{ id }}" aria-expanded="false">{{ config.extra.start_course_short_names.get(item.title, item.title) | e }}</button>{% elif item.url is defined %}<a class="tm-mobile-nav__link" href="{{ item.url | url }}">{{ item.title | e }}</a>{% endif %}</li>
+    {% endfor %}
+  </ul>
+{%- endmacro %}
+{% macro panels(items, prefix='root', parent_title='Home') -%}
+  {% for item in items %}
+    {% set id = prefix ~ '-' ~ loop.index %}
+    {% if item.children %}
+      <section class="tm-mobile-nav__panel" id="tm-nav-{{ id }}" data-tm-nav-panel="{{ id }}" hidden>
+        <button class="tm-mobile-nav__back" type="button" data-tm-nav-target="{{ prefix }}" aria-label="Back to {{ parent_title | e }}"><svg viewBox="1.635 -0.57 12.854 17.139" aria-hidden="true"><path fill="currentColor" d="M6.803 2.804a.75.75 0 0 1 1.06 1.06L4.477 7.25h8.856a.75.75 0 0 1 0 1.5H4.475l3.388 3.387a.75.75 0 0 1-1.06 1.06L2.37 8.767l-.074-.084a1.084 1.084 0 0 1 0-1.367l.074-.082z"/></svg><span>{{ parent_title | e }}</span></button>
+        <div class="tm-mobile-nav__section"><h2>{{ item.title | e }}</h2>{{ menu_items(item.children, id) }}</div>
+      </section>
+      {{ panels(item.children, id, item.title) }}
+    {% endif %}
+  {% endfor %}
+{%- endmacro %}
+<dialog class="tm-mobile-nav" id="tm-mobile-navigation" aria-labelledby="tm-mobile-nav-title">
+  <div class="tm-mobile-nav__header">
+    <a class="tm-mobile-nav__brand" id="tm-mobile-nav-title" href="{{ nav.homepage.url | url }}">TechMind</a>
+    <button class="tm-mobile-nav__icon" type="button" data-tm-nav-search aria-label="Search documentation"><svg viewBox="0 0 16 16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"><circle cx="6.75" cy="6.75" r="4.75" fill="none"/><path d="m10.25 10.25 3.5 3.5" fill="none"/></svg></button>
+    <button class="tm-mobile-nav__icon" type="button" data-tm-nav-close aria-label="Close navigation"><svg class="tm-mobile-nav__close-icon" viewBox="0 0 20 20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="3.5" width="15" height="13" rx="3" fill="none"/><path d="M7 3.5v13m4-9 2.5 2.5L11 12.5" fill="none"/></svg></button>
+  </div>
+  <nav class="tm-mobile-nav__scroll" aria-label="Courses and chapters">
+    <section class="tm-mobile-nav__panel" data-tm-nav-panel="root" id="tm-nav-root">
+      {{ menu_items(nav.items) }}
+      <div class="tm-mobile-nav__extras">
+        <a class="tm-mobile-nav__link" href="{{ 'start/' | url }}#subjects">All subjects</a>
+        <a class="tm-mobile-nav__link" href="{{ config.repo_url }}" target="_blank" rel="noopener">GitHub<svg viewBox="1.243 0.843 9.483 10.345" aria-hidden="true"><path fill="currentColor" d="M8.949 2.505a.497.497 0 0 1 .546.546L9.5 3.1V8a.5.5 0 0 1-1 0V4.207l-5.147 5.15a.5.5 0 1 1-.707-.707L7.794 3.5H4a.5.5 0 0 1 0-1h4.9z"/></svg></a>
+      </div>
+    </section>
+    {{ panels(nav.items) }}
+  </nav>
+</dialog>

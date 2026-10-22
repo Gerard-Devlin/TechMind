@@ -1,0 +1,31 @@
+{# TechMind copy and theme-aware colors, using the reference's title and character. #}
+<div class="tm-start-intro">
+  <section class="tm-start-devday devday-banner" data-devday-banner aria-labelledby="devday-title">
+    <div class="devday-copy">
+      <h1 id="devday-title">
+        <span class="tm-start-sr-only">Make ideas 「real」</span>
+        <span class="devday-wordmark" aria-hidden="true">
+          <span class="tm-start-wordmark__fallback"><span>Make</span> <span class="tm-start-wordmark__green">ideas</span> <span>「<span class="tm-start-wordmark__purple">real</span>」</span></span>
+          <span data-tm-devday-title></span>
+        </span>
+      </h1>
+      <p class="tm-start-devday__description">Notes on code, computer systems, and machine intelligence.</p>
+      <div class="tm-start-devday__actions">
+        <span class="devday-button-frame">
+          <a class="devday-button" href="#subjects">Browse subjects</a>
+          <span class="devday-dot devday-dot-tl" aria-hidden="true"></span>
+          <span class="devday-dot devday-dot-tr" aria-hidden="true"></span>
+          <span class="devday-dot devday-dot-br" aria-hidden="true"></span>
+          <span class="devday-dot devday-dot-bl" aria-hidden="true"></span>
+        </span>
+        <a class="tm-start-devday__watch" href="{{ config.repo_url }}" target="_blank" rel="noopener noreferrer">
+          View source
+          <svg viewBox="3 3 18 18" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.243 6.757a1 1 0 0 1 1 1v7.072a1 1 0 0 1-2 0v-4.657L8.464 16.95a1 1 0 0 1-1.414-1.414l6.778-6.779H9.172a1 1 0 0 1 0-2h7.07Z" clip-rule="evenodd"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="devday-character" data-tm-devday-agent>
+      <span class="tm-start-devday__fallback" aria-hidden="true"><img src="{{ 'assets/start/devday/agent-eyes-designing.svg' | url }}" width="150" height="150" alt=""></span>
+    </div>
+  </section>
+</div>

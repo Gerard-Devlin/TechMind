@@ -45,6 +45,7 @@ Thumbs.db
 desktop.ini
 
 # Logs and temporary files
+.codex-tmp/
 *.log
 *.tmp
 *.bak

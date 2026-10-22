@@ -1,4 +1,4 @@
-const CACHE_VERSION = "techmind-v2";
+const CACHE_VERSION = "techmind-v3";
 const PAGE_CACHE = `${CACHE_VERSION}-pages`;
 const ASSET_CACHE = `${CACHE_VERSION}-assets`;
 const SITE_ROOT = new URL("./", self.registration.scope);
@@ -42,7 +42,13 @@ self.addEventListener("fetch", event => {
   // normal asset can leave subsequent reloads with an unusable, black video.
   if (request.headers.has("range") || request.destination === "video" || request.destination === "audio") return;
 
-  if (request.mode === "navigate") {
+  // MkDocs instant navigation fetches HTML without mode=navigate. Treat those
+  // requests as pages too; an asset-style stale response can resurrect an old
+  // header/chat shell on every internal link click even after a normal refresh.
+  const isPage = request.mode === "navigate" || request.destination === "document" ||
+    request.headers.get("accept")?.includes("text/html") ||
+    url.pathname.endsWith("/") || /\.html?$/i.test(url.pathname);
+  if (isPage) {
     event.respondWith(networkFirstPage(request));
     return;
   }

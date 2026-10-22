@@ -85,6 +85,7 @@ plugins:
 hooks:
   - hooks/toc_inline_code.py
   - hooks/start_catalog.py
+  - hooks/ask_ai_assets.py
 
 # Markdown 扩展
 markdown_extensions:
@@ -145,6 +146,10 @@ markdown_extensions:
 
 # 页面分析/页尾社交
 extra:
+  # Public Ask AI settings only; the DeepSeek key is a Cloudflare Worker secret.
+  ask_ai:
+    endpoint: "https://techmind-ai.devl1n.workers.dev"
+    site_key: "0x4AAAAAAFhIrcLQFQcb7rAi"
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/Gerard-Devlin
@@ -152,9 +157,16 @@ extra:
 
 # JavaScript 支持
 extra_javascript:
+  - path: javascripts/ask-ai.js?v=20261023-7
+    type: module
   - javascripts/landing.js
+  - path: javascripts/start.js?v=20261022-8
+    type: module
+  - path: javascripts/footer-wordmark.js?v=20261022-2
+    type: module
   - javascripts/toc.js
   - javascripts/search.js
+  - javascripts/mobile-nav.js?v=20261022-5
   - javascripts/pwa.js
   - javascripts/mathjax.js
   - javascripts/katex.js
@@ -164,13 +176,16 @@ extra_javascript:
 
 # CSS 支持
 extra_css:
+  - stylesheets/ask-ai.css?v=20261023-6
   - https://unpkg.com/katex@0/dist/katex.min.css
   - stylesheets/extra.css
   - stylesheets/landing.css
-  - stylesheets/start.css
+  - stylesheets/start.css?v=20261023-1
+  - stylesheets/footer-wordmark.css?v=20261022-2
   - stylesheets/toc.css
   - stylesheets/search.css
-  - stylesheets/header.css
+  - stylesheets/header.css?v=20261022-8
+  - stylesheets/mobile-nav.css?v=20261022-7
 
 
 # ---------------------------------------------------------------------------------------------------------

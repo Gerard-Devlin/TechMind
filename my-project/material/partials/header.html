@@ -1,4 +1,4 @@
-{# Single-row desktop header; mobile keeps Material's native controls. #}
+{# Desktop course navigation and OpenAI.com-style compact mobile controls. #}
 {% macro nav_link(nav_item, ref) -%}
   {% set ref = ref or nav_item %}
   {% if nav_item.children %}
@@ -15,12 +15,12 @@
 {% endif %}
 <header class="{{ class }}" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="{{ lang.t('header') }}">
+    <a class="tm-header-mobile-brand" href="{{ nav.homepage.url | url }}" aria-label="TechMind home">TechMind</a>
     <a href="{{ config.extra.homepage | d(nav.homepage.url, true) | url }}" title="{{ config.site_name | e }}" class="md-header__button md-logo" aria-label="{{ config.site_name }}" data-md-component="logo">
       {% include "partials/logo.html" %}
     </a>
     <label class="md-header__button md-icon" for="__drawer">
-      {% set icon = config.theme.icon.menu or "material/menu" %}
-      {% include ".icons/" ~ icon ~ ".svg" %}
+      <svg viewBox="0 0 20 20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="3.5" width="15" height="13" rx="3" fill="none"/><path d="M7 3.5v13" fill="none"/></svg>
     </label>
     <div class="md-header__title" data-md-component="header-title">
       <div class="md-header__ellipsis">
@@ -36,8 +36,7 @@
       {% set search = config.plugins["material/search"] | attr("config") %}
       {% if search.enabled %}
         <label class="md-header__button md-icon" for="__search">
-          {% set icon = config.theme.icon.search or "material/magnify" %}
-          {% include ".icons/" ~ icon ~ ".svg" %}
+          <svg viewBox="0 0 16 16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"><circle cx="6.75" cy="6.75" r="4.75" fill="none"/><path d="m10.25 10.25 3.5 3.5" fill="none"/></svg>
         </label>
         {% include "partials/search.html" %}
       {% endif %}
@@ -51,3 +50,4 @@
     {% if not config.theme.palette is mapping %}{% include "partials/javascripts/palette.html" %}{% endif %}
   </nav>
 </header>
+{% include "partials/mobile-nav.html" %}

@@ -1,0 +1,36 @@
+{# Public configuration only. Provider credentials live exclusively in Worker secrets. #}
+{% set ask_ai = config.extra.get('ask_ai', {}) %}
+<div class="tm-ai" data-tm-ai-root data-endpoint="{{ ask_ai.get('endpoint', '') | e }}" data-site-key="{{ ask_ai.get('site_key', '') | e }}" data-docs-base="{{ config.site_url | e }}" data-course-images="{{ config.extra.get('ask_ai_course_images', {}) | tojson | forceescape }}">
+  <button class="tm-ai__launcher" type="button" data-ai-open aria-haspopup="dialog" aria-expanded="false" aria-controls="tm-ai-panel">Ask AI</button>
+  <section class="tm-ai__panel" id="tm-ai-panel" role="dialog" aria-labelledby="tm-ai-title" aria-hidden="true" inert>
+    <header class="tm-ai__header">
+      <h2 id="tm-ai-title">Docs agent</h2>
+      <div class="tm-ai__header-actions">
+        <button class="tm-ai__icon-button" type="button" data-ai-new aria-label="Start a new docs agent chat" title="Start a new chat"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.793 2.793a3.121 3.121 0 1 1 4.414 4.414l-8.5 8.5A1 1 0 0 1 12 16H9a1 1 0 0 1-1-1v-3a1 1 0 0 1 .293-.707l8.5-8.5Zm3 1.414a1.121 1.121 0 0 0-1.586 0L10 12.414V14h1.586l8.207-8.207a1.121 1.121 0 0 0 0-1.586ZM6 5a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-4a1 1 0 1 1 2 0v4a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3V6a3 3 0 0 1 3-3h4a1 1 0 1 1 0 2H6Z" clip-rule="evenodd"/></svg></button>
+        <button class="tm-ai__icon-button" type="button" data-ai-close aria-label="Close docs agent"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M5.636 5.636a1 1 0 0 1 1.414 0l4.95 4.95 4.95-4.95a1 1 0 0 1 1.414 1.414L13.414 12l4.95 4.95a1 1 0 0 1-1.414 1.414L12 13.414l-4.95 4.95a1 1 0 0 1-1.414-1.414l4.95-4.95-4.95-4.95a1 1 0 0 1 0-1.414Z" clip-rule="evenodd"/></svg></button>
+      </div>
+    </header>
+    <div class="tm-ai__thread" data-ai-thread tabindex="0" aria-label="Conversation">
+      <div class="tm-ai__welcome" data-ai-welcome>
+        <h2>What can I help you with?</h2>
+        <div class="tm-ai__prompts">
+          <button type="button" data-ai-prompt="answer"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.75"/><path d="M9.75 9a2.25 2.25 0 1 1 3.85 1.6c-1 .85-1.6 1.15-1.6 2.65M12 16.5h.01" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/></svg><span>Ask a question</span></button>
+          <button type="button" data-ai-prompt="find"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="10.75" cy="10.75" r="7.25" stroke="currentColor" stroke-width="1.75"/><path d="m16 16 4.5 4.5" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/></svg><span>Find a page</span></button>
+          <button type="button" data-ai-prompt="guide"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3.5" y="4" width="17" height="16" rx="2" stroke="currentColor" stroke-width="1.75"/><path d="m7.5 9 3 3-3 3M13 15h3.5" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Build a custom guide</span></button>
+        </div>
+      </div>
+      <div class="tm-ai__messages" data-ai-messages role="log" aria-label="Messages" aria-live="off"></div>
+    </div>
+    <button class="tm-ai__scroll-bottom tm-ai__icon-button" type="button" data-ai-bottom aria-label="Scroll to latest message" hidden><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 4v16m-6-6 6 6 6-6" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+    <div class="tm-ai__compose-area">
+      <div class="tm-ai__mode" data-ai-mode hidden><span></span><button class="tm-ai__icon-button" type="button" aria-label="Clear selected action" data-ai-clear-mode>×</button></div>
+      <div class="tm-ai__verification" data-ai-verification hidden><div data-ai-turnstile></div></div>
+      <p class="tm-ai__notice" data-ai-notice role="status" hidden></p>
+      <form class="tm-ai__composer" data-ai-form>
+        <textarea data-ai-input rows="1" maxlength="2000" placeholder="Ask about docs or what you want to build" aria-label="Ask about docs or what you want to build" autocomplete="off" spellcheck="false"></textarea>
+        <button class="tm-ai__send" type="submit" data-ai-send aria-label="Send message" disabled><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 19V5m-5 5 5-5 5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+      </form>
+    </div>
+    <span class="tm-ai__sr-only" data-ai-announcement role="status" aria-live="polite"></span>
+  </section>
+</div>

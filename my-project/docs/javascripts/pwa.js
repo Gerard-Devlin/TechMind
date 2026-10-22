@@ -8,7 +8,7 @@
   const workerUrl = new URL("service-worker.js", siteRoot);
 
   window.addEventListener("load", () => {
-    navigator.serviceWorker.register(workerUrl, { scope: siteRoot.pathname }).catch(error => {
+    navigator.serviceWorker.register(workerUrl, { scope: siteRoot.pathname, updateViaCache: "none" }).catch(error => {
       console.warn("TechMind service worker registration failed:", error);
     });
   }, { once: true });

@@ -1,0 +1,71 @@
+@font-face {
+  font-family: "TechMind ASCII Serif";
+  src: url("../assets/footer-ascii/Fraunces-SemiBold-Latin.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 600;
+  size-adjust: 90%;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "TechMind ASCII Glyph";
+  src: url("../assets/footer-ascii/Geist-Latin.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+.tm-ascii-wordmark {
+  --tm-ascii-ink: #242424;
+  position: relative;
+  width: calc(100% - 64px);
+  max-width: 1136px;
+  aspect-ratio: 1648 / 269;
+  margin: clamp(8px, 2vw, 24px) auto 0;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+[data-md-color-scheme="slate"] .tm-ascii-wordmark {
+  --tm-ascii-ink: #f0f0ec;
+}
+
+.tm-ascii-wordmark__still {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: var(--tm-ascii-ink);
+  -webkit-mask: url("../assets/footer-ascii/techmind.svg") center / 100% 100% no-repeat;
+  mask: url("../assets/footer-ascii/techmind.svg") center / 100% 100% no-repeat;
+  transition: opacity 200ms ease;
+}
+
+/* The engine draws into an 1800 × 520 mask. Crop to this word's ink bounds. */
+.tm-ascii-wordmark__art {
+  position: absolute;
+  left: -4.611650%;
+  top: -44.609665%;
+  width: 109.223301%;
+  height: 193.308550%;
+  color: var(--tm-ascii-ink);
+  pointer-events: none;
+}
+
+.tm-ascii-wordmark[data-live] .tm-ascii-wordmark__still {
+  opacity: 0;
+}
+
+@media (min-width: 1024px) {
+  .tm-start .tm-ascii-wordmark {
+    width: calc(100% - 80px);
+    max-width: 1072px;
+  }
+}
+
+@media (max-width: 760px) {
+  .tm-ascii-wordmark { width: calc(100% - 48px); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tm-ascii-wordmark__still { transition: none; }
+}

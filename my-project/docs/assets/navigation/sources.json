@@ -1,0 +1,16 @@
+{
+  "reference": "https://openai.com/zh-Hans-CN/",
+  "inspected": "2026-10-22",
+  "fonts": [
+    {"file": "OpenAISans-Regular.woff2", "url": "https://cdn.openai.com/common/fonts/openai-sans/v4/OpenAISans-Regular.woff2"},
+    {"file": "OpenAISans-Medium.woff2", "url": "https://cdn.openai.com/common/fonts/openai-sans/v4/OpenAISans-Medium.woff2"},
+    {"file": "OpenAISans-Bold.woff2", "url": "https://cdn.openai.com/common/fonts/openai-sans/v4/OpenAISans-Bold.woff2"}
+  ],
+  "notes": [
+    "Mobile root and child panels measured from the existing public browser page, including header, fluid type tokens, margins, back button, and external arrow.",
+    "Menu content comes from the MkDocs navigation tree, not OpenAI's product categories.",
+    "Latin fonts are downloaded locally. Chinese chapter labels retain the site's system-font fallback.",
+    "Header search and sidebar SVGs are reconstructed inline from the visible controls: direct icon downloads and browser asset export were unavailable. The back and external-link SVG paths are reused from the delivered DOM. Explicit fill=none on each outline shape prevents Material's fill rule from making solid icons.",
+    "The drawer stays available up to Material's desktop breakpoint (1220px), so tablet article navigation remains accessible."
+  ]
+}

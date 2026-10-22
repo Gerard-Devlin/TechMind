@@ -28,8 +28,7 @@
   'DLD': {
     'description': 'Gates, Boolean algebra, combinational logic, and sequential circuits.',
     'category': 'Hardware',
-    'source': 'assets/start/electricity.mp4',
-    'media_type': 'video',
+    'source': 'assets/start/devday/realtime.jpg',
     'local': true
   },
   'DBS': {
@@ -83,21 +82,17 @@
   {'source': 'assets/start/fallback/residency-pastel.webp', 'local': true},
   {'source': 'assets/start/fallback/research-dawn.webp', 'local': true},
   {'source': 'assets/start/fallback/research-transcribe.webp', 'local': true},
-  {'source': 'assets/start/fallback/signals-gradient.webp', 'local': true}
+  {'source': 'assets/start/fallback/signals-gradient.webp', 'local': true},
+  {'source': 'assets/start/devday/codex-use-cases.webp', 'local': true},
+  {'source': 'assets/start/devday/showcase.webp', 'local': true}
 ] %}
 
 {% macro arrow() -%}
 <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10h12m-5-5 5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
 {%- endmacro %}
 
-{% macro media(source, media_type='image', local=false, poster='') -%}
-{% if media_type == 'video' %}
-<video autoplay muted loop playsinline preload="metadata"{% if poster %} poster="{{ poster }}"{% endif %} aria-hidden="true">
-  <source src="{% if local %}{{ source | url }}{% else %}{{ source }}{% endif %}" type="video/mp4">
-</video>
-{% else %}
+{% macro media(source, local=false) -%}
 <img src="{% if local %}{{ source | url }}{% else %}{{ source }}{% endif %}" alt="" width="1080" height="1080" loading="lazy" decoding="async">
-{% endif %}
 {%- endmacro %}
 
 {% macro collect_pages(item, stats) -%}
@@ -121,7 +116,7 @@
   {%- set source = configured_source or fallback.get('source') -%}
   {%- set source_local = info.get('local', false) if configured_source else fallback.get('local', false) -%}
   <a class="tm-start-subject" id="subject-{{ index + 1 }}" href="{{ stats.url | url }}">
-  <span class="tm-start-subject__media">{{ media(source, info.get('media_type', 'image'), source_local, info.get('poster', '')) }}</span>
+  <span class="tm-start-subject__media">{{ media(source, source_local) }}</span>
   <span class="tm-start-subject__copy">
     <strong>{{ item.title }}</strong>
     <small><span>Updated {{ config.extra.start_course_dates.get(item.title, 'recently') }}</span><span>{{ stats.count }} {{ 'chapter' if stats.count == 1 else 'chapters' }}</span>{{ arrow() }}</small>
@@ -141,9 +136,9 @@
   <a{% if lead %} class="tm-start-featured__lead"{% endif %} href="{{ stats.url | url }}">
     <span class="tm-start-featured__media">
       {% if lead %}
-        {{ media('assets/start/featured-hero.mp4', 'video', true, 'assets/start/courses/featured-poster.webp' | url) }}
+        {{ media('assets/start/devday/codex-wallpaper.webp', true) }}
       {% else %}
-        {{ media(source, info.get('media_type', 'image'), source_local, info.get('poster', '')) }}
+        {{ media(source, source_local) }}
       {% endif %}
     </span>
     <span class="tm-start-featured__copy">
@@ -156,6 +151,7 @@
 {% block container %}
 <div class="md-content tm-landing tm-start" data-md-component="content" id="top">
   <main id="tm-content">
+    {% include "partials/start-devday.html" %}
     {# The hero is editorial: one lead and exactly four rail stories. The catalog below remains fully nav-driven. #}
     {% set featured = namespace(lead=none, lead_index=0, pc=none, pc_index=0, dld=none, dld_index=0, dl=none, dl_index=0, ml=none, ml_index=0) %}
     {% set course_position = namespace(value=0) %}
@@ -232,6 +228,7 @@
     </div>
     <div class="tm-footer__bottom"><a class="tm-brand" href="{{ 'index.html' | url }}">TechMind</a><p>{{ config.copyright }}</p><a href="https://github.com/Gerard-Devlin" target="_blank" rel="noopener" aria-label="Devlin on GitHub">{% include ".icons/fontawesome/brands/github.svg" %}</a></div>
   </footer>
+  {% include "partials/footer-wordmark.html" %}
 </div>
 {% endblock %}
 

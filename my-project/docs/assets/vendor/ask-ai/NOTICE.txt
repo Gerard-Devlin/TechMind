@@ -1,0 +1,6 @@
+Local browser dependencies for Ask AI:
+
+- `marked.esm.js`: marked 18.1.1, https://github.com/markedjs/marked (MIT).
+- `purify.es.mjs`: DOMPurify 3.4.17, https://github.com/cure53/DOMPurify (Apache-2.0 or MPL-2.0).
+
+The adjacent license files are retained verbatim. No CDN requests are required to render an answer.

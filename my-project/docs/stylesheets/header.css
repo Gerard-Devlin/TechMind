@@ -1,5 +1,6 @@
 /* Desktop-only shadcn-style single-row header. */
 .tm-header-nav { display: none; }
+.tm-header-mobile-brand { display: none; }
 
 /* shadcn's split-circle mode glyph, shared by both palette states. */
 .md-header .md-header__option .md-header__button svg { display: none; }
@@ -189,11 +190,19 @@
   .md-header {
     border: 0 !important;
     box-shadow: none !important;
+    height: 54px;
   }
-  .md-header .md-logo { order: 1; }
-  .md-header label[for="__drawer"] { order: 2; }
-  .md-header .md-header__title { order: 3; }
-  .md-header .md-header__option { order: 4; }
+  .md-header .md-header__inner { gap: 0; height: 54px; min-height: 54px; max-width: none; margin: 0; padding: 0 12px 0 24px; }
+  .md-header :is(.md-logo, .md-header__title, .md-header__source) { display: none !important; }
+  .tm-header-mobile-brand { display: block; flex: 1; order: 1; color: inherit; font: 600 20px/24px "OpenAI Sans", Arial, Helvetica, "PingFang SC", "Microsoft YaHei", sans-serif; letter-spacing: -.048em; }
+  .md-header label[for="__drawer"] { order: 5; }
+  .md-header label:is([for="__drawer"], [for="__search"]) { display: inline-flex; flex: 0 0 40px; padding: 0; }
+  .md-header .md-header__option { flex: 0 0 40px; order: 2; width: 40px; margin: 0; }
+  .md-header .md-header__button { align-items: center; justify-content: center; width: 40px; height: 40px; margin: 0; padding: 10px; }
+  .md-header label[for="__drawer"] svg { width: 18px; height: 18px; }
+  .md-header label[for="__search"] svg { width: 16px; height: 16px; }
+  .md-header .md-header__option .md-header__button { padding: 11px; }
+  .md-header .md-header__option .md-header__button::before { width: 18px; height: 18px; }
   .md-header .md-header__option .md-header__button svg {
     fill: none;
     stroke: currentColor;
@@ -201,7 +210,14 @@
     stroke-linejoin: round;
     stroke-width: 2;
   }
-  .md-header label[for="__search"] { order: 5; }
-  .md-header .tm-search { order: 6; }
-  .md-header .md-header__source { order: 7; }
+  .md-header label[for="__search"] { order: 3; }
+  /* The visible mobile trigger is the preceding label; the hidden desktop
+     search wrapper must not reserve a fourth icon-sized slot. */
+  .md-header .tm-search { flex: 0 0 0; order: 4; width: 0; height: 0; margin: 0; }
+  .md-header .tm-search__trigger { display: none; }
+  [data-md-toggle="search"]:checked ~ .md-header .md-header__option { margin-inline-end: 0; }
+}
+@media (min-width: 768px) and (max-width: 76.234375em) {
+  .md-header { height: 64px; }
+  .md-header .md-header__inner { height: 64px; min-height: 64px; padding-inline: 32px 20px; }
 }

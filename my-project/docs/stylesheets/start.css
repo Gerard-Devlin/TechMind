@@ -1,9 +1,29 @@
+@import url("../assets/start/devday/components.css");
+
+@font-face {
+  font-family: "TechMind DevDay Sans";
+  src: url("../assets/start/devday/OpenAISans-Regular.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "TechMind DevDay Sans";
+  src: url("../assets/start/devday/OpenAISans-Medium.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+
 /* OpenAI home-page proportions, with TechMind subjects and links. */
 body:has(.tm-start) {
   --tm-bg: #000;
   --tm-surface: #1f1f1f;
   --tm-hover: #292929;
   --tm-rule: #333;
+  --tm-devday-green: #04b84c;
+  --tm-devday-purple: #924ff7;
 }
 
 body[data-md-color-scheme="default"]:has(.tm-start) {
@@ -11,6 +31,8 @@ body[data-md-color-scheme="default"]:has(.tm-start) {
   --tm-surface: #f4f4f4;
   --tm-hover: #e9e9e9;
   --tm-rule: #dedede;
+  --tm-devday-green: #008a35;
+  --tm-devday-purple: #8141d9;
 }
 
 body:has(.tm-start),
@@ -22,6 +44,68 @@ body:has(.tm-start) :is(.md-header, .md-tabs) {
 
 .tm-start { overflow: visible; }
 .tm-start main { display: block; }
+
+/* The DevDay banner follows the source's 1152px shell and 640/768/1024px breaks. */
+.tm-start-intro {
+  width: 100%;
+  max-width: 1152px;
+  margin-inline: auto;
+  padding: 32px 40px 0;
+}
+
+.tm-start-devday {
+  position: relative;
+  isolation: isolate;
+  margin-bottom: 24px;
+  overflow: visible;
+  background: var(--tm-bg);
+  padding: 40px 0;
+  color: var(--tm-text);
+  font: 400 16px/24px "TechMind DevDay Sans", Arial, Helvetica, sans-serif;
+  letter-spacing: -.01em;
+  text-align: left;
+}
+
+.tm-start-devday .devday-copy { position: relative; z-index: 10; }
+.tm-start-devday h1 { margin: 0; font: inherit; }
+.tm-start-devday .devday-wordmark { aspect-ratio: 1144 / 132; }
+.tm-start-devday ._title_1u09z_1 { color: inherit; }
+.tm-start-devday ._drawDotsText_56qia_26 { font-family: "TechMind DevDay Sans", Arial, Helvetica, sans-serif; }
+.tm-start-wordmark__fallback { display: block; position: absolute; inset: 0; font-size: 10.5cqw; line-height: 1; white-space: nowrap; }
+.tm-start-wordmark__green { color: var(--tm-devday-green); }
+.tm-start-wordmark__purple { color: var(--tm-devday-purple); }
+.devday-wordmark:has([data-rendered="true"]) .tm-start-wordmark__fallback { visibility: hidden; }
+.tm-start-sr-only { position: absolute; width: 1px; height: 1px; padding: 0; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
+.tm-start-devday .tm-start-devday__description { margin: 28px 0 0; color: var(--tm-copy); font: inherit; line-height: 26px; }
+.tm-start-devday__actions { display: flex; flex-wrap: wrap; align-items: center; gap: 16px 24px; margin-top: 24px; }
+.tm-start-devday .devday-button-frame { display: inline-flex; position: relative; }
+.tm-start-devday .devday-button,
+.tm-start-devday .tm-start-devday__watch { display: inline-flex; position: relative; z-index: 10; min-height: 44px; align-items: center; gap: 8px; font: 500 14px/20px "TechMind DevDay Sans", Arial, Helvetica, sans-serif; letter-spacing: -.01em; }
+.tm-start-devday .devday-button { background: var(--tm-text); padding: 12px 20px; color: var(--tm-bg); }
+.tm-start-devday .tm-start-devday__watch { color: var(--tm-text); text-decoration: underline; text-underline-offset: 4px; }
+.tm-start-devday__watch svg { width: 16px; height: 16px; }
+.tm-start-devday :is(a, button):focus-visible { outline: 2px solid var(--tm-text); outline-offset: 8px; }
+.tm-start-devday .tm-start-devday__watch:focus-visible { outline-offset: 4px; }
+.tm-start-devday button._agent_zckbo_1:focus-visible { outline-offset: -10px; }
+.tm-start-devday .devday-character { position: absolute; z-index: 20; }
+.tm-start-devday__fallback { display: block; width: 52.6316%; aspect-ratio: 1; margin: 19.2771% 0 0 21.0526%; border-radius: 50%; background: #924ff7; transform: rotate(-12deg); }
+.tm-start-devday__fallback img { width: 100%; height: 100%; }
+
+@media (max-width: 1023px) {
+  .tm-start-intro { padding-inline: 24px; }
+}
+
+@media (max-width: 767px) {
+  .tm-start-intro { padding: 24px 16px 0; }
+  .tm-start-devday { padding: 32px 0; }
+}
+
+@media (max-width: 639px) {
+  .tm-start-devday .devday-wordmark { aspect-ratio: 1.25; }
+  .tm-start-wordmark__fallback { font-size: 21cqw; line-height: 1.16; white-space: normal; }
+  .tm-start-wordmark__fallback > span { display: block; }
+  .tm-start-devday ._text_1u09z_13 { font-size: 21cqw; line-height: 1.16; white-space: pre-line; overflow-wrap: normal; }
+}
 
 .tm-start-featured {
   display: grid;
@@ -59,7 +143,7 @@ body:has(.tm-start) :is(.md-header, .md-tabs) {
   background: var(--tm-surface);
 }
 
-.tm-start-featured__media :is(img, video) {
+.tm-start-featured__media img {
   display: block;
   width: 100%;
   height: 100%;
@@ -129,7 +213,7 @@ body:has(.tm-start) :is(.md-header, .md-tabs) {
   background: var(--tm-surface);
 }
 
-.tm-start-subject__media :is(img, video) {
+.tm-start-subject__media img {
   display: block;
   width: 100%;
   height: 100%;
@@ -145,11 +229,19 @@ body:has(.tm-start) :is(.md-header, .md-tabs) {
 
 .tm-start .tm-footer__links { border-top-color: var(--tm-rule); }
 
-@media (max-width: 1020px) {
+/* Keep every desktop section on the hero's content edges. */
+@media (min-width: 1024px) {
+  .tm-start :is(.tm-start-featured, .tm-start-catalog, .tm-footer) {
+    max-width: 1152px;
+    padding-inline: 40px;
+  }
+}
+
+@media (max-width: 1023px) {
   .tm-start-subject { grid-template-columns: 145px minmax(0, 1fr); min-height: 145px; gap: 22px; }
 }
 
-@media (max-width: 1020px) {
+@media (max-width: 1023px) {
   .tm-start-featured { display: grid; grid-template-columns: minmax(0, 1fr); gap: 24px; padding: 40px 0 0; }
   .tm-start-featured__lead {
     position: static;
@@ -178,6 +270,18 @@ body:has(.tm-start) :is(.md-header, .md-tabs) {
   .tm-start-featured small { margin-top: 16px; font-size: 14px; line-height: 1.4; }
   .tm-start-catalog { margin-top: 120px; padding-inline: 24px; }
   .tm-start-subjects { grid-template-columns: minmax(0, 1fr); }
+}
+
+/* The reference's middle layout: one landscape lead, then three square cards.
+   Keep the phone's portrait/stacked layout below its 44rem container break. */
+@media (min-width: 704px) and (max-width: 1023px) {
+  .tm-start-featured { gap: 0; padding-inline: 32px; }
+  .tm-start-featured__lead { margin-bottom: 48px; padding-inline: 0; }
+  .tm-start-featured__lead .tm-start-featured__media { aspect-ratio: 16 / 9; }
+  .tm-start-featured__lead strong { font-size: 36px; line-height: 1.16; }
+  .tm-start-featured__rail { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; padding-inline: 0; }
+  .tm-start-featured__rail .tm-start-featured__copy { min-height: 0; }
+  .tm-start-catalog { padding-inline: 32px; }
 }
 
 @media (max-width: 560px) {

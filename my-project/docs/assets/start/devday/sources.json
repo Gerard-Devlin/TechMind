@@ -1,0 +1,119 @@
+{
+  "reference": "https://developers.openai.com/",
+  "retrieved": "2026-10-22",
+  "notes": [
+    "Original public browser bundles, not original application source.",
+    "The existing TechMind navbar and course catalog are retained.",
+    "The component font and eye URLs resolve relative to the bundled module instead of the domain root.",
+    "Astro attribute selectors are removed from the original component CSS.",
+    "The two former course videos are replaced by static artwork.",
+    "TechMind copy, internal course navigation, theme-aware colors, and matching light/dark geometry replace the original event branding.",
+    "The title component accepts site text and stacks its words on mobile; the character accessory color follows the site theme."
+  ],
+  "assets": {
+    "https://cdn.openai.com/common/fonts/openai-sans/v2/OpenAISans-Regular.woff2": {
+      "file": "OpenAISans-Regular.woff2",
+      "contentType": "font/woff2"
+    },
+    "https://cdn.openai.com/common/fonts/openai-sans/v2/OpenAISans-Medium.woff2": {
+      "file": "OpenAISans-Medium.woff2",
+      "contentType": "font/woff2"
+    },
+    "https://developers.openai.com/_astro/DevDayAgent.react.ChdkRzq-.js": {
+      "file": "runtime/TechMindAgent.js",
+      "contentType": "application/javascript"
+    },
+    "https://developers.openai.com/_astro/DevDayHeroTitle.react.bxD4fy2p.js": {
+      "file": "runtime/TechMindHeroTitle.js",
+      "contentType": "application/javascript"
+    },
+    "https://developers.openai.com/_astro/client.F-XekeHr.js": {
+      "file": "runtime/client.F-XekeHr.js",
+      "contentType": "application/javascript"
+    },
+    "https://developers.openai.com/_astro/rolldown-runtime.hePW80VL.js?dpl=dpl_KwdPWbEWgk8wksnJxcBSMVoXuVFy": {
+      "file": "runtime/rolldown-runtime.hePW80VL.js",
+      "contentType": "application/javascript"
+    },
+    "https://developers.openai.com/_astro/react.CGSMBlYx.js?dpl=dpl_KwdPWbEWgk8wksnJxcBSMVoXuVFy": {
+      "file": "runtime/react.CGSMBlYx.js",
+      "contentType": "application/javascript"
+    },
+    "https://developers.openai.com/_astro/jsx-runtime.CWLBoBiw.js?dpl=dpl_KwdPWbEWgk8wksnJxcBSMVoXuVFy": {
+      "file": "runtime/jsx-runtime.CWLBoBiw.js",
+      "contentType": "application/javascript"
+    },
+    "https://developers.openai.com/_astro/DevDayEntrance.react.BIC3kMbc.js?dpl=dpl_KwdPWbEWgk8wksnJxcBSMVoXuVFy": {
+      "file": "runtime/DevDayEntrance.react.BIC3kMbc.js",
+      "contentType": "application/javascript"
+    },
+    "https://developers.openai.com/_astro/preload-helper.CxFQXtKk.js?dpl=dpl_KwdPWbEWgk8wksnJxcBSMVoXuVFy": {
+      "file": "runtime/preload-helper.CxFQXtKk.js",
+      "contentType": "application/javascript"
+    },
+    "https://developers.openai.com/_astro/opentype.CUqjAlyS.js?dpl=dpl_KwdPWbEWgk8wksnJxcBSMVoXuVFy": {
+      "file": "runtime/opentype.CUqjAlyS.js",
+      "contentType": "application/javascript"
+    },
+    "https://developers.openai.com/_astro/react-dom.T1U5bGD0.js?dpl=dpl_KwdPWbEWgk8wksnJxcBSMVoXuVFy": {
+      "file": "runtime/react-dom.T1U5bGD0.js",
+      "contentType": "application/javascript"
+    },
+    "https://developers.openai.com/images/devday/wordmark.svg": {
+      "file": "wordmark.svg",
+      "contentType": "image/svg+xml"
+    },
+    "https://developers.openai.com/images/devday/wordmark-stacked.svg": {
+      "file": "wordmark-stacked.svg",
+      "contentType": "image/svg+xml"
+    },
+    "https://developers.openai.com/images/devday/agent-eyes-thinking.svg": {
+      "file": "agent-eyes-thinking.svg",
+      "contentType": "image/svg+xml"
+    },
+    "https://developers.openai.com/images/devday/agent-eyes-designing.svg": {
+      "file": "agent-eyes-designing.svg",
+      "contentType": "image/svg+xml"
+    },
+    "https://developers.openai.com/images/devday/agent-eyes-building.svg": {
+      "file": "agent-eyes-building.svg",
+      "contentType": "image/svg+xml"
+    },
+    "https://developers.openai.com/images/devday/agent-eyes-iterating.svg": {
+      "file": "agent-eyes-iterating.svg",
+      "contentType": "image/svg+xml"
+    },
+    "https://developers.openai.com/images/devday/agent-eyes-testing.svg": {
+      "file": "agent-eyes-testing.svg",
+      "contentType": "image/svg+xml"
+    },
+    "https://developers.openai.com/images/devday/agent-eyes-shipping.svg": {
+      "file": "agent-eyes-shipping.svg",
+      "contentType": "image/svg+xml"
+    },
+    "https://developers.openai.com/fonts/OpenAISans-Medium.woff": {
+      "file": "OpenAISans-Medium.woff",
+      "contentType": "font/woff"
+    },
+    "https://developers.openai.com/images/codex/codex-wallpaper-1.webp": {
+      "file": "codex-wallpaper.webp",
+      "contentType": "image/webp"
+    },
+    "https://developers.openai.com/images/api/models/gpt-realtime-2.jpg": {
+      "file": "realtime.jpg",
+      "contentType": "image/jpeg"
+    },
+    "https://developers.openai.com/images/home/codex-use-cases-img.webp": {
+      "file": "codex-use-cases.webp",
+      "contentType": "image/webp"
+    },
+    "https://developers.openai.com/images/home/showcase-img.webp": {
+      "file": "showcase.webp",
+      "contentType": "image/webp"
+    },
+    "https://developers.openai.com/_astro/pages.BVX-oTcw.css": {
+      "file": "components.css",
+      "contentType": "text/css"
+    }
+  }
+}
