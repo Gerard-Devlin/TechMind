@@ -157,7 +157,7 @@ extra:
 
 # JavaScript 支持
 extra_javascript:
-  - path: javascripts/ask-ai.js?v=20261023-7
+  - path: javascripts/ask-ai.js?v=20261023-8
     type: module
   - javascripts/landing.js
   - path: javascripts/start.js?v=20261022-8

@@ -433,7 +433,8 @@ function initialize(root) {
           const retrieval = event.data.retrieval;
           if (['hybrid', 'lexical'].includes(retrieval?.method)) turn.element.dataset.retrievalMethod = retrieval.method;
           if (typeof retrieval?.semanticExecuted === 'boolean') turn.element.dataset.semanticExecuted = String(retrieval.semanticExecuted);
-          if (event.data.indexStale) setNotice('Using a cached documentation index. Recent changes may not appear yet.');
+          if (retrieval?.unavailable) setNotice('Document search is temporarily unavailable. Chat is still available.');
+          else if (event.data.indexStale) setNotice('Using a cached documentation index. Recent changes may not appear yet.');
           status.textContent = mode === 'find' ? 'Finding pages…' : 'Writing an answer…';
         } else if (event.event === 'delta' && typeof event.data.text === 'string') {
           turn.answer += event.data.text;
@@ -444,11 +445,11 @@ function initialize(root) {
         } else if (event.event === 'error') { throw new Error('The response was interrupted. Please try again.'); }
       }
       if (!done) throw new Error('The connection was interrupted. This response may be incomplete.');
-      if (!turn.answer && !turn.sources.length) throw new Error('No relevant documentation found. Try a more specific topic.');
+      if (!turn.answer && !turn.sources.length) throw new Error('The response was empty. Please try again.');
       status.hidden = true;
       renderAnswer(turn, true); renderSources(turn); renderActions(turn);
       if (turn.truncated) { status.textContent = 'Response limit reached. Ask a follow-up to continue.'; status.hidden = false; }
-      save(); announce('Response complete. Document sources are available.');
+      save(); announce(turn.sources.length ? 'Response complete. Document sources are available.' : 'Response complete.');
       if (turn.navigation && turn.navigation !== currentPage()) {
         const target = prepareDocumentNavigation(turn.navigation);
         if (target) location.assign(target);
