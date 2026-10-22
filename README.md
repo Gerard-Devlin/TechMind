@@ -14,33 +14,19 @@
   </p>
 </div>
 
-## Overview
+## About
 
-TechMind is an evolving computer science knowledge base for students and self-directed learners, combining structured notes, worked examples, and AI-assisted learning. It connects programming and algorithms with the systems that execute them, then extends into machine learning and efficient AI inference.
+TechMind is a growing collection of notes and learning resources on computer science and technology. It brings together clear explanations, practical examples, and connections between ideas to make complex topics easier to understand and revisit.
 
-The goal is practical understanding: explain the underlying idea, make it concrete with code and diagrams, and connect it to the rest of the stack. Most notes are written in Chinese and are revised as the material develops; this is an actively maintained learning resource, not a finished textbook.
+**[Explore TechMind](https://gerard-devlin.github.io/TechMind/start/)** and discover a starting point for your next learning journey.
 
-**[Explore subjects](https://gerard-devlin.github.io/TechMind/start/)** or **[read the documentation](https://gerard-devlin.github.io/TechMind/)**.
+## AI-assisted learning
 
-## Subjects
-
-- **Programming and algorithms:** C, Python, data structures, algorithms, and competitive programming.
-- **Computer systems:** digital logic, computer organization and architecture, compilers, and database systems.
-- **Machine learning:** supervised and unsupervised learning, deep learning, and practical tools including PyTorch and NumPy.
-- **AI efficiency:** visual-token compression and inference-efficiency methods, including VisionZip, PruneVid, FastVID, HoliTom, and FlashVID.
-
-## Learn with Ask AI
-
-Open **Ask AI** in the lower-right corner of the site to ask questions while reading, locate relevant material, or build a suggested study sequence.
-
-- **Understand a concept.** Ask for an explanation, a comparison, or a worked example, with links to relevant notes when available.
-- **Find the right document.** Ask about a topic such as `网络流` or `NumPy broadcasting`. A clearly matched topic can open the corresponding page or section automatically; broader requests retain document candidates.
-- **Continue the discussion.** Ask follow-up questions about what you are reading without restarting the discussion.
-- **Plan what to study next.** Request an ordered learning guide with links to the relevant course material.
+With **Ask AI**, readers can ask questions as they study, clarify unfamiliar concepts, and find relevant material. It complements the notes with explanations and follow-up discussion, helping readers explore topics and build a deeper understanding.
 
 ## Contributing
 
-Corrections, clearer explanations, reproducible examples, and documentation improvements are welcome. Open an [issue](https://github.com/Gerard-Devlin/TechMind/issues) or submit a pull request with the relevant chapter and enough context to review the change.
+Feedback, corrections, and ideas are welcome. Open an [issue](https://github.com/Gerard-Devlin/TechMind/issues) or submit a pull request to help improve the learning resources.
 
 ## License
 
