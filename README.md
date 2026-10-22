@@ -14,33 +14,34 @@
   </p>
 </div>
 
-![TechMind preview](https://github.com/user-attachments/assets/57a93f58-2a6d-40cb-bdf0-c9e3996b4fe8)
+## Overview
 
-## 🧭 About
+TechMind is an evolving computer science knowledge base for students and self-directed learners, combining structured notes, worked examples, and AI-assisted learning. It connects programming and algorithms with the systems that execute them, then extends into machine learning and efficient AI inference.
 
-TechMind is my technical notebook: a place to turn scattered facts into a connected understanding of computer science.
+The goal is practical understanding: explain the underlying idea, make it concrete with code and diagrams, and connect it to the rest of the stack. Most notes are written in Chinese and are revised as the material develops; this is an actively maintained learning resource, not a finished textbook.
 
-The notes begin with programming fundamentals and follow the abstractions in both directions—down toward logic, memory, architecture, and compilers; up toward algorithms, databases, machine learning, and deep learning. Most chapters grow out of a question I encountered while studying or building something, then evolve as my understanding improves.
+**[Explore subjects](https://gerard-devlin.github.io/TechMind/start/)** or **[read the documentation](https://gerard-devlin.github.io/TechMind/)**.
 
-This is not a finished textbook. It is a living record of how I learn.
+## Subjects
 
-## ✍️ How these notes are written
+- **Programming and algorithms:** C, Python, data structures, algorithms, and competitive programming.
+- **Computer systems:** digital logic, computer organization and architecture, compilers, and database systems.
+- **Machine learning:** supervised and unsupervised learning, deep learning, and practical tools including PyTorch and NumPy.
+- **AI efficiency:** visual-token compression and inference-efficiency methods, including VisionZip, PruneVid, FastVID, HoliTom, and FlashVID.
 
-- **Start with the idea.** Terminology matters, but intuition comes first.
-- **Make it concrete.** Code, diagrams, formulas, and worked examples turn concepts into tools.
-- **Connect the layers.** A language feature makes more sense when you can trace it through the compiler and into the machine.
-- **Revise in public.** The notes are updated whenever I find a clearer explanation or a better example.
+## Learn with Ask AI
 
-## 📚 Start reading
+Open **Ask AI** in the lower-right corner of the site to ask questions while reading, locate relevant material, or build a suggested study sequence.
 
-The latest version is available at **[gerard-devlin.github.io/TechMind](https://gerard-devlin.github.io/TechMind/)**.
+- **Understand a concept.** Ask for an explanation, a comparison, or a worked example, with links to relevant notes when available.
+- **Find the right document.** Ask about a topic such as `网络流` or `NumPy broadcasting`. A clearly matched topic can open the corresponding page or section automatically; broader requests retain document candidates.
+- **Continue the discussion.** Ask follow-up questions about what you are reading without restarting the discussion.
+- **Plan what to study next.** Request an ordered learning guide with links to the relevant course material.
 
-Use the navigation to browse by subject, or search for a specific concept. There is no required reading order—start with the question that brought you here and follow the links outward.
+## Contributing
 
-## 🤝 Contributing
+Corrections, clearer explanations, reproducible examples, and documentation improvements are welcome. Open an [issue](https://github.com/Gerard-Devlin/TechMind/issues) or submit a pull request with the relevant chapter and enough context to review the change.
 
-Corrections, clearer explanations, and better examples are always welcome. If something is inaccurate or confusing, open an [issue](https://github.com/Gerard-Devlin/TechMind/issues) or submit a pull request.
+## License
 
-## 📄 License
-
-Released under the [MIT License](LICENSE).
+Project code is released under the [MIT License](LICENSE). Third-party libraries, fonts, and media retain their respective licenses and attribution.
